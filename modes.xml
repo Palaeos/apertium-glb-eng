@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <!-- glb → eng -->
+
+  <mode name="glb-eng" install="yes" gendebug="yes">
+    <pipeline>
+
+      <program name="lt-proc -w">
+        <file name="glb-eng.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="glb-eng.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="glb-eng.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="glb-eng.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="glb-eng.autolex.bin"/>
+      </program>
+
+      <program name="apertium-transfer -b">
+        <file name="apertium-glb-eng.glb-eng.t1x"/>
+        <file name="glb-eng.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-glb-eng.glb-eng.t2x"/>
+        <file name="glb-eng.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-glb-eng.glb-eng.t3x"/>
+        <file name="glb-eng.t3x.bin"/>
+      </program>
+
+      <program name="lt-proc $1">
+        <file name="glb-eng.autogen.bin"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="glb-eng.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <!-- eng → glb -->
+
+  <mode name="eng-glb" install="yes" gendebug="yes">
+    <pipeline>
+
+      <program name="lt-proc -w">
+        <file name="eng-glb.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="eng-glb.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="eng-glb.prob"/>
+      </program>
+
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="eng-glb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="eng-glb.autolex.bin"/>
+      </program>
+
+      <program name="apertium-transfer -b">
+        <file name="apertium-glb-eng.eng-glb.t1x"/>
+        <file name="eng-glb.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-glb-eng.eng-glb.t2x"/>
+        <file name="eng-glb.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-glb-eng.eng-glb.t3x"/>
+        <file name="eng-glb.t3x.bin"/>
+      </program>
+
+      <program name="lt-proc $1">
+        <file name="eng-glb.autogen.bin"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="eng-glb.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+</modes>
+

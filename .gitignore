@@ -1,4 +1,5 @@
 /*.bin
+!eng.automorf.bin
 /*.hfst
 /*.gz
 /*.m4

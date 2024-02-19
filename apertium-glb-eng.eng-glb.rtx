@@ -1,0 +1,103 @@
+!!!!!!!!!!!!!!!
+!! ATTRIBUTE CATEGORIES
+!!!!!!!!!!!!!!!
+
+number = (ND sg) sg pl sp ND;
+gender = (GD m) m f mf GD;
+det_type = def ind dem itg;
+definite = def ind;
+person = 1p 2p 3p;
+tense = pres past fut inf;
+vpreps = nun le xa ger;
+
+
+
+
+!!!!!!!!!!!!!!!
+!! OUTPUT PATTERNS
+!!!!!!!!!!!!!!!
+
+n: _.gender.number;
+adj: _.gender.number;
+adv: _;
+vbmod: _;
+det_default: _.det_type;
+det_def: _.det_type.number;
+vblex: _.<vblex>.tense.person.number;
+vbser: _.<vbser>.tense.person.number;
+vbdo: _.<vbdo>.tense.person.number;
+
+vbpr: _;
+
+NP: _.number;
+DP: _.gender.number;
+VP: _.tense.person.number;
+DVP: _.tense.person.number;
+S: _;
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!
+!! TAG-REWRITE RULES
+!!!!!!!!!!!!!!!
+
+
+tense > vpreps : pres nun, past le, fut xa, cni ger;
+
+
+!!!!!!!!!!!!!!!
+!! MACROS
+!!!!!!!!!!!!!!!
+
+det: (if (1.det_type = def or 1.det_type = ind)
+         1(det_def)
+      else
+         1(det_default));
+
+tense_pref: (if (1.tense = pres)
+               [u@vbpr.pres _]
+            elif (1.tense = past)
+               [u@vbpr.past _]
+            elif (1.tense = inf)
+               [u@vbpr.inf _]
+            else [u@ _] 
+);
+
+!!!!!!!!!!!!!!!
+!! REDUCTION RULES
+!!!!!!!!!!!!!!!
+
+
+
+NP -> n.$gender.$number { 1 } |
+      adj NP.$gender.$number { 1[gender=2.gender] _ 2 } ;
+
+DP -> det NP { _ 2 };
+
+
+
+VP -> vblex.$tense.$person.$number { 1 } |
+      adv VP.$tense.$person.$number { 1 _ 2 } ;
+
+
+PVP-> vbdo.$tense.$person.$number not@adv VP.<inf> { no@neg 3 }|
+      be@vblex.$tense.$person.$number not@adv { no@neg 1 }|
+      VP { 1 };
+
+
+DVP -> PVP.$tense.$person.$number { *(tense_pref)[tense=1.tense] _ 1 }|
+       will@vbmod PVP.<inf> { u@fut 2 };
+
+! Example rule:
+! Input:  ^ראש<n><m><sg>/hovud<n><nt><sg>$ ^גדול<adj><m><sg>/stor<adj><nt><sg>$
+! Output: ^stor<adj><nt><sg>$ ^hovud<n><nt><sg>$
+! NP -> n.$number adj { 2[gender=1.gender, number=1.number] _ 1 } ;
+
+! Resources:
+! https://wiki.apertium.org/wiki/Apertium-recursive
+! https://wiki.apertium.org/wiki/Apertium-recursive/Formalism
+! https://wiki.apertium.org/wiki/Apertium-recursive/Cookbook

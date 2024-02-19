@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+
+<alphabet>ABCDEFGHIJKLMNOPRSTUVWXYZabcdefghijklmnoprstuvwxyz</alphabet>
+
+<sdefs>
+    <sdef n="re" />
+    <sdef n="alpha" />
+    <sdef n="acc" />
+    <sdef n="gen" />
+    <sdef n="dat" />
+    <sdef n="all" />
+    <sdef n="loc" />
+    <sdef n="abl" />
+    <sdef n="ins" />
+    <sdef n="com" />
+    <sdef n="nomiacc" />
+    <sdef n="nom" />
+    <sdef n="comp" />
+    <sdef n="detnt" />
+    <sdef n="predet" />
+    <sdef n="past" />
+    <sdef n="atn" />
+    <sdef n="qnt" />
+    <sdef n="ord" />
+    <sdef n="obj" />
+    <sdef n="subj" />
+    <sdef n="pro" />
+    <sdef n="tn" />
+    <sdef n="acr" />
+    <sdef n="top" />
+    <sdef n="ant" />
+    <sdef n="cog" />
+    <sdef n="al" />
+    <sdef n="n" />
+    <sdef n="np" />
+    <sdef n="adj" />
+    <sdef n="f" />
+    <sdef n="m" />
+    <sdef n="mf" />
+    <sdef n="ut" />
+    <sdef n="sg" />
+    <sdef n="pl" />
+    <sdef n="ND" />
+    <sdef n="adv" />
+    <sdef n="preadv" />
+    <sdef n="pr" />
+    <sdef n="vbpr" />
+    <sdef n="prn" />
+    <sdef n="rel" />
+    <sdef n="nn" />
+    <sdef n="an" />
+    <sdef n="aa" />
+    <sdef n="ind" />
+    <sdef n="itg" />
+    <sdef n="det" />
+    <sdef n="dem" />
+    <sdef n="def" />
+    <sdef n="cnjcoo" />
+    <sdef n="cnjsub" />
+    <sdef n="cnjadv" />
+    <sdef n="nt" />
+    <sdef n="vaux" />
+    <sdef n="vbser" />
+    <sdef n="vbhaver" />
+    <sdef n="vblex" />
+    <sdef n="vbmod" />
+    <sdef n="inf" />
+    <sdef n="ger" />
+    <sdef n="gerpast" />
+    <sdef n="prc_pres" />
+    <sdef n="prc_past" />
+    <sdef n="pri" />
+    <sdef n="ifi" />
+    <sdef n="impf" />
+    <sdef n="perf" />
+    <sdef n="pros" />
+    <sdef n="p1" />
+    <sdef n="p2" />
+    <sdef n="p3" />
+    <sdef n="immi" />
+    <sdef n="pii" />
+    <sdef n="fti" />
+    <sdef n="fut" />
+    <sdef n="fts" />
+    <sdef n="cni" />
+    <sdef n="prs" />
+    <sdef n="pis" />
+    <sdef n="imp" />
+    <sdef n="aff" />
+    <sdef n="neg" />
+    <sdef n="pasv" />
+    <sdef n="hab" />
+    <sdef n="pos" />
+    <sdef n="gen" />
+    <sdef n="sp" />
+    <sdef n="ref" />
+    <sdef n="sup" />
+    <sdef n="num" />
+    <sdef n="percent" />
+    <sdef n="ij" />
+    <sdef n="sent" />
+    <sdef n="cm" />
+    <sdef n="lpar" />
+    <sdef n="rpar" />
+    <sdef n="web" />
+    <sdef n="subs" />
+    <sdef n="pres" />
+    <sdef n="pprs" />
+    <sdef n="guio" />
+    <sdef n="enc" />
+    <sdef n="vbdo" />
+    <sdef n="sint" />
+    <sdef n="unc" />
+    <sdef n="sep" />
+    <sdef n="pron" />
+    <sdef n="apos" />
+    <sdef n="compound-only-L" />
+    <sdef n="compound-R" />
+
+</sdefs>
+
+<pardefs>
+
+    <pardef n="u__vbpr">
+      <e>       <p><l>u</l>                        <r>u<s n="vbpr"/></r></p></e>
+      <e>       <p><l>na</l>                       <r>u<s n="vbpr"/><s n="inf"/></r></p></e>
+      <e>       <p><l>nun</l>                      <r>u<s n="vbpr"/><s n="pres"/></r></p></e>
+      <e>       <p><l>nun nun</l>               <r>u<s n="vbpr"/><s n="pres"/><s n="impf"/></r></p></e>
+      <e>       <p><l>nun le</l>                <r>u<s n="vbpr"/><s n="pres"/><s n="perf"/></r></p></e>
+      <e>       <p><l>nun xa</l>                <r>u<s n="vbpr"/><s n="pres"/><s n="pros"/></r></p></e>
+      <e>       <p><l>le</l>                       <r>u<s n="vbpr"/><s n="past"/></r></p></e>
+      <e>       <p><l>le nun</l>                <r>u<s n="vbpr"/><s n="past"/><s n="impf"/></r></p></e>
+      <e>       <p><l>le le</l>                 <r>u<s n="vbpr"/><s n="past"/><s n="perf"/></r></p></e>
+      <e>       <p><l>le xa</l>                 <r>u<s n="vbpr"/><s n="past"/><s n="pros"/></r></p></e>
+      <e>       <p><l>xa</l>                       <r>u<s n="vbpr"/><s n="fut"/></r></p></e>
+      <e>       <p><l>xa nun</l>               <r>u<s n="vbpr"/><s n="fut"/><s n="impf"/></r></p></e>
+      <e>       <p><l>xa le</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="perf"/></r></p></e>
+      <e>       <p><l>xa xa</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="pros"/></r></p></e>
+      <e>       <p><l>ger</l>                      <r>u<s n="vbpr"/><s n="cni"/></r></p></e>
+      <e>       <p><l>ger nun</l>               <r>u<s n="vbpr"/><s n="cni"/><s n="impf"/></r></p></e>
+      <e>       <p><l>ger le</l>                <r>u<s n="vbpr"/><s n="cni"/><s n="perf"/></r></p></e>
+      <e>       <p><l>ger xa</l>                <r>u<s n="vbpr"/><s n="cni"/><s n="pros"/></r></p></e>
+      <e>       <p><l>jale</l>                <r>u<s n="vbpr"/><s n="past"/><s n="immi"/></r></p></e>
+      <e>       <p><l>jaxa</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="immi"/></r></p></e>
+      <e>       <p><l>am</l>                       <r>u<s n="vbpr"/><s n="imp"/></r></p></e>
+
+      <e>       <p><l>u no</l>                        <r>u<s n="vbpr"/><s n="neg"/></r></p></e>
+      <e>       <p><l>na no</l>                       <r>u<s n="vbpr"/><s n="inf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>nun no</l>                      <r>u<s n="vbpr"/><s n="pres"/></r></p></e>
+      <e>       <p><l>nun nun no</l>               <r>u<s n="vbpr"/><s n="pres"/><s n="impf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>nun le no</l>                <r>u<s n="vbpr"/><s n="pres"/><s n="perf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>nun xa no</l>                <r>u<s n="vbpr"/><s n="pres"/><s n="pros"/><s n="neg"/></r></p></e>
+      <e>       <p><l>le no</l>                       <r>u<s n="vbpr"/><s n="past"/><s n="neg"/></r></p></e>
+      <e>       <p><l>le nun no</l>                <r>u<s n="vbpr"/><s n="past"/><s n="impf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>le le no</l>                 <r>u<s n="vbpr"/><s n="past"/><s n="perf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>le xa no</l>                 <r>u<s n="vbpr"/><s n="past"/><s n="pros"/><s n="neg"/></r></p></e>
+      <e>       <p><l>xa no</l>                       <r>u<s n="vbpr"/><s n="fut"/><s n="neg"/></r></p></e>
+      <e>       <p><l>xa nun no</l>               <r>u<s n="vbpr"/><s n="fut"/><s n="impf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>xa le no</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="perf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>xa xa no</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="pros"/><s n="neg"/></r></p></e>
+      <e>       <p><l>ger no</l>                      <r>u<s n="vbpr"/><s n="cni"/><s n="neg"/></r></p></e>
+      <e>       <p><l>ger nun no</l>               <r>u<s n="vbpr"/><s n="cni"/><s n="impf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>ger le no</l>                <r>u<s n="vbpr"/><s n="cni"/><s n="perf"/><s n="neg"/></r></p></e>
+      <e>       <p><l>ger xa no</l>                <r>u<s n="vbpr"/><s n="cni"/><s n="pros"/><s n="neg"/></r></p></e>
+      <e>       <p><l>am no</l>                       <r>u<s n="vbpr"/><s n="imp"/><s n="neg"/></r></p></e>
+
+      <e>       <p><l>u si</l>                        <r>u<s n="vbpr"/><s n="aff"/></r></p></e>
+      <e>       <p><l>na si</l>                       <r>u<s n="vbpr"/><s n="inf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>nun si</l>                      <r>u<s n="vbpr"/><s n="pres"/></r></p></e>
+      <e>       <p><l>nun nun si</l>               <r>u<s n="vbpr"/><s n="pres"/><s n="impf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>nun le si</l>                <r>u<s n="vbpr"/><s n="pres"/><s n="perf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>nun xa si</l>                <r>u<s n="vbpr"/><s n="pres"/><s n="pros"/><s n="aff"/></r></p></e>
+      <e>       <p><l>le si</l>                       <r>u<s n="vbpr"/><s n="past"/><s n="aff"/></r></p></e>
+      <e>       <p><l>le nun si</l>                <r>u<s n="vbpr"/><s n="past"/><s n="impf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>le le si</l>                 <r>u<s n="vbpr"/><s n="past"/><s n="perf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>le xa si</l>                 <r>u<s n="vbpr"/><s n="past"/><s n="pros"/><s n="aff"/></r></p></e>
+      <e>       <p><l>xa si</l>                       <r>u<s n="vbpr"/><s n="fut"/><s n="aff"/></r></p></e>
+      <e>       <p><l>xa nun si</l>               <r>u<s n="vbpr"/><s n="fut"/><s n="impf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>xa le si</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="perf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>xa xa si</l>                <r>u<s n="vbpr"/><s n="fut"/><s n="pros"/><s n="aff"/></r></p></e>
+      <e>       <p><l>ger si</l>                      <r>u<s n="vbpr"/><s n="cni"/><s n="aff"/></r></p></e>
+      <e>       <p><l>ger nun si</l>               <r>u<s n="vbpr"/><s n="cni"/><s n="impf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>ger le si</l>                <r>u<s n="vbpr"/><s n="cni"/><s n="perf"/><s n="aff"/></r></p></e>
+      <e>       <p><l>ger xa si</l>                <r>u<s n="vbpr"/><s n="cni"/><s n="pros"/><s n="aff"/></r></p></e>
+      <e>       <p><l>am si</l>                       <r>u<s n="vbpr"/><s n="imp"/><s n="aff"/></r></p></e>
+    </pardef>
+
+    <pardef n="__vblex">
+      <e>       <p><l></l>          <r><s n="vblex"/></r></p></e>
+      <e>       <p><l>ne</l>        <r><s n="vblex"/><s n="pprs"/></r></p></e>
+      <e>       <p><l>do</l>        <r><s n="vblex"/><s n="pp"/></r></p></e>
+    </pardef>
+
+    <pardef n="__vblex">
+      <e>       <p><l></l>          <r><s n="vblex"/></r></p></e>
+      <e>       <p><l>ne</l>        <r><s n="prc_pres"/></r></p></e>
+      <e>       <p><l>do</l>        <r><s n="prc_past"/></r></p></e>
+    </pardef>
+
+    <pardef n="__n">
+      <e>       <p><l></l>          <r><s n="n"/></r></p></e>
+      <e>       <p><l>su</l>        <r><s n="n"/><s n="gen"/></r></p></e>
+    </pardef>
+
+    <pardef n="polar">
+      <e>       <p><l>be</l>         <r><s n="pasv"/></r></p></e>
+      <e>       <p><l>du</l>        <r><s n="hab"/></r></p></e>
+      <e>       <p><l>bedu</l>        <r><s n="pasv"/><s n="hab"/></r></p></e>
+    </pardef>
+
+    <pardef n="number">
+      <e>       <p><l></l>         <r><s n="sp"/></r></p></e>
+      <e>       <p><l>un</l>         <r><s n="sg"/></r></p></e>
+    </pardef>
+
+</pardefs>
+
+
+
+
+<section id="main" type="standard">
+
+      <e lm="u">    <i>u</i><par n="u__vbpr"/></e>
+
+
+<e>                      <p><l>mi</l>        <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>                      <p><l>yu</l>        <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+<e>                      <p><l>te</l>        <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>                      <p><l>femte</l>        <r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e>                      <p><l>mante</l>        <r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e>                      <p><l>to</l>        <r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+<e>                      <p><l>imi</l>        <r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>                      <p><l>uyu</l>        <r>prpers<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>                      <p><l>ete</l>       <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>                      <p><l>oto</l>       <r>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="pl"/></r></p></e>
+
+<e>                      <p><l>ren</l>       <r>prpers<s n="prn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+
+
+</section>
+
+</dictionary>

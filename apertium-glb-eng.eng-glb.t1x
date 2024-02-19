@@ -1,60 +1,343 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<transfer default="chunk">
-  <section-def-cats>
-    <def-cat n="nom">
-      <cat-item tags="n.*"/>
-    </def-cat>
-    <def-cat n="sent">
-      <cat-item tags="sent"/>
-    </def-cat>
-  </section-def-cats>
+<transfer>
 
-  <section-def-attrs>
+<section-def-cats>
+  <def-cat n="nom">
+     <cat-item tags="n.*"/>
+     <cat-item tags="np.al.*"/>
+     <cat-item tags="np.org.*"/>
+  </def-cat>
+  <def-cat n="auxcj">
+     <cat-item tags="vbser.pri.*"/>
+     <cat-item tags="vbser.pres.*"/>
+     <cat-item tags="vbser.past.*"/>
+     <cat-item tags="vbser.pss.*"/>
+
+     <cat-item tags="vaux.pri.*"/>
+     <cat-item tags="vaux.pres.*"/>
+     <cat-item tags="vaux.past.*"/>
+     <cat-item tags="vaux.pss.*"/>
+
+     <cat-item tags="vbhaver.pri.*"/>
+     <cat-item tags="vbhaver.pres.*"/>
+     <cat-item tags="vbhaver.past.*"/>
+     <cat-item tags="vbhaver.pss.*"/>
+  </def-cat>
+
+  <def-cat n="verbcj">
+     <cat-item tags="vblex.pri.*"/>
+     <cat-item tags="vblex.pres.*"/>
+     <cat-item tags="vblex.past.*"/>
+     <cat-item tags="vblex.pss.*"/>
+
+     <!-- When voice is marked -->
+     <cat-item tags="vblex.*.pri.*"/>
+     <cat-item tags="vblex.*.pres.*"/>
+     <cat-item tags="vblex.*.past.*"/>
+     <cat-item tags="vblex.*.pss.*"/>
+  </def-cat>
+
+  <def-cat n="auxinf">
+     <cat-item tags="vaux.inf"/>
+     <cat-item tags="vaux.*.inf"/>
+  </def-cat>
+
+  <def-cat n="imp">
+     <cat-item tags="vblex.imp.*"/>
+     <cat-item tags="vbser.imp.*"/>
+     <cat-item tags="vbhaver.imp.*"/>
+     <cat-item tags="vblex.*.imp.*"/>
+     <cat-item tags="vblex.imp"/>
+     <cat-item tags="vbser.imp"/>
+     <cat-item tags="vbhaver.imp"/>
+     <cat-item tags="vblex.*.imp"/>
+  </def-cat>
+
+  <def-cat n="inf">
+     <cat-item tags="vblex.inf.*"/>
+     <cat-item tags="vbser.inf.*"/>
+     <cat-item tags="vbhaver.inf.*"/>
+     <cat-item tags="vblex.*.inf.*"/>
+     <cat-item tags="vblex.inf"/>
+     <cat-item tags="vbser.inf"/>
+     <cat-item tags="vbhaver.inf"/>
+     <cat-item tags="vblex.*.inf"/>
+  </def-cat>
+
+  <def-cat n="vblex">
+     <cat-item tags="vblex.*"/>
+  </def-cat>
+ 
+  <def-cat n="prnpers">
+     <cat-item tags="prn.p1.*"/>
+     <cat-item tags="prn.p2.*"/>
+     <cat-item tags="prn.p3.*"/>
+  </def-cat>
+ 
+  <def-cat n="prnpers_gen">
+     <cat-item tags="prn.p1.*.*.gen.*"/>
+     <cat-item tags="prn.p2.*.*.gen.*"/>
+     <cat-item tags="prn.p3.*.*.gen.*"/>
+     <cat-item tags="prn.p1.*.*.gen"/>
+     <cat-item tags="prn.p2.*.*.gen"/>
+     <cat-item tags="prn.p3.*.*.gen"/>
+  </def-cat>
+
+  <def-cat n="prn_poss">
+    <cat-item tags="prn.pos.*"/>
+    <cat-item tags="prn.p1.*.*.gen"/>
+    <cat-item tags="prn.p2.*.*.gen"/>
+    <cat-item tags="prn.p3.*.*.gen"/>
+  </def-cat>
+
+  <def-cat n="prn_ref">
+    <cat-item tags="prn.ref.*"/>
+  </def-cat>
+
+  <def-cat n="art">
+    <cat-item tags="det.def.*"/>
+    <cat-item tags="det.ind.*"/>
+  </def-cat>
+
+  <def-cat n="det">
+    <cat-item tags="det.dem.*"/>
+    <cat-item tags="det.qnt.*"/>
+    <cat-item tags="det.pos.*"/>
+  </def-cat>
+  <def-cat n="adj">
+     <cat-item tags="adj.*"/>
+  </def-cat>
+
+</section-def-cats>
+<section-def-attrs>
+    <def-attr n="a_nom">
+      <attr-item tags="n"/>
+      <attr-item tags="n.acr"/>
+      <attr-item tags="n.acr.re"/>
+      <attr-item tags="np"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="np.top"/>
+    </def-attr>
+    <def-attr n="a_n">
+      <attr-item tags="n"/>
+    </def-attr>
+    <def-attr n="a_acr">
+      <attr-item tags="acr"/>
+      <attr-item tags="acr.re"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="np.top"/>
+    </def-attr>
+    <def-attr n="a_any">
+      <attr-item tags="n"/>
+      <attr-item tags="np"/>
+    </def-attr>
+    <def-attr n="a_prp">
+      <attr-item tags="pr"/>
+    </def-attr>
+
+    <def-attr n="a_vprp">
+      <attr-item tags="vbpr"/>
+    </def-attr>
+
+    <def-attr n="a_adj">
+      <attr-item tags="adj"/>
+      <attr-item tags="adj.pst"/>
+      <attr-item tags="adj.sint.comp"/>
+      <attr-item tags="adj.sint.sup"/>
+      <attr-item tags="adj.itg"/>
+      <attr-item tags="adj.pos"/>
+    </def-attr>
+    <def-attr n="a_vrb">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vblex.sep"/>
+      <attr-item tags="vbser"/>
+      <attr-item tags="vaux"/>
+    </def-attr>
+
+    <def-attr n="a_det">
+      <attr-item tags="det.def"/>
+      <attr-item tags="det.ind"/>
+      <attr-item tags="det.pos"/>
+      <attr-item tags="det.qnt"/>
+      <attr-item tags="det.itg"/>
+      <attr-item tags="det.qnt"/>
+      <attr-item tags="det.dem"/>
+    </def-attr>
+
+    <def-attr n="a_prn">
+      <attr-item tags="prn"/>
+      <attr-item tags="prn.ref"/>
+      <!-- Jacob added -->
+      <attr-item tags="prn.itg"/>
+      <attr-item tags="prn.subj"/>
+      <attr-item tags="prn.obj"/>
+      <attr-item tags="prn.tn"/>
+    </def-attr>
+
+    <def-attr n="a_prn__sen__subj_obj">
+      <attr-item tags="prn"/>
+      <attr-item tags="prn.ref"/>
+      <attr-item tags="prn.itg"/>
+      <attr-item tags="prn.tn"/>
+    </def-attr>
+
+
+    <def-attr n="a_tns">
+      <attr-item tags="pri"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="pres"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="cni"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="subs"/>
+      <attr-item tags="ppres"/>
+      <attr-item tags="fti"/>
+      <attr-item tags="past"/>
+    </def-attr>
+
+
+    <def-attr n="a_gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+    <def-attr n="a_pres">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+    <def-attr n="a_nbr">
+      <attr-item tags="sp"/>
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="ND"/>
+    </def-attr>
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
     </def-attr>
-  </section-def-attrs>
+    <def-attr n="a_asp">
+      <attr-item tags="perf"/>
+      <attr-item tags="impf"/>
+      <attr-item tags="pros"/>
+    </def-attr>
+    <def-attr n="a_pol">
+      <attr-item tags="aff"/>
+      <attr-item tags="neg"/>
+    </def-attr>
 
-  <section-def-vars>
-    <def-var n="number"/>
-  </section-def-vars>
+</section-def-attrs>
 
-  <section-def-macros>
-    <def-macro n="test" npar="1">
-          <let>
-            <var n="number"/>
-            <lit v=""/>
-          </let>
-    </def-macro>
-  </section-def-macros>
+<section-def-vars>
+    <def-var n="numer"/>
 
-  <section-rules>
-    <rule comment="REGLA: SENT">
-      <pattern>
-        <pattern-item n="sent"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk name="sent" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SENT"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-  </section-rules>
+</section-def-vars>
+
+<section-rules>
+
+<rule comment="REGULA: NAM">
+   <pattern>
+     <pattern-item n="nom"/>
+   </pattern>
+   <action>
+     <out>
+       <lu>
+         <clip pos="1" side="tl" part="lem"/>
+         <clip pos="1" side="tl" part="a_nom"/>
+       </lu>
+     </out>
+   </action>
+</rule>
+
+<rule comment="REGULA: SIFA">
+   <pattern>
+     <pattern-item n="adj"/>
+   </pattern>
+   <action>
+     <out>
+       <lu>
+         <clip pos="1" side="tl" part="lem"/>
+         <clip pos="1" side="tl" part="a_adj"/>
+       </lu>
+     </out>
+   </action>
+</rule>
+
+<rule comment="REGLA: DET NOM">
+  <pattern>
+    <pattern-item n="art"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+    <out>
+      <lu>
+        <clip pos="2" side="tl" part="lem"/>
+      </lu>
+    </out>
+  </action>
+</rule>
+
+<rule comment="REGLA: SIFA NOM">
+  <pattern>
+    <pattern-item n="adj"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+    <out>
+      <lu>
+        <clip pos="1" side="tl" part="lem"/>
+      </lu>
+      <b/>
+      <lu>
+        <clip pos="2" side="tl" part="lem"/>
+      </lu>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="REGULA: FALE">
+   <pattern>
+     <pattern-item n="verbcj"/>
+   </pattern>
+   <action>
+     <out>
+       <lu>
+         <lit v="u"/>
+         <lit-tag v="vprp"/>
+         <clip pos="1" side="tl" part="a_tns"/>
+       </lu>
+       <b/>
+       <lu>
+         <clip pos="1" side="tl" part="lem"/>
+         <lit-tag v="vblex"/>
+       </lu>
+     </out>
+   </action>
+</rule>
+
+<rule>
+   <pattern>
+     <pattern-item n="prnpers"/>
+   </pattern>
+   <action>
+     <out>
+       <lu>
+         <lit v="prpers"/>
+         <lit-tag v="prn"/>
+         <clip pos="1" side="tl" part="a_prn"/>
+         <clip pos="1" side="tl" part="a_nbr"/>
+       </lu>
+     </out>
+   </action>
+</rule>
+
+
+</section-rules>
+
 </transfer>
-
-<!--
-Resources:
-    https://wiki.apertium.org/wiki/Chunking:_A_full_example
-    https://wiki.apertium.org/wiki/Chunking
-    https://wiki.apertium.org/wiki/Apertium_New_Language_Pair_HOWTO#Transfer_rules
-    https://wiki.apertium.org/wiki/A_long_introduction_to_transfer_rules
-    https://wiki.apertium.org/wiki/Transfer#Adding_structural_transfer_.28grammar.29_rules
--->
-

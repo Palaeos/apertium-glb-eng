@@ -1,0 +1,4 @@
+echo "the" | lt-proc '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-eng/eng.automorf.bin'  | apertium-tagger -g $2 '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-eng/eng.prob' | apertium-pretransfer | lt-proc -b '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/glb-eng.autobil.bin' | lrx-proc -m '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/glb-eng.autolex.bin' | apertium-anaphora '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/apertium-glb-eng.glb-eng.arx' | rtx-proc -a '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/glb-eng.rtx.bin' | lsx-proc '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/glb-eng.revautoseq.bin' | lt-proc $1 '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/glb-eng.autogen.bin' | lt-proc -p '/home/paleos/ApplicationSource/GlobasaTranslation/apertium-glb-eng/glb-eng.autopgen.bin'
+
+
+

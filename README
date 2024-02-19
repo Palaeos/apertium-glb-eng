@@ -1,12 +1,12 @@
-glb and English: `apertium-glb-eng`
+Globasa and English: `apertium-glb-eng`
 ===============================================================================
 
-This is an Apertium language pair for translating between glb and
+This is an Apertium language pair for translating between Globasa and
 English. What you can use this language package for:
 
-* Translating between glb and English
-* Morphological analysis of glb and English
-* Part-of-speech tagging of glb and English
+* Translating between Globasa and English
+* Morphological analysis of Globasa and English
+* Part-of-speech tagging of Globasa and English
 
 For information on the latter two points, see subheading "For more
 information" below.
@@ -72,13 +72,13 @@ Files and data
 
 * [`apertium-glb-eng.glb-eng.dix`](apertium-glb-eng.glb-eng.dix) - Bilingual dictionary
 * [`apertium-glb-eng.glb-eng.rtx`](apertium-glb-eng.glb-eng.rtx) - Structural transfer rules for translating into English
-* [`apertium-glb-eng.eng-glb.rtx`](apertium-glb-eng.eng-glb.rtx) - Structural transfer rules for translating into glb
+* [`apertium-glb-eng.eng-glb.rtx`](apertium-glb-eng.eng-glb.rtx) - Structural transfer rules for translating into Globasa
 * [`apertium-glb-eng.glb-eng.lrx`](apertium-glb-eng.glb-eng.lrx) - Lexical selection rules for translating into English
-* [`apertium-glb-eng.eng-glb.lrx`](apertium-glb-eng.eng-glb.lrx) - Lexical selection rules for translating into glb
+* [`apertium-glb-eng.eng-glb.lrx`](apertium-glb-eng.eng-glb.lrx) - Lexical selection rules for translating into Globasa
 * [`apertium-glb-eng.glb-eng.lsx`](apertium-glb-eng.glb-eng.lsx) - Discontiguous multiword rules for translating into English
-* [`apertium-glb-eng.eng-glb.lsx`](apertium-glb-eng.eng-glb.lsx) - Discontiguous multiword rules for translating into glb
+* [`apertium-glb-eng.eng-glb.lsx`](apertium-glb-eng.eng-glb.lsx) - Discontiguous multiword rules for translating into Globasa
 * [`apertium-glb-eng.glb-eng.arx`](apertium-glb-eng.glb-eng.arx) - Anaphora resolution rules for translating into English
-* [`apertium-glb-eng.eng-glb.arx`](apertium-glb-eng.eng-glb.arx) - Anaphora resolution rules for translating into glb
+* [`apertium-glb-eng.eng-glb.arx`](apertium-glb-eng.eng-glb.arx) - Anaphora resolution rules for translating into Globasa
 * [`modes.xml`](modes.xml) - Translation modes
 
 For more information

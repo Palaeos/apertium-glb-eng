@@ -8,7 +8,7 @@ det_type = def ind dem itg;
 definite = def ind;
 person = 1p 2p 3p;
 tense = pres past fut inf;
-vpreps = nun le xa ger;
+vpreps = nun le xa ger na;
 
 
 
@@ -23,15 +23,19 @@ adv: _;
 vbmod: _;
 det_default: _.det_type;
 det_def: _.det_type.number;
-vblex: _.<vblex>.tense.person.number;
-vbser: _.<vbser>.tense.person.number;
-vbdo: _.<vbdo>.tense.person.number;
+
+vblex: _.tense.person.number;
+vbinf: _.<inf>;
+v: _.tense.person.number;
+vbser: _.tense.person.number;
+vbdo:  _.tense.person.number;
 
 vbpr: _;
 
 NP: _.number;
 DP: _.gender.number;
 VP: _.tense.person.number;
+PVP: _.tense.person.number;
 DVP: _.tense.person.number;
 S: _;
 
@@ -46,7 +50,7 @@ S: _;
 !!!!!!!!!!!!!!!
 
 
-tense > vpreps : pres nun, past le, fut xa, cni ger;
+tense > vpreps : pres nun, past le, fut xa, cni ger, inf na;
 
 
 !!!!!!!!!!!!!!!
@@ -57,15 +61,6 @@ det: (if (1.det_type = def or 1.det_type = ind)
          1(det_def)
       else
          1(det_default));
-
-tense_pref: (if (1.tense = pres)
-               [u@vbpr.pres _]
-            elif (1.tense = past)
-               [u@vbpr.past _]
-            elif (1.tense = inf)
-               [u@vbpr.inf _]
-            else [u@ _] 
-);
 
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
@@ -78,19 +73,39 @@ NP -> n.$gender.$number { 1 } |
 
 DP -> det NP { _ 2 };
 
+v  -> vblex.$tense.$person.$number { 1 } |
+      be@vbser.$tense.$person.$number vblex.pp { be@pr 2[tense = 1.tense] } ;
 
 
-VP -> vblex.$tense.$person.$number { 1 } |
+
+VP -> v.$tense.$person.$number { 1 } |
       adv VP.$tense.$person.$number { 1 _ 2 } ;
 
 
-PVP-> vbdo.$tense.$person.$number not@adv VP.<inf> { no@neg 3 }|
-      be@vblex.$tense.$person.$number not@adv { no@neg 1 }|
-      VP { 1 };
 
-
-DVP -> PVP.$tense.$person.$number { *(tense_pref)[tense=1.tense] _ 1 }|
-       will@vbmod PVP.<inf> { u@fut 2 };
+DVP ->   will@vbmod.past be@vblex VP.$tense.$person.$number { u@vbpr.cni.impf _ 3 }|
+         will@vbmod.past not@adv be@vblex VP.$tense.$person.$number { u@vbpr.cni.impf.neg _ 4 }|
+         will@vbmod.past not@adv VP.$tense.$person.$number { u@vbpr.cni.neg _ 3 }|
+         will@vbmod.past have@vbhaver VP.$tense.$person.$number { u@vbpr.cni.perf _ 3 }|
+         will@vbmod.past have@vbhaver not@adv VP.$tense.$person.$number { u@vbpr.cni.perf.neg _ 4 }|
+         will@vbmod.past VP.$tense.$person.$number { u@vbpr.cni _ 2 }|
+         will@vbmod.past not@adv VP.$tense.$person.$number { u@vbpr.cni.neg _ 3 }|
+         will@vbmod.pres not@adv VP.$tense.$person.$number { u@vbpr.fut.neg _ 3 }|
+         will@vbmod.pres VP.$tense.$person.$number { u@vbpr.fut _ 2 }|
+         will@vbmod.pres be@vblex VP.$tense.$person.$number { u@vbpr.fut.impf _ 3 }|
+         will@vbmod.pres be@vblex go@vblex to@pr VP.$tense.$person.$number { u@vbpr.fut.pros _ 5 }|
+         will@vbmod.pres not@adv be@vblex VP.$tense.$person.$number { u@vbpr.fut.impf.neg _ 4 }|
+         will@vbmod.pres have@vbhaver VP.$tense.$person.$number { u@vbpr.fut.perf _ 3 }|
+         will@vbmod.pres have@vbhaver not@adv VP.$tense.$person.$number { u@vbpr.fut.perf.neg _ 4 }|
+         will@vbmod.pres not@adv have@vbhaver VP.$tense.$person.$number { u@vbpr.fut.perf.neg _ 4 }|
+         vbdo.$tense.$person.$number VP { u@vbpr.[1.tense].aff _ 2 }|
+         vbdo.$tense.$person.$number not@adv VP { u@vbpr.[1.tense].neg _ 3 }|
+         have@vbhaver.$tense.$person.$number VP { u@vbpr.[1.tense].perf _ 2 }|
+         have@vbhaver.$tense.$person.$number not@adv VP { u@vbpr.[1.tense].perf.neg _ 3 }|
+         be@vblex.$tense.$person.$number not@adv { u@vbpr.[1.tense].neg _ 1 }|
+         be@vbser.$tense.$person.$number VP { u@vbpr.[1.tense].impf _ 2 }|
+         be@vbser.$tense.$person.$number go@vblex to@pr VP { u@vbpr.[1.tense].pros _ 4 }|
+         VP.$tense.$person.$number { u@vbpr.[1.tense] _ 1 };
 
 ! Example rule:
 ! Input:  ^ראש<n><m><sg>/hovud<n><nt><sg>$ ^גדול<adj><m><sg>/stor<adj><nt><sg>$

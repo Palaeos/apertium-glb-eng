@@ -21,6 +21,9 @@
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
 
+    <sdef n="pfx"             c="Prefix"/>
+    
+
     <sdef n="attr"            c="Attributive"/>
     <sdef n="top"             c="Toponym"/>
     <sdef n="ant"             c="Anthroponym"/>
@@ -45,6 +48,7 @@
     <sdef n="m"               c="Masculine"/>
     <sdef n="mf"               c="Masculine or Feminine"/>
     <sdef n="un"              c="No gender"/>
+    <sdef n="GD"              c="Gender to be determined"/>
 
     <sdef n="sg"              c="Singular"/>
     <sdef n="du"              c="Dual"/>
@@ -71,6 +75,7 @@
     <sdef n="pres"            c="Present"/>
     <sdef n="imp"             c="Imperative"/>
     <sdef n="pret"            c="Preterite"/>
+    <sdef n="past"            c="Past"/>
     <sdef n="pp"              c="Perfect participle"/>
     <sdef n="pprs"            c="Present participle"/>
     <sdef n="pasv"            c="Passive"/>
@@ -127,9 +132,65 @@
 <e>       <p><l>mas<b/>prefere<s n="cnjcoo"/></l>      <r>but<b/>rather<s n="cnjcoo"/></r></p></e>
 
 
+
+
+<e>       <p><l>aw<s n="pfx"/></l>                 <r>away<s n="adv"/></r></p></e>
+<e>       <p><l>ex<s n="pfx"/></l>                 <r>out<s n="adv"/></r></p></e>
+<e>       <p><l>per<s n="pfx"/></l>                 <r>on<s n="adv"/></r></p></e>
+
+<e><p><l>alopul<b/>kom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
+<e><p><l>celki<s n = "cnjsub"/></l>   <r>so<b/>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>celki<s n = "cnjsub"/></l>   <r>in<b/>order<b/>for<s n = "cnjsub"/></r></p></e>
+<e><p><l>denmaner<b/>hu<s n = "cnjsub"/></l>   <r>like<s n = "cnjsub"/></r></p></e>
+<e><p><l>denmaner<b/>hu<s n = "cnjsub"/></l>   <r>in<b/>the<b/>way<b/>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>as<s n = "cnjsub"/></r></p></e>
+<e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>such<b/>as<s n = "cnjsub"/></r></p></e>
+<e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>like<s n = "cnjsub"/></r></p></e>
+<e><p><l>denwatu<b/>hu<s n = "cnjsub"/></l>   <r>whenever<s n = "cnjsub"/></r></p></e>
+<e><p><l>durki<s n = "cnjsub"/></l>   <r>while<s n = "cnjsub"/></r></p></e>
+<e><p><l>eger<s n = "cnjsub"/></l>   <r>if<s n = "cnjsub"/></r></p></e>
+<e><p><l>eger<b/>no<s n = "cnjsub"/></l>   <r>if<b/>not<s n = "cnjsub"/></r></p></e>
+<e><p><l>eger<b/>no<s n = "cnjsub"/></l>   <r>otherwise<s n = "cnjsub"/></r></p></e>
+<e><p><l>eger<b/>si<s n = "cnjsub"/></l>   <r>if<b/>so<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>folo<b/>ki<s n = "cnjsub"/></l>   <r>such<b/>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>hataya<b/>ki<s n = "cnjsub"/></l>   <r>even<b/>though<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>hataya<b/>ki<s n = "cnjsub"/></l>   <r>although<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>hataya<b/>ki<s n = "cnjsub"/></l>   <r>despite<b/>the<b/>fact<b/>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>kompara<b/>ki<s n = "cnjsub"/></l>   <r>whereas<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>kosa<b/>ki<s n = "cnjsub"/></l>   <r>because<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>kosa<b/>ki<s n = "cnjsub"/></l>   <r>since<s n = "cnjsub"/></r></p></e>
+<e><p><l>fe<b/>tayti<b/>ki<s n = "cnjsub"/></l>   <r>instead<b/>of<s n = "cnjsub"/></r></p></e>
+<e><p><l>feki<s n = "cnjsub"/></l>   <r>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>finki<s n = "cnjsub"/></l>   <r>until<s n = "cnjsub"/></r></p></e>
+<e><p><l>folki<s n = "cnjsub"/></l>   <r>the<b/>more<s n = "cnjsub"/></r></p></e>
+<e><p><l>folki<s n = "cnjsub"/></l>   <r>the<b/>less<s n = "cnjsub"/></r></p></e>
+<e><p><l>kam<s n = "cnjsub"/></l>   <r>yes/no<b/>question<b/>particle<s n = "cnjsub"/></r></p></e>
+<e><p><l>kam<s n = "cnjsub"/></l>   <r>or<s n = "cnjsub"/></r></p></e>
+<e><p><l>kam<s n = "cnjsub"/></l>   <r>or<b/>whether<s n = "cnjsub"/></r></p></e>
+<e><p><l>ki<s n = "cnjsub"/></l>   <r>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>kom<s n = "cnjsub"/></l>   <r>as<s n = "cnjsub"/></r></p></e>
+<e><p><l>kom<s n = "cnjsub"/></l>   <r>than<s n = "cnjsub"/></r></p></e>
+<e><p><l>koski<s n = "cnjsub"/></l>   <r>because<s n = "cnjsub"/></r></p></e>
+<e><p><l>koski<s n = "cnjsub"/></l>   <r>since<s n = "cnjsub"/></r></p></e>
+<e><p><l>ku<s n = "cnjsub"/></l>   <r>_interrogative<b/>clauses<b/>in<b/>declarative<b/>sentences_<s n = "cnjsub"/></r></p></e>
+<e><p><l>kwas<s n = "cnjsub"/></l>   <r>as<b/>if<s n = "cnjsub"/></r></p></e>
+<e><p><l>leki<s n = "cnjsub"/></l>   <r>before<s n = "cnjsub"/></r></p></e>
+<e><p><l>mas<s n = "cnjsub"/></l>   <r>but<s n = "cnjsub"/></r></p></e>
+<e><p><l>nenkom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
+<e><p><l>poskom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
+<e><p><l>temki<s n = "cnjsub"/></l>   <r>that<s n = "cnjsub"/></r></p></e>
+<e><p><l>temki<s n = "cnjsub"/></l>   <r>about<b/>which<s n = "cnjsub"/></r></p></e>
+<e><p><l>xaki<s n = "cnjsub"/></l>   <r>after<s n = "cnjsub"/></r></p></e>
+<e><p><l>xaki<s n = "cnjsub"/></l>   <r>once<s n = "cnjsub"/></r></p></e>
+<e><p><l>xorki<s n = "cnjsub"/></l>   <r>since<s n = "cnjsub"/></r></p></e>
+
+
+
+
 <e>       <p><l>su<s n="pos"/></l>                 <r>'s<s n="gen"/></r></p></e>
     
     <!-- Personal pronouns -->
+
 
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -140,6 +201,17 @@
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+
 
 
 <e>       <p><l>se<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></l><r>myself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -157,21 +229,15 @@
 
     <!-- Possessives (+determiners) -->
 
-<e>       <p><l>imisu<s n="det"/><s n="pos"/></l>        <r>our<s n="det"/><s n="pos"/></r></p></e>
-<e>       <p><l>yusu<s n="det"/><s n="pos"/></l>        <r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e>       <p><l>prpers<s n="det"/><s n="pos"/><s n="p1"/><s n="ut"/><s n="pl"/></l>        <r>our<s n="det"/><s n="pos"/></r></p></e>
+<e>       <p><l>prpers<s n="det"/><s n="pos"/><s n="p2"/><s n="ut"/><s n="sg"/></l>        <r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 
 <e>       <p><l>prpers<s n="det"/><s n="pos"/></l>        <r>prpers<s n="det"/><s n="pos"/></r></p></e>
 
+<e>       <p><l>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="ut"/><s n="pl"/></l>       <r>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="det"/><s n="pos"/><s n="p1"/><s n="ut"/><s n="sg"/></l>        <r>prpers<s n="det"/><s n="pos"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 
-<!--
 
-<e>       <p><l>misu<s n="det"/><s n="pos"/></l>        <r>prpers<s n="det"/><s n="pos"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-<e>       <p><l>femtesu<s n="det"/><s n="pos"/></l>        <r>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-<e>       <p><l>mantesu<s n="det"/><s n="pos"/></l>        <r>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-<e>       <p><l>tosu<s n="det"/><s n="pos"/></l>        <r>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
-<e>       <p><l>etesu<s n="det"/><s n="pos"/></l>       <r>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-
--->
 <e r="RL">       <p><l>misu tø<s n="adj"/></l>                   <r>prpers<s n="prn"/><s n="pos"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e r="RL">       <p><l>imisu tø<s n="adj"/></l>                  <r>prpers<s n="prn"/><s n="pos"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e r="RL">       <p><l>yusu tø<s n="adj"/></l>                   <r>prpers<s n="prn"/><s n="pos"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -187,9 +253,31 @@
 
 <e>       <p><l>ki<s n="cnjsub"/></l>                   <r>that<s n="cnjsub"/></r></p></e>
 
+<e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
+<e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+<e>       <p><l>den<s n="det"/></l>                   <r>that<s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
+<e>       <p><l>den<s n="det"/></l>                   <r>that<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 
-<e>       <p><l>ke</l>                   <r>what<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
-<e>       <p><l>ke</l>                   <r>which<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+<e>       <p><l>ke<s n="det"/></l>                   <r>what<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+<e>       <p><l>ke<s n="det"/></l>                   <r>which<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+
+<e><p><l>ban<s n = "det"/></l>   <r>some<s n = "det"/><s n="ind"/><s n="sp"/></r></p></e>
+<e><p><l>bannumer<s n = "det"/></l>   <r>some<b/>number<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>bannumer<s n = "det"/></l>   <r>a<b/>certain<b/>number<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>bannumer<s n = "det"/></l>   <r>some<s n = "det"/><s n="qnt"/><s n="sp"/></r></p></e>
+<e><p><l>bannumer<s n = "det"/></l>   <r>several<s n = "det"/></r></p></e>
+<e><p><l>bannumer<s n = "det"/></l>   <r>various<s n = "det"/></r></p></e>
+
+
+<e>       <p><l>alo<s n="det"/></l>                   <r>another<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+<e>       <p><l>sama<s n="det"/></l>                   <r>the<b/>same<s n="det"/><s n="ind"/><s n="sp"/></r></p></e>
+
+
+<e>       <p><l>hin<s n="prn"/><s n="GD"/><s n="sg"/></l>                   <r>this<s n="prn"/><s n="dem"/><s n="mf"/><s n="sp"/></r></p></e>
+<e>       <p><l>hin<s n="prn"/><s n="GD"/><s n="pl"/></l>                   <r>this<s n="prn"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
+
+<e>       <p><l>den<s n="prn"/><s n="GD"/><s n="sg"/></l>                   <r>that<s n="prn"/><s n="dem"/><s n="mf"/><s n="sp"/></r></p></e>
+<e>       <p><l>den<s n="prn"/><s n="GD"/><s n="pl"/></l>                   <r>that<s n="prn"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
 <e>       <p><l>ke<s n="prn"/><s n="ut"/><s n="sg"/></l>                   <r>who<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -197,8 +285,14 @@
 <e>       <p><l>ke<s n="prn"/><s n="nt"/><s n="sg"/></l>                   <r>what<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 <e>       <p><l>ke<s n="prn"/><s n="nt"/><s n="sg"/></l>                   <r>which<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 
+<e><p><l>banete<s n = "prn"/></l>   <r>some<b/>of<b/>them<s n = "prn"/></r></p></e>
+<e><p><l>banoto<s n = "prn"/></l>   <r>some<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>somebody<s n = "prn"/></r></p></e>
+<e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>someone<s n = "prn"/></r></p></e>
+<e><p><l>banto<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>something<s n = "prn"/></r></p></e>
 
 <e>       <p><l>ke<s n="det"/><s n="pos"/></l>                             <r>whose<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+
 
 <e>       <p><l>keloka<s n="adv"/></l>                             <r>where<s n="adv"/><s n="itg"/></r></p></e>
 <e>       <p><l>kewatu<s n="adv"/></l>                             <r>when<s n="adv"/><s n="itg"/></r></p></e>
@@ -209,6 +303,295 @@
 <e>       <p><l>denloka<s n="adv"/></l>                             <r>there<s n="adv"/></r></p></e>
 <e>       <p><l>denwatu<s n="adv"/></l>                             <r>then<s n="adv"/></r></p></e>
 
+<e>       <p><l>hinloka<s n="adv"/></l>                             <r>here<s n="adv"/></r></p></e>
+<e>       <p><l>hinwatu<s n="adv"/></l>                             <r>now<s n="adv"/></r></p></e>
+
+
+
+<e>       <p><l>denloka<s n="adv"/><b/>hu<s n="cnjsub"/></l>                             <r>where<s n="adv"/></r></p></e>
+<e>       <p><l>denwatu<s n="adv"/><b/>hu<s n="cnjsub"/></l>                             <r>when<s n="adv"/></r></p></e>
+
+<e>       <p><l>denpul<s n="adj"/><b/>kom<s n="cnjsub"/></l>                             <r>like<s n="pr"/></r></p></e>
+
+<e>       <p><l>denmaner<s n="adv"/><b/>hu<s n="adv"/></l>                             <r>like<s n="cnjsub"/></r></p></e>
+
+<e>       <p><l>hu<b/>dasu<s n="adv"/></l>                             <r>whose<s n="det"/><s n="pos"/><s n="mf"/><s n="sp"/></r></p></e>
+
+
+<e><p><l>aloete<s n = "prn"/></l>   <r>some<b/>other<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>alooto<s n = "prn"/></l>   <r>some<b/>other<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>alote<s n = "prn"/></l>   <r>somebody<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>alote<s n = "prn"/></l>   <r>someone<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>aloto<s n = "prn"/></l>   <r>something<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>aloto<s n = "prn"/></l>   <r>another<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>aloto<s n = "prn"/></l>   <r>a<b/>different<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>denete<s n = "prn"/></l>   <r>those<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>denoto<s n = "prn"/></l>   <r>those<b/>(things)<s n = "prn"/></r></p></e>
+<e><p><l>denoto<s n = "prn"/></l>   <r>those<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>dente<s n = "prn"/></l>   <r>that<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>dente<s n = "prn"/></l>   <r>that<b/>being<s n = "prn"/></r></p></e>
+<e><p><l>dente<s n = "prn"/></l>   <r>that<b/>person<s n = "prn"/></r></p></e>
+<e><p><l>dento<s n = "prn"/></l>   <r>that<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>dento<s n = "prn"/></l>   <r>that<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>alote<s n = "prn"/></l>   <r>anybody<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>alote<s n = "prn"/></l>   <r>anyone<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>aloto<s n = "prn"/></l>   <r>any<b/>other<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>aloto<s n = "prn"/></l>   <r>anything<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>bante<s n = "prn"/></l>   <r>anybody<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>bante<s n = "prn"/></l>   <r>anyone<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>bante<s n = "prn"/></l>   <r>whoever<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>banto<s n = "prn"/></l>   <r>anything<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>banto<s n = "prn"/></l>   <r>whichever<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>dento<s n = "prn"/></l>   <r>that<b/>specific<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>hinto<s n = "prn"/></l>   <r>this<b/>specific<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>kete<s n = "prn"/></l>   <r>whoever<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>kete<s n = "prn"/></l>   <r>who<b/>ever<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>keto<s n = "prn"/></l>   <r>whatever<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>keto<s n = "prn"/></l>   <r>what<b/>ever<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>moyto<s n = "prn"/></l>   <r>everything<b/>and<b/>anything<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>nilto<s n = "prn"/></l>   <r>not<b/>any<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>nilto<s n = "prn"/></l>   <r>not<b/>a<b/>single<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>he<b/>samato<s n = "prn"/></l>   <r>the<b/>same<b/>exact<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>hinete<s n = "prn"/></l>   <r>these<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>hinoto<s n = "prn"/></l>   <r>these<b/>(things)<s n = "prn"/></r></p></e>
+<e><p><l>hinoto<s n = "prn"/></l>   <r>these<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>hinte<s n = "prn"/></l>   <r>this<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>hinte<s n = "prn"/></l>   <r>this<b/>being<s n = "prn"/></r></p></e>
+<e><p><l>hinte<s n = "prn"/></l>   <r>this<b/>person<s n = "prn"/></r></p></e>
+<e><p><l>hinto<s n = "prn"/></l>   <r>this<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>hinto<s n = "prn"/></l>   <r>this<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>mante<s n = "prn"/></l>   <r>he<s n = "prn"/></r></p></e>
+<e><p><l>moyete<s n = "prn"/></l>   <r>they<b/>all<s n = "prn"/></r></p></e>
+<e><p><l>moyete<s n = "prn"/></l>   <r>all<b/>of<b/>them<s n = "prn"/></r></p></e>
+<e><p><l>moyoto<s n = "prn"/></l>   <r>all<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>moyte<s n = "prn"/></l>   <r>everybody<s n = "prn"/></r></p></e>
+<e><p><l>moyte<s n = "prn"/></l>   <r>everyone<s n = "prn"/></r></p></e>
+<e><p><l>moyto<s n = "prn"/></l>   <r>everything<s n = "prn"/></r></p></e>
+<e><p><l>nilete<s n = "prn"/></l>   <r>none<b/>of<b/>them<s n = "prn"/></r></p></e>
+<e><p><l>niloto<s n = "prn"/></l>   <r>no<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>niloto<s n = "prn"/></l>   <r>none<b/>of<b/>them<s n = "prn"/></r></p></e>
+<e><p><l>nilte<s n = "prn"/></l>   <r>nobody<s n = "prn"/></r></p></e>
+<e><p><l>nilte<s n = "prn"/></l>   <r>no<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>nilto<s n = "prn"/></l>   <r>nothing<s n = "prn"/></r></p></e>
+<e><p><l>samaete<s n = "prn"/></l>   <r>the<b/>same<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>samaoto<s n = "prn"/></l>   <r>the<b/>same<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>samate<s n = "prn"/></l>   <r>(the)<b/>same<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>samato<s n = "prn"/></l>   <r>(the)<b/>same<b/>thing<s n = "prn"/></r></p></e>
+
+
+
+<e><p><l>alonumer<s n = "det"/></l>   <r>a<b/>different<b/>number<b/>of<s n = "det"/></r></p></e>
+
+<e><p><l>bankwanti<s n = "det"/></l>   <r>some<b/>amount<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>bankwanti<s n = "det"/></l>   <r>some<b/>quantify<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>bankwanti<s n = "det"/></l>   <r>some<s n = "det"/></r></p></e>
+<e><p><l>bankwanti<s n = "det"/></l>   <r>a<b/>bit<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>bannumer<s n = "det"/></l>   <r>(a)<b/>few<s n = "det"/></r></p></e>
+<e><p><l>denkwanti<s n = "det"/></l>   <r>that<b/>amount<b/>of<s n = "det"/></r></p></e>
+<e><p><l>denkwanti<s n = "det"/></l>   <r>that<b/>quantity<b/>of<s n = "det"/></r></p></e>
+<e><p><l>denkwanti<s n = "det"/></l>   <r>that<b/>much<b/>of<s n = "det"/></r></p></e>
+<e><p><l>dennumer<s n = "det"/></l>   <r>that<b/>number<b/>of<s n = "det"/></r></p></e>
+<e><p><l>dennumer<s n = "det"/></l>   <r>that<b/>many<s n = "det"/></r></p></e>
+<e><p><l>he<b/>alo<s n = "det"/></l>   <r>any<b/>other<s n = "det"/></r></p></e>
+<e><p><l>he<b/>ban<s n = "det"/></l>   <r>any<s n = "det"/></r></p></e>
+<e><p><l>he<b/>den<s n = "det"/></l>   <r>that<b/>specific<s n = "det"/></r></p></e>
+<e><p><l>he<b/>hin<s n = "det"/></l>   <r>this<b/>specific<s n = "det"/></r></p></e>
+<e><p><l>he<b/>ke<s n = "det"/></l>   <r>whichever<s n = "det"/></r></p></e>
+<e><p><l>he<b/>moy<s n = "det"/></l>   <r>every<b/>and<b/>any<s n = "det"/></r></p></e>
+<e><p><l>he<b/>nil<s n = "det"/></l>   <r>no<s n = "det"/></r></p></e>
+<e><p><l>he<b/>sama<s n = "det"/></l>   <r>the<b/>same<b/>exact<s n = "det"/></r></p></e>
+<e><p><l>hinkwanti<s n = "det"/></l>   <r>this<b/>amount<b/>of<s n = "det"/></r></p></e>
+<e><p><l>hinkwanti<s n = "det"/></l>   <r>this<b/>quantity<b/>of<s n = "det"/></r></p></e>
+<e><p><l>hinkwanti<s n = "det"/></l>   <r>this<b/>much<b/>of<s n = "det"/></r></p></e>
+<e><p><l>hinnumer<s n = "det"/></l>   <r>this<b/>number<b/>of<s n = "det"/></r></p></e>
+<e><p><l>hinnumer<s n = "det"/></l>   <r>this<b/>many<b/>of<s n = "det"/></r></p></e>
+<e><p><l>kekwanti<s n = "det"/></l>   <r>how<b/>much<s n = "det"/></r></p></e>
+<e><p><l>kenumer<s n = "det"/></l>   <r>how<b/>many<s n = "det"/></r></p></e>
+<e><p><l>max<s n = "det"/></l>   <r>more<s n = "det"/></r></p></e>
+<e><p><l>moy<s n = "det"/></l>   <r>every<s n = "det"/></r></p></e>
+<e><p><l>moy<s n = "det"/></l>   <r>each<s n = "det"/></r></p></e>
+<e><p><l>moy<s n = "det"/></l>   <r>all<s n = "det"/></r></p></e>
+<e><p><l>moydua<s n = "det"/></l>   <r>both<s n = "det"/></r></p></e>
+<e><p><l>moykwanti<s n = "det"/></l>   <r>the<b/>entire<b/>quantity<b/>of<s n = "det"/></r></p></e>
+<e><p><l>moykwanti<s n = "det"/></l>   <r>the<b/>entire<b/>amount<b/>of<s n = "det"/></r></p></e>
+<e><p><l>moynumer<s n = "det"/></l>   <r>all<b/>of<b/>the<s n = "det"/></r></p></e>
+<e><p><l>moyun<s n = "det"/></l>   <r>each<b/>(one)<s n = "det"/></r></p></e>
+<e><p><l>nilkwanti<s n = "det"/></l>   <r>no<b/>amount<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>nilkwanti<s n = "det"/></l>   <r>no<b/>quantitiy<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>nilkwanti<s n = "det"/></l>   <r>none<b/>of<b/>(the)<s n = "det"/></r></p></e>
+<e><p><l>nilkwanti<s n = "det"/></l>   <r>no<s n = "det"/></r></p></e>
+<e><p><l>nilnumer<s n = "det"/></l>   <r>none<b/>of<b/>(the)<s n = "det"/></r></p></e>
+<e><p><l>nilnumer<s n = "det"/></l>   <r>no<s n = "det"/></r></p></e>
+<e><p><l>samakwanti<s n = "det"/></l>   <r>the<b/>same<b/>quantity<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>samakwanti<s n = "det"/></l>   <r>the<b/>same<b/>amount<b/>(of)<s n = "det"/></r></p></e>
+<e><p><l>samanumer<s n = "det"/></l>   <r>the<b/>same<b/>number<b/>(of)<s n = "det"/></r></p></e>
+
+
+<e><p><l>aloloka<s n = "adv"/></l>   <r>elsewhere<s n = "adv"/></r></p></e>
+<e><p><l>aloloka<s n = "adv"/></l>   <r>somewhere<b/>else<s n = "adv"/></r></p></e>
+<e><p><l>alomaner<s n = "adv"/></l>   <r>by<b/>another<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>alomaner<s n = "adv"/></l>   <r>by<b/>a<b/>different<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>alomaner<s n = "adv"/></l>   <r>in<b/>another<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>alomaner<s n = "adv"/></l>   <r>in<b/>a<b/>different<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>alomo<s n = "adv"/></l>   <r>to<b/>a<b/>different<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>aloseba<s n = "adv"/></l>   <r>for<b/>another<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>aloseba<s n = "adv"/></l>   <r>for<b/>a<b/>different<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>alowatu<s n = "adv"/></l>   <r>at<b/>a<b/>different<b/>time<s n = "adv"/></r></p></e>
+<e><p><l>alowatu<s n = "adv"/></l>   <r>at<b/>another<b/>time<s n = "adv"/></r></p></e>
+<e><p><l>banloka<s n = "adv"/></l>   <r>somewhere<s n = "adv"/></r></p></e>
+<e><p><l>banmaner<s n = "adv"/></l>   <r>somehow<s n = "adv"/></r></p></e>
+<e><p><l>banmaner<s n = "adv"/></l>   <r>by<b/>a<b/>certain<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>banmaner<s n = "adv"/></l>   <r>by<b/>some<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>banmaner<s n = "adv"/></l>   <r>in<b/>a<b/>certain<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>banmaner<s n = "adv"/></l>   <r>in<b/>some<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>banmo<s n = "adv"/></l>   <r>to<b/>some<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>banmo<s n = "adv"/></l>   <r>to<b/>a<b/>certain<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>banmo<s n = "adv"/></l>   <r>somewhat<s n = "adv"/></r></p></e>
+<e><p><l>banmo<s n = "adv"/></l>   <r>(a)<b/>bit<s n = "adv"/></r></p></e>
+<e><p><l>banmo<s n = "adv"/></l>   <r>(a)<b/>little<b/>bit<s n = "adv"/></r></p></e>
+<e><p><l>banseba<s n = "adv"/></l>   <r>for<b/>some<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>banseba<s n = "adv"/></l>   <r>for<b/>a<b/>certain<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>banwatu<s n = "adv"/></l>   <r>sometime<s n = "adv"/></r></p></e>
+<e><p><l>banwatu<s n = "adv"/></l>   <r>once<b/>upon<b/>a<b/>time<s n = "adv"/></r></p></e>
+<e><p><l>banwatu<s n = "adv"/></l>   <r>at<b/>some<b/>point<b/>(in<b/>time)<s n = "adv"/></r></p></e>
+<e><p><l>banwatu<s n = "adv"/></l>   <r>eventually<s n = "adv"/></r></p></e>
+<e><p><l>daydaymo<s n = "adv"/></l>   <r>extremely<s n = "adv"/></r></p></e>
+<e><p><l>daydenmo<s n = "adv"/></l>   <r>so<s n = "adv"/></r></p></e>
+<e><p><l>daydenmo<s n = "adv"/></l>   <r>such<s n = "adv"/></r></p></e>
+<e><p><l>daydenmo<s n = "adv"/></l>   <r>how<s n = "adv"/></r></p></e>
+<e><p><l>daymo<s n = "adv"/></l>   <r>greatly<s n = "adv"/></r></p></e>
+<e><p><l>daymo<s n = "adv"/></l>   <r>very<s n = "adv"/></r></p></e>
+<e><p><l>daymo<s n = "adv"/></l>   <r>really<s n = "adv"/></r></p></e>
+<e><p><l>daymo<s n = "adv"/></l>   <r>highly<s n = "adv"/></r></p></e>
+<e><p><l>denloka<s n = "adv"/></l>   <r>there<s n = "adv"/></r></p></e>
+<e><p><l>denloka<b/>hu<s n = "adv"/></l>   <r>_subordinate<b/>clause_:<b/>where<s n = "adv"/></r></p></e>
+<e><p><l>denloka<b/>hu<s n = "adv"/></l>   <r>wherever<s n = "adv"/></r></p></e>
+<e><p><l>denmaner<s n = "adv"/></l>   <r>like<b/>that<s n = "adv"/></r></p></e>
+<e><p><l>denmaner<s n = "adv"/></l>   <r>like<b/>so<s n = "adv"/></r></p></e>
+<e><p><l>denmaner<s n = "adv"/></l>   <r>by<b/>that<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>denmaner<s n = "adv"/></l>   <r>in<b/>that<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>denmo<s n = "adv"/></l>   <r>as<s n = "adv"/></r></p></e>
+<e><p><l>denmo<s n = "adv"/></l>   <r>to<b/>that<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>denmo<s n = "adv"/></l>   <r>that<s n = "adv"/></r></p></e>
+<e><p><l>denmo...<b/>kom...<s n = "adv"/></l>   <r>as...<b/>as...<s n = "adv"/></r></p></e>
+<e><p><l>denseba<s n = "adv"/></l>   <r>for<b/>that<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>denseba<b/>hu<s n = "adv"/></l>   <r>_subordinate<b/>clause_:<b/>why<s n = "adv"/></r></p></e>
+<e><p><l>denseba<b/>hu<s n = "adv"/></l>   <r>how<b/>come<s n = "adv"/></r></p></e>
+<e><p><l>denwatu<s n = "adv"/></l>   <r>then<s n = "adv"/></r></p></e>
+<e><p><l>dupul<s n = "adv"/></l>   <r>_continuative<b/>aspect_<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>fato<s n = "adv"/></l>   <r>in<b/>fact<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>fato<s n = "adv"/></l>   <r>actually<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>fato<s n = "adv"/></l>   <r>de<b/>facto<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>fini<s n = "adv"/></l>   <r>finally<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>fini<s n = "adv"/></l>   <r>eventually<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>infer<s n = "adv"/></l>   <r>(down)<b/>below<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>infer<s n = "adv"/></l>   <r>(down)<b/>under<s n = "adv"/></r></p></e>
+<e><p><l>fe<b/>super<s n = "adv"/></l>   <r>(up)<b/>above<s n = "adv"/></r></p></e>
+<e><p><l>godomo<s n = "adv"/></l>   <r>too<s n = "adv"/></r></p></e>
+<e><p><l>haji<s n = "adv"/></l>   <r>still<s n = "adv"/></r></p></e>
+<e><p><l>haji<s n = "adv"/></l>   <r>yet<s n = "adv"/></r></p></e>
+<e><p><l>hata<s n = "adv"/></l>   <r>even<s n = "adv"/></r></p></e>
+<e><p><l>hata<s n = "adv"/></l>   <r>yet<s n = "adv"/></r></p></e>
+<e><p><l>he<b/>aloloka<s n = "adv"/></l>   <r>anywhere<b/>else<s n = "adv"/></r></p></e>
+<e><p><l>he<b/>banloka<s n = "adv"/></l>   <r>anywhere<s n = "adv"/></r></p></e>
+<e><p><l>he<b/>banloka<s n = "adv"/></l>   <r>wherever<s n = "adv"/></r></p></e>
+<e><p><l>he<b/>banmo<s n = "adv"/></l>   <r>to<b/>any<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>he<b/>banwatu<s n = "adv"/></l>   <r>ever<s n = "adv"/></r></p></e>
+<e><p><l>he<b/>banwatu<s n = "adv"/></l>   <r>whenever<s n = "adv"/></r></p></e>
+<e><p><l>hinloka<s n = "adv"/></l>   <r>here<s n = "adv"/></r></p></e>
+<e><p><l>hinmaner<s n = "adv"/></l>   <r>like<b/>this<s n = "adv"/></r></p></e>
+<e><p><l>hinmaner<s n = "adv"/></l>   <r>like<b/>so<s n = "adv"/></r></p></e>
+<e><p><l>hinmaner<s n = "adv"/></l>   <r>by<b/>this<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>hinmaner<s n = "adv"/></l>   <r>in<b/>this<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>hinmaner<s n = "adv"/></l>   <r>thus<s n = "adv"/></r></p></e>
+<e><p><l>hinmo<s n = "adv"/></l>   <r>to<b/>this<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>hinmo<s n = "adv"/></l>   <r>this<s n = "adv"/></r></p></e>
+<e><p><l>hinmo<s n = "adv"/></l>   <r>yay<s n = "adv"/></r></p></e>
+<e><p><l>hinmo<s n = "adv"/></l>   <r>yea<s n = "adv"/></r></p></e>
+<e><p><l>hinseba<s n = "adv"/></l>   <r>for<b/>this<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>hinwatu<s n = "adv"/></l>   <r>now<s n = "adv"/></r></p></e>
+<e><p><l>iji<s n = "adv"/></l>   <r>both<s n = "adv"/></r></p></e>
+<e><p><l>kama<s n = "adv"/></l>   <r>whether<s n = "adv"/></r></p></e>
+<e><p><l>keloka<s n = "adv"/></l>   <r>where<s n = "adv"/></r></p></e>
+<e><p><l>kemaner<s n = "adv"/></l>   <r>how<s n = "adv"/></r></p></e>
+<e><p><l>kemaner<s n = "adv"/></l>   <r>done<b/>by<b/>what<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>kemaner<s n = "adv"/></l>   <r>done<b/>in<b/>what<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>kemo<s n = "adv"/></l>   <r>how<s n = "adv"/></r></p></e>
+<e><p><l>kemo<s n = "adv"/></l>   <r>to<b/>what<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>keseba<s n = "adv"/></l>   <r>why<s n = "adv"/></r></p></e>
+<e><p><l>keseba<s n = "adv"/></l>   <r>how<b/>come<s n = "adv"/></r></p></e>
+<e><p><l>kewatu<s n = "adv"/></l>   <r>when<s n = "adv"/></r></p></e>
+<e><p><l>kriban<s n = "adv"/></l>   <r>almost<s n = "adv"/></r></p></e>
+<e><p><l>kriban<s n = "adv"/></l>   <r>nearly<s n = "adv"/></r></p></e>
+<e><p><l>kufimo<s n = "adv"/></l>   <r>sufficiently<s n = "adv"/></r></p></e>
+<e><p><l>kufimo<s n = "adv"/></l>   <r>enough<s n = "adv"/></r></p></e>
+<e><p><l>lilmo<s n = "adv"/></l>   <r>(a)<b/>little<s n = "adv"/></r></p></e>
+<e><p><l>lilmo<s n = "adv"/></l>   <r>(a)<b/>little<b/>bit<s n = "adv"/></r></p></e>
+<e><p><l>lilmo<s n = "adv"/></l>   <r>slightly<s n = "adv"/></r></p></e>
+<e><p><l>maxim<s n = "adv"/></l>   <r>(the)<b/>most<s n = "adv"/></r></p></e>
+<e><p><l>maximummo<s n = "adv"/></l>   <r>as...<b/>as<b/>possible<s n = "adv"/></r></p></e>
+<e><p><l>maximummo<s n = "adv"/></l>   <r>maximally<s n = "adv"/></r></p></e>
+<e><p><l>maxmin<s n = "adv"/></l>   <r>more<b/>or<b/>less<s n = "adv"/></r></p></e>
+<e><p><l>maxmo<s n = "adv"/></l>   <r>more<s n = "adv"/></r></p></e>
+<e><p><l>min<s n = "adv"/></l>   <r>fewer<s n = "adv"/></r></p></e>
+<e><p><l>min<s n = "adv"/></l>   <r>less<s n = "adv"/></r></p></e>
+<e><p><l>minim<s n = "adv"/></l>   <r>(the)<b/>least<s n = "adv"/></r></p></e>
+<e><p><l>minmo<s n = "adv"/></l>   <r>less<s n = "adv"/></r></p></e>
+<e><p><l>moyloka<s n = "adv"/></l>   <r>everywhere<s n = "adv"/></r></p></e>
+<e><p><l>moyloka<s n = "adv"/></l>   <r>throughout<s n = "adv"/></r></p></e>
+<e><p><l>moymaner<s n = "adv"/></l>   <r>by<b/>every<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>moymaner<s n = "adv"/></l>   <r>in<b/>every<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>moymo<s n = "adv"/></l>   <r>in<b/>every<b/>way<s n = "adv"/></r></p></e>
+<e><p><l>moyseba<s n = "adv"/></l>   <r>for<b/>every<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>moywatu<s n = "adv"/></l>   <r>always<s n = "adv"/></r></p></e>
+<e><p><l>mudan<s n = "adv"/></l>   <r>peony<s n = "adv"/></r></p></e>
+<e><p><l>nerxali<s n = "adv"/></l>   <r>soon<s n = "adv"/></r></p></e>
+<e><p><l>nilloka<s n = "adv"/></l>   <r>nowhere<s n = "adv"/></r></p></e>
+<e><p><l>nilmaner<s n = "adv"/></l>   <r>by<b/>no<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>nilmaner<s n = "adv"/></l>   <r>in<b/>no<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>nilmo<s n = "adv"/></l>   <r>in<b/>no<b/>way<s n = "adv"/></r></p></e>
+<e><p><l>nilmo<s n = "adv"/></l>   <r>to<b/>no<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>nilseba<s n = "adv"/></l>   <r>for<b/>no<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>nilwatu<s n = "adv"/></l>   <r>never<s n = "adv"/></r></p></e>
+<e><p><l>no<s n = "adv"/></l>   <r>no<s n = "adv"/></r></p></e>
+<e><p><l>no<s n = "adv"/></l>   <r>not<s n = "adv"/></r></p></e>
+<e><p><l>no<s n = "adv"/></l>   <r>don't<s n = "adv"/></r></p></e>
+<e><p><l>no<s n = "adv"/></l>   <r>do<b/>not<s n = "adv"/></r></p></e>
+<e><p><l>no<s n = "adv"/></l>   <r>doesn't<s n = "adv"/></r></p></e>
+<e><p><l>no<s n = "adv"/></l>   <r>does<b/>not<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>abil<s n = "adv"/></l>   <r>can't<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>abil<s n = "adv"/></l>   <r>cannot<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>haji<s n = "adv"/></l>   <r>no<b/>longer<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>haji<s n = "adv"/></l>   <r>not<b/>anymore<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>hata<s n = "adv"/></l>   <r>not<b/>even<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>uje<s n = "adv"/></l>   <r>not<b/>yet<s n = "adv"/></r></p></e>
+<e><p><l>no<b/>uje<s n = "adv"/></l>   <r>have<b/>yet<b/>(to)<s n = "adv"/></r></p></e>
+<e><p><l>noro<s n = "adv"/></l>   <r>neither<s n = "adv"/></r></p></e>
+<e><p><l>oro<s n = "adv"/></l>   <r>either<s n = "adv"/></r></p></e>
+<e><p><l>pia<s n = "adv"/></l>   <r>also<s n = "adv"/></r></p></e>
+<e><p><l>pia<s n = "adv"/></l>   <r>too<s n = "adv"/></r></p></e>
+<e><p><l>relativomo<s n = "adv"/></l>   <r>relatively<s n = "adv"/></r></p></e>
+<e><p><l>relativomo<s n = "adv"/></l>   <r>quite<s n = "adv"/></r></p></e>
+<e><p><l>relativomo<s n = "adv"/></l>   <r>rather<s n = "adv"/></r></p></e>
+<e><p><l>relativomo<s n = "adv"/></l>   <r>fairly<s n = "adv"/></r></p></e>
+<e><p><l>relativomo<s n = "adv"/></l>   <r>pretty<s n = "adv"/></r></p></e>
+<e><p><l>samaloka<s n = "adv"/></l>   <r>in<b/>the<b/>same<b/>place<s n = "adv"/></r></p></e>
+<e><p><l>samamaner<s n = "adv"/></l>   <r>by<b/>the<b/>same<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>samamaner<s n = "adv"/></l>   <r>in<b/>the<b/>same<b/>manner<s n = "adv"/></r></p></e>
+<e><p><l>samamo<s n = "adv"/></l>   <r>in<b/>the<b/>same<b/>way<s n = "adv"/></r></p></e>
+<e><p><l>samamo<s n = "adv"/></l>   <r>to<b/>the<b/>same<b/>degree<s n = "adv"/></r></p></e>
+<e><p><l>samaseba<s n = "adv"/></l>   <r>for<b/>the<b/>same<b/>reason<s n = "adv"/></r></p></e>
+<e><p><l>samawatu<s n = "adv"/></l>   <r>at<b/>the<b/>same<b/>time<s n = "adv"/></r></p></e>
+<e><p><l>semi<b/>semi<s n = "adv"/></l>   <r>so-so<s n = "adv"/></r></p></e>
+<e><p><l>si<s n = "adv"/></l>   <r>yes<s n = "adv"/></r></p></e>
+<e><p><l>sol<s n = "adv"/></l>   <r>only<s n = "adv"/></r></p></e>
+<e><p><l>sol<s n = "adv"/></l>   <r>merely<s n = "adv"/></r></p></e>
+<e><p><l>sol<s n = "adv"/></l>   <r>just<s n = "adv"/></r></p></e>
+<e><p><l>sol<s n = "adv"/></l>   <r>a<b/>mere<s n = "adv"/></r></p></e>
+<e><p><l>supremmo<s n = "adv"/></l>   <r>extremely<s n = "adv"/></r></p></e>
+<e><p><l>totalmo<s n = "adv"/></l>   <r>totally<s n = "adv"/></r></p></e>
+<e><p><l>totalmo<s n = "adv"/></l>   <r>quite<s n = "adv"/></r></p></e>
+<e><p><l>uje<s n = "adv"/></l>   <r>already<s n = "adv"/></r></p></e>
 
     <!-- Numerals -->
 <!--
@@ -235,7 +618,20 @@
 <e><p><l>ococen<s n = "num"/></l>   <r>eight hundred<s n = "num"/></r></p></e>
 <e><p><l>nuacen<s n = "num"/></l>   <r>nine hundred<s n = "num"/></r></p></e>
 
+
+<e><p><l>abil<s n = "vbmod"/></l>   <r>can<s n = "vbmod"/><s n = "pres"/></r></p></e>
+<e><p><l>musi<s n = "vbmod"/></l>   <r>must<s n = "vbmod"/><s n = "pres"/></r></p></e>
+<e><p><l>ingay<s n = "vbmod"/></l>   <r>shall<s n = "vbmod"/><s n = "past"/></r></p></e>
+
+<e><p><l>vole<s n = "vblex"/></l>   <r>want<s n = "vbmod"/><s n = "pres"/></r></p></e>
+
+<e><p><l>harizin<s n = "vblex"/></l>   <r>may<s n = "vbmod"/><s n = "pres"/></r></p></e>
+<e><p><l>ible<s n = "adv"/></l>   <r>might<s n = "vbmod"/></r></p></e>
+
+
+
 <e><p><l>sen<s n = "vblex"/></l>   <r>be<s n = "vblex"/></r></p></e>
+<e><p><l>sen<s n = "vblex"/></l>   <r>be<s n = "vbser"/></r></p></e>
 
 <e><p><l>suyon<s n = "vblex"/></l>   <r>swim<s n = "vblex"/></r></p></e>
 

@@ -6,18 +6,20 @@ number = sg pl sp ND;
 gender_ENG = m f mf nt GD;
 gender_GLB = m f ut nt GD;
 det_type = def ind dem itg pos;
-definite = def ind;
+detense = def ind;
 articles = the a an;
 degree = comp sup;
-copula = vblex bvser;
 person = p1 p2 p3;
 finite = pres past fut cni imp inf;
+aspect = prog impf pros;
 tense = [finite] pprs ger pp;
+preflist = aw ex per;
 
 ing = pprs ger;
 ptc_type = pprs pp;
 
-finite_PP = fut cni;
+!tense_PP = fut cni;
+tense_PP = pres past;
 
 
 
@@ -30,6 +32,7 @@ finite_PP = fut cni;
 
 n: _;
 np: _;
+pfx: _;
 prn: _.person.gender_GLB.number;
 det_pos: _.<pos>.person.gender_GLB.number;
 det_pos_cor: _.<pos>;
@@ -48,21 +51,25 @@ det: (if (1.HasSuffix = gender_GLB and 1.HasSuffix = number )
 posadj: _.<pos>.person.gender_GLB.number;
 adj: _;
 num: _;
+pr: _;
 adv: _;
-vbmod: _;
+vbmod: _.tense;
 
 cnjsub: _;
 
-vblex: _.ptc_type;
+vblex: _;
 vbinf: _.<inf>;
 prepv: _.tense;
+copula: _.tense; 
+verb: _.tense;
 v: _.tense;
 vv: _.tense;
 
 vbser: _;
 vbdo:  _;
+vbhaver: _;
 
-vbpr: _.tense;
+vbpr: _.tense.aspect;
 
 
 
@@ -85,6 +92,7 @@ AVP: _;
 
 ! tense is an output of the verbal phrases so that the information can be used for determining the tense marker in the Globasa.
 
+WILL: _.tense;
 BE: _.tense;
 HAVE: _.tense;
 VP: _.tense;
@@ -106,7 +114,8 @@ REL: _;
 !!!!!!!!!!!!!!!
 
 !exploits the tense marking on the will auxiliary verb to pick either future or conditional
-finite > finite_PP : pres fut, past cni;
+tense > tense_PP : pres fut, past cni;
+tense_PP > tense : pres fut, past cni;
 
 gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 
@@ -115,19 +124,20 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 !! MACROS
 !!!!!!!!!!!!!!!
 
-maybe_det: (if (1.definite = def)
-               [the@det.def.sp]
-            elif (1.number = sg)
-               [a@det.ind.sp]
-            else [] );
+
 
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
+copula -> be@vblex.$tense { 1 } | vbser.$tense { 1 };
+
+!v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
+
 ! For lexical verbs, takes adverbs after or or followed by a nominal phrase and converts them into prefixes. For instance "die away" -> "awmorcu"
-prepv ->    vblex.$tense adv {2 1}|
-            vblex.$tense NOM adv {3 1 _ 2};
+prepv ->    vblex.$tense {1}|
+            vblex.$tense adv ? (2.lem/tl in preflist) {2 1}|
+            vblex.$tense NOM adv ? (2.lem/tl in preflist) {3 1 _ 2};
 
 ! Merges open noun-noun compounds together
 npcomp ->   n.$number { 1 }|
@@ -137,7 +147,7 @@ npcomp ->   n.$number { 1 }|
 
 ! Accounts for any number of adjectives, even with arbitrary degree adverbs
 NP -> npcomp.$number { 1 } |
-      AJC npcomp.$number { 1 _ 2 } ;
+      1: AJC npcomp.$number { 1 _ 2 } ;
 
 ! Extracts the number information from the noun to determine the right numeral to put before
 NNP -> num NP.$number  { 1 _ 2 }| num NP.$number  { 1 _ 2 }|
@@ -170,7 +180,7 @@ DP -> [articles]@det CNP { 2 }|
 
 
 ! Accounts for any number of adverbs
-AVP -> adv AVP { 1 _ 2 }  |
+AVP -> 0.1:adv AVP { 1 _ 2 }  |
        adv { 1 } ;
 
 ! Accounts for any number of adjectival phrases and carries forth the comparative degree to later convert to an adverb.
@@ -189,45 +199,44 @@ AP -> AJC AP { 1 _ 2 } |
       AJC { 1 } ;
 
 
+WILL ->     will@vbmod.$tense  { 1 }|
+            will@vbmod.$tense AVP  { 1 _ 2 };
 
+BE -> WILL.$tense copula  { 2[tense=tense_PP] }|
+      copula.$tense { 1 };
 
-BE -> will@vbmod.$finite_PP be@vblex.$tense { 2[tense = 1.finite>finite_PP] }|
-      be@vbser.$tense { 1 }|
-      be@vblex.$tense { 1 };
-
-HAVE -> will@vbmod.$finite_PP vbhaver@vblex.$tense { 2[tense = 1.finite>finite_PP] }|
+HAVE -> WILL.$tense vbhaver@vblex {  2 }|
       vbhaver@vblex.$tense { 1 };
 
 ! Detects passive constructions and prefixes the verb accordingly.
-vv  -> vblex.$tense { 1 } |
+vv  -> prepv.$tense { 1 } |
       BE.$tense prepv.pp { be@pfx 2[tense = 1.tense] } |
-      BE.$tense prepv.pp by@pr { be@pfx 2[tense = 1.tense] } |
-      BE.$tense AVP prepv.pp { be@pfx 3[tense = 1.tense] } |
-      BE.$tense AVP prepv.pp by@pr { be@pfx 2[tense = 1.tense] } |
-      BE.$tense AVP prepv.pp { be@pfx 3[tense = 1.tense] } ;
+      BE.$tense prepv.pp by@pr { be@pfx 2[tense = 1.tense] };
 
 ! Accounts for any adverb modifying the verb.
-VP -> vv.$tense { 1 } |
-      AVP vv.$tense { 1 _ 2 } ;
+
+VP -> vv.$tense { 1 };
 
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
-DVP ->   will@vbmod.$finite_PP VP.$tense { u@vbpr.[1.finite>finite_PP] _ 2 }|
-         will@vbmod.$finite_PP be@vblex VP.$tense { u@vbpr.[1.finite>finite_PP].impf _ 3 }|
-         will@vbmod.$finite_PP be@vblex go@vblex to@pr VP.$tense{ u@vbpr.[1.finite>finite_PP].pros _ 5 }|
-         will@vbmod.$finite_PP not@adv be@vblex VP.$tense { u@vbpr.[1.finite>finite_PP].impf.neg _ 4 }|
-         will@vbmod.$finite_PP have@vbhaver VP.$tense { u@vbpr.[1.finite>finite_PP].perf _ 3 }|
-         will@vbmod.$finite_PP have@vbhaver not@adv VP.$tense { u@vbpr.[1.finite>finite_PP].perf.neg _ 4 }|
-         will@vbmod.$finite_PP not@adv have@vbhaver VP.$tense { u@vbpr.[1.finite>finite_PP].perf.neg _ 4 }|
-         vbdo.$tense VP { u@vbpr.[1.tense].aff _ 2 }|
-         vbdo.$tense not@adv VP { u@vbpr.[1.tense].neg _ 3 }|
-         have@vbhaver.$tense VP { u@vbpr.[1.tense].perf _ 2 }|
-         have@vbhaver.$tense not@adv VP { u@vbpr.[1.tense].perf.neg _ 3 }|
-         BE.$tense not@adv { u@vbpr.[1.tense].neg _ 1 }|
-         BE.$tense VP.ing { u@vbpr.[1.tense].impf _ 2 }|
-         be@vbser.$tense go@vblex to@pr VP { u@vbpr.[1.tense].pros _ 4 }|
-         to@pr VP.inf { u@vbpr.inf _ 2 } |
-         VP.$finite { u@vbpr.[1.finite] _ 1 };
+DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
+         will@vbmod vblex.inf { u@fut 2 }|
+         will@vbmod.$tense_PP be@vblex VP.$tense { u@vbpr.[1.tense>tense_PP].impf _ 3 }|
+         will@vbmod.$tense_PP be@vblex go@vblex to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5 }|
+         will@vbmod.$tense_PP not@adv be@vblex VP.$tense { u@vbpr.[1.tense>tense_PP].impf.neg _ 4 }|
+         will@vbmod.$tense_PP have@vbhaver VP.$tense { u@vbpr.[1.tense>tense_PP].perf _ 3 }|
+         will@vbmod.$tense_PP have@vbhaver not@adv VP.$tense { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
+         will@vbmod.$tense_PP not@adv have@vbhaver VP.$tense { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
+         20:vbdo.$tense VP { u@vbpr.[1.tense].aff _ 2 }|
+         20:vbdo.$tense not@adv VP { u@vbpr.[1.tense].neg _ 3 }|
+         HAVE VP { u@vbpr.[1.tense].perf _ 2 }|
+         have@vbhaver not@adv VP { u@vbpr.[1.tense].perf.neg _ 3 }|
+         20:copula not@adv { u@vbpr.[1.tense].neg _ 1 }|
+         BE.[finite] VP.[ing] { u@vbpr.[1.tense].impf _ 2 }|
+         BE.[finite] go@vblex.[ing] to@pr VP.inf { u@vbpr.[1.tense].pros _ 4 }|
+         to@pr VP.inf{ u@vbpr.inf _ 2 }|
+         0.1:VP.[finite]{ u@vbpr.[1.tense] _ 1 } ! Main issue is that this rule in infinitives takes precedence over the future tense rule above.
+         ;
 
 ! Abstracts away any pronouns, noun phrases or proper nouns
 NOM -> DP {1}| prn {1}| np {1};

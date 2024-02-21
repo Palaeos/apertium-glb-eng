@@ -12,6 +12,7 @@
     <sdef n="vaux"            c="Auxiliary verb"/>
     <sdef n="vbser"           c="'To be' verb"/>
     <sdef n="vbhaver"         c="'To have' verb"/>
+    <sdef n="vbpr"           c="Verbal preposition"/>
     <sdef n="cnjsub"          c="Subordinating conjunction"/>
     <sdef n="cnjcoo"          c="Co-ordinating conjunction"/>
     <sdef n="cnjadv"          c="Adverbial conjunction"/>
@@ -76,6 +77,8 @@
     <sdef n="imp"             c="Imperative"/>
     <sdef n="pret"            c="Preterite"/>
     <sdef n="past"            c="Past"/>
+    <sdef n="fut"             c="Future"/>
+    <sdef n="cni"             c="Conditional"/>
     <sdef n="pp"              c="Perfect participle"/>
     <sdef n="pprs"            c="Present participle"/>
     <sdef n="pasv"            c="Passive"/>
@@ -130,10 +133,12 @@
 <e>       <p><l>nor<s n="cnjcoo"/></l>                 <r>neither<s n="cnjcoo"/></r></p></e>
 <e r="RL"><p><l>nor<s n="cnjcoo"/></l>                 <r>nor<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>mas<b/>prefere<s n="cnjcoo"/></l>      <r>but<b/>rather<s n="cnjcoo"/></r></p></e>
-
-
-
-
+    
+        <!-- Co-ordinating conjunction 
+<e>       <p><l>no<s n="adv"/><s n="fut"/></l>                 <r>not<s n="adv"/></r></p></e>
+<e>       <p><l>u<s n="vbpr"/><s n="fut"/></l>                 <r>will<s n="vbmod"/><s n="pres"/></r></p></e>
+<e>       <p><l>u<s n="vbpr"/><s n="cni"/></l>                 <r>will<s n="vbmod"/><s n="past"/></r></p></e>
+-->
 <e>       <p><l>aw<s n="pfx"/></l>                 <r>away<s n="adv"/></r></p></e>
 <e>       <p><l>ex<s n="pfx"/></l>                 <r>out<s n="adv"/></r></p></e>
 <e>       <p><l>per<s n="pfx"/></l>                 <r>on<s n="adv"/></r></p></e>
@@ -201,6 +206,16 @@
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>

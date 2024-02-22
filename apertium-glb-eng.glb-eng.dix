@@ -142,6 +142,7 @@
 <e>       <p><l>aw<s n="pfx"/></l>                 <r>away<s n="adv"/></r></p></e>
 <e>       <p><l>ex<s n="pfx"/></l>                 <r>out<s n="adv"/></r></p></e>
 <e>       <p><l>per<s n="pfx"/></l>                 <r>on<s n="adv"/></r></p></e>
+<e>       <p><l>per<s n="pfx"/></l>                 <r>over<s n="adv"/></r></p></e>
 
 <e><p><l>alopul<b/>kom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
 <e><p><l>celki<s n = "cnjsub"/></l>   <r>so<b/>that<s n = "cnjsub"/></r></p></e>
@@ -205,7 +206,7 @@
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -215,7 +216,7 @@
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -225,7 +226,7 @@
 <e>       <p><l>prpers<s n="prn"/><s n="p1"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
-<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sp"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
+<e>       <p><l>prpers<s n="prn"/><s n="p2"/><s n="ut"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sp"/></r></p></e>
 
 
 
@@ -322,15 +323,18 @@
 <e>       <p><l>hinwatu<s n="adv"/></l>                             <r>now<s n="adv"/></r></p></e>
 
 
-
+<!-- There are currently issues where the second part of the multi word translation is dropped -->
 <e>       <p><l>denloka<s n="adv"/><b/>hu<s n="cnjsub"/></l>                             <r>where<s n="adv"/></r></p></e>
 <e>       <p><l>denwatu<s n="adv"/><b/>hu<s n="cnjsub"/></l>                             <r>when<s n="adv"/></r></p></e>
+<e>       <p><l>denwatu<s n="adv"/> #hu<s n="cnjsub"/></l>                             <r>when<s n="cnjadv"/></r></p></e>
 
 <e>       <p><l>denpul<s n="adj"/><b/>kom<s n="cnjsub"/></l>                             <r>like<s n="pr"/></r></p></e>
 
 <e>       <p><l>denmaner<s n="adv"/><b/>hu<s n="adv"/></l>                             <r>like<s n="cnjsub"/></r></p></e>
 
 <e>       <p><l>hu<b/>dasu<s n="adv"/></l>                             <r>whose<s n="det"/><s n="pos"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e>       <p><l>kufi<s n="adj"/></l>                             <r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
 
 
 <e><p><l>aloete<s n = "prn"/></l>   <r>some<b/>other<b/>ones<s n = "prn"/></r></p></e>
@@ -441,6 +445,7 @@
 <e><p><l>samakwanti<s n = "det"/></l>   <r>the<b/>same<b/>amount<b/>(of)<s n = "det"/></r></p></e>
 <e><p><l>samanumer<s n = "det"/></l>   <r>the<b/>same<b/>number<b/>(of)<s n = "det"/></r></p></e>
 
+<e><p><l>watumon<s n = "adv"/></l>   <r>a<b/>while<s n = "adv"/></r></p></e> <!--Note: US usage-->
 
 <e><p><l>aloloka<s n = "adv"/></l>   <r>elsewhere<s n = "adv"/></r></p></e>
 <e><p><l>aloloka<s n = "adv"/></l>   <r>somewhere<b/>else<s n = "adv"/></r></p></e>
@@ -635,6 +640,7 @@
 
 
 <e><p><l>abil<s n = "vbmod"/></l>   <r>can<s n = "vbmod"/><s n = "pres"/></r></p></e>
+<e><p><l>u<s n = "vbpr"/><s n = "cni"/> abil<s n = "vbmod"/></l>   <r>can<s n = "vbmod"/><s n = "past"/></r></p></e>
 <e><p><l>musi<s n = "vbmod"/></l>   <r>must<s n = "vbmod"/><s n = "pres"/></r></p></e>
 <e><p><l>ingay<s n = "vbmod"/></l>   <r>shall<s n = "vbmod"/><s n = "past"/></r></p></e>
 
@@ -651,6 +657,7 @@
 <e><p><l>suyon<s n = "vblex"/></l>   <r>swim<s n = "vblex"/></r></p></e>
 
 <e><p><l>pawbu<s n = "vblex"/></l>   <r>run<s n = "vblex"/></r></p></e>
+<e><p><l>hare<s n = "vblex"/></l>   <r>have<s n = "vblex"/></r></p></e>
 
 <e><p><l>awpawbu<s n = "vblex"/></l>   <r>run# away<s n = "vblex"/></r></p></e>
 <e><p><l>awpawbu<s n = "vblex"/></l>   <r>flee<s n = "vblex"/></r></p></e>

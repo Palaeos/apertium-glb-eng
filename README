@@ -97,3 +97,15 @@ If you need help using this language pair or data, you can contact:
 * IRC: `#apertium` on irc.oftc.net (irc://irc.oftc.net/#apertium)
 
 See also the file [`AUTHORS`](AUTHORS), included in this distribution.
+
+TODO
+-------------------------------------------------------------------------------
+
+* Improve the periphrastic translations to better handle adverbs and negation.
+* Implement Word sense disambiguation. One could start with data used for the English-Spanish pair
+* Globasa to English
+* Anaphora resolution
+  * For English-Globasa, to resolve implied pronouns and the number of "you"
+  * For Globasa-English, to resolve the number of nouns and gender of pronouns
+
+

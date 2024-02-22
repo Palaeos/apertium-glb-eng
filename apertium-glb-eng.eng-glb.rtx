@@ -7,12 +7,14 @@ gender_ENG = m f mf nt GD;
 gender_GLB = m f ut nt GD;
 det_type = def ind dem itg pos;
 detense = def ind;
+copula = vbser vblex;
 articles = the a an;
 degree = comp sup;
 person = p1 p2 p3;
-finite = pres past fut cni imp inf;
+finite = pres past fut cni imp;
+modal = can should may must could;
 aspect = prog impf pros;
-tense = [finite] pprs ger pp;
+tense = [finite] inf pprs ger pp;
 preflist = aw ex per;
 
 ing = pprs ger;
@@ -135,14 +137,16 @@ copula -> be@vblex.$tense { 1 } | vbser.$tense { 1 };
 !v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
 
 ! For lexical verbs, takes adverbs after or or followed by a nominal phrase and converts them into prefixes. For instance "die away" -> "awmorcu"
+! This rule interferes with the will/would tense marking.
 prepv ->    vblex.$tense {1}|
-            vblex.$tense adv ? (2.lem/tl in preflist) {2 1}|
-            vblex.$tense NOM adv ? (2.lem/tl in preflist) {3 1 _ 2};
+            vblex.$tense * adv ? ((3.lem/tl in preflist)) {3 1 _ 2};
 
 ! Merges open noun-noun compounds together
 npcomp ->   n.$number { 1 }|
             n n.$number { 1 2 } |
             n -@guio n.$number { 1 3 } ;
+
+
 
 
 ! Accounts for any number of adjectives, even with arbitrary degree adverbs
@@ -200,13 +204,14 @@ AP -> AJC AP { 1 _ 2 } |
 
 
 WILL ->     will@vbmod.$tense  { 1 }|
-            will@vbmod.$tense AVP  { 1 _ 2 };
+            AVP will@vbmod.$tense  { 1 _ 2 };
 
 BE -> WILL.$tense copula  { 2[tense=tense_PP] }|
       copula.$tense { 1 };
 
 HAVE -> WILL.$tense vbhaver@vblex {  2 }|
       vbhaver@vblex.$tense { 1 };
+
 
 ! Detects passive constructions and prefixes the verb accordingly.
 vv  -> prepv.$tense { 1 } |
@@ -215,27 +220,29 @@ vv  -> prepv.$tense { 1 } |
 
 ! Accounts for any adverb modifying the verb.
 
-VP -> vv.$tense { 1 };
+VP -> vv.$tense { 1 }| AVP vv.$tense { 1 };
 
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
 DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
-         will@vbmod vblex.inf { u@fut 2 }|
-         will@vbmod.$tense_PP be@vblex VP.$tense { u@vbpr.[1.tense>tense_PP].impf _ 3 }|
-         will@vbmod.$tense_PP be@vblex go@vblex to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5 }|
-         will@vbmod.$tense_PP not@adv be@vblex VP.$tense { u@vbpr.[1.tense>tense_PP].impf.neg _ 4 }|
-         will@vbmod.$tense_PP have@vbhaver VP.$tense { u@vbpr.[1.tense>tense_PP].perf _ 3 }|
-         will@vbmod.$tense_PP have@vbhaver not@adv VP.$tense { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
-         will@vbmod.$tense_PP not@adv have@vbhaver VP.$tense { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
-         20:vbdo.$tense VP { u@vbpr.[1.tense].aff _ 2 }|
-         20:vbdo.$tense not@adv VP { u@vbpr.[1.tense].neg _ 3 }|
-         HAVE VP { u@vbpr.[1.tense].perf _ 2 }|
+         will@vbmod.$tense_PP be@vblex.inf VP.[ing] { u@vbpr.[1.tense>tense_PP].impf _ 3 }|
+         will@vbmod.$tense_PP be@vblex.inf go@vblex.[ing] to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5 }|
+         will@vbmod.$tense_PP not@adv be@vblex.inf VP.$tense.[ing] { u@vbpr.[1.tense>tense_PP].impf.neg _ 4 }|
+         will@vbmod.$tense_PP have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf _ 3 }|
+         will@vbmod.$tense_PP have@vbhaver.inf not@adv VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
+         will@vbmod.$tense_PP not@adv have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
+         vbdo.$tense VP { u@vbpr.[1.tense].aff _ 2 }|
+         vbdo.$tense not@adv VP { u@vbpr.[1.tense].neg _ 3 }|
+         have@vbhaver be@vblex.pp VP.[ing] { u@vbpr.[1.tense] _ dupul@adv _ 3 }|
+         have@vbhaver VP.pp { u@vbpr.[1.tense].perf _ 2 }|
+         have@vbhaver be@vblex.pp { u@vbpr.[1.tense].perf _ 2 }|
          have@vbhaver not@adv VP { u@vbpr.[1.tense].perf.neg _ 3 }|
-         20:copula not@adv { u@vbpr.[1.tense].neg _ 1 }|
+         be@vblex not@adv { u@vbpr.[1.tense].neg _ 1 }|
          BE.[finite] VP.[ing] { u@vbpr.[1.tense].impf _ 2 }|
          BE.[finite] go@vblex.[ing] to@pr VP.inf { u@vbpr.[1.tense].pros _ 4 }|
+         [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
          to@pr VP.inf{ u@vbpr.inf _ 2 }|
-         0.1:VP.[finite]{ u@vbpr.[1.tense] _ 1 } ! Main issue is that this rule in infinitives takes precedence over the future tense rule above.
+         VP.[finite]{ u@vbpr.[1.tense] _ 1 } ! Main issue is that this rule in infinitives takes precedence over the future tense rule above.
          ;
 
 ! Abstracts away any pronouns, noun phrases or proper nouns

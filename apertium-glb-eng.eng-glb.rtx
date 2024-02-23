@@ -6,7 +6,7 @@ number = sg pl sp ND;
 gender_ENG = m f mf nt GD;
 gender_GLB = m f ut nt GD;
 det_type = def ind dem itg pos;
-detense = def ind;
+definite = def ind;
 copula = vbser vblex;
 articles = the a an;
 degree = comp sup;
@@ -53,6 +53,7 @@ det: (if (1.HasSuffix = gender_GLB and 1.HasSuffix = number )
 posadj: _.<pos>.person.gender_GLB.number;
 adj: _;
 num: _;
+quant: _;
 pr: _;
 adv: _;
 vbmod: _.tense;
@@ -134,12 +135,16 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 
 copula -> be@vblex.$tense { 1 } | vbser.$tense { 1 };
 
+quant -> num {1};
+
 !v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
 
 ! For lexical verbs, takes adverbs after or or followed by a nominal phrase and converts them into prefixes. For instance "die away" -> "awmorcu"
 ! This rule interferes with the will/would tense marking.
-prepv ->    vblex.$tense {1}|
-            vblex.$tense * adv ? ((3.lem/tl in preflist)) {3 1 _ 2};
+prepv ->    vblex.$tense {1}
+            | 0.01:vblex.$tense adv ? ((3.lem/tl in preflist)) {2 1}|
+             0.01:vblex.$tense * adv ? ((3.lem/tl in preflist)) {3 1 _ 2}
+            ;
 
 ! Merges open noun-noun compounds together
 npcomp ->   n.$number { 1 }|
@@ -154,7 +159,7 @@ NP -> npcomp.$number { 1 } |
       1: AJC npcomp.$number { 1 _ 2 } ;
 
 ! Extracts the number information from the noun to determine the right numeral to put before
-NNP -> num NP.$number  { 1 _ 2 }| num NP.$number  { 1 _ 2 }|
+NNP -> quant NP.$number  { 1 _ 2 }| quant NP.$number  { 1 _ 2 }|
             NP.$number  (if (1.number = sg)
             { un@num _ 1 }
             elif (1.number = pl)
@@ -164,7 +169,7 @@ NNP -> num NP.$number  { 1 _ 2 }| num NP.$number  { 1 _ 2 }|
             )|
             ! inserts implied pronouns after adjectives. a numeral if available is used to pick the right number.
             AJC  {  1 _ prpers@prn.p3.GD.sg }|
-            num AJC  (if (1.number = sg)
+            quant AJC  (if (1.number = sg)
             { 1 _ 2 _ prpers@prn.p3.GD.sg }
             else
             { 1 _ 2 _ prpers@prn.p3.GD.pl }
@@ -225,21 +230,24 @@ VP -> vv.$tense { 1 }| AVP vv.$tense { 1 };
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
 DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
-         will@vbmod.$tense_PP be@vblex.inf VP.[ing] { u@vbpr.[1.tense>tense_PP].impf _ 3 }|
-         will@vbmod.$tense_PP be@vblex.inf go@vblex.[ing] to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5 }|
-         will@vbmod.$tense_PP not@adv be@vblex.inf VP.$tense.[ing] { u@vbpr.[1.tense>tense_PP].impf.neg _ 4 }|
-         will@vbmod.$tense_PP have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf _ 3 }|
-         will@vbmod.$tense_PP have@vbhaver.inf not@adv VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
-         will@vbmod.$tense_PP not@adv have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4 }|
-         vbdo.$tense VP { u@vbpr.[1.tense].aff _ 2 }|
-         vbdo.$tense not@adv VP { u@vbpr.[1.tense].neg _ 3 }|
-         have@vbhaver be@vblex.pp VP.[ing] { u@vbpr.[1.tense] _ dupul@adv _ 3 }|
-         have@vbhaver VP.pp { u@vbpr.[1.tense].perf _ 2 }|
-         have@vbhaver be@vblex.pp { u@vbpr.[1.tense].perf _ 2 }|
-         have@vbhaver not@adv VP { u@vbpr.[1.tense].perf.neg _ 3 }|
-         be@vblex not@adv { u@vbpr.[1.tense].neg _ 1 }|
-         BE.[finite] VP.[ing] { u@vbpr.[1.tense].impf _ 2 }|
-         BE.[finite] go@vblex.[ing] to@pr VP.inf { u@vbpr.[1.tense].pros _ 4 }|
+         will@vbmod.$tense_PP be@vblex.inf VP.[ing] { u@vbpr.[1.tense>tense_PP].impf _ 3[tense=pres] }|
+         will@vbmod.$tense_PP be@vblex.inf go@vblex.[ing] to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5[tense=inf] }|
+         will@vbmod.$tense_PP not@adv be@vblex.inf VP.$tense.[ing] { u@vbpr.[1.tense>tense_PP].impf.neg _ 4[tense=inf] }|
+         will@vbmod.$tense_PP have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf _ 3[tense=inf] }|
+         will@vbmod.$tense_PP have@vbhaver.inf not@adv VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4[tense=inf] }|
+         will@vbmod.$tense_PP not@adv have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4[tense=inf] }|
+         20:vbdo.$tense VP.inf { u@vbpr.[1.tense].aff _ 2[tense=inf] }|
+         20:vbdo.$tense not@adv VP.inf { u@vbpr.[1.tense].neg _ 3[tense=inf] }|
+         20:have@vbhaver be@vblex.pp VP.[ing] { u@vbpr.[1.tense] _ dupul@adv _ 3[tense=inf] }|
+         20:have@vbhaver VP.pp { u@vbpr.[1.tense].perf _ 2[tense=pres] }|
+         20:have@vbhaver be@vblex.pp { u@vbpr.[1.tense].perf _ 2[tense=inf] }|
+         20:have@vbhaver not@adv VP.pp { u@vbpr.[1.tense].perf.neg _ 3[tense=inf] }|
+         20:be@vblex AJC { u@vbpr.[1.tense] _ 1[tense=inf] _ 2 }|
+         20:be@vblex AJC { u@vbpr.[1.tense] _ 1[tense=inf] _ 2 }|
+         20:be@vblex not@adv { u@vbpr.[1.tense].neg _ 1[tense=inf] }|
+         20:be@vblex not@adv AJC { u@vbpr.[1.tense].neg _ 1[tense=inf] _ 3 }|
+         BE.[finite] VP.[ing] { u@vbpr.[1.tense].impf _ 2[tense=inf] }|
+         BE.[finite] go@vblex.[ing] to@pr VP.inf { u@vbpr.[1.tense].pros _ 4[tense=inf] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
          to@pr VP.inf{ u@vbpr.inf _ 2 }|
          VP.[finite]{ u@vbpr.[1.tense] _ 1 } ! Main issue is that this rule in infinitives takes precedence over the future tense rule above.
@@ -257,6 +265,7 @@ REL -> prn.rel DVP {hu@cnjsub _ da@prn _ 2 }|
 
 ! Attempt to translate the lexical verb questions to starting with "kam"
 S ->  do@vbdo.$tense.* NOM VP { kam@adv _ 2 _ u@vbpr.[1.tense] _ 3 }|
+      prn.itg do@vbdo.$tense NOM VP { 3 _ u@vbpr.[2.tense] _ 4 _ 1 }|
       there@adv BE.$tense { u@vbpr.[2.tense] _ hay@vblex }; ! Translates "there is", "there was" into "hay"
 
 

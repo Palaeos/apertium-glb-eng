@@ -1,22 +1,6823 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rules glob="star">
-  <!--
-    This rule chooses "energía" as the translation of "power" when it is preceded by "wind".
-    Add your own rules within <rule> here, using the resources below as a guide
-  <rule>
-    <match lemma="wind"/>
-    <match lemma="power" tags="n.*">
-      <select lemma="energía" tags="n.*"/>
+<rules>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="news" tags="n.*" />
+      <match lemma="investigative" tags="adj" />
+      <match lemma="newspaper" tags="n.*" />
+      <match lemma="magazine" tags="n.*" />                  
+    </or>
+    <match lemma="report" tags="n.*">
+      <select lemma="reportaje" tags="n.*" />
     </match>
   </rule>
-  -->
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="trade" tags="n.*" />
+      <match lemma="labour" tags="n.*" />
+      <match lemma="professional" tags="adj" />
+    </or>
+    <match lemma="union" tags="n.*">
+      <select lemma="ergouncutim" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="insurance" tags="n.*" />
+      <match lemma="all-risk" tags="adj" />
+    </or>
+    <match lemma="policy" tags="n.*">
+      <select lemma="p&#243;liza" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="give" tags="vblex.*">
+      <select lemma="impartir" tags="vblex.*" />
+    </match>
+    <or>    
+      <match lemma="lecture" tags="n.*" />
+      <match lemma="lesson" tags="n.*" />
+    </or>
+   </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="music" tags="n.*" />
+      <match lemma="numeric" tags="adj" />
+    </or>
+    <match lemma="group" tags="n.*">
+      <select lemma="conjunto" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>    
+      <match lemma="make" tags="vblex.*" />
+      <match lemma="ask" tags="vblex.*" />
+      <match lemma="formulate" tags="vblex.*" />
+      <match lemma="pose" tags="vblex.*" />      
+    </or>
+    <match lemma="question" tags="n.*">
+      <select lemma="swal" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>    
+      <match lemma="constitutional" tags="adj" />
+      <match lemma="god-given" tags="adj" />
+      <match lemma="legal" tags="adj" />
+      <match lemma="human" tags="adj" />
+      <match lemma="basic" tags="adj" />
+      <match lemma="voting" tags="adj" />
+      <match lemma="civil" tags="adj" />
+    </or>
+    <match lemma="right" tags="n.*">
+      <select lemma="haki" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>    
+      <match lemma="political" tags="adj" />
+      <match lemma="far" tags="adj" />
+      <match lemma="extreme" tags="adj" />
+      <match lemma="radical" tags="adj" />
+      <match lemma="turn" tags="vblex.*" />
+      <match lemma="go" tags="vblex.*" />
+      <match lemma="take" tags="vblex.*" />
+    </or>
+    <match lemma="right" tags="n.*">
+      <select lemma="kanan" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="exchange" tags="adj" />
+      <match lemma="fish" tags="adj" />      
+    </or>
+    <match lemma="market" tags="n.*">
+      <select lemma="lonja" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="great" tags="adj.*">
+      <select lemma="sumo" tags="adj" />
+    </match>
+    <or>
+      <match lemma="pope" tags="n.*" />
+      <match lemma="priest" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="art" tags="n.*" />
+      <match lemma="literary" tags="adj" />
+      <match lemma="brilliant" tags="adj" />            
+    </or>
+    <match lemma="work" tags="n.*">
+      <select lemma="obra" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="know" tags="vblex.*">
+      <select lemma="kone" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="someone" tags="prn.*" />
+      <match lemma="noone" tags="prn.*" />
+      <match lemma="anyone" tags="prn.*" />
+      <match lemma="everyone" tags="prn.*" />
+      <match lemma="somebody" tags="prn.*" />
+      <match lemma="nobody" tags="prn.*" />
+      <match lemma="anybody" tags="prn.*" />
+      <match lemma="everybody" tags="prn.*" />
+      <match lemma="prpers" tags="prn.*" />
+      <match lemma="people" tags="n.*" />
+      <match lemma="person" tags="n.*" />
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="suit" tags="n.*" />
+    <match lemma="case" tags="n.*">
+      <select lemma="maleta" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="financial" tags="adj" />
+      <match lemma="personal" tags="adj" />
+      <match lemma="moral" tags="adj" />
+      <match lemma="military" tags="adj" />
+      <match lemma="staunch" tags="adj" />
+      <match lemma="unconditional" tags="adj" />            
+    </or>
+    <match lemma="support" tags="n.*">
+      <select lemma="apoyo" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="simple" tags="adj" />
+      <match lemma="strong" tags="adj" />
+      <match lemma="lingistic" tags="adj" />      
+    </or>
+    <match lemma="term" tags="n.*">
+      <select lemma="n" tags="n.*" />
+    </match>
+  </rule>
+
+
+  <rule weight="1.0">
+    <match lemma="ask" tags="vblex.*">
+      <select lemma="pedir" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="approval" tags="n.*" />
+      <match lemma="advice" tags="n.*" />
+      <match lemma="favour" tags="n.*" />
+      <match lemma="opinion" tags="n.*" />
+      <match lemma="much" tags="adv" />
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="constitutional" tags="adj" />
+      <match lemma="civil" tags="adj" />
+      <match lemma="islamic" tags="adj" />
+      <match lemma="break" tags="vblex.*" />
+      <match lemma="respect" tags="vblex.*" />
+      <match lemma="followw" tags="vblex.*" />
+      <match lemma="against" tags="pr" />                                    
+    </or>
+    <match lemma="law" tags="n.*">
+      <select lemma="lega" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="law" tags="n.*">
+      <select lemma="abogacia" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="profession" tags="n.*" />
+      <match lemma="salary" tags="n.*" />
+      <match lemma="trade" tags="n.*" />
+      <match lemma="exercise" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="health" tags="n.*">
+      <select lemma="sanidad" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="service" tags="n.*" />
+      <match lemma="care" tags="n.*" />
+      <match lemma="warning" tags="n.*" />            
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="dinner" tags="n.*" />
+      <match lemma="tea" tags="n.*" />
+      <match lemma="throw" tags="vblex.*" />
+    </or>
+    <match lemma="party" tags="n.*">
+      <select lemma="parti" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="party" tags="n.*">
+      <select lemma="parti" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="dress" tags="n.*" />
+      <match lemma="game" tags="n.*" />
+    </or>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="hunting" />
+    </or>
+    <match lemma="party" tags="n.*">
+      <select lemma="partida" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="heart" tags="n.*" />
+      <match lemma="liver" tags="n.*" />
+      <match lemma="brain" tags="n.*" />
+      <match lemma="stomach" tags="n.*" />      
+    </or>
+    <match lemma="condition" tags="n.*">
+      <select lemma="afecc&#237;on" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <match lemma="state" tags="vblex.*">
+      <select lemma="plantear" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="objection" tags="n.*" />
+      <match lemma="problem" tags="n.*" />      
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="raise" tags="vblex.*">
+      <select lemma="criar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="child" tags="n.*" />
+      <match lemma="family" tags="n.*" />
+      <match lemma="baby" tags="n.*" />
+      <match lemma="dog" tags="n.*" />            
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="raise" tags="vblex.*">
+      <select lemma="aumentar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="funds" tags="n.*" />
+      <match lemma="concern" tags="n.*" />
+      <match lemma="consciousness" tags="n.*" />
+      <match lemma="standing" tags="n.*" />
+      <match lemma="reputation" tags="n.*" />
+      <match lemma="hope" tags="n.*" />
+      <match lemma="pressure" tags="n.*" />
+      <match lemma="temperature" tags="n.*" />
+      <match lemma="price" tags="n.*" />
+      <match lemma="salary" tags="n.*" />
+      <match lemma="volume" tags="n.*" />                              
+    </or>
+  </rule>
+
+  
+  <rule weight="1.0">
+    <match lemma="meet" tags="vblex.*">
+      <select lemma="cumplir" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="demands" tags="n.*" />
+      <match lemma="wishes" tags="n.*" />
+      <match lemma="deadline" tags="n.*" />
+      <match lemma="quota" tags="n.*" />
+      <match lemma="debt" tags="n.*" />
+      <match lemma="obligation" tags="n.*" />
+      <match lemma="reequirements" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="picture" tags="n.*" />
+      <match lemma="image" tags="n.*" />
+      <match lemma="text" tags="n.*" />
+      <match lemma="page" tags="n.*" />
+      <match lemma="window" tags="n.*" />                        
+    </or>
+    <match lemma="border" tags="n.*">
+      <select lemma="borde" tags="n.*" />
+    </match>
+  </rule>  
+
+  <rule weight="1.0">
+    <match lemma="admission" tags="n.*" />    
+    <match lemma="free" tags="adj">
+      <select lemma="gratis" tags="adj" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="free" tags="adj">
+      <select lemma="gratis" tags="adj" />
+    </match>
+    <or>
+      <match lemma="ticket" tags="n.*" />
+      <match lemma="charge" tags="n.*" />
+      <match lemma="sample" tags="n.*" />
+      <match lemma="schooling" tags="n.*" />
+      <match lemma="healthcare" tags="n.*" />
+      <match lemma="gift" tags="n.*" />            
+    </or>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="stair" tags="n.*" />
+    </or>
+    <match lemma="step" tags="n.*">
+      <select lemma="pelda&#241;o" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="look" tags="vblex.*">
+      <select lemma="parecer" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="like" tags="pr" />
+    </or>
+  </rule>  
+
+  <rule weight="1.0">
+    <match lemma="play" tags="vblex.*">
+      <select lemma="reproducir" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="tape" tags="n.*" />
+      <match lemma="recorder" tags="n.*" />      
+      <match lemma="song" tags="n.*" />      
+      <match lemma="track" tags="n.*" />      
+      <match lemma="disc" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="play" tags="vblex.*">
+      <select lemma="tocar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="instrument" tags="n.*" />
+      <match lemma="violin" tags="n.*" />      
+      <match lemma="flute" tags="n.*" />      
+      <match lemma="piano" tags="n.*" />      
+      <match lemma="guitar" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="play" tags="vblex.*">
+      <select lemma="interpretar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="role" tags="n.*" />
+      <match lemma="character" tags="n.*" />      
+      <match lemma="scene" tags="n.*" />      
+    </or>
+  </rule>	
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="basketball" tags="n.*" />
+      <match lemma="football" tags="n.*" />            
+      <match lemma="tennis" tags="n.*" />
+    </or>
+    <match lemma="court" tags="n.*">
+      <select lemma="medan" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="royal" tags="adj" />
+      <match lemma="king" tags="n.*" />
+      <match lemma="palace" tags="n.*" />            
+    </or>
+    <match lemma="court" tags="n.*">
+      <select lemma="corte" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="muscle" tags="n.*" />
+      <match lemma="bone" tags="n.*" />
+      <match lemma="strain" tags="vblex.*" />
+      <match lemma="body" tags="vblex.*" />            
+    </or>
+    <match lemma="joint" tags="n.*">
+      <select lemma="artro" tags="n.*" />
+    </match>
+  </rule>  
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="carry" tags="vblex.*" />
+      <match lemma="pass" tags="vblex.*" />
+      <match lemma="vote" tags="vblex.*" />            
+    </or>
+    <match lemma="motion" tags="n.*">
+      <select lemma="moci&#243;n" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="motion" tags="n.*">
+      <select lemma="moci&#243;n" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="rejected" tags="adj" />
+      <match lemma="defeated" tags="adj" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="casual" tags="adj" />
+      <match lemma="colloquial" tags="adj" />      
+    </or>
+    <match lemma="speech" tags="n.*">
+      <select lemma="pala" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="loud" tags="adj" />
+      <match lemma="hi-fi" tags="adj" />
+      <match lemma="turn on" tags="vblex.*" />            
+    </or>
+    <match lemma="speaker" tags="n.*">
+      <select lemma="altavoz" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="speaker" tags="n.*">
+      <select lemma="altavoz" tags="n.*" />
+    </match>
+      <match lemma="volume" tags="n.*" />
+      <match lemma="wire" tags="n.*" />
+      <match lemma="stand" tags="n.*" />      
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="conference" tags="n.*" />
+      <match lemma="public" tags="adj" />
+    </or>
+    <match lemma="speaker" tags="n.*">
+      <select lemma="palayen" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="social" tags="adj" />
+      <match lemma="unemployment" tags="adj" />      
+    </or>
+    <match lemma="benefit" tags="n.*">
+      <select lemma="prestaci&#243;n" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="visa" tags="n.*" />
+      <match lemma="loan" tags="n.*" />
+      <match lemma="grant" tags="n.*" />
+      <match lemma="job" tags="n.*" />
+      <match lemma="scholarship" tags="n.*" />                  
+    </or>
+    <match lemma="application" tags="n.*">
+      <select lemma="solicitud" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="language" tags="n.*">
+      <select lemma="lenguaje" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="disorder" tags="n.*" />
+      <match lemma="impairment" tags="n.*" />
+      <match lemma="trait" tags="n.*" />
+      <match lemma="grammar" tags="n.*" />
+      <match lemma="symbol" tags="n.*" />
+      <match lemma="theory" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="spend" tags="vblex.*">
+      <select lemma="pasar" tags="vblex.*" />
+    </match>
+    <match />
+    <or>
+      <match lemma="time" tags="n.*" />
+      <match lemma="month" tags="n.*" />
+      <match lemma="year" tags="n.*" />
+      <match lemma="day" tags="n.*" />
+      <match lemma="minute" tags="n.*" />
+      <match lemma="second" tags="n.*" />            
+      <match lemma="hour" tags="n.*" />            
+    </or>
+  </rule>
+  
+  <rule weight="1.0">
+    <match lemma="spend" tags="vblex.*">
+      <select lemma="pasar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="time" tags="n.*" />
+      <match lemma="month" tags="n.*" />
+      <match lemma="year" tags="n.*" />
+      <match lemma="day" tags="n.*" />
+      <match lemma="minute" tags="n.*" />
+      <match lemma="second" tags="n.*" />            
+      <match lemma="hour" tags="n.*" />            
+    </or>
+  </rule>
+  
+  <rule weight="1.0">
+    <match lemma="focus" tags="vblex.*">
+      <select lemma="enfocar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="binoculars" tags="n.*" />
+      <match lemma="camera" tags="n.*" />
+      <match lemma="eye" tags="n.*" />      
+    </or>
+  </rule>
+
+  
+  <rule weight="1.0">
+    <or>
+       <match lemma="shoot" tags="vblex.*" />
+       <match lemma="play" tags="vblex.*" />
+       <match lemma="keep" tags="vblex.*" />              
+     </or>
+    <match lemma="goal" tags="n.*">
+      <select lemma="gol" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="goal" tags="n.*">
+      <select lemma="gol" tags="n.*" />
+    </match>
+    <or>
+       <match lemma="area" tags="n.*" />
+       <match lemma="kick" tags="n.*" />
+       <match lemma="scorer" tags="n.*" />              
+     </or>
+  </rule>
+
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="money" tags="n.*" />
+      <match lemma="bank" tags="n.*" />      
+    </or>
+    <match lemma="balance" tags="n.*">
+      <select lemma="saldo" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="note" tags="vblex.*">
+      <select lemma="anotar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="information" tags="n.*" />
+      <match lemma="details" tags="n.*" />
+      <match lemma="down" />            
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="monitor" tags="vblex.*">
+      <select lemma="monitorizar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="project" tags="n.*" />
+      <match lemma="progress" tags="n.*" />
+      <match lemma="development" tags="n.*" />
+      <match lemma="improvement" tags="n.*" />
+      <match lemma="process" tags="n.*" />                        
+    </or>
+  </rule>
+
+  
+  
+  <rule weight="1.0">
+    <match lemma="set# up" tags="vblex.*">
+      <select lemma="montar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="shop" tags="n.*" />
+      <match lemma="company" tags="n.*" />
+      <match lemma="firm" tags="n.*" />
+      <match lemma="enterprise" tags="n.*" />
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="set# up" tags="vblex.*">
+      <select lemma="convocar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="conference" tags="n.*" />
+      <match lemma="meeting" tags="n.*" />
+    </or>
+  </rule>
+
+
+    
+
+  <rule weight="1.0">
+    <match lemma="grow" tags="vblex.*">
+      <select lemma="cultivar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="flower" tags="n.*" />
+      <match lemma="plant" tags="n.*" />
+      <match lemma="crop" tags="n.*" />
+      <match lemma="vegetable" tags="n.*" />                  
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="issue" tags="vblex.*">
+      <select lemma="publicar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="statement" tags="n*" />
+      <match lemma="report" tags="n*" />
+      <match lemma="declaration" tags="n*" />            
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="issue" tags="vblex.*">
+      <select lemma="disgongin" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="ticket" tags="n*" />
+      <match lemma="visa" tags="n*" />
+      <match lemma="authorisation" tags="n*" />
+      <match lemma="permission" tags="n*" />
+      <match lemma="allowance" tags="n*" />                        
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="theater" tags="n.*" />
+      <match lemma="go" tags="vblex.*" />
+      <match lemma="on" tags="pr" />      
+    </or>
+    <match lemma="stage" tags="n.*">
+      <select lemma="sahnidom" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="in" tags="pr" />
+    </or>
+    <match lemma="operation" tags="n.*">
+      <select lemma="funcionamiento" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="stand" tags="vblex.*">
+      <select lemma="aguantar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="situation" tags="n.*" />
+      <match lemma="pain" tags="n.*" />
+      <match lemma="noise" tags="n.*" />
+      <match lemma="suffering" tags="n.*" />
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="can" tags="vblex.*" />
+    </or>
+    <match lemma="stand" tags="vblex.*">
+      <select lemma="aguantar" tags="vblex.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="double" tags="adj" />
+      <match lemma="numeric" tags="adj" />
+      <match lemma="statistical" tags="adj" />
+      <match lemma="decimal" tags="adj" />      
+      <match lemma="" tags="adj" />                  
+    </or>
+    <match lemma="figure" tags="n.*">
+      <select lemma="cifra" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="public" tags="adj" />
+      <match lemma="political" tags="adj" />      
+    </or>
+    <match lemma="figure" tags="n.*">
+      <select lemma="personaje" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="supply" tags="n.*">
+      <select lemma="abastecimiento" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="route" tags="n.*" />
+      <match lemma="ship" tags="n.*" />
+      <match lemma="line" tags="n.*" />            
+    </or>
+    
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="main" tags="adj" />
+      <match lemma="first" tags="adj" />
+      <match lemma="second" tags="adj" />      
+    </or>
+    <match lemma="course" tags="n.*">
+      <select lemma="plato" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="course" tags="n.*">
+      <select lemma="plato" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="meal" tags="n.*" />
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="psychedelic" tags="adj" />
+      <match lemma="hallucinogenic" tags="adj" />
+      <match lemma="stimulant" tags="adj" />
+      <match lemma="addictive" tags="adj" />
+      <match lemma="harmless" tags="adj" />
+      <match lemma="scheduled" tags="adj" />      
+      <match lemma="do" tags="vblex.*" />                              
+    </or>
+    <match lemma="drug" tags="n.*">
+      <select lemma="droga" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="drug" tags="n.*">
+      <select lemma="droga" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="dependence" tags="n.*" />
+      <match lemma="addict" tags="n.*" />
+      <match lemma="abuse" tags="n.*" />
+      <match lemma="addiction" tags="n.*" />
+      <match lemma="test" tags="n.*" />            
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="have" tags="vblex.*" />
+      <match lemma="heated" tags="adj" />      
+    </or>
+    <match lemma="argument" tags="n.*">
+      <select lemma="discusi&#243;n" tags="n.*" />
+    </match>
+  </rule>
+  
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="book" tags="n.*" />
+      <match lemma="film" tags="n.*" />
+      <match lemma="play" tags="n.*" />      
+      <match lemma="positive" tags="adj" />
+      <match lemma="negative" tags="adj" />
+      <match lemma="good" tags="adj" />      
+    </or>
+    <match lemma="review" tags="n.*">
+      <select lemma="cr&#237;tica" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="monthly" tags="adj" />
+      <match lemma="weekly" tags="adj" />
+      <match lemma="scientific" tags="adj" />
+    </or>
+    <match lemma="review" tags="n.*">
+      <select lemma="revista" tags="n.*" />
+    </match>
+  </rule>
+
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="reach" tags="vblex.*" />
+    </or>
+    <match lemma="oil" tags="n.*">
+      <select lemma="petr&#243;leo" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="oil" tags="n.*">
+      <select lemma="petr&#243;leo" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="industry" tags="n.*" />
+      <match lemma="pipeline" tags="n.*" />
+      <match lemma="refinery" tags="n.*" />
+      <match lemma="field" tags="n.*" />
+      <match lemma="rig" tags="n.*" />
+      <match lemma="patch" tags="n.*" />
+      <match lemma="well" tags="n.*" />
+      <match lemma="slick" tags="n.*" />                              
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="paint" tags="vblex.*" />
+    </or>
+    <match lemma="oil" tags="n.*">
+      <select lemma="&#243;leo" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="oil" tags="n.*">
+      <select lemma="&#243;leo" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="paint" tags="n.*" />
+      <match lemma="painting" tags="n.*" />      
+    </or>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="pure" tags="adj" />
+      <match lemma="sheer" tags="adj" />
+      <match lemma="by" tags="pr" />            
+    </or>
+    <match lemma="chance" tags="n.*">
+      <select lemma="casualidad" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="jump" tags="vblex.*" />
+      <match lemma="leap" tags="vblex.*" />
+      <match lemma="give" tags="vblex.*" />            
+    </or>
+    <match lemma="chance" tags="n.*">
+      <select lemma="kihoy" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="chance" tags="n.*">
+      <select lemma="kihoy" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="lifetime" tags="n.*" />
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="failure" tags="n.*">
+      <select lemma="quiebra" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="rate" tags="n.*" />
+      <match lemma="index" tags="n.*" />      
+    </or>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="business" tags="n.*" />
+      <match lemma="company" tags="n.*" />
+      <match lemma="enterprise" tags="n.*" />
+      <match lemma="firm" tags="n.*" />
+      <match lemma="bank" tags="n.*" />      
+    </or>
+    <match lemma="failure" tags="n.*">
+      <select lemma="quiebra" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <or>
+      <match lemma="engine" tags="n.*" />
+      <match lemma="mechanical" tags="n.*" />
+      <match lemma="device" tags="n.*" />
+      <match lemma="operation" tags="n.*" />                  
+    </or>
+    <match lemma="failure" tags="n.*">
+      <select lemma="fallo" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="dance" tags="n.*" />
+      <match lemma="take" tags="vblex.*" />      
+    </or>
+    <match lemma="floor" tags="n.*">
+      <select lemma="pista" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="money" tags="n.*" />
+      <match lemma="currency" tags="n.*" />
+      <match lemma="cash" tags="n.*" />
+    </or>
+    <match lemma="exchange" tags="n.*">
+      <select lemma="cambio" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="exchange" tags="n.*">
+      <select lemma="cambio" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="office" tags="n.*" />
+      <match lemma="rate" tags="n.*" />
+      <match lemma="interest" tags="n.*" />
+    </or>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="bank" tags="n.*" />
+    </or>
+    <match lemma="note" tags="n.*">
+      <select lemma="billete" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="distilled" tags="adj" />
+      <match lemma="alcoholic" tags="adj" />
+      <match lemma="strong" tags="adj" />            
+    </or>
+    <match lemma="spirit" tags="n.*">
+      <select lemma="alcohol" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="blind" tags="adj" />
+      <match lemma="have" tags="vblex.*" />      
+    </or>
+    <match lemma="date" tags="n.*">
+      <select lemma="randevu" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="university" tags="n.*" />
+      <match lemma="college" tags="n.*" />
+      <match lemma="first" tags="n.*" />
+      <match lemma="hold" tags="vblex.*" />                  
+    </or>
+    <match lemma="degree" tags="n.*">
+      <select lemma="t&#237;tulo" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="draft" tags="vblex.*">
+      <select lemma="reclutar" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="military" tags="n.*" />
+      <match lemma="soldiers" tags="n.*" />      
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="assume" tags="vblex.*">
+      <select lemma="asumir" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="dutie" tags="n.*" />
+      <match lemma="command" tags="n.*" />
+      <match lemma="role" tags="n.*" />
+      <match lemma="title" tags="n.*" />
+      <match lemma="responsibility" tags="n.*" />      
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <match lemma="building" tags="n.*">
+      <select lemma="construcci&#243;n" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="defect" tags="n.*" />
+      <match lemma="company" tags="n.*" />      
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="first" tags="adj" />
+      <match lemma="second" tags="adj" />      
+    </or>
+    <match lemma="round" tags="n.*">
+      <select lemma="ronda" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="wet" tags="adj" />
+      <match lemma="poisoned" tags="adj" />
+      <match lemma="health" tags="adj" />
+      <match lemma="red" tags="adj" />            
+    </or>
+    <match lemma="fish" tags="n.*">
+      <select lemma="mahimaso" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="concrete" tags="n.*" />
+      <match lemma="brick" tags="n.*" />
+      <match lemma="building" tags="n.*" />
+      <match lemma="clay" tags="n.*" />
+      <match lemma="lay" tags="vblex.*" />      
+    </or>
+    <match lemma="foundation" tags="n.*">
+      <select lemma="cimiento" tags="n.*" />
+    </match>
+  </rule>
+
+
+    
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="legal" tags="adj" />
+      <match lemma="last" tags="adj" />      
+    </or>
+    <match lemma="will" tags="n.*">
+      <select lemma="wasyatu" tags="n.*" />
+    </match>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="white" tags="adj" />
+      <match lemma="black" tags="adj" />
+      <match lemma="human" tags="adj" />
+      <match lemma="master" tags="adj" />
+      <match lemma="superior" tags="adj" />
+      <match lemma="inferior" tags="adj" />                  
+    </or>
+    <match lemma="race" tags="n.*">
+      <select lemma="rasa" tags="n.*" />
+    </match>
+  </rule>
+
+  
+  <rule weight="1.0">
+    <match lemma="race" tags="n.*">
+      <select lemma="rasa" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="riot" tags="n.*" />
+      <match lemma="relation" tags="n.*" />
+      <match lemma="politics" tags="n.*" />
+      <match lemma="discrimination" tags="n.*" />                  
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="day" tags="n.*" />
+      <match lemma="night" tags="n.*" />
+      <match lemma="work" tags="n.*" />
+      <match lemma="work" tags="vblex.*" />            
+    </or>
+    <match lemma="shift" tags="n.*">
+      <select lemma="turno" tags="n.*" />
+    </match>
+  </rule>
+  
+  <rule weight="1.0">
+    <match lemma="shift" tags="n.*">
+      <select lemma="turno" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="work" tags="n.*" />
+      <match lemma="worker" tags="n.*" />      
+    </or>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="exercise" tags="vblex.*" />
+      <match lemma="use" tags="vblex.*" />      
+    </or>
+    <match lemma="caution" tags="n.*">
+      <select lemma="precauci&#243;n" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="launder" tags="vblex.*">
+      <select lemma="blanquear" tags="vblex.*" />
+    </match>
+    <or>
+      <match lemma="money" tags="n.*" />
+      <match lemma="cash" tags="n.*" />      
+    </or>
+  </rule>
+
+  
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="company" tags="n.*" />
+      <match lemma="state" tags="n.*" />
+      <match lemma="bank" tags="n.*" />            
+    </or>
+    <match lemma="branch" tags="n.*">
+      <select lemma="sucursal" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <or>
+      <match lemma="road" tags="n.*" />
+      <match lemma="path" tags="n.*" />      
+    </or>
+    <match lemma="branch" tags="n.*">
+      <select lemma="bifurcaci&#243;n" tags="n.*" />
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="branch" tags="n.*">
+      <select lemma="bifurcaci&#243;n" tags="n.*" />
+    </match>
+    <or>
+      <match lemma="right" tags="n.*" />
+      <match lemma="left" tags="n.*" />      
+    </or>
+  </rule>
+  
+
+
+ 
+  <rule weight="1.0">
+    <match lemma="central" tags="*" />
+    <match lemma="bank" tags="n.*">
+      <select lemma="banko" tags="n.*" />
+    </match>
+   </rule> 
+   
+   
+  
+  <rule weight="1.0">
+    <match lemma="bank" tags="n.*">
+      <select lemma="orilla" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+    <match />
+    <match lemma="river" tags="*" />
+  </rule>  
+
+
+
+  <rule weight="1.0">
+    <match lemma="recruitment" tags="*" /> 
+    <match lemma="office" tags="n.*">
+      <select lemma="ofisikamer" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="main" tags="*" />
+    <match lemma="argument" tags="n.*">
+      <select lemma="debatemon" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+  <rule weight="1.0"> 
+    <match lemma="bow" tags="n.*">
+    	<select lemma="reverencia" tags="n.*" />	
+    </match>
+    <match lemma="to" tags="pr" />
+    <match />
+    <match lemma="car industry" tags="*" />
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="wear" tags="vblex.*" />
+    <match />
+    <match />
+    <match />
+    <match lemma="bow" tags="n.*">
+    	<select lemma="lazo" tags="n.*" />
+    </match>	
+  </rule>
+  
+  
+
+  <rule weight="1.0">
+    <match lemma="football" tags="*" />
+    <match lemma="match" tags="n.*">
+      <select lemma="partido" tags="n.*" />
+    </match>
+  </rule>
+  
+
+  
+
+  <rule weight="1.0">
+    <match lemma="pool" tags="n.*">
+    	<select lemma="conjunto" tags="n.*" />
+    </match>	
+    <match lemma="of" tags="pr" />
+   <or> 
+    <match lemma="knowledge" tags="*" />
+    <match lemma="document" tags="n.pl" />
+   </or> 
+  </rule>  
+  
+  
+
+   <rule weight="1.0">
+   <or>
+    <match lemma="car" tags="*" />
+    <match lemma="tractor" tags="*" />
+   </or> 
+    <match lemma="driver" tags="n.*">
+      <select lemma="xoferyen" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="driver" tags="n.*">
+    	<select lemma="motor" tags="n.*" />
+    </match>	
+    <match lemma="of" tags="pr" />
+    <match lemma="modernisation" tags="*" />
+  </rule>
+  
+
+  
+  <rule weight="1.0">
+    <match lemma="key" tags="n.*">
+    	<select lemma="yawxe" tags="n.*" />
+    </match>
+    <match lemma="to" tags="pr" />
+    <match />
+    <match lemma="future" tags="*" />
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+   <match lemma="press" tags="vblex.*" />
+    <match />
+    <match lemma="key" tags="n.*">
+      <select lemma="tecla" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="take" tags="vblex.*" />
+    <match lemma="up" tags="*" />
+    <match />
+    <match lemma="post" tags="n.*">
+      <select lemma="ofisi" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+   	<match lemma="FP&#214;" tags="*" />
+    <match lemma="party" tags="n.*">
+      <select lemma="taraf" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  
+  
+  <rule weight="1.0">
+   <or>
+   	<match lemma="spoil" tags="vblex.*" />
+    <match lemma="throw" tags="vblex.*" />
+   </or> 
+    <match />
+    <match lemma="party" tags="n.*">
+      <select lemma="parti" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="close" tags="vblex.*" />
+    <match />
+    <match lemma="plant" tags="n.*">
+      <select lemma="fabrikadom" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="piece" tags="*" />
+    <match lemma="of" tags="pr" />
+    <match lemma="paper" tags="n.*">
+      <select lemma="paper" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0"> 
+   	<match lemma="statistical" tags="*" />
+    <match lemma="table" tags="n.*">
+      <select lemma="tabla" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+
+
+
+
+
+  
+  <rule weight="1.0">
+    <match lemma="cup" tags="n.*">
+    	<select lemma="fenjan" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+   <or> 
+    <match lemma="tea" tags="*" />
+    <match lemma="cocoa" tags="*" />
+    <match lemma="coffee" tags="*" />
+   </or> 
+  </rule>
+  
+  
+
+
+  
+  <rule weight="1.0">
+   <or>
+   	<match lemma="world" tags="*" />
+    <match lemma="football" tags="*" />
+   </or>
+    <match lemma="cup" tags="n.*">
+      <select lemma="trofe" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+   	<match lemma="radical" tags="*" />
+    <match lemma="movement" tags="n.*">
+      <select lemma="kampani" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="reinvent" tags="vblex.*" />
+    <match />
+    <match lemma="wheel" tags="n.*">
+      <select lemma="calun" tags="n.*" />
+    </match>
+  </rule>  
+  
+
+
+
+ 
+  <rule weight="1.0">
+    <match lemma="glass" tags="n.*">
+      <select lemma="vaso" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+   <or> 
+    <match lemma="water" tags="*" />
+    <match lemma="milk" tags="*" />
+   </or> 
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="glass" tags="n.*">
+      <select lemma="copa" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+    <match lemma="wine" tags="*" />
+  </rule>
+
+
+  
+  <rule weight="1.0">
+    <match lemma="round" tags="n.*">
+      <select lemma="ronda" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+   	<match lemma="enlargement" tags="*" /> 
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="military" tags="*" />
+    <match lemma="strike" tags="n.*">
+      <select lemma="ataque" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+   	<match lemma="hunger" tags="*" /> 
+    <match lemma="strike" tags="n.*">
+      <select lemma="huelga" tags="n.*" />
+    </match>
+  </rule>
+  
+
+
+
+  
+  <rule weight="1.0">
+    <match lemma="band" tags="n.*">
+    	<select lemma="grupo" tags="n.*" />
+    </match>	
+    <match lemma="of" tags="pr" />
+   <or> 
+    <match lemma="person" tags="n.pl" />
+    <match lemma="explorer" tags="n.pl" />
+   </or> 
+  </rule>
+  
+
+  
+  <rule weight="1.0">
+    <match lemma="brass" tags="*" />
+    <match lemma="band" tags="n.*">
+      <select lemma="bendu" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0"> 
+   <match lemma="flavour" tags="*" />
+   <match lemma="of" tags="pr" />
+   <match lemma="jam" tags="n.*">
+      <select lemma="marmelada" tags="n.*" />
+   </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+   	<match lemma="transgenic" tags="*" />
+    <match lemma="bean" tags="n.*">
+      <select lemma="grano" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+   	<match lemma="cosmetic" tags="*" />
+    <match lemma="stunt" tags="n.*">
+      <select lemma="truco" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+  	<match lemma="application" tags="n.*">
+  		<select lemma="aplika" tags="n.*" />
+  	</match>
+  	<match lemma="of" tags="pr" />
+  	<match />
+  	<match lemma="policy" tags="*" />
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+  	<match lemma="membership" tags="*" />
+    <match lemma="application" tags="n.*">
+      <select lemma="solicitud" tags="n.*" />
+    </match>
+  </rule>
+  
+ 
+  
+  <rule weight="1.0">
+    <match lemma="poker" tags="*" />
+    <match lemma="game" tags="n.*">
+      <select lemma="partida" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+  	<match lemma="game" tags="n.*">
+  		<select lemma="partido" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+    <match lemma="tennis" tags="*" /> 
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="railway" tags="*" />
+    <match lemma="station" tags="n.*">
+      <select lemma="estaci&#243;n" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="police" tags="*" />
+    <match lemma="station" tags="n.*">
+      <select lemma="comisar&#237;a" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="radio" tags="*" />
+    <match lemma="station" tags="n.*">
+      <select lemma="emisora" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="television" tags="*" />
+    <match lemma="station" tags="n.*">
+      <select lemma="canal" tags="n.*" />
+    </match>
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="bar" tags="n.*">
+      <select lemma="pastilla" tags="n.*" />
+    </match>
+    <match lemma="of" tags="pr" />
+    <match lemma="soap" tags="*" />
+  </rule>
+  
+  
+  
+  <rule weight="1.0">
+    <match lemma="plain" tags="*" />
+    <match lemma="language" tags="n.*">
+      <select lemma="lenguaje" tags="n.*" />
+    </match>
+  </rule> 
+  
+  
+  
+  <rule weight="1.0">
+		<match lemma="wind" tags="*" />
+		<match lemma="farm" tags="n.*">
+			<select lemma="parque" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="ski" tags="*" />
+		<match lemma="instructor" tags="n.*">
+			<select lemma="monitor" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="driving" tags="*" />
+		<match lemma="instructor" tags="n.*">
+			<select lemma="alimyen" tags="n.*" />
+		</match>
+	</rule>
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="branch" tags="n.*">
+			<select lemma="sucursal" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="government" tags="*" />
+	</rule>
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="branch" tags="n.*">
+			<select lemma="xube" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="economy" tags="*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="olive" tags="*" />
+		<match lemma="branch" tags="n.*">
+			<select lemma="xube" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="extra" tags="*" />
+		<match lemma="night" tags="*" />
+	  </or>	
+		<match lemma="shift" tags="n.*">
+			<select lemma="turno" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="information" tags="*" />
+		<match lemma="drive" tags="n.*">
+			<select lemma="campa&#241;a" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="diplomatic" tags="*" />
+		<match lemma="drive" tags="n.*">
+			<select lemma="unidad" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="european" tags="*" />
+		<match lemma="social" tags="*" />
+	  </or>	
+		<match lemma="model" tags="n.*">
+			<select lemma="modelo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">	
+	  	<match lemma="growth" tags="*" />
+		<match lemma="rate" tags="n.*">
+			<select lemma="nispatu" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="economic" tags="*" />
+		<match lemma="contribution" tags="n.*">
+			<select lemma="tongibe" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="main" tags="*" />
+		<match lemma="course" tags="n.*">
+			<select lemma="plato" tags="n.*" />
+		</match>
+	</rule>
+	
+
+	
+	
+	<rule weight="1.0">
+		<match lemma="last" tags="*" />
+		<match lemma="resort" tags="n.*">
+			<select lemma="recurso" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="health" tags="*" />
+		<match lemma="resort" tags="n.*">
+			<select lemma="centro" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="field" tags="n.*">
+			<select lemma="medan" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="education" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="concert" tags="*" />
+		<match lemma="hall" tags="n.*">
+			<select lemma="salun" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="church" tags="*" />
+		<match lemma="hall" tags="n.*">
+			<select lemma="salun" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="production" tags="*" />
+		<match lemma="line" tags="n.*">
+			<select lemma="linea" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="fishing" tags="*" />
+		<match lemma="rod" tags="n.*">
+			<select lemma="ca&#241;a" tags="n.*" />
+		</match>
+	</rule>
+	
+
+	
+	
+	<rule weight="1.0">
+		<match lemma="fit" tags="n.*">
+			<select lemma="acceso" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="megalomania" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="valid" tags="*" />
+		<match lemma="ticket" tags="n.*">
+			<select lemma="billete" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="time" tags="*" />
+		<match lemma="frame" tags="n.*">
+			<select lemma="plazo" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="explosive" tags="*" />
+		<match lemma="device" tags="n.*">
+			<select lemma="artefacto" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="management" tags="*" />
+		<match lemma="board" tags="n.*">
+			<select lemma="junta" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="board" tags="n.*">
+			<select lemma="junta" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="director" tags="n.pl" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="extradition" tags="*" />
+		<match lemma="form" tags="n.*">
+			<select lemma="impreso" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="bank" tags="*" />
+		<match lemma="manager" tags="n.*">
+			<select lemma="director" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="supermarket" tags="*" />
+		<match lemma="manager" tags="n.*">
+			<select lemma="kwanliyen" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="dance" tags="*" />
+		<match lemma="floor" tags="n.*">
+			<select lemma="pista" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="insurance" tags="*" />
+		<match lemma="policy" tags="n.*">
+			<select lemma="p&#243;liza" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="development" tags="*" />
+		<match lemma="policy" tags="n.*">
+			<select lemma="regula" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="passport" tags="*" />
+		<match lemma="holder" tags="n.*">
+			<select lemma="titular" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="airline" tags="*" />
+	  	<match lemma="mining" tags="*" />
+	  </or>	
+		<match lemma="company" tags="n.*">
+			<select lemma="tonya" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="cabin" tags="*" />
+	  	<match lemma="submarine" tags="*" />
+	  </or>	
+		<match lemma="crew" tags="n.*">
+			<select lemma="tripulaci&#243;n" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="take" tags="*" />
+		<match lemma="account" tags="n.*">
+			<select lemma="akonto" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="flat" tags="*" />
+		<match lemma="rate" tags="n.*">
+			<select lemma="tarifa" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="spare" tags="*" />
+		<match lemma="tyre" tags="n.*">
+			<select lemma="rueda" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+	
+	
+	<rule weight="1.0">
+		<match lemma="act" tags="n.*">
+			<select lemma="acci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="terrorism" tags="*" />
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="practise" tags="vblex.*" />
+		<match lemma="law" tags="n.*">
+			<select lemma="abogac&#237;a" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		  <match lemma="good" tags="*" />
+		<match lemma="sign" tags="n.*">
+			<select lemma="ixara" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="weekly" tags="*" />
+		<match lemma="magazine" tags="n.*">
+			<select lemma="zaxi" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="rank" tags="n.*">
+			<select lemma="ranko" tags="n.*" />
+		</match>	
+		<match lemma="of" tags="pr" />
+		<match lemma="director" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="minor" tags="*" />
+		<match lemma="major" tags="*" />
+	  </or> 	
+		<match lemma="key" tags="n.*">
+			<select lemma="tono" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="key" tags="n.*">
+			<select lemma="clave" tags="n.*" />
+		</match>	
+		<match lemma="to" tags="pr" />
+		<match lemma="success" tags="*" />
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+	  	<match lemma="summer" tags="*" />
+		<match lemma="break" tags="n.*">
+			<select lemma="wakufa" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+	  	<match lemma="social" tags="*" />
+		<match lemma="strain" tags="n.*">
+			<select lemma="tensi&#243;n" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="fall" tags="n.*">
+			<select lemma="sokutu" tags="n.*" />
+		</match>	
+		<match lemma="in" tags="pr" />
+		<match lemma="income" tags="*" />
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="wall" tags="n.*">
+			<select lemma="divar" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="house" tags="*" />
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+	  	<match lemma="economic" tags="*" />
+		<match lemma="revival" tags="n.*">
+			<select lemma="renacimiento" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="range" tags="n.*">
+			<select lemma="medan" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="opportunity" tags="n.pl" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="range" tags="n.*">
+			<select lemma="autonom&#237;a" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="vehicle" tags="n.pl" />
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="range" tags="n.*">
+			<select lemma="registro" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  <or>
+	  	<match lemma="good" tags="n.pl" />
+	  	<match lemma="service" tags="n.pl" />
+	  </or>	
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="range" tags="n.*">
+			<select lemma="espetrum" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="data" tags="*" />
+	</rule>
+	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="report" tags="*" />
+		<match lemma="to" tags="pr" />
+		<match lemma="date" tags="n.*">
+			<select lemma="tarihe" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="rubber" tags="*" />
+		<match lemma="stamp" tags="n.*">
+			<select lemma="sello" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="part" tags="n.*">
+			<select lemma="rol" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="play" tags="vblex.*" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="research" tags="*" />
+		<match lemma="foundation" tags="n.*">
+			<select lemma="fundaci&#243;n" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="foundation" tags="n.*">
+			<select lemma="basi" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match lemma="discussion" tags="n.pl" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="page" tags="n.*">
+			<select lemma="sayfa" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match />
+		<match lemma="book" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="kick" tags="vblex.*" />
+		<match />
+		<match lemma="ball" tags="n.*">
+			<select lemma="bol" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="crystal" tags="*" />
+		<match lemma="ball" tags="n.*">
+			<select lemma="bol" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="overall" tags="*" />
+		<match lemma="score" tags="n.*">
+			<select lemma="puntuaci&#243;n" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="sit" tags="vblex.*" />
+		<match lemma="on" tags="pr" />
+		<match />
+		<match lemma="floor" tags="n.*">
+			<select lemma="dixan" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="show" tags="n.*">
+			<select lemma="demostraci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="strength" tags="*" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="show" tags="n.*">
+			<select lemma="xow" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="unity" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="armed" tags="*" />
+		<match lemma="force" tags="n.*">
+			<select lemma="kowa" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="travel" tags="vblex.*" />
+		<match lemma="by" tags="pr" />
+		<match lemma="air" tags="n.*">
+			<select lemma="avi&#243;n" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="economic" tags="*" />
+		<match lemma="boom" tags="n.*">
+			<select lemma="auge" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="mouse" tags="*" />
+		<match lemma="click" tags="n.*">
+			<select lemma="clic" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="click" tags="n.*">
+			<select lemma="clic" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	 <or>
+	 	<match lemma="rifle" tags="*" />
+	 	<match lemma="camera" tags="*" />
+	 </or>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="horn" tags="n.*">
+			<select lemma="sungo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="plenty" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="scrap" tags="n.*">
+			<select lemma="trozo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="paper" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="tour" tags="n.*">
+			<select lemma="recorrido" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="capital" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="tourism" tags="*" />
+		<match lemma="season" tags="n.*">
+			<select lemma="mosem" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="have" tags="vblex.*" />
+		<match />
+		<match lemma="chance" tags="n.*">
+			<select lemma="kihoy" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="problem" tags="*" />
+		<match lemma="area" tags="n.*">
+			<select lemma="campo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="education" tags="*" />
+		<match lemma="course" tags="n.*">
+			<select lemma="darsulari" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="court" tags="n.*">
+			<select lemma="corte" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="opinion" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="passage" tags="n.*">
+			<select lemma="paso" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="time" tags="*" />
+	</rule>	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="send" tags="vblex.*" />	
+		<match />
+		<match lemma="letter" tags="n.*">
+			<select lemma="suratu" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="letter" tags="n.*">
+			<select lemma="letra" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  	<match lemma="law" tags="*" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="nature" tags="n.*">
+			<select lemma="car&#225;cter" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="proposal" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="meeting" tags="*" />
+		<match lemma="room" tags="n.*">
+			<select lemma="kamer" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="hotel" tags="*" />
+		<match lemma="room" tags="n.*">
+			<select lemma="kamer" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="railway" tags="*" />
+		<match lemma="connection" tags="n.*">
+			<select lemma="linku" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="Internet" tags="*" />
+		<match lemma="connection" tags="n.*">
+			<select lemma="linku" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+	  	<match lemma="voting" tags="*" />
+		<match lemma="machine" tags="n.*">
+			<select lemma="tora" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="opinion" tags="*" />
+		<match lemma="poll" tags="n.*">
+			<select lemma="tupyogi" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="go" tags="vblex.*" />
+		<match />
+		<match />
+		<match lemma="poll" tags="n.*">
+			<select lemma="urna" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="chess" tags="*" />
+		<match lemma="board" tags="n.*">
+			<select lemma="tablero" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="board" tags="n.*">
+			<select lemma="consejo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="director" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="notice" tags="*" />
+		<match lemma="board" tags="n.*">
+			<select lemma="tahta" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="pass" tags="n.*">
+			<select lemma="abono" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match lemma="public" tags="*" />
+		<match lemma="transport" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="pyrenean" tags="*" />
+		<match lemma="pass" tags="n.*">
+			<select lemma="paso" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="civilian" tags="*" />
+		<match lemma="control" tags="n.*">
+			<select lemma="krasi" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="command" tags="n.*">
+			<select lemma="mando" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="operation" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="short" tags="*" />
+		<match lemma="term" tags="n.*">
+			<select lemma="watumon" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="Parliamentary" tags="*" />
+		<match lemma="term" tags="n.*">
+			<select lemma="periodo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="conveyor" tags="*" />
+		<match lemma="belt" tags="n.*">
+			<select lemma="cinta" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="umbilical" tags="*" />
+		<match lemma="cord" tags="n.*">
+			<select lemma="kordo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="point" tags="n.*">
+			<select lemma="tyan" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="view" tags="*" />
+	</rule>
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="survey" tags="n.*">
+			<select lemma="estudio" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="charge" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="offshoot" tags="n.*">
+			<select lemma="rama" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="Al\-Qaeda" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="platform" tags="n.*">
+			<select lemma="programa" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="party" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="position" tags="n.*">
+			<select lemma="loka" tags="n.*" />
+		</match>
+		<match lemma="as" tags="pr" />
+		<match />
+		<match lemma="leader" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="senior" tags="*" />
+		<match lemma="position" tags="n.*">
+			<select lemma="ofisi" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="change" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match lemma="gear" tags="n.*">
+			<select lemma="marcha" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="reverse" tags="*" />
+		<match lemma="gear" tags="n.*">
+			<select lemma="marcha" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="internal" tags="*" />
+		<match lemma="affair" tags="n.*">
+			<select lemma="masele" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="book" tags="vblex.*" />
+		<match />
+		<match lemma="flight" tags="n.*">
+			<select lemma="fley" tags="n.*" />
+		</match>	
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="data" tags="*" />
+		<match lemma="recorder" tags="n.*">
+			<select lemma="registrador" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="democratic" tags="*" />
+		<match lemma="path" tags="n.*">
+			<select lemma="ruta" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="strip" tags="n.*">
+			<select lemma="franja" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="land" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="coastal" tags="*" />
+		<match lemma="strip" tags="n.*">
+			<select lemma="pista" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="insurance" tags="*" />
+		<match lemma="claim" tags="*" />
+		<match lemma="record" tags="n.*">
+			<select lemma="expediente" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="criminal" tags="*" />
+		<match lemma="record" tags="n.*">
+			<select lemma="antecedentes" tags="n.*" />
+		</match>
+	</rule>
+		
+	
+	
+	<rule weight="1.0">
+		<match lemma="record" tags="n.*">
+			<select lemma="historial" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="assist" tags="vblex.*" />
+	  <or>
+	  	<match lemma="peace" tags="*" />
+	  	<match lemma="prosperity" tags="*" />
+	  </or>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="world" tags="*" />
+		<match lemma="record" tags="n.*">
+			<select lemma="r&#233;cord" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="safety" tags="*" />
+		<match lemma="record" tags="n.*">
+			<select lemma="historial" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="can" tags="n.*">
+			<select lemma="banka" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="caffeine" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+	  	<match lemma="government" tags="*" />
+		<match lemma="measure" tags="n.*">
+			<select lemma="medida" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="national" tags="*" />
+		<match lemma="fund" tags="n.*">
+			<select lemma="fondo" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="ice" tags="*" />
+		<match lemma="sheet" tags="n.*">
+			<select lemma="capa" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="political" tags="*" />
+		<match lemma="display" tags="n.*">
+			<select lemma="onexa" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="bouquet" tags="n.*">
+			<select lemma="ramo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="flower" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="skin" tags="*" />
+	  	<match lemma="heart" tags="*" />
+	  </or>	
+		<match lemma="cell" tags="n.*">
+			<select lemma="celul" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="basketball" tags="*" />
+		<match lemma="club" tags="n.*">
+			<select lemma="klubu" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="press" tags="*" />
+		<match lemma="review" tags="n.*">
+			<select lemma="rese&#241;a" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="shed" tags="n.*">
+			<select lemma="nave" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match />
+		<match lemma="storage" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="civilian" tags="*" />
+		<match lemma="glove" tags="n.*">
+			<select lemma="gante" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="blanket" tags="n.*">
+			<select lemma="manto" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="fog" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="legal" tags="*" />
+		<match lemma="case" tags="n.*">
+			<select lemma="kaso" tags="n.*" />
+		</match>
+	</rule>
+	
+
+	
+	
+	<rule weight="1.0">
+		<match lemma="traditional" tags="*" />
+		<match lemma="crop" tags="n.*">
+			<select lemma="cultivo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="public" tags="*" />
+		<match lemma="register" tags="n.*">
+			<select lemma="daftari" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="room" tags="n.*">
+			<select lemma="kungan" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match lemma="leadership" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="police" tags="*" />
+		<match lemma="officer" tags="n.*">
+			<select lemma="agente" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="air" tags="*" />
+		<match lemma="force" tags="*" />
+		<match lemma="officer" tags="n.*">
+			<select lemma="oficial" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="tax" tags="*" />
+		<match lemma="break" tags="n.*">
+			<select lemma="exenciones" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="age" tags="*" />
+		<match lemma="bracket" tags="n.*">
+			<select lemma="grupo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="form" tags="n.*">
+			<select lemma="formu" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="aid" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="tax" tags="*" />
+		<match lemma="haven" tags="n.*">
+			<select lemma="para&#237;so" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="cut" tags="n.*">
+			<select lemma="reducci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match lemma="income" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="sea" tags="*" />
+		<match lemma="bed" tags="n.*">
+			<select lemma="bistar" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="millennium" tags="*" />
+		<match lemma="bug" tags="n.*">
+			<select lemma="bicho" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="fiscal" tags="*" />
+		<match lemma="competition" tags="n.*">
+			<select lemma="konkure" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="length" tags="n.*">
+			<select lemma="periodo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="time" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="string" tags="n.*">
+			<select lemma="cadena" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="disaster" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="string" tags="n.*">
+			<select lemma="serie" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="scandal" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="stick" tags="n.*">
+			<select lemma="gumbo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="religion" tags="*" />
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="electronic" tags="*" />
+		<match lemma="stick" tags="n.*">
+			<select lemma="bast&#243;n" tags="n.*" />
+		</match>	
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="medical" tags="*" />
+		<match lemma="care" tags="n.*">
+			<select lemma="asistencia" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="take" tags="vblex.*" />
+		<match lemma="care" tags="n.*">
+			<select lemma="jawgu" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="cost" tags="n.*">
+			<select lemma="kima" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="capital" tags="*" />
+	</rule>
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="trunk" tags="n.*">
+			<select lemma="kano" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="tree" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="elephant" tags="*" />
+		<match lemma="'s" tags="gen" />
+		<match lemma="trunk" tags="n.*">
+			<select lemma="trompa" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="pig" tags="*" />
+		<match lemma="'s" tags="gen" />
+		<match lemma="tail" tags="n.*">
+			<select lemma="koda" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="positive" tags="*" />
+		<match lemma="spin" tags="n.*">
+			<select lemma="giro" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="computer" tags="*" />
+		<match lemma="dealer" tags="n.*">
+			<select lemma="comerciante" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="weapon" tags="n.pl" />	
+		<match lemma="dealer" tags="n.*">
+			<select lemma="traficante" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="dealer" tags="n.*">
+			<select lemma="comerciante" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="vitamin" tags="*" />
+		<match lemma="product" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="EU" tags="*" />
+		<match lemma="badge" tags="n.*">
+			<select lemma="insignia" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="launch" tags="*" />
+		<match lemma="pad" tags="n.*">
+			<select lemma="plataforma" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="head" tags="n.*">
+			<select lemma="kef" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="government" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="recreational" tags="*" />
+		<match lemma="craft" tags="n.*">
+			<select lemma="embarcaci&#243;n" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="landing" tags="*" />
+		<match lemma="gear" tags="n.*">
+			<select lemma="tren" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="form" tags="n.*">
+			<select lemma="manifestaci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="extremism" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="house" tags="n.*">
+			<select lemma="c&#225;mara" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="representative" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="amendment" tags="n.*">
+			<select lemma="enmienda" tags="n.*" />
+		</match>
+		<match lemma="table" tags="vblex.*" />
+		<match lemma="by" tags="pr" />
+		<match lemma="member" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match lemma="parliament" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="quality" tags="*" />
+		<match lemma="label" tags="n.*">
+			<select lemma="sello" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="food" tags="*" />
+		<match lemma="scare" tags="n.*">
+			<select lemma="alarma" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="take" tags="vblex.*" />
+		<match />
+		<match lemma="stand" tags="n.*">
+			<select lemma="postura" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="hydroelectric" tags="*" />
+		<match lemma="power" tags="n.*">
+			<select lemma="energ&#237;a" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="lemonade" tags="*" />
+		<match lemma="stand" tags="n.*">
+			<select lemma="puesto" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="transport" tags="vblex.*" />
+		<match lemma="by" tags="*" />
+		<match lemma="rail" tags="n.*">
+			<select lemma="tren" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="launch" tags="n.*">
+			<select lemma="lanca" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="product" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="shaft" tags="n.*">
+			<select lemma="rayo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="light" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="shaft" tags="n.*">
+			<select lemma="hueco" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="elevator" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="drive" tags="*" />
+		<match lemma="shaft" tags="n.*">
+			<select lemma="eje" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="piece" tags="n.*">
+			<select lemma="bage" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="paper" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="piece" tags="n.*">
+			<select lemma="mon" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="legislation" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="slice" tags="n.*">
+			<select lemma="loncha" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="salami" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="slice" tags="n.*">
+			<select lemma="trozo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="cake" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="snippet" tags="n.*">
+			<select lemma="fragmento" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="news" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="article" tags="n.*">
+			<select lemma="prenda" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="clothing" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="newspaper" tags="*" />
+		<match lemma="article" tags="n.*">
+			<select lemma="mon" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="production" tags="*" />
+		<match lemma="line" tags="n.*">
+			<select lemma="cadena" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="energy" tags="*" />
+		<match lemma="production" tags="n.*">
+			<select lemma="producci&#243;n" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="golden" tags="*" />
+		<match lemma="share" tags="n.*">
+			<select lemma="sahem" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="take" tags="vblex.*" />
+		<match lemma="cover" tags="n.*">
+			<select lemma="cubierto" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="cover" tags="n.*">
+			<select lemma="portada" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match />
+		<match lemma="issue" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="Economist" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="IDF" tags="*" />
+		<match lemma="shell" tags="n.*">
+			<select lemma="proyectil" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="shell" tags="n.*">
+			<select lemma="sadafa" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="tortoise" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="pack" tags="n.*">
+			<select lemma="banda" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="thief" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="sick" tags="*" />
+		<match lemma="animal" tags="n.*">
+			<select lemma="hewan" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="carton" tags="n.*">
+			<select lemma="karton" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="milk" tags="*" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="electric" tags="*" />
+		<match lemma="shock" tags="n.*">
+			<select lemma="descarga" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="combination" tags="*" />
+		<match lemma="lock" tags="n.*">
+			<select lemma="kuflu" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="seal" tags="n.*">
+			<select lemma="sello" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="approval" tags="*" />
+	</rule>
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="supply" tags="*" />
+		<match lemma="cut" tags="n.*">
+			<select lemma="kata" tags="n.*" />
+		</match>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="cut" tags="n.*">
+			<select lemma="tajada" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match lemma="commission" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="budget" tags="*" />
+		<match lemma="cut" tags="n.*">
+			<select lemma="recorte" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="revenue" tags="*" />
+		<match lemma="side" tags="n.*">
+			<select lemma="aspecto" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="side" tags="n.*">
+			<select lemma="taraf" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  	<match lemma="street" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="side" tags="n.*">
+			<select lemma="ladera" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="mountain" tags="*" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="editor" tags="n.*">
+			<select lemma="director" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="newspaper" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="editor" tags="n.*">
+			<select lemma="penciyen" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="pamphlet" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="body" tags="n.*">
+			<select lemma="conjunto" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="information" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="body" tags="n.*">
+			<select lemma="masa" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="water" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="collection" tags="n.*">
+			<select lemma="grupo" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+      	<match lemma="report" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="herd" tags="n.*">
+			<select lemma="reba&#241;o" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="llama" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="left\-wing" tags="*" />
+		<match lemma="herd" tags="n.*">
+			<select lemma="reba&#241;o" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="herd" tags="n.*">
+			<select lemma="manada" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="buffalo" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="pack" tags="n.*">
+			<select lemma="paquete" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="cigarette" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="flock" tags="n.*">
+			<select lemma="bandada" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="crow" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="passage" tags="n.*">
+			<select lemma="pasaje" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match />
+		<match lemma="report" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="rider" tags="n.*">
+			<select lemma="cl&#225;usula" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match />
+		<match lemma="Constitution" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="path" tags="n.*">
+			<select lemma="dao" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+	  <or>
+	  	<match lemma="growth" tags="*" />
+		<match lemma="employment" tags="*" />
+	  </or>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="blood" tags="*" />
+		<match lemma="vessel" tags="n.*">
+			<select lemma="vaso" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="lose" tags="vblex.*" />
+		<match lemma="keep" tags="vblex.*" />
+	  </or>
+		<match lemma="count" tags="n.*">
+			<select lemma="hesabu" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="price" tags="*" />
+		<match lemma="tag" tags="n.*">
+			<select lemma="label" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="economic" tags="*" />
+		<match lemma="gain" tags="n.*">
+			<select lemma="beneficio" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+		
+	<rule weight="1.0">
+		<match lemma="spirit" tags="n.*">
+			<select lemma="ruho" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  <or>
+	  	<match lemma="confidence" tags="*" />
+	  	<match lemma="solidarity" tags="*" />
+	  </or> 	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="cooperative" tags="*" />
+		<match lemma="spirit" tags="n.*">
+			<select lemma="ruho" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="gold" tags="*" />
+	  	<match lemma="standard" tags="n.*">
+	  		<select lemma="patr&#243;n" tags="n.*" />
+	  	</match>
+	</rule> 	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="standard" tags="n.*">
+			<select lemma="nivel" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="living" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="mark" tags="n.*">
+			<select lemma="se&#241;al" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="respect" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="mark" tags="n.*">
+			<select lemma="glif" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="Presidency" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="help" tags="*" />	
+		<match lemma="hand" tags="n.*">
+			<select lemma="hanta" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="budgetary" tags="*" />
+		<match lemma="surplus" tags="n.*">
+			<select lemma="excedente" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="trade" tags="*" />
+		<match lemma="surplus" tags="n.*">
+			<select lemma="super&#225;vit" tags="n.*" />
+		</match>
+	</rule>
+	
+
+ 
+ 
+	<rule weight="1.0">
+		<match lemma="weather" tags="*" />
+		<match lemma="forecast" tags="n.*">
+			<select lemma="pron&#243;stico" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="forecast" tags="n.*">
+			<select lemma="previsi&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="growth" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="political" tags="*" />
+		<match lemma="outlook" tags="n.*">
+			<select lemma="prespetiva" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="cabinet" tags="*" />
+		<match lemma="'s" tags="gen" />
+		<match lemma="statement" tags="n.*">
+			<select lemma="loga" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="amicus" tags="*" />
+		<match lemma="curiae" tags="*" />
+		<match lemma="brief" tags="n.*">
+			<select lemma="escrito" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="political" tags="*" />
+		<match lemma="statement" tags="n.*">
+			<select lemma="loga" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="identity" tags="*" />
+		<match lemma="card" tags="n.*">
+			<select lemma="documento" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="proof" tags="n.*">
+			<select lemma="justificante" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="insurance" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="political" tags="*" />
+		<match lemma="core" tags="n.*">
+			<select lemma="nukleus" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="core" tags="n.*">
+			<select lemma="coraz&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  <or>
+	  	<match lemma="apple" tags="*" />
+		<match lemma="fruit" tags="*" />
+	  </or>	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="order" tags="n.*">
+			<select lemma="ordenu" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="business" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="top" tags="n.*">
+			<select lemma="copa" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  	<match lemma="tree" tags="n.pl" />	
+	</rule>	
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="top" tags="n.*">
+			<select lemma="kapi" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  	<match lemma="agenda" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="top" tags="n.*">
+			<select lemma="kapi" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="world" tags="*" />
+	</rule>	
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="Gregorian" tags="*" />
+		<match lemma="chant" tags="n.*">
+			<select lemma="canto" tags="n.*" />
+		</match>
+	</rule>
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="demonstration" tags="n.*">
+			<select lemma="onexa" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="understand" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="anti\-nuclear" tags="*" />
+		<match lemma="demonstration" tags="n.*">
+			<select lemma="manifestaci&#243;n" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="spy" tags="*" />
+		<match lemma="ring" tags="n.*">
+			<select lemma="red" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="ring" tags="n.*">
+			<select lemma="halke" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="friend" tags="n.pl" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="criminal" tags="*" />
+		<match lemma="court" tags="n.*">
+			<select lemma="corte" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="try" tags="vblex.*" />
+		<match lemma="in" tags="pr" />
+		<match lemma="court" tags="n.*">
+			<select lemma="tribunal" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="criminal" tags="*" />
+		<match lemma="law" tags="n.*">
+			<select lemma="derecho" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="military" tags="*" />
+		<match lemma="gang" tags="n.*">
+			<select lemma="pandilla" tags="n.*" />
+		</match>
+	 </rule>
+	 
+  
+	 
+	 <rule weight="1.0">
+	 	<match lemma="gang" tags="n.*">
+	 		<select lemma="banda" tags="n.*" />
+	 	</match>
+	 	<match lemma="of" tags="pr" />
+	 	<match lemma="con men" tags="*" />
+	 </rule>
+	 
+
+
+	 
+	 <rule weight="1.0">
+	 	<match lemma="Sunday" tags="*" />
+	 	<match lemma="strip" tags="n.*">
+	 		<select lemma="tira" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+
+
+	 
+	 <rule weight="1.0">
+	 	<match lemma="windsurfing" tags="*" />
+	 	<match lemma="squad" tags="n.*">
+	 		<select lemma="equipo" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="anti\-terrorist" tags="*" />	
+	 	<match lemma="squad" tags="n.*">
+	 		<select lemma="brigada" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="fire" tags="*" />
+	 	<match lemma="drill" tags="n.*">
+	 		<select lemma="simulacro" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="emergency" tags="*" />
+	 	<match lemma="drill" tags="n.*">
+	 		<select lemma="ejercicio" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="pneumatic" tags="*" />
+	 	<match lemma="drill" tags="n.*">
+	 		<select lemma="martillo" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+
+	 
+	 <rule weight="1.0">
+	 	<match lemma="budget" tags="*" />
+	 	<match lemma="exercise" tags="n.*">
+	 		<select lemma="ejercicio" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="reserve" tags="n.*">
+	 		<select lemma="reserva" tags="n.*" />
+	 	</match>
+	 	<match lemma="of" tags="pr" />
+	 	<match lemma="appropriation" tags="n.pl" />
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="arena" tags="n.*">
+	 		<select lemma="estadio" tags="n.*" />
+	 	</match>
+	 	<match lemma="for" tags="pr" />
+	 	<match lemma="World" tags="*" />
+	 	<match lemma="Cup" tags="*" />
+	 	<match lemma="football" tags="*" />
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	   	<match lemma="political" tags="*" />
+	   	<match lemma="scene" tags="n.*">
+	   		<select lemma="panorama" tags="n.*" />
+	   	</match>
+	 </rule>	
+	 
+	 
+	 
+	 <rule weight="1.0">
+	   	<match lemma="Neolithic" tags="*" />
+	 	<match lemma="site" tags="n.*">
+	 		<select lemma="yacimiento" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	   	<match lemma="Internet" tags="*" />
+	 	<match lemma="site" tags="n.*">
+	 		<select lemma="loka" tags="n.*" />
+	 	</match>
+	</rule>
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="industrial" tags="*" />
+		<match lemma="site" tags="n.*">
+			<select lemma="emplazamiento" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="spot" tags="n.*">
+	  		<select lemma="algo" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="fish" tags="*" />
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	   <or>
+	   	<match lemma="passenger" tags="*" />
+	   	<match lemma="baggage" tags="*" />
+	   </or>	
+	 	<match lemma="check" tags="n.*">
+	 		<select lemma="moni" tags="n.*" />
+	 	</match>
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	   	<match lemma="area" tags="n.*">
+	   		<select lemma="espacio" tags="n.*" />
+	   	</match>
+	   	<match lemma="of" tags="pr" />
+	   <or>
+	   	<match lemma="freedom" tags="*" />
+	   	<match lemma="security" tags="*" />
+	   	<match lemma="justice" tags="*" />
+	   </or>	
+	 </rule>
+	 
+	 
+	 
+	 <rule weight="1.0">
+	 	<match lemma="dash" tags="n.*">
+	 		<select lemma="pizca" tags="n.*" />
+	 	</match>
+	 	<match lemma="of" tags="pr" />
+	 	<match lemma="environment" tags="*" />
+	 </rule>	
+	 
+	 
+	 
+	 <rule weight="1.0">
+	  	<match lemma="evening" tags="*" />
+	  	<match lemma="slot" tags="n.*">
+	  		<select lemma="hueco" tags="n.*" />
+	  	</match>
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="expansion" tags="*" />
+	  	<match lemma="slot" tags="n.*">
+	  		<select lemma="ranura" tags="n.*" />
+	  	</match>
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="kick" tags="n.*">
+	  		<select lemma="saque" tags="n.*" />
+	  	</match>
+	  	<match lemma="off" tags="*" />
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	   	<match lemma="corner" tags="n.*">
+	   		<select lemma="gona" tags="n.*" />
+	   	</match>
+	   	<match lemma="of" tags="pr" />
+	   	<match />
+	   	<match lemma="house" tags="*" />
+	  </rule>
+	  
+
+	  
+	 <rule weight="1.0">
+	   	<match lemma="interpretation" tags="*" />
+	    <match lemma="booth" tags="n.*">
+	    	<select lemma="cabina" tags="n.*" />
+	    </match>
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="vote" tags="n.*">
+	  		<select lemma="voto" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="confidence" tags="*" />
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="vote" tags="n.*">
+	  		<select lemma="moci&#243;n" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="no" tags="*" />
+	  	<match lemma="confidence" tags="*" />
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	 <match lemma="cold" tags="*" />
+	  	 <match lemma="spell" tags="n.*">
+	  	 	<select lemma="ola" tags="n.*" />
+	  	 </match>
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	     <match lemma="spell" tags="n.*">
+	     	<select lemma="per&#237;odo" tags="n.*" />
+	     </match>
+	     <match lemma="abroad" tags="*" />
+	  </rule>
+	  
+	  
+
+	  
+	  <rule weight="1.0">
+	  	<match lemma="opening" tags="n.*">
+	  		<select lemma="buka" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="border" tags="n.pl" />
+	  </rule>
+	  
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="opening" tags="n.*">
+	  		<select lemma="inicio" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="negotiation" tags="n.pl" />
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="division" tags="n.*">
+	  		<select lemma="reparto" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	   <or>
+	    <match lemma="task" tags="n.pl" />
+	    <match lemma="responsibility" tags="n.pl" />
+	   </or>
+	  </rule>
+	  
+	   
+	  
+	  <rule weight="1.0">
+	  	<match lemma="social" tags="*" />
+	  	<match lemma="security" tags="n.*">
+	  		<select lemma="anjenya" tags="n.*" />
+	  	</match>
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="explosive" tags="*" />
+	  	<match lemma="charge" tags="n.*">
+	  		<select lemma="fuha" tags="n.*" />
+	  	</match>
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="president" tags="n.*">
+	  		<select lemma="presidiyen" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match />
+	  	<match lemma="club" tags="*" />
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	   	<match lemma="deal" tags="n.*">
+	   		<select lemma="trato" tags="n.*" />
+	   	</match>
+	   	<match />
+	   	<match />
+	   	<match lemma="ACP" tags="*" />
+	   	<match lemma="country" tags="n.pl" />
+	  </rule>
+	  
+	  
+	  
+	  <rule weight="1.0">
+	  	<match lemma="football" tags="*" />	
+	  	<match lemma="pitch" tags="n.*">
+	  		<select lemma="campo" tags="n.*" />
+	  	</match>
+	  </rule>
+	  
+	  
+	
+	<rule weight="1.0">
+		<match lemma="runny" tags="*" />
+		<match lemma="nose" tags="n.*">
+			<select lemma="nasa" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="trading" tags="*" />
+		<match lemma="block" tags="n.*">
+			<select lemma="bloque" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="coming" tags="n.*">
+			<select lemma="mayor&#237;a" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="age" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="onset" tags="n.*">
+			<select lemma="inicio" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="winter" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="onset" tags="n.*">
+			<select lemma="inicio" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />	
+		<match lemma="crisis" tags="*" />	
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="mouth" tags="n.*">
+			<select lemma="desembocadura" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match />
+		<match lemma="river" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="emergence" tags="n.*">
+			<select lemma="surgimiento" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match />
+	  	<match lemma="economy" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="emergence" tags="n.*">
+			<select lemma="aparici&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  	<match lemma="job" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="event" tags="n.*">
+			<select lemma="caso" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  <or>
+	  	<match lemma="illness" tags="*" />
+	  	<match lemma="accident" tags="*" />
+	  </or>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="United Nations" tags="*" />
+	  	<match lemma="event" tags="n.*">
+	  		<select lemma="okurxey" tags="n.*" />
+	  	</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	   <or>	
+		<match lemma="intellectual" tags="*" />
+		<match lemma="political" tags="*" />
+	  </or>
+		<match lemma="case" tags="n.*">
+			<select lemma="argumento" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="thread" tags="n.*">
+	  		<select lemma="xilo" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="consistency" tags="*" />
+	</rule> 
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="respiratory" tags="*" />
+		<match lemma="tract" tags="n.*">
+			<select lemma="v&#237;as" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="gastro\-intestinal" tags="*" />
+		<match lemma="tract" tags="n.*">
+			<select lemma="aparato" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="financial" tags="*" />
+		<match lemma="management" tags="n.*">
+			<select lemma="kwanli" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="risk" tags="*" />
+		<match lemma="assessment" tags="n.*">
+			<select lemma="tatmini" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="human" tags="*" />
+		<match lemma="ear" tags="n.*">
+			<select lemma="ore" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="sphere" tags="n.*">
+			<select lemma="&#225;mbito" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="influence" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="seizure" tags="n.*">
+			<select lemma="confiscaci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  	<match lemma="asset" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="seizure" tags="n.*">
+			<select lemma="incautaci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="property" tags="*" />
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="epileptic" tags="*" />
+		<match lemma="seizure" tags="n.*">
+			<select lemma="ataque" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="spread" tags="n.*">
+			<select lemma="propagaci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="disease" tags="*" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="carry" tags="vblex.*" />
+	  	<match lemma="out" tags="pr" />
+		<match />
+  		<match lemma="deed" tags="n.*">
+  			<select lemma="acci&#243;n" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+
+
+  	
+  	<rule weight="1.0">
+  		<match lemma="bomb" tags="*" />
+  		<match lemma="scare" tags="n.*">
+  			<select lemma="amenaza" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	  	<match lemma="solar" tags="*" />
+  		<match lemma="panel" tags="n.*">
+  			<select lemma="panel" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+  	
+
+  	
+  	<rule weight="1.0">
+  		<match lemma="Pandora" tags="*" />
+  		<match lemma="'s" tags="gen" />
+  		<match lemma="box" tags="n.*">
+  			<select lemma="sanduku" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	  	<match lemma="function" tags="n.*">
+  	  		<select lemma="funsyon" tags="n.*" />
+  	  	</match>
+  	  	<match lemma="of" tags="pr" />
+  	  	<match lemma="demand" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="reception" tags="n.*">
+  			<select lemma="recepci&#243;n" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  		<match lemma="radio" tags="*" />
+  		<match lemma="signal" tags="n.pl" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	 	<match lemma="Berlin" tags="*" />
+  		<match lemma="wall" tags="n.*">
+  			<select lemma="divar" tags="n.*" />
+  		</match>
+  	</rule>	
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="ocean" tags="*" />
+  		<match lemma="floor" tags="n.*">
+  			<select lemma="fondo" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="frame" tags="n.*">
+  			<select lemma="marco" tags="n.*" />
+  		</match>	
+  		<match lemma="of" tags="pr" />
+  		<match lemma="reference" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="ozone" tags="*" />
+  		<match lemma="layer" tags="n.*">
+  			<select lemma="cengu" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="layer" tags="n.*">
+  			<select lemma="cengu" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  	  	<match lemma="bureaucracy" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="vein" tags="n.*">
+  			<select lemma="veta" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  	  	<match lemma="gold" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="deposit" tags="n.*">
+  			<select lemma="dep&#243;sito" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  		<match lemma="several" tags="*" />
+  		<match lemma="thousand" tags="*" />
+  		<match lemma="pound" tags="n.pl" />
+  	</rule>
+  	
+
+
+  	
+  	<rule weight="1.0">
+  		<match lemma="mineral" tags="*" />
+  		<match lemma="deposit" tags="n.*">
+  			<select lemma="yacimiento" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	  	<match lemma="stake" tags="n.*">
+  	  		<select lemma="apuesta" tags="n.*" />
+  	  	</match>
+  	  	<match lemma="in" tags="pr" />
+  	  	<match />
+  	  	<match lemma="future" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="vault" tags="n.*">
+  			<select lemma="kube" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  		<match lemma="construction" tags="*" />
+  	</rule>	
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="purpose" tags="n.*">
+  			<select lemma="finalidad" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  		<match />
+  		<match lemma="report" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	  	<match lemma="public" tags="*" />
+  	  	<match lemma="interest" tags="n.*">
+  	  		<select lemma="lixiku" tags="n.*" />
+  	  	</match>
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	  <or>
+  	  	<match lemma="hedonistic" tags="*" />
+  		<match lemma="materialist" tags="*" />
+  	  </or>	
+  		<match lemma="life" tags="*" />
+  		<match lemma="style" tags="n.*">
+  			<select lemma="moda" tags="n.*" />
+  		</match>
+  	</rule>
+  	
+
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="managerial" tags="*" />
+  		<match lemma="style" tags="n.*">
+  			<select lemma="estilo" tags="n.*" />
+  		</match>
+  	</rule>	
+  	
+  	
+  	
+  	<rule weight="1.0">
+  		<match lemma="mode" tags="n.*">
+  			<select lemma="medio" tags="n.*" />
+  		</match>
+  		<match lemma="of" tags="pr" />
+  		<match lemma="transport" tags="*" />
+  	</rule>
+  	
+  	
+  	
+  	<rule weight="1.0">
+  	  	<match lemma="entry" tags="n.*">
+  	  		<select lemma="inidi" tags="n.*" />
+  	  	</match>
+  	  	<match lemma="into" tags="pr" />
+  	  	<match lemma="force" tags="*" />
+  	</rule>
+  	
+  	
+	
+	<rule weight="1.0">
+  	 	<match lemma="stretch" tags="n.*">
+  	 		<select lemma="extensi&#243;n" tags="n.*" />
+  	 	</match>
+  	 	<match lemma="of" tags="pr" />
+  	  	<match lemma="water" tags="*" />
+  	</rule>
+  	
+
+
+
+	<rule weight="1.0">
+	  	<match lemma="Eucalyptus" tags="*" />
+		<match lemma="bark" tags="n.*">
+			<select lemma="xupi" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="bark" tags="n.*">
+			<select lemma="bwawsa" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="dog" tags="*" />
+	</rule>	
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="seal" tags="*" />
+		<match lemma="pup" tags="n.*">
+			<select lemma="cr&#237;a" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="pupil" tags="n.*">
+			<select lemma="alumno" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match />
+		<match lemma="class" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="spend" tags="*" />
+		<match lemma="per" tags="*" />
+		<match lemma="pupil" tags="n.*">
+			<select lemma="alumno" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="novice" tags="n.*">
+	  		<select lemma="novato" tags="n.*" />
+	  	</match>
+	  	<match lemma="in" tags="pr" />
+	  	<match />
+	  	<match lemma="politics" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="bear" tags="vblex.*" />
+		<match lemma="witness" tags="n.*">
+			<select lemma="testimonio" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="key" tags="*" />
+	  	<match lemma="witness" tags="n.*">
+	  		<select lemma="xahediyen" tags="n.*" />
+	  	</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="treasure" tags="*" />
+		<match lemma="chest" tags="n.*">
+			<select lemma="cofre" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="tightness" tags="*" />
+	  	<match lemma="of" tags="pr" />
+	  	<match />
+	  	<match lemma="chest" tags="n.*">
+	  		<select lemma="cati" tags="n.*" />
+	  	</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="preserve" tags="n.*">
+	  		<select lemma="coto" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="fisherman" tags="n.pl" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="sale" tags="n.*">
+	  		<select lemma="maydo" tags="n.*" />
+	  	</match>
+	  	<match lemma="of" tags="pr" />
+	  	<match lemma="ivory" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="car" tags="*" />
+		<match lemma="boot" tags="*" />
+		<match lemma="sale" tags="n.*">
+			<select lemma="mercadillo" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="training" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match lemma="staff" tags="n.*">
+			<select lemma="ergotim" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="capital" tags="*" />
+		<match lemma="tax" tags="n.*">
+			<select lemma="swe" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="fork" tags="n.*">
+			<select lemma="bifurcaci&#243;n" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match />
+	  	<match lemma="road" tags="*" />
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="smoke" tags="*" />
+	  	<match lemma="screen" tags="n.*">
+	  		<select lemma="ekrin" tags="n.*" />
+	  	</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="rail\-freight" tags="*" />
+	  	<match lemma="terminal" tags="n.*">
+	  		<select lemma="terminal" tags="n.*" />
+	  	</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+	  	<match lemma="bus" tags="*" />
+	  	<match lemma="stop" tags="n.*">
+	  		<select lemma="parada" tags="n.*" />
+	  	</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="tropical" tags="*" />
+		<match lemma="storm" tags="n.*">
+			<select lemma="bofun" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+	
+	<rule weight="1.0">	
+		<match lemma="barrage" tags="n.*">
+			<select lemma="lluvia" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="threat" tags="n.pl" />
+	</rule>	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="charter" tags="n.*">
+			<select lemma="carta" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="right" tags="n.pl" />
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="discharge" tags="n.*">
+			<select lemma="descarga" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="Tritium" tags="*" />
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="brink" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="war" tags="*" />
+	</rule>	
+	
+
+	
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="brown" tags="*" />
+	  	<match lemma="orange" tags="*" />
+		<match lemma="black" tags="*" />
+		<match lemma="yellow" tags="*" />
+		<match lemma="green" tags="*" />
+		<match lemma="blue" tags="*" />
+		<match lemma="purple" tags="*" />
+		<match lemma="pink" tags="*" />
+		<match lemma="red" tags="*" />
+		<match lemma="gray" tags="*" />
+		<match lemma="white" tags="*" />
+	  </or>	
+		<match lemma="border" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+
+	<rule weight="1.0">
+		<match lemma="thick" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="chaos" tags="*" />
+	</rule>
+	
+
+
+
+
+
+
+	<rule weight="1.0">
+		<match lemma="verge" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  <or>	
+		<match lemma="collapse" tags="*" />
+		<match lemma="starvation" tags="*" />
+		<match lemma="bankruptcy" tags="*" />
+	  </or>	
+	</rule>	
+
+
+
+	<rule weight="1.0">
+		<match lemma="stand" tags="*" />
+		<match lemma="on" tags="pr" />
+		<match />
+		<match lemma="edge" tags="n.*">
+			<select lemma="byen" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+
+	<rule weight="1.0">
+		<match lemma="edge" tags="n.*">
+			<select lemma="byen" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  <or>
+	  	<match lemma="wood" tags="n.pl" />
+	  	<match lemma="forest" tags="*" />
+		<match lemma="europe" tags="*" />
+	  </or>	
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="breaking" tags="*" />
+		<match lemma="point" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+
+
+	<rule weight="1.0">
+		<match lemma="point" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	 <or>
+	 	<match lemma="failure" tags="*" />
+	 	<match lemma="collapse" tags="*" />
+	 </or>
+	</rule>
+	
+
+
+
+
+
+
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="posterior" tags="*" />
+	  	<match lemma="anterior" tags="*" />
+	  	<match lemma="lateral" tags="*" />
+	  </or>
+	  	<match lemma="border" tags="n.*">
+	  		<select lemma="borde" tags="n.*" />
+	  	</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="threshold" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  	<match lemma="crisis" tags="*" />
+	</rule>  
+	
+
+
+	<rule weight="1.0">
+	  <or>
+		<match lemma="decorative" tags="*" />
+		<match lemma="inclusive" tags="*" />
+	  </or>
+	  	<match lemma="border" tags="n.*">
+	  		<select lemma="borde" tags="n.*" />
+	  	</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="border" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+	  <or>
+	  	<match lemma="realism" tags="*" />
+	  	<match lemma="fantasy" tags="*" />
+	  </or>
+	</rule>
+	
+
+
+	
+	<rule weight="1.0">
+		<match lemma="street" tags="*" />
+		<match lemma="curb" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="end" tags="n.*">
+			<select lemma="borde" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="wedge" tags="*" />
+	</rule>	
+
+
+
+
+
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="wave" tags="*" />
+	  	<match lemma="solar" tags="*" />
+	  	<match lemma="geothermal" tags="*" />
+	  	<match lemma="nuclear" tags="*" />
+	  	<match lemma="hydroelectic" tags="*" />
+	  	<match lemma="natural" tags="*" />
+	  </or>	
+		<match lemma="power" tags="n.*">
+			<select lemma="energ&#237;a" tags="n.*" />
+		</match>
+	</rule>		
+	
+
+
+
+
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="economic" tags="*" />
+	  	<match lemma="industrial" tags="*" />
+	  	<match lemma="financial" tags="*" />
+	  	<match lemma="trading" tags="*" />
+	  </or>
+	  	<match lemma="power" tags="n.*">
+	  		<select lemma="potencia" tags="n.*" />
+	  	</match>
+	</rule>	  
+	
+
+
+	<rule weight="1.0">
+		<match lemma="power" tags="n.*">
+			<select lemma="capacidad" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="decision" tags="*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="power" tags="n.*">
+			<select lemma="capacidad" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="act" tags="vblex.*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="purchasing" tags="*" />
+		<match lemma="power" tags="n.*">
+			<select lemma="capacidad" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="power" tags="n.*">
+			<select lemma="facultad" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="order" tags="vblex.*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="supervisory" tags="*" />
+		<match lemma="power" tags="n.*">
+			<select lemma="facultad" tags="n.*" />
+		</match>
+	</rule>
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="distinguish" tags="*" />
+ 	    <match lemma="power" tags="n.*">
+  			<select lemma="facultad" tags="n.*" />
+  	   </match>
+ 	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="in" tags="pr" />
+		<match lemma="power" tags="n.*">
+			<select lemma="facultad" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="power" tags="n.*">
+			<select lemma="competencia" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="legislative" tags="*" />
+		<match lemma="initiative" tags="*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="ability" tags="n.*">
+			<select lemma="abilya" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="learn" tags="vblex.*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="operational" tags="*" />
+		<match lemma="capacity" tags="n.*">
+			<select lemma="abilya" tags="n.*" />
+		</match>
+	</rule>
+
+
+
+
+
+
+
+
+
+	<rule weight="1.0">
+	  <or>
+		<match lemma="political" tags="*" />
+		<match lemma="world" tags="*" />
+		<match lemma="global" tags="*" />
+		<match lemma="international" tags="*" />
+	  </or>	
+		<match lemma="stage" tags="n.*">
+			<select lemma="sahnidom" tags="n.*" />
+		</match>
+	</rule>		
+
+	
+
+
+	<rule weight="1.0">
+		<match lemma="stage" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="negotiation" tags="*" />
+	</rule>
+	
+
+
+
+
+	<rule weight="1.0">
+	  <or>
+		<match lemma="programming" tags="*" />
+		<match lemma="developmental" tags="*" />
+	  </or>	
+		<match lemma="stage" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+	</rule>
+
+
+
+	<rule weight="1.0">
+		<match lemma="stage" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match lemma="growth" tags="*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="stage" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="process" tags="*" />
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="final" tags="*" />
+		<match lemma="stage" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="phase" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="liberalisation" tags="*" />
+	</rule>
+	
+	
+	
+
+
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="development" tags="*" />
+		<match lemma="conversion" tags="*" />
+	  </or>	
+		<match lemma="phase" tags="n.*">
+			<select lemma="fase" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="international" tags="*" />
+		<match lemma="scene" tags="n.*">
+			<select lemma="escenario" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="scene" tags="n.*">
+			<select lemma="escenario" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="riot" tags="n.pl" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="scene" tags="n.*">
+			<select lemma="escenario" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match />
+		<match lemma="liberalisation" tags="*" />
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="international" tags="*" />
+		<match lemma="arena" tags="n.*">
+			<select lemma="escenario" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="arena" tags="n.*">
+			<select lemma="escenario" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match />
+		<match lemma="tragedy" tags="*" />
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match />
+		<match lemma="advertisement" tags="*" />
+	</rule>	
+
+
+
+	<rule weight="1.0">
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+		<match lemma="from" tags="pr" />
+		<match />
+		<match lemma="novel" tags="*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match />
+		<match lemma="film" tags="*" />
+	</rule>
+	
+
+
+	<rule weight="1.0">
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match lemma="Pluto" tags="*" />
+	</rule>	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="Moli&#232;re" tags="*" />
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+	</rule>	
+	
+	
+
+
+	<rule weight="1.0">
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+	  <or>	
+		<match lemma="drama" tags="*" />
+		<match lemma="story" tags="*" />
+	  </or>
+	</rule>	  
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="create" tags="*" />
+		<match />
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="what" tags="*" />
+		<match lemma="a" tags="*" />
+		<match lemma="unpleasant" tags="*" />
+		<match lemma="individual" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="quite" tags="*" />
+		<match />
+		<match lemma="character" tags="n.*">
+			<select lemma="person" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="biblical" tags="*" />
+		<match lemma="figure" tags="n.*">
+			<select lemma="personaje" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="best\-known" tags="*" />
+		<match lemma="personage" tags="n.*">
+			<select lemma="personaje" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+
+
+	<rule weight="1.0">
+	  <or>
+	  	<match lemma="powerful" tags="*" />
+	  	<match lemma="noble" tags="*" />
+	  	<match lemma="fashionable" tags="*" />
+	  	<match lemma="important" tags="*" />
+	  </or>
+	  	<match lemma="personage" tags="n.*">
+	  		<select lemma="personaje" tags="n.*" />
+	  	</match>
+	</rule>	 
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="become" tags="*" />
+		<match />
+		<match lemma="personage" tags="n.*">
+			<select lemma="personaje" tags="n.*" />
+		</match>
+	</rule>		
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="miracle" tags="n.pl" />
+	</rule>
+	
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="toward" tags="pr" />
+		<match />
+		<match lemma="objective" tags="*" />
+	</rule>
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="work" tags="n.*">
+			<select lemma="obrar" tags="n.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match />
+		<match lemma="change" tags="*" />
+	</rule>
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="in favour" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="with" tags="pr" />
+	  <or>
+	  	<match lemma="pragmatism" tags="*" />
+	  	<match lemma="realism" tags="*" />
+	  </or>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match lemma="the same" tags="*" />
+		<match lemma="direction" tags="*" />
+	</rule>
+	
+	
+	
+	
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="on" tags="pr" />
+		<match />
+		<match lemma="range" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="service" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="funcionar" tags="vblex.*" />
+		</match>
+		<match lemma="at" tags="pr" />
+		<match />
+		<match lemma="capacity" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="make" tags="vblex.*" />
+		<match />
+		<match />
+		<match lemma="market" tags="*" />
+		<match lemma="work" tags="vblex.*">
+			<select lemma="funcionar" tags="vblex.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="funcionar" tags="vblex.*" />
+		</match>
+		<match lemma="together" tags="*" />
+		<match lemma="effectively" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="funcionar" tags="vblex.*" />
+		</match>
+		<match lemma="for" tags="pr" />
+		<match />
+		<match />
+		<match lemma="european" tags="*" />
+		<match lemma="sea" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="explotar" tags="vblex.*" />
+		</match>
+		<match lemma="in" tags="pr" />
+		<match lemma="agriculture" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="work" tags="vblex.*">
+			<select lemma="obrar" tags="vblex.*" />
+		</match>
+		<match lemma="toward" tags="pr" />
+		<match />
+		<match lemma="objective" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="afirmar" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="be" tags="*" />
+		<match lemma="perfect" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="afirmar" tags="vblex.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="be" tags="*" />
+		<match lemma="make" tags="vblex.*" />
+		<match />
+		<match lemma="difference" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="afirmar" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="country" tags="*" />
+		<match lemma="be" tags="*" />
+		<match lemma="safe" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="n.*">
+			<select lemma="afirmar" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="advocate" tags="vblex.*" />
+		<match />
+		<match />
+		<match lemma="working" tags="*" />
+		<match lemma="environment" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="afirmar" tags="vblex.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="have" tags="vblex.*" />
+		<match lemma="take" tags="vblex.*" />
+		<match />
+		<match />
+		<match lemma="step" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="alegar" tags="vblex.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="be" tags="*" />
+		<match />
+		<match lemma="democratic" tags="*" />
+		<match lemma="institution" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="alegar" tags="vblex.*" />
+		</match>
+		<match lemma="ignorance" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="alegar" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="implementation" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="atribuirse" tags="vblex.*" />
+		</match>
+		<match lemma="credit" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="atribuirse" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="monopoly" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="atribuirse" tags="vblex.*" />
+		</match>
+		<match lemma="leader" tags="*" />
+		<match lemma="status" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="atribuirse" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="success" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="atribuirse" tags="vblex.*" />
+		</match>
+		<match lemma="ownership" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="resolution" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="claim" tags="vblex.*">
+			<select lemma="atribuirse" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="glory" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="pasar" tags="vblex.*" />
+		</match>
+		<match lemma="time" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="pasar" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="hour" tags="n.pl" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="pasar" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="rest" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="life" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="pasar" tags="vblex.*" />
+		</match>	
+		<match />
+		<match />
+		<match lemma="break" tags="n.pl" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="pasar" tags="vblex.*" />
+		</match>
+		<match />
+	  <or>
+	  	<match lemma="summer" tags="*" />
+	  	<match lemma="winter" tags="*" />
+	  </or>
+	  	<match lemma="holiday" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="pasar" tags="vblex.*" />
+		</match>
+		<match lemma="New" tags="*" />
+		<match lemma="Year" tags="*" />
+		<match lemma="'s" tags="gen" />
+	  <or>
+	  	<match lemma="Day" tags="*" />
+	  	<match lemma="Eve" tags="*" />
+	  </or>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="emplear" tags="vblex.*" />
+		</match>
+		<match />
+		<match />
+		<match lemma="resource" tags="n.pl" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="llevar" tags="vblex.*" />
+		</match>
+		<match lemma="plan" tags="vblex.*" />
+		<match />
+		<match />
+		<match lemma="mission" tags="n.pl" />
+	</rule>
+	
+
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="perder" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="mast" tags="*" />
+	</rule>
+	
+
+
+
+
+	<rule weight="1.0">
+		<match lemma="spend" tags="vblex.*">
+			<select lemma="dedicar" tags="vblex.*" />
+		</match>
+		<match lemma="time" tags="*" />
+		<match lemma="on" tags="*" />
+		<match lemma="something" tags="*" />
+	</rule>	
+
+	
+
+
+	<rule weight="1.0">
+		<match lemma="close" tags="vblex.*" />
+		<match />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+	
+
+	
+	<rule weight="1.0">
+		<match lemma="workforce" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match />
+		<match />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="Cisterna" tags="*" />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="beet" tags="*" />
+		<match lemma="process" tags="*" />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="fertiliser" tags="*" />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="manage" tags="vblex.*" />
+		<match />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="AZF" tags="*" />
+		<match lemma="plant" tags="n.*">
+			<select lemma="fabrikadom" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="offshore" tags="*" />
+		<match lemma="plant" tags="n.*">
+			<select lemma="maquinaria" tags="n.*" />
+		</match>
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="plant" tags="vblex.*">
+			<select lemma="colocar" tags="vblex.*" />
+		</match>
+		<match lemma="bomb" tags="n.pl" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="plant" tags="vblex.*">
+			<select lemma="sembrar" tags="vblex.*" />
+		</match>
+		<match />
+		<match lemma="crop" tags="n.pl" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="speaker" tags="n.*">
+			<select lemma="palayen" tags="n.*" />
+		</match>
+		<match lemma="from" tags="pr" />
+		<match />
+		<match />
+		<match lemma="country" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="speaker" tags="n.*">
+			<select lemma="palayen" tags="n.*" />
+		</match>
+		<match lemma="from" tags="pr" />
+		<match />
+		<match lemma="group" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="main" tags="*" />
+		<match lemma="speaker" tags="n.*">
+			<select lemma="interlocutor" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="respect" tags="*" />
+		<match lemma="for" tags="pr" />
+		<match />
+		<match lemma="speaker" tags="n.*">
+			<select lemma="interlocutor" tags="n.*" />
+		</match>
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="loud" tags="*" />
+		<match lemma="speaker" tags="n.*">
+			<select lemma="altavoz" tags="n.*" />
+		</match>
+		<match lemma="to" tags="pr" />
+		<match lemma="broadcast" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="speaker" tags="n.*">
+			<select lemma="presidente" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="parliament" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="speaker" tags="n.*">
+			<select lemma="presidente" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="danish" tags="*" />
+		<match lemma="Folketing" tags="*" />
+	</rule>
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="speaker" tags="n.*">
+			<select lemma="presidente" tags="n.*" />
+		</match>
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="cypriot" tags="*" />
+		<match lemma="parliament" tags="*" />
+	</rule>	
+	
+
+
+
+	<rule weight="1.0">
+		<match lemma="cut" tags="vblex.*" />
+		<match />
+		<match lemma="speaker" tags="n.*">
+			<select lemma="palayen" tags="n.*" />
+		</match>
+		<match lemma="off" tags="*" />
+	</rule>
+	
+
+
+
+
+	<rule weight="1.0">
+		<match lemma="frequency" tags="*" />
+		<match lemma="response" tags="*" />
+		<match lemma="of" tags="pr" />
+		<match />
+		<match lemma="speaker" tags="n.*">
+			<select lemma="altavoz" tags="n.*" />
+		</match>
+	</rule>		
+	
+	<rule weight="1.0"> 
+		<match lemma="snow" tags="n.*" />
+		<match tags="pr" />
+		<match />
+		<match lemma="slope" tags="n.*">
+			<select lemma="ladera" tags="n.f.*" />
+		</match>
+	</rule>		
+		
+	<rule weight="1.0"> 
+		<match lemma="snow" tags="n.*" />
+		<match tags="pr" />
+		<match />
+		<match />
+		<match lemma="slope" tags="n.*">
+			<select lemma="ladera" tags="n.f.*" />
+		</match>
+	</rule>		
+
+	<rule weight="1.0"> 
+		<match lemma="cost" tags="n.*">
+			<select lemma="gasto" tags="n.m.*" />
+		</match>
+                <match lemma="of" tags="pr" />
+		<match lemma="run" tags="vblex.ger">
+			<select lemma="functionar" tags="vblex.*" />
+		</match>
+	</rule>		
+
+        <rule weight="1.0" c=": 5"> 
+          <match lemma="save" tags="vblex.*"><select lemma="hifazi" tags="vblex.*" /></match>
+          <match lemma="money" tags="n.*" />
+        </rule>
+        <rule weight="2.0" c=": 5"> 
+          <match tags="det.pos.*" />
+          <match lemma="address" tags="n.*"><select lemma="adresu" /></match>
+        </rule>
+
+    
+    <rule weight="1.0">
+      <match lemma="as" tags="*">
+        <select lemma="denpul kom" tags="cnjadv" />
+      </match>
+      <match lemma="part" tags="n.*" />
+      <match lemma="de" tags="pr" />
+    </rule>
+    
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="archaeological" tags="adj" />
+        <match lemma="geological" tags="adj" />
+        <match lemma="paleontological" tags="adj" />
+      </or>
+      <match lemma="site" tags="n.*">
+        <select lemma="yacimiento" tags="n.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="country" tags="n.*" />
+        <match lemma="nation" tags="n.*" />
+        <match lemma="state" tags="n.*" />
+      </or>
+      <match lemma="'s" tags="gen" />
+      <match lemma="status" tags="n.*">
+        <select lemma="estatus" tags="n.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="global" tags="adj" />
+        <match lemma="national" tags="adj" />
+        <match lemma="continental" tags="adj" />
+        <match lemma="international" tags="adj" />
+        <match lemma="regional" tags="adj" />
+      </or>
+      <match lemma="military" tags="adj" />
+      <match lemma="power" tags="n.*">
+        <select lemma="potencia" tags="n.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="socioeconomic" tags="adj" />
+        <match lemma="social" tags="adj" />
+        <match lemma="economic" tags="adj" />
+        <match lemma="academic" tags="adj" />
+      </or>
+      <match lemma="performance" tags="n.*">
+        <select lemma="rendimiento" tags="n.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="from" tags="pr" />
+        <match lemma="of" tags="pr" />
+        <match lemma="in" tags="pr" />
+      </or>
+      <match lemma="a" tags="det.ind.*" />
+      <match lemma="letter" tags="n.*">
+        <select lemma="suratu" tags="n.*" />
+      </match>
+      <or>
+        <match lemma="date" tags="vblex.pp" />
+        <match lemma="find" tags="vblex.pp" />
+        <match lemma="write" tags="vblex.pp" />
+      </or>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="draft" tags="n.*" />
+        <match lemma="version" tags="n.*" /> 
+      </or>
+      <match lemma="of" tags="pr" />
+      <or>
+        <match lemma="the" tags="det.def.*" />
+        <match lemma="a" tags="det.ind.*" />
+      </or>
+      <match lemma="article" tags="n.*">
+        <select lemma="mon" tags="n.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="use" tags="vblex.*" />
+        <match lemma="apply" tags="vblex.*" />
+        <match lemma="employ" tags="vblex.*" />
+      </or>
+      <or>
+        <match lemma="the" tags="det.def.*" />
+        <match lemma="a" tags="det.ind.*" />
+      </or>
+      <match lemma="term" tags="n.*">
+        <select lemma="watumon" tags="n.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <or>
+        <match lemma="prpers" tags="prn.subj.*" />
+        <match tags="np.*" />
+      </or>
+      <match lemma="appear" tags="vblex.*">
+        <select lemma="aparecer" tags="vblex.*" />
+      </match>
+    </rule>
+
+    
+    <rule weight="1.0">
+      <match lemma="collection" tags="n.*">
+        <select lemma="grupo" tags="n.*" />
+      </match>
+      <match lemma="of" tags="pr" />
+      <match lemma="independent" tags="adj" />
+      <or>
+        <match lemma="state" tags="n.pl" />
+        <match lemma="country" tags="n.pl" />
+        <match lemma="nation" tags="n.pl" />
+        <match lemma="region" tags="n.pl" />
+        <match lemma="province" tags="n.pl" />
+      </or>
+    </rule>
+    
+    
+    <rule weight="1.0">
+      <match lemma="over" tags="pr">
+        <select lemma="a lo largo de" tags="pr" />
+      </match>
+      <match lemma="the" tags="det.def.*" />
+      <or>
+        <match lemma="year" tags="n.*" />
+        <match lemma="month" tags="n.*" />
+        <match lemma="day" tags="n.*" />
+        <match lemma="week" tags="n.*" />
+        <match lemma="hour" tags="n.*" />
+        <match lemma="decade" tags="n.*" />
+        <match lemma="century" tags="n.*" />
+
+        <match lemma="summer" tags="n.*" />
+        <match lemma="winter" tags="n.*" />
+        <match lemma="autumn" tags="n.*" />
+        <match lemma="spring" tags="n.*" />
+        <match lemma="fall" tags="n.*" />
+      </or>
+    </rule>
+			
 </rules>
-
-<!--
-Resources:
-    https://wiki.apertium.org/wiki/How_to_get_started_with_lexical_selection_rules
-    https://wiki.apertium.org/wiki/Constraint-based_lexical_selection
-    https://wiki.apertium.org/wiki/Lexical_selection
-    https://wiki.apertium.org/wiki/Learning_rules_from_parallel_and_non-parallel_corpora
--->
-

@@ -103,6 +103,9 @@ TODO
 
 * Improve the periphrastic translations to better handle adverbs and negation.
 * Implement Word sense disambiguation. One could start with the Lexical selection rules used for English->Spanish
+* One could make use of the existing parallel texts to train a machine learned word sense disambiguation.
+  * most of the text at https://doxo.globasa.net/ has parallel English text
+* Introduce translations between other variants of English like Early Modern English
 * Globasa to English
   * Decomposing coumpounds[https://wiki.apertium.org/wiki/Compounds] and derivations would be very useful. One could use this to reverse engineer derivations that are not in the dictionary to give a literal translation.
 * Anaphora resolution

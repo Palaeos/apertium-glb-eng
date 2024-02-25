@@ -2,21 +2,61 @@
 !! ATTRIBUTE CATEGORIES
 !!!!!!!!!!!!!!!
 
-number = (ND sg) sg pl sp ND;
-gender = (GD m) m f mf GD;
-det_type = def ind dem itg;
-tense = pres past fut ifi pri fti;
+number = sg pl sp ND;
+gender_ENG = m f mf nt GD;
+gender_GLB = m f ut nt GD;
+det_type = def ind dem itg pos;
+definite = def ind;
+copula = vbser vblex;
+articles = the a an;
+degree = comp sup;
+person = p1 p2 p3;
+prespast = pres past;
+modal = abil ingay musi;
+finite = pres past fut cni imp;
+aspect = prog impf pros;
+tense = [finite] inf pprs ger pp;
+preflist = aw ex per;
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
+
+
 n: _.gender.number;
 adj: _.gender.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
+vblex: _.tense.person.number;
+vbmod: _.tense.person.number;
 
 NP: _.number;
+
+npcomp: _.number;
+NNP: _;
+CNP: _;
+DP: _;
+NOM: _;
+CONJ: _;
+
+AP: _;
+AJ: _.degree;
+AJC: _;
+AVP: _;
+
+! tense is an output of the verbal phrases so that the information can be used for determining the tense marker in the Globasa.
+
+WILL: _.tense;
+BE: _.tense;
+HAVE: _.tense;
+VP: _.tense;
+PVP: _.tense;
+DVP: _;
+PRN: _.person.gender_GLB.number;
+S: _;
+
+REL: _;
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -36,6 +76,10 @@ det: (if (1.det_type = def or 1.det_type = ind)
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
+
+DVP ->   u@vbpr.[prespast] vblex {  2[tense=1.tense] }|
+         vbmod na vblex { 1  3[tense=inf] }|
+         0.1: u@vbpr vblex {  2[tense=pres] };
 
 ! Example rule:
 ! Input:  ^ראש<n><m><sg>/hovud<n><nt><sg>$ ^גדול<adj><m><sg>/stor<adj><m><sg>$

@@ -24,8 +24,9 @@ preflist = aw ex per;
 
 
 
-n: _.gender.number;
-adj: _.gender.number;
+n: _.gender_ENG.number;
+adj: _;
+prn: _.person.gender_ENG.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
 vblex: _.tense.person.number;
@@ -53,7 +54,7 @@ HAVE: _.tense;
 VP: _.tense;
 PVP: _.tense;
 DVP: _;
-PRN: _.person.gender_GLB.number;
+PRN: _.person.gender_ENG.number;
 S: _;
 
 REL: _;
@@ -78,8 +79,10 @@ det: (if (1.det_type = def or 1.det_type = ind)
 !!!!!!!!!!!!!!!
 
 DVP ->   u@vbpr.[prespast] vblex {  2[tense=1.tense] }|
-         vbmod na vblex { 1  3[tense=inf] }|
-         0.1: u@vbpr vblex {  2[tense=pres] };
+         vbmod na vblex { 1 _  3[tense=inf] }|
+         0.1: vblex {  1[tense=pres] };
+
+S -> n DVP {1 2[person=p3,number=sg]}| n DVP {1 2[person=p3,number=sg]}| prpers@prn.p3.*.sg DVP {1 _ 2[person=p3,number=sg]};
 
 ! Example rule:
 ! Input:  ^ראש<n><m><sg>/hovud<n><nt><sg>$ ^גדול<adj><m><sg>/stor<adj><m><sg>$

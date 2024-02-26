@@ -5,7 +5,7 @@
 number = sg pl sp ND;
 gender_ENG = m f mf nt GD;
 gender_GLB = m f ut nt GD;
-det_type = def ind dem itg pos;
+det_type = def ind dem itg pos qnt;
 definite = def ind;
 copula = vbser vblex;
 articles = the a an;
@@ -38,11 +38,14 @@ pfx: _;
 prn: _.person.gender_GLB.number;
 det_pos: _.<pos>.person.gender_GLB.number;
 det_pos_cor: _.<pos>;
+det_qnt_cor: _.<qnt>;
 det_def: _;
 
 ! The resulting Globasa determiner will either be possessive with the associated tags "Misu", "yusu", etc. or not
 
-det: (if (1.HasSuffix = gender_GLB and 1.HasSuffix = number )
+det: (if (1.det_type = qnt)
+         1(det_qnt_cor)
+      elif (1.HasSuffix = gender_GLB and 1.HasSuffix = number )
          1(det_pos)
       elif (1.det_type = pos)
          1(det_pos_cor)
@@ -135,7 +138,7 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 
 copula -> be@vblex.$tense { 1 } | vbser.$tense { 1 };
 
-quant -> num {1};
+quant -> num {1}| det_qnt_cor {1};
 
 !v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
 
@@ -159,13 +162,13 @@ NP -> npcomp.$number { 1 } |
       1: AJC npcomp.$number { 1 _ 2 } ;
 
 ! Extracts the number information from the noun to determine the right numeral to put before
-NNP -> quant NP.$number  { 1 _ 2 }| quant NP.$number  { 1 _ 2 }|
-            NP.$number  (if (1.number = sg)
-            { un@num _ 1 }
-            elif (1.number = pl)
-            { plu@adj _ 1 }
-            else
-            { 1 }
+NNP ->      20:num NP.$number  { 1 _ 2 }
+            |
+            20:det_qnt_cor NP.$number  { 1 _ 2 }
+            |
+            NP.$number  (if (1.number = sg) { un@num _ 1 }
+            elif (1.number = pl)  { plu@adj _ 1 }
+            else { 1 }
             )|
             ! inserts implied pronouns after adjectives. a numeral if available is used to pick the right number.
             AJC  {  1 _ prpers@prn.p3.GD.sg }|
@@ -178,7 +181,7 @@ NNP -> quant NP.$number  { 1 _ 2 }| quant NP.$number  { 1 _ 2 }|
 
 ! Translates the number information from the noun into the right numeral to put before.
 CNP ->      det_pos.$gender_ENG.$number NNP {1[gender_GLB = 1.gender_ENG>gender_GLB] _ 2 }|
-            NNP of@pr prn.$gender_ENG.$number {prprs@det.number.gender_GLB _ 1 }|
+            NNP of@pr prn.$gender_ENG.$number {prprs@det.[3.number].[3.gender_GLB] _ 1 }|
             NNP { 1 };
 
 ! Accounts for determiners and removes definite/indefinite articles
@@ -189,8 +192,10 @@ DP -> [articles]@det CNP { 2 }|
 
 
 ! Accounts for any number of adverbs
-AVP -> 0.1:adv AVP { 1 _ 2 }  |
-       adv { 1 } ;
+AVP -> 0.1:adj.ord AVP { 1 _ 2 }  |
+       adj.ord { 1 } |
+       0.1:adv AVP { 1 _ 2 }  |
+       adv { 1 } ; 
 
 ! Accounts for any number of adjectival phrases and carries forth the comparative degree to later convert to an adverb.
 AJ -> AVP adj.$degree { 1 _ 2 } |
@@ -230,15 +235,16 @@ VP -> vv.$tense { 1 }| AVP vv.$tense { 1 };
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
 DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
-         will@vbmod.$tense_PP be@vblex.inf VP.[ing] { u@vbpr.[1.tense>tense_PP].impf _ 3[tense=pres] }|
+         20:shall@vbmod.pres VP.inf { u@vbpr.fut _ 2 }|
+         will@vbmod.$tense_PP be@vblex.inf VP.ger { u@vbpr.[1.tense>tense_PP].impf _ 3[tense=pres] }|
          will@vbmod.$tense_PP be@vblex.inf go@vblex.[ing] to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5[tense=inf] }|
-         will@vbmod.$tense_PP not@adv be@vblex.inf VP.$tense.[ing] { u@vbpr.[1.tense>tense_PP].impf.neg _ 4[tense=inf] }|
+         will@vbmod.$tense_PP not@adv be@vblex.inf VP.$tense.ger { u@vbpr.[1.tense>tense_PP].impf.neg _ 4[tense=inf] }|
          will@vbmod.$tense_PP have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf _ 3[tense=inf] }|
          will@vbmod.$tense_PP have@vbhaver.inf not@adv VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4[tense=inf] }|
          will@vbmod.$tense_PP not@adv have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4[tense=inf] }|
          20:vbdo.$tense VP.inf { u@vbpr.[1.tense].aff _ 2[tense=inf] }|
          20:vbdo.$tense not@adv VP.inf { u@vbpr.[1.tense].neg _ 3[tense=inf] }|
-         20:have@vbhaver be@vblex.pp VP.[ing] { u@vbpr.[1.tense] _ dupul@adv _ 3[tense=inf] }|
+         20:have@vbhaver be@vblex.pp VP.ger { u@vbpr.[1.tense] _ dupul@adv _ 3[tense=inf] }|
          20:have@vbhaver VP.pp { u@vbpr.[1.tense].perf _ 2[tense=pres] }|
          20:have@vbhaver be@vblex.pp { u@vbpr.[1.tense].perf _ 2[tense=inf] }|
          20:have@vbhaver not@adv VP.pp { u@vbpr.[1.tense].perf.neg _ 3[tense=inf] }|
@@ -246,11 +252,11 @@ DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          20:be@vblex AJC { u@vbpr.[1.tense] _ 1[tense=inf] _ 2 }|
          20:be@vblex not@adv { u@vbpr.[1.tense].neg _ 1[tense=inf] }|
          20:be@vblex not@adv AJC { u@vbpr.[1.tense].neg _ 1[tense=inf] _ 3 }|
-         BE.[finite] VP.[ing] { u@vbpr.[1.tense].impf _ 2[tense=inf] }|
-         BE.[finite] go@vblex.[ing] to@pr VP.inf { u@vbpr.[1.tense].pros _ 4[tense=inf] }|
+         BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ 2[tense=inf] }|
+         BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ 4[tense=inf] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
          to@pr VP.inf{ u@vbpr.inf _ 2 }|
-         VP.[finite]{ u@vbpr.[1.tense] _ 1 } ! Main issue is that this rule in infinitives takes precedence over the future tense rule above.
+         VP.[finite]{ u@vbpr.[1.tense] _ 1 }
          ;
 
 ! Abstracts away any pronouns, noun phrases or proper nouns

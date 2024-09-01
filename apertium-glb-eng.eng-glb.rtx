@@ -252,10 +252,10 @@ DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          20:have@vbhaver %be@vblex.pp DP { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|  
          20:have@vbhaver %be@vblex.pp AJC { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|
          20:have@vbhaver not@adv %VP.pp { u@vbpr.[1.tense].perf.neg _ %3[tense=""] }|
-         20:be@vblex AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
-         20:be@vblex AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
-         20:be@vblex not@adv { u@vbpr.[1.tense].neg _ %1[tense=""] }|
-         20:be@vblex not@adv AJC { u@vbpr.[1.tense].neg _ %1[tense=""] _ 3 }|
+         20:be@[copula] AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
+         20:be@[copula] AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
+         20:be@[copula] not@adv { u@vbpr.[1.tense].neg _ %1[tense=""] }|
+         20:be@[copula] not@adv AJC { u@vbpr.[1.tense].neg _ %1[tense=""] _ 3 }|
          BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ %2[tense=""] }|
          BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ %4[tense=""] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|

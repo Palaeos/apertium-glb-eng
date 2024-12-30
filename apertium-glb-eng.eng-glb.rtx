@@ -15,6 +15,7 @@ finite = pres past fut cni imp;
 modal = can should may must could;
 aspect = prog impf pros;
 tense = [finite] inf pprs ger pp;
+out_tense = pprs ger pp;
 preflist = aw ex per;
 
 ing = pprs ger;
@@ -65,7 +66,7 @@ vbmod: _.tense;
 
 cnjsub: _;
 
-vblex: _;
+vblex: _.out_tense;
 vbinf: _.<inf>;
 prepv: _.tense;
 copula: _.tense; 
@@ -126,6 +127,8 @@ REL: _;
 tense > tense_PP : pres fut, past cni;
 tense_PP > tense : pres fut, past cni;
 
+tense > out_tense : pres pres, past past;
+
 gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 
 
@@ -147,9 +150,9 @@ quant -> num {1} | several@det_ind_cor {1};
 
 ! For lexical verbs, takes adverbs after or or followed by a nominal phrase and converts them into prefixes. For instance "die away" -> "awmorcu"
 ! This rule interferes with the will/would tense marking.
-prepv ->    vblex.$tense {1}
-            | 0.01:vblex.$tense adv ? ((3.lem/tl in preflist)) {2 1}|
-             0.01:vblex.$tense * adv ? ((3.lem/tl in preflist)) {3 1 _ 2}
+prepv ->    0.01: vblex.$tense {%1}
+            | 0.01:vblex.$tense adv ? ((3.lem/tl in preflist)) {2 %1}|
+             0.01:vblex.$tense * adv ? ((3.lem/tl in preflist)) {3 %1 _ 2}
             ;
 
 ! Merges open noun-noun compounds together
@@ -162,14 +165,14 @@ npcomp ->   n.$number { 1 }|
 
 ! Accounts for any number of adjectives, even with arbitrary degree adverbs
 NP -> npcomp.$number { 1 } |
-      1: AJC npcomp.$number { 1 _ 2 } ;
+      0.1: AJC npcomp.$number { 1 _ 2 } ;
 
 ! Extracts the number information from the noun to determine the right numeral to put before
-NNP ->      20:num NP.$number  { 1 _ 2 }
+NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             |
-            20:det_qnt_cor NP.$number  { 1 _ 2 }
+            5:det_qnt_cor NP.$number  { 1 _ 2 }
             |
-            20:det_ind_cor NP.$number  { 1 _ 2 }
+            0.1 : 20:det_ind_cor NP.$number  { 1 _ 2 }
             |
             0.01: NP.$number  (if (1.number = sg) { un@num[lemcase=1.lemcase] _ 1 }
             elif (1.number = pl)  { plu@adj _ 1 }
@@ -229,16 +232,13 @@ HAVE -> WILL.$tense vbhaver@vblex {  2 }|
 
 
 ! Detects passive constructions and prefixes the verb accordingly.
-vv  -> prepv.$tense { 1 } |
-      be@vbser.$tense prepv.pp { be@pfx 2[tense = 1.tense] } |
-      be@vbser.$tense prepv.pp by@pr { be@pfx 2[tense = 1.tense] }
-      |be@vbser.$tense AVP prepv.pp { 2 be@pfx 3[tense = 1.tense] } 
-      |be@vbser.$tense AVP prepv.pp by@adv { 2 be@pfx 3[tense = 1.tense] }
-;
+vv  -> prepv.$tense { %1 } |
+      BE.$tense prepv.pp { be@pfx %2[tense = 1.tense] } |
+      BE.$tense prepv.pp by@pr { be@pfx %2[tense = 1.tense] };
 
 ! Accounts for any adverb modifying the verb.
 
-VP -> vv.$tense { 1 }| AVP vv.$tense { 1 };
+VP -> vv.$tense { %1 }| AVP vv.$tense { 1 %2 };
 
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
@@ -252,26 +252,21 @@ DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          will@vbmod.$tense_PP have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf _ 3[tense=inf] }|
          will@vbmod.$tense_PP have@vbhaver.inf not@adv VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4[tense=inf] }|
          will@vbmod.$tense_PP not@adv have@vbhaver.inf VP.pp { u@vbpr.[1.tense>tense_PP].perf.neg _ 4[tense=inf] }|
-         20:vbdo.$tense VP.inf { u@vbpr.[1.tense].aff _ 2[tense=inf] }|
+         20:vbdo.$tense VP.inf { u@vbpr.[1.tense].aff _ %2[tense=""] }|
          20:vbdo.$tense not@adv VP.inf { u@vbpr.[1.tense].neg _ 3[tense=inf] }|
          20:have@vbhaver be@vblex.pp VP.ger { u@vbpr.[1.tense] _ dupul@adv _ 3[tense=inf] }|
-         20:have@vbhaver VP.pp { u@vbpr.[1.tense].perf _ 2[tense=pres] }|
-         20:have@vbhaver be@vblex.pp { u@vbpr.[1.tense].perf _ 2[tense=inf] }|
-         20:have@vbhaver not@adv VP.pp { u@vbpr.[1.tense].perf.neg _ 3[tense=inf] }|
-         20:be@vblex AJC { u@vbpr.[1.tense] _ 1[tense=inf] _ 2 }|
-         20:be@vblex AJC { u@vbpr.[1.tense] _ 1[tense=inf] _ 2 }|
-         20:be@vblex not@adv { u@vbpr.[1.tense].neg _ 1[tense=inf] }|
-         20:be@vblex not@adv AJC { u@vbpr.[1.tense].neg _ 1[tense=inf] _ 3 }|
-         4: BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ 2[tense=inf] }|
-         4: BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ 4[tense=inf] }|
+         20:have@vbhaver %VP.pp{ u@vbpr.[1.tense].perf _ %2[tense=""] }|
+         20:have@vbhaver %be@vblex.pp DP { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|  
+         20:have@vbhaver %be@vblex.pp AJC { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|
+         20:have@vbhaver not@adv %VP.pp { u@vbpr.[1.tense].perf.neg _ %3[tense=""] }|
+         20:be@[copula] AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
+         20:be@[copula] AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
+         20:be@[copula] not@adv { u@vbpr.[1.tense].neg _ %1[tense=""] }|
+         20:be@[copula] not@adv AJC { u@vbpr.[1.tense].neg _ %1[tense=""] _ 3 }|
+         BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ %2[tense=""] }|
+         BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ %4[tense=""] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
-         to@pr VP.inf{ u@vbpr.inf _ 2 }|
-         20: by@adv VP.pprs { yon@pr _ u@vbpr.inf _ 2 }|
-         20: while@adv VP.pprs { dur@pr u@vbpr.inf _ 2 }|
-         20: without@adv VP.subs { nenyon@pr u@vbpr.inf _ 2 }|
-         20:VP.subs { u@vbpr.inf _ 1 }|
-         20:pr VP.subs { 1 u@vbpr.inf _ 2 }|
-         1:VP.ger { u@vbpr.inf _ 1 }|
+         20:to@pr VP.inf{ u@vbpr.inf _ 2 }|
          VP.[finite]{ u@vbpr.[1.tense] _ 1 }
 
          ;

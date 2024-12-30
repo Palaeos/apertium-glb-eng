@@ -11,8 +11,12 @@ copula = vbser vblex;
 articles = the a an;
 degree = comp sup;
 person = p1 p2 p3;
+personlex = p3;
+numbervblex = sg;
 prespast = pres past;
+futcondi = fut cni;
 modal = abil ingay musi;
+case = subj obj;
 finite = pres past fut cni imp;
 aspect = prog impf pros;
 tense = [finite] inf pprs ger pp;
@@ -24,12 +28,15 @@ preflist = aw ex per;
 
 
 
-n: _.gender_ENG.number;
+n: _.number;
 adj: _;
-prn: _.person.gender_ENG.number;
+pr: _;
+num: _;
+prn: _.case.person.gender_ENG.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
 vblex: _.tense.person.number;
+vbpr: _.tense.aspect;
 vbmod: _.tense.person.number;
 
 NP: _.number;
@@ -53,7 +60,7 @@ BE: _.tense;
 HAVE: _.tense;
 VP: _.tense;
 PVP: _.tense;
-DVP: _;
+DVP: _.tense.person.number;
 PRN: _.person.gender_ENG.number;
 S: _;
 
@@ -64,6 +71,7 @@ REL: _;
 !!!!!!!!!!!!!!!
 
 tense > tense : ifi past, pri pres, fti fut;
+tense > tense_PP : fut pres, cni past;
 
 !!!!!!!!!!!!!!!
 !! MACROS
@@ -78,11 +86,29 @@ det: (if (1.det_type = def or 1.det_type = ind)
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
-DVP ->   u@vbpr.[prespast] vblex {  2[tense=1.tense] }|
-         vbmod na vblex { 1 _  3[tense=inf] }|
-         0.1: vblex {  1[tense=pres] };
+NP -> %n {1}|
+      adj %NP {1 _ 2};
 
-S -> n DVP {1 2[person=p3,number=sg]}| n DVP {1 2[person=p3,number=sg]}| prpers@prn.p3.*.sg DVP {1 _ 2[person=p3,number=sg]};
+NNP -> %NP {%1[number=sg]}|
+      %num NP {1 %2[number=pl]}|
+      5: %un@num NP {%2[number=sg]}|
+      plu@adj %NP {%2[number=pl]};
+
+NOM -> NP {1}| prn {1};
+
+DVP ->   u@vbpr.[prespast] %vblex {  %2[person=$person, number=$number] }|
+         u@vbpr.[prespast] %vblex {  %2[person=$person, number=$number] }|
+         u@vbpr.[futcondi] %vblex {  will@vbmod.[1.tense>tense_PP] _ %2[tense = inf, person=$person, number=$number] }|
+         5: u@vbpr.inf %vblex { to@pr _  2[tense=inf] }|
+         [modal]@vbmod.$tense u@vbpr.inf %vblex { 1[tense=pres] _  3[tense=2.tense] }|
+         0.01: %vblex.$tense {  %1[tense=pres, person=$person, number=$number] }
+;
+
+S -> n DVP {1[number=sg] _ 2[person=p3,number=sg]}|
+     prpers@prn %DVP {1[case=subj, person=1.person, number=1.number] _ %2[person=1.person, number=1.number]}|
+     prpers@prn %DVP prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3[case=obj]}|
+     prpers@prn %DVP pr prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3 _ 4[case=obj]}
+;
 
 ! Example rule:
 ! Input:  ^ראש<n><m><sg>/hovud<n><nt><sg>$ ^גדול<adj><m><sg>/stor<adj><m><sg>$

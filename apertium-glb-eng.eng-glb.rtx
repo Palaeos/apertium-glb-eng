@@ -26,7 +26,6 @@ tense_PP = pres past;
 
 
 
-!!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
@@ -38,13 +37,16 @@ pfx: _;
 prn: _.person.gender_GLB.number;
 det_pos: _.<pos>.person.gender_GLB.number;
 det_pos_cor: _.<pos>;
-det_qnt_cor: _.<qnt>;
+det_qnt_cor: _.<qnt>.number;
+det_ind_cor: _.<qnt>.number;
 det_def: _;
 
 ! The resulting Globasa determiner will either be possessive with the associated tags "Misu", "yusu", etc. or not
 
 det: (if (1.det_type = qnt)
          1(det_qnt_cor)
+      elif (1.det_type = ind)
+         1(det_ind_cor)
       elif (1.HasSuffix = gender_GLB and 1.HasSuffix = number )
          1(det_pos)
       elif (1.det_type = pos)
@@ -85,6 +87,7 @@ nou: _;
 
 NP: _.number;
 npcomp: _.number;
+seq: _;
 NNP: _;
 CNP: _;
 DP: _;
@@ -138,7 +141,7 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 
 copula -> be@vblex.$tense { 1 } | vbser.$tense { 1 };
 
-quant -> num {1}| det_qnt_cor {1};
+quant -> num {1} | several@det_ind_cor {1};
 
 !v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
 
@@ -166,7 +169,9 @@ NNP ->      20:num NP.$number  { 1 _ 2 }
             |
             20:det_qnt_cor NP.$number  { 1 _ 2 }
             |
-            NP.$number  (if (1.number = sg) { un@num _ 1 }
+            20:det_ind_cor NP.$number  { 1 _ 2 }
+            |
+            0.01: NP.$number  (if (1.number = sg) { un@num[lemcase=1.lemcase] _ 1 }
             elif (1.number = pl)  { plu@adj _ 1 }
             else { 1 }
             )|
@@ -185,10 +190,10 @@ CNP ->      det_pos.$gender_ENG.$number NNP {1[gender_GLB = 1.gender_ENG>gender_
             NNP { 1 };
 
 ! Accounts for determiners and removes definite/indefinite articles
-DP -> [articles]@det CNP { 2 }|
-      det_pos_cor CNP {1 _ 2 }|
-      det_def CNP {1 _ 2 }|
-      CNP { 1 };
+DP -> [articles]@det NNP { 2[lemcase=1.lemcase] }|
+      det_pos_cor NNP {1 _ 2 }|
+      !det_def NNP {1 _ 2 }|
+      NNP { 1 };
 
 
 ! Accounts for any number of adverbs
@@ -225,8 +230,11 @@ HAVE -> WILL.$tense vbhaver@vblex {  2 }|
 
 ! Detects passive constructions and prefixes the verb accordingly.
 vv  -> prepv.$tense { 1 } |
-      BE.$tense prepv.pp { be@pfx 2[tense = 1.tense] } |
-      BE.$tense prepv.pp by@pr { be@pfx 2[tense = 1.tense] };
+      be@vbser.$tense prepv.pp { be@pfx 2[tense = 1.tense] } |
+      be@vbser.$tense prepv.pp by@pr { be@pfx 2[tense = 1.tense] }
+      |be@vbser.$tense AVP prepv.pp { 2 be@pfx 3[tense = 1.tense] } 
+      |be@vbser.$tense AVP prepv.pp by@adv { 2 be@pfx 3[tense = 1.tense] }
+;
 
 ! Accounts for any adverb modifying the verb.
 
@@ -234,7 +242,9 @@ VP -> vv.$tense { 1 }| AVP vv.$tense { 1 };
 
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
-DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
+DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
+         1:will@vbmod.$tense_PP { u@vbpr.[1.tense>tense_PP] }|
+         20:will@vbmod.$tense_PP AVP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 _ 3 }|
          20:shall@vbmod.pres VP.inf { u@vbpr.fut _ 2 }|
          will@vbmod.$tense_PP be@vblex.inf VP.ger { u@vbpr.[1.tense>tense_PP].impf _ 3[tense=pres] }|
          will@vbmod.$tense_PP be@vblex.inf go@vblex.[ing] to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5[tense=inf] }|
@@ -252,21 +262,34 @@ DVP ->   20:will@vbmod.$tense_PP VP.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          20:be@vblex AJC { u@vbpr.[1.tense] _ 1[tense=inf] _ 2 }|
          20:be@vblex not@adv { u@vbpr.[1.tense].neg _ 1[tense=inf] }|
          20:be@vblex not@adv AJC { u@vbpr.[1.tense].neg _ 1[tense=inf] _ 3 }|
-         BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ 2[tense=inf] }|
-         BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ 4[tense=inf] }|
+         4: BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ 2[tense=inf] }|
+         4: BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ 4[tense=inf] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
          to@pr VP.inf{ u@vbpr.inf _ 2 }|
+         20: by@adv VP.pprs { yon@pr _ u@vbpr.inf _ 2 }|
+         20: while@adv VP.pprs { dur@pr u@vbpr.inf _ 2 }|
+         20: without@adv VP.subs { nenyon@pr u@vbpr.inf _ 2 }|
+         20:VP.subs { u@vbpr.inf _ 1 }|
+         20:pr VP.subs { 1 u@vbpr.inf _ 2 }|
+         1:VP.ger { u@vbpr.inf _ 1 }|
          VP.[finite]{ u@vbpr.[1.tense] _ 1 }
+
          ;
 
 ! Abstracts away any pronouns, noun phrases or proper nouns
 NOM -> DP {1}| prn {1}| np {1};
+
+
+seq -> from@pr NOM to@pr NOM { xorfe@pr[lemcase=1.lemcase] _ 2 _ finfe@pr[lemcase=3.lemcase] _ 4};
 
 CONJ -> for@pr the@det reason@n that@cnjsub {denseba@abv _ hu@cnjsub };
 
 ! Translates the relative clause with the resumptive "da" in the right place
 REL -> prn.rel DVP {hu@cnjsub _ da@prn _ 2 }|
        prn.rel NOM DVP {hu@cnjsub  _ 2  _ 3  _ da@prn }|
+       pr prn.rel DVP {hu@cnjsub _ 1 _ da@prn _ 3 }|
+       1:pr prn.rel NOM DVP {hu@cnjsub  _ 3  _ 4 _ 1 _ da@prn }|
+       40: pr prn.rel NOM DVP NOM {hu@cnjsub  _ 3  _ 4 _ 5 _ 1 _ da@prn }|
        whom@prn NOM DVP {hu@cnjsub _ 2  _ 3  _ da@prn };
 
 ! Attempt to translate the lexical verb questions to starting with "kam"

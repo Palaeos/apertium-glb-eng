@@ -18,6 +18,7 @@
     <sdef n="cnjadv"          c="Adverbial conjunction"/>
     <sdef n="pr"              c="Preposition"/>
     <sdef n="adv"             c="Adverb"/>
+    <sdef n="preadv"          c="Preadverb"/>
     <sdef n="ij"              c="Interjection"/>
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
@@ -122,6 +123,11 @@
        after, although, if, unless, so that, and because  -->
 
 <e>       <p><l>ji<s n="cnjcoo"/></l>                 <r>and<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>iji<s n="cnjcoo"/></l>                 <r>both<s n="cnjcoo"/></r></p></e>
+
+
+<e>       <p><l>moydua<s n="det"/><s n="ind"/><s n="pl"/><j/>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l>                 <r>both<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
+
 
     <!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
 <e>       <p><l>ji<b/>pia<s n="cnjcoo"/></l>        <r>and<b/>also<s n="cnjcoo"/></r></p></e>
@@ -144,6 +150,17 @@
 <e>       <p><l>per<s n="pfx"/></l>                 <r>on<s n="adv"/></r></p></e>
 <e>       <p><l>per<s n="pfx"/></l>                 <r>over<s n="adv"/></r></p></e>
 
+<e>       <p><l>xafe<s n = "pr"/><b/>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></l>                 <r>then<s n="cnjadv"/></r></p></e>
+
+<e>       <p><l>xafe<s n = "pr"/><b/>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></l>                 <r>and<s n="cnjcoo"/><j/>then<s n="cnjadv"/></r></p></e>
+
+<e><p><l>kom<s n = "pr"/></l>   <r>as<s n = "pr"/></r></p></e>
+
+<e>       <p><l>moydua<s n="det"/><s n="ind"/><s n="pl"/><j/>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l>                 <r>both<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
+
+
+<e><p><l>triunfa<s n = "vblex"/></l>   <r>triumph<s n = "vblex"/></r></p></e>
+
 <e><p><l>alopul<b/>kom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
 <e><p><l>celki<s n = "cnjsub"/></l>   <r>so<b/>that<s n = "cnjsub"/></r></p></e>
 <e><p><l>celki<s n = "cnjsub"/></l>   <r>in<b/>order<b/>for<s n = "cnjsub"/></r></p></e>
@@ -152,7 +169,7 @@
 <e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>as<s n = "cnjsub"/></r></p></e>
 <e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>such<b/>as<s n = "cnjsub"/></r></p></e>
 <e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>like<s n = "cnjsub"/></r></p></e>
-<e><p><l>denwatu<b/>hu<s n = "cnjsub"/></l>   <r>whenever<s n = "cnjsub"/></r></p></e>
+<e><p><l>denwatu<s n="adv"/><j/>hu<s n = "cnjsub"/></l>   <r>whenever<s n = "cnjsub"/></r></p></e>
 <e><p><l>durki<s n = "cnjsub"/></l>   <r>while<s n = "cnjsub"/></r></p></e>
 <e><p><l>eger<s n = "cnjsub"/></l>   <r>if<s n = "cnjsub"/></r></p></e>
 <e><p><l>eger<b/>no<s n = "cnjsub"/></l>   <r>if<b/>not<s n = "cnjsub"/></r></p></e>
@@ -269,13 +286,18 @@
 
 <e>       <p><l>ki<s n="cnjsub"/></l>                   <r>that<s n="cnjsub"/></r></p></e>
 
+<e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
 <e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
 <e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
+<e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
 <e>       <p><l>den<s n="det"/></l>                   <r>that<s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
 <e>       <p><l>den<s n="det"/></l>                   <r>that<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 
 <e>       <p><l>ke<s n="det"/></l>                   <r>what<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
 <e>       <p><l>ke<s n="det"/></l>                   <r>which<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+
+<e>       <p><l>ke<s n="det"/></l>                   <r>what<s n="det"/><s n="itg"/><s n="sg"/></r></p></e>
+<e>       <p><l>ke<s n="det"/></l>                   <r>which<s n="det"/><s n="itg"/><s n="sg"/></r></p></e>
 
 <e><p><l>ban<s n = "det"/></l>   <r>some<s n = "det"/><s n="ind"/><s n="sp"/></r></p></e>
 <e><p><l>bannumer<s n = "det"/></l>   <r>some<b/>number<b/>(of)<s n = "det"/></r></p></e>
@@ -303,9 +325,13 @@
 
 <e><p><l>banete<s n = "prn"/></l>   <r>some<b/>of<b/>them<s n = "prn"/></r></p></e>
 <e><p><l>banoto<s n = "prn"/></l>   <r>some<b/>things<s n = "prn"/></r></p></e>
+
+<e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>somebody<s n = "prn"/></r></p></e>
 <e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>somebody<s n = "prn"/></r></p></e>
 <e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>someone<s n = "prn"/></r></p></e>
 <e><p><l>banto<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>something<s n = "prn"/></r></p></e>
+
+<e>       <p><l>banøtø<s n="prn"/><s n="GD"/><s n="pl"/></l>                   <r>some<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
 
 <e>       <p><l>ke<s n="det"/><s n="pos"/></l>                             <r>whose<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
 
@@ -324,9 +350,9 @@
 
 
 <!-- There are currently issues where the second part of the multi word translation is dropped -->
-<e>       <p><l>denloka<s n="adv"/><b/>hu<s n="cnjsub"/></l>                             <r>where<s n="adv"/></r></p></e>
-<e>       <p><l>denwatu<s n="adv"/><b/>hu<s n="cnjsub"/></l>                             <r>when<s n="adv"/></r></p></e>
-<e>       <p><l>denwatu<s n="adv"/> #hu<s n="cnjsub"/></l>                             <r>when<s n="cnjadv"/></r></p></e>
+<e>       <p><l>denloka<s n="adv"/><j/>hu<s n="cnjsub"/></l>                             <r>where<s n="adv"/></r></p></e>
+<e>       <p><l>denwatu<s n="adv"/><j/>hu<s n="cnjsub"/></l>                             <r>when<s n="adv"/></r></p></e>
+<e>       <p><l>denwatu<s n="adv"/><j/>hu<s n="cnjsub"/></l>                             <r>when<s n="cnjadv"/></r></p></e>
 
 <e>       <p><l>denpul<s n="adj"/><b/>kom<s n="cnjsub"/></l>                             <r>like<s n="pr"/></r></p></e>
 
@@ -481,6 +507,7 @@
 <e><p><l>daydenmo<s n = "adv"/></l>   <r>how<s n = "adv"/></r></p></e>
 <e><p><l>daymo<s n = "adv"/></l>   <r>greatly<s n = "adv"/></r></p></e>
 <e><p><l>daymo<s n = "adv"/></l>   <r>very<s n = "adv"/></r></p></e>
+<e><p><l>daymo<s n = "adv"/></l>   <r>very<s n = "preadv"/></r></p></e>
 <e><p><l>daymo<s n = "adv"/></l>   <r>really<s n = "adv"/></r></p></e>
 <e><p><l>daymo<s n = "adv"/></l>   <r>highly<s n = "adv"/></r></p></e>
 <e><p><l>denloka<s n = "adv"/></l>   <r>there<s n = "adv"/></r></p></e>
@@ -649,7 +676,8 @@
 <e><p><l>harizin<s n = "vblex"/></l>   <r>may<s n = "vbmod"/><s n = "pres"/></r></p></e>
 <e><p><l>ible<s n = "adv"/></l>   <r>might<s n = "vbmod"/></r></p></e>
 
-
+<e><p><l>bujo<s n = "vblex"/></l>   <r>capture<s n = "vblex"/></r></p></e>
+<e><p><l>bujo<s n = "vblex"/></l>   <r>catch<s n = "vblex"/></r></p></e>
 
 <e><p><l>sen<s n = "vblex"/></l>   <r>be<s n = "vblex"/></r></p></e>
 <e><p><l>sen<s n = "vblex"/></l>   <r>be<s n = "vbser"/></r></p></e>
@@ -665,6 +693,20 @@
 <e><p><l>anda<s n = "vblex"/></l>   <r>walk<s n = "vblex"/></r></p></e>
 
 <e><p><l>suki<s n = "vblex"/></l>   <r>like<s n = "vblex"/></r></p></e>
+
+
+<e><p><l>suki<s n = "vblex"/></l>   <r>like<s n = "vblex"/></r></p></e>
+
+<e><p><l>precisoya<s n = "n"/></l>   <r>precision<s n = "n"/></r></p></e>
+
+<e><p><l>precisoya<s n = "n"/></l>   <r>accuracy<s n = "n"/></r></p></e>
+
+<e><p><l>Filbi<s n = "np"/></l>   <r>Filby<s n = "np"/></r></p></e>
+
+<e><p><l>Wina<s n = "np"/></l>   <r>Weena<s n = "np"/></r></p></e>
+
+<e><p><l>watumaxina<s n = "n"/></l>   <r>time machine<s n = "n"/></r></p></e>
+
 
 
 
@@ -1506,6 +1548,9 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>bax<s n = "pr"/></l>   <r>under<s n = "pr"/></r></p></e>
 <e><p><l>bax<s n = "pr"/></l>   <r>beneath<s n = "pr"/></r></p></e>
 <e><p><l>bax<s n = "pr"/></l>   <r>below<s n = "pr"/></r></p></e>
+<e><p><l>bax asman<s n = "adv"/></l>   <r>outdoors<s n = "adv"/></r></p></e>
+<e><p><l>bax asman<s n = "adv"/></l>   <r>in the open air<s n = "adv"/></r></p></e>
+<e><p><l>bax asman<s n = "adv"/></l>   <r>open-air<s n = "adv"/></r></p></e>
 <e><p><l>baxasmanli<s n = "adj"/></l>   <r>outdoor<s n = "adj"/></r></p></e>
 <e><p><l>baxasmanli<s n = "adj"/></l>   <r>open-air<s n = "adj"/></r></p></e>
 <e><p><l>baxbaharili<s n = "adj"/></l>   <r>underwater<s n = "adj"/></r></p></e>
@@ -1990,16 +2035,22 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>cel<s n = "pr"/></l>   <r>to<s n = "pr"/></r></p></e>
 <e><p><l>cel<s n = "pr"/></l>   <r>for<s n = "pr"/></r></p></e>
 <e><p><l>cel bax<s n = "pr"/></l>   <r>under<s n = "pr"/></r></p></e>
+<e><p><l>cel comen<s n = "adv"/></l>   <r>aside<s n = "adv"/></r></p></e>
+<e><p><l>cel comen<s n = "adv"/></l>   <r>to the side<s n = "adv"/></r></p></e>
 <e><p><l>cel ex<s n = "pr"/></l>   <r>out<s n = "pr"/></r></p></e>
 <e><p><l>cel fronta<s n = "pr"/></l>   <r>forward<s n = "pr"/></r></p></e>
 <e><p><l>cel fronta<s n = "pr"/></l>   <r>forwards<s n = "pr"/></r></p></e>
 <e><p><l>cel fronta<s n = "pr"/></l>   <r>ahead<s n = "pr"/></r></p></e>
 <e><p><l>cel in<s n = "pr"/></l>   <r>into<s n = "pr"/></r></p></e>
 <e><p><l>cel infer<s n = "pr"/></l>   <r>down<s n = "pr"/></r></p></e>
+<e><p><l>cel infracengu<s n = "adv"/></l>   <r>downstairs<s n = "adv"/></r></p></e>
+<e><p><l>cel kapi<s n = "adv"/></l>   <r>to the top<s n = "adv"/></r></p></e>
+<e><p><l>cel peda<s n = "adv"/></l>   <r>to the bottom<s n = "adv"/></r></p></e>
 <e><p><l>cel per<s n = "pr"/></l>   <r>onto<s n = "pr"/></r></p></e>
 <e><p><l>cel ruke<s n = "pr"/></l>   <r>backward<s n = "pr"/></r></p></e>
 <e><p><l>cel ruke<s n = "pr"/></l>   <r>backwards<s n = "pr"/></r></p></e>
 <e><p><l>cel super<s n = "pr"/></l>   <r>up<s n = "pr"/></r></p></e>
+<e><p><l>cel supracengu<s n = "adv"/></l>   <r>upstairs<s n = "adv"/></r></p></e>
 <e><p><l>cele<s n = "n"/></l>   <r>goal<s n = "n"/></r></p></e>
 <e><p><l>cele<s n = "n"/></l>   <r>target<s n = "n"/></r></p></e>
 <e><p><l>cele<s n = "n"/></l>   <r>purpose<s n = "n"/></r></p></e>
@@ -2813,6 +2864,7 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>dumbu<s n = "n"/></l>   <r>pygo-<s n = "n"/></r></p></e>
 <e><p><l>dumbumon<s n = "n"/></l>   <r>butt<b/>cheek<s n = "n"/></r></p></e>
 <e><p><l>duna<s n = "n"/></l>   <r>dune<s n = "n"/></r></p></e>
+<e><p><l>dunerleli<s n = "adv"/></l>   <r>lately<s n = "adv"/></r></p></e>
 <e><p><l>Dunya<s n = "np"/></l>   <r>Earth<s n = "np"/></r></p></e>
 <e><p><l>Dunyayen<s n = "n"/></l>   <r>Earthling<s n = "n"/></r></p></e>
 <e><p><l>Dunyayen<s n = "n"/></l>   <r>world<b/>citizen<s n = "n"/></r></p></e>
@@ -2820,6 +2872,9 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>dupa<s n = "n"/></l>   <r>incense<s n = "n"/></r></p></e>
 <e><p><l>dur<s n = "pr"/></l>   <r>during<s n = "pr"/></r></p></e>
 <e><p><l>dur<s n = "pr"/></l>   <r>for<s n = "pr"/></r></p></e>
+<e><p><l>dur moywatu<s n = "adv"/></l>   <r>forever<s n = "adv"/></r></p></e>
+<e><p><l>dur na<s n = "adv"/></l>   <r>while<s n = "adv"/></r></p></e>
+<e><p><l>dur total<s n = "adv"/></l>   <r>throughout<s n = "adv"/></r></p></e>
 <e><p><l>dure<s n = "n"/></l>   <r>duration<s n = "n"/></r></p></e>
 <e><p><l>dure<s n = "vblex"/></l>   <r>last<s n = "vblex"/></r></p></e>
 <e><p><l>dure<s n = "vblex"/></l>   <r>continue<s n = "vblex"/></r></p></e>
@@ -3313,23 +3368,124 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>fe<s n = "pr"/></l>   <r>in<s n = "pr"/></r></p></e>
 <e><p><l>fe<s n = "pr"/></l>   <r>for<s n = "pr"/></r></p></e>
 <e><p><l>fe<s n = "pr"/></l>   <r>of<s n = "pr"/></r></p></e>
+<e><p><l>fe alo kaso<s n = "adv"/></l>   <r>otherwise<s n = "adv"/></r></p></e>
+<e><p><l>fe alo kaso<s n = "adv"/></l>   <r>or else<s n = "adv"/></r></p></e>
+<e><p><l>fe alo lexi<s n = "adv"/></l>   <r>in other words<s n = "adv"/></r></p></e>
+<e><p><l>fe alo loga<s n = "adv"/></l>   <r>in other words<s n = "adv"/></r></p></e>
+<e><p><l>fe aresto<s n = "adv"/></l>   <r>under arrest<s n = "adv"/></r></p></e>
+<e><p><l>fe aresto<s n = "adv"/></l>   <r>in custody<s n = "adv"/></r></p></e>
+<e><p><l>fe asel<s n = "adv"/></l>   <r>originally<s n = "adv"/></r></p></e>
+<e><p><l>fe asif<s n = "adv"/></l>   <r>regretfully<s n = "adv"/></r></p></e>
+<e><p><l>fe asif<s n = "adv"/></l>   <r>unfortunately<s n = "adv"/></r></p></e>
+<e><p><l>fe basi<s n = "adv"/></l>   <r>basically<s n = "adv"/></r></p></e>
+<e><p><l>fe basi<s n = "adv"/></l>   <r>fundamentally<s n = "adv"/></r></p></e>
+<e><p><l>fe baxya<s n = "adv"/></l>   <r>underneath<s n = "adv"/></r></p></e>
+<e><p><l>fe benji<s n = "adv"/></l>   <r>in essense<s n = "adv"/></r></p></e>
+<e><p><l>fe benji<s n = "adv"/></l>   <r>basically<s n = "adv"/></r></p></e>
+<e><p><l>fe bonxanse<s n = "adv"/></l>   <r>luckily<s n = "adv"/></r></p></e>
+<e><p><l>fe bonxanse<s n = "adv"/></l>   <r>fortunately<s n = "adv"/></r></p></e>
+<e><p><l>fe centro<s n = "adv"/></l>   <r>in the center<s n = "adv"/></r></p></e>
+<e><p><l>fe centro<s n = "adv"/></l>   <r>in the middle<s n = "adv"/></r></p></e>
+<e><p><l>fe comen<s n = "adv"/></l>   <r>on the side<s n = "adv"/></r></p></e>
 <e><p><l>fe comen de<s n = "pr"/></l>   <r>beside<s n = "pr"/></r></p></e>
 <e><p><l>fe comen de<s n = "pr"/></l>   <r>next to<s n = "pr"/></r></p></e>
+<e><p><l>fe den kaso<s n = "adv"/></l>   <r>in that case<s n = "adv"/></r></p></e>
+<e><p><l>fe den kaso<s n = "adv"/></l>   <r>then<s n = "adv"/></r></p></e>
+<e><p><l>fe durya<s n = "adv"/></l>   <r>in the meantime<s n = "adv"/></r></p></e>
+<e><p><l>fe durya<s n = "adv"/></l>   <r>meanwhile<s n = "adv"/></r></p></e>
+<e><p><l>fe espesyalya<s n = "adv"/></l>   <r>in particular<s n = "adv"/></r></p></e>
+<e><p><l>fe espesyalya<s n = "adv"/></l>   <r>particularly<s n = "adv"/></r></p></e>
+<e><p><l>fe espesyalya<s n = "adv"/></l>   <r>especially<s n = "adv"/></r></p></e>
+<e><p><l>fe exya<s n = "adv"/></l>   <r>outside<s n = "adv"/></r></p></e>
+<e><p><l>fe exya<s n = "adv"/></l>   <r>without<s n = "adv"/></r></p></e>
+<e><p><l>fe folo<s n = "adv"/></l>   <r>therefore<s n = "adv"/></r></p></e>
+<e><p><l>fe folo<s n = "adv"/></l>   <r>consequently<s n = "adv"/></r></p></e>
+<e><p><l>fe folo<s n = "adv"/></l>   <r>so<s n = "adv"/></r></p></e>
+<e><p><l>fe folo<s n = "adv"/></l>   <r>thus<s n = "adv"/></r></p></e>
+<e><p><l>fe folo<s n = "adv"/></l>   <r>then<s n = "adv"/></r></p></e>
+<e><p><l>fe folya<s n = "adv"/></l>   <r>alongside<s n = "adv"/></r></p></e>
+<e><p><l>fe folya<s n = "adv"/></l>   <r>accordingly<s n = "adv"/></r></p></e>
+<e><p><l>fe fronta<s n = "adv"/></l>   <r>in front<s n = "adv"/></r></p></e>
+<e><p><l>fe fronta<s n = "adv"/></l>   <r>ahead<s n = "adv"/></r></p></e>
 <e><p><l>fe fronta de<s n = "pr"/></l>   <r>in front of<s n = "pr"/></r></p></e>
+<e><p><l>fe geo<s n = "adv"/></l>   <r>my gosh<s n = "adv"/></r></p></e>
+<e><p><l>fe geo<s n = "adv"/></l>   <r>land sakes<s n = "adv"/></r></p></e>
+<e><p><l>fe gwaho<s n = "adv"/></l>   <r>by the way<s n = "adv"/></r></p></e>
+<e><p><l>fe hataya<s n = "adv"/></l>   <r>even so<s n = "adv"/></r></p></e>
+<e><p><l>fe hataya<s n = "adv"/></l>   <r>however<s n = "adv"/></r></p></e>
+<e><p><l>fe hataya<s n = "adv"/></l>   <r>nevertheless<s n = "adv"/></r></p></e>
+<e><p><l>fe hataya<s n = "adv"/></l>   <r>nonetheless<s n = "adv"/></r></p></e>
+<e><p><l>fe hataya<s n = "adv"/></l>   <r>in spite of that<s n = "adv"/></r></p></e>
+<e><p><l>fe hataya<s n = "adv"/></l>   <r>yet<s n = "adv"/></r></p></e>
 <e><p><l>fe hataya fe<s n = "pr"/></l>   <r>in spite of<s n = "pr"/></r></p></e>
 <e><p><l>fe hataya fe<s n = "pr"/></l>   <r>despite<s n = "pr"/></r></p></e>
+<e><p><l>fe hin kaso<s n = "adv"/></l>   <r>in this case<s n = "adv"/></r></p></e>
+<e><p><l>fe infracengu<s n = "adv"/></l>   <r>downstairs<s n = "adv"/></r></p></e>
+<e><p><l>fe intrewatu<s n = "adv"/></l>   <r>in the meantime<s n = "adv"/></r></p></e>
+<e><p><l>fe intrewatu<s n = "adv"/></l>   <r>meanwhile<s n = "adv"/></r></p></e>
+<e><p><l>fe intreya<s n = "adv"/></l>   <r>in between<s n = "adv"/></r></p></e>
+<e><p><l>fe inya<s n = "adv"/></l>   <r>inside<s n = "adv"/></r></p></e>
+<e><p><l>fe inya<s n = "adv"/></l>   <r>within<s n = "adv"/></r></p></e>
+<e><p><l>fe jadin<s n = "adv"/></l>   <r>supposedly<s n = "adv"/></r></p></e>
+<e><p><l>fe kapi<s n = "adv"/></l>   <r>on top<s n = "adv"/></r></p></e>
 <e><p><l>fe kapi de<s n = "pr"/></l>   <r>on top of<s n = "pr"/></r></p></e>
 <e><p><l>fe kompara fe<s n = "pr"/></l>   <r>in comparison with<s n = "pr"/></r></p></e>
 <e><p><l>fe kompara fe<s n = "pr"/></l>   <r>compared to<s n = "pr"/></r></p></e>
 <e><p><l>fe kompara fe<s n = "pr"/></l>   <r>versus<s n = "pr"/></r></p></e>
 <e><p><l>fe kosa fe<s n = "pr"/></l>   <r>because of<s n = "pr"/></r></p></e>
 <e><p><l>fe kosa fe<s n = "pr"/></l>   <r>due to<s n = "pr"/></r></p></e>
+<e><p><l>fe leya<s n = "adv"/></l>   <r>in the past<s n = "adv"/></r></p></e>
+<e><p><l>fe leya<s n = "adv"/></l>   <r>prior<s n = "adv"/></r></p></e>
+<e><p><l>fe lutuf<s n = "adv"/></l>   <r>please<s n = "adv"/></r></p></e>
+<e><p><l>fe maxusya<s n = "adv"/></l>   <r>besides<s n = "adv"/></r></p></e>
+<e><p><l>fe midiya<s n = "adv"/></l>   <r>in the middle<s n = "adv"/></r></p></e>
+<e><p><l>fe minusya<s n = "adv"/></l>   <r>except for that<s n = "adv"/></r></p></e>
+<e><p><l>fe misal<s n = "adv"/></l>   <r>for example<s n = "adv"/></r></p></e>
+<e><p><l>fe misal<s n = "adv"/></l>   <r>for instance<s n = "adv"/></r></p></e>
+<e><p><l>fe misu bage<s n = "adv"/></l>   <r>for my part<s n = "adv"/></r></p></e>
+<e><p><l>fe misu ijen<s n = "adv"/></l>   <r>in my opinion<s n = "adv"/></r></p></e>
+<e><p><l>fe moy kaso<s n = "adv"/></l>   <r>in any case<s n = "adv"/></r></p></e>
+<e><p><l>fe moy kaso<s n = "adv"/></l>   <r>at any rate<s n = "adv"/></r></p></e>
+<e><p><l>fe moy kaso<s n = "adv"/></l>   <r>anyway<s n = "adv"/></r></p></e>
+<e><p><l>fe muka<s n = "adv"/></l>   <r>across<s n = "adv"/></r></p></e>
+<e><p><l>fe muka<s n = "adv"/></l>   <r>face to face<s n = "adv"/></r></p></e>
+<e><p><l>fe nerleli watu<s n = "adv"/></l>   <r>lately<s n = "adv"/></r></p></e>
+<e><p><l>fe nunya<s n = "adv"/></l>   <r>at present<s n = "adv"/></r></p></e>
+<e><p><l>fe nunya<s n = "adv"/></l>   <r>presently<s n = "adv"/></r></p></e>
+<e><p><l>fe nunya<s n = "adv"/></l>   <r>now<s n = "adv"/></r></p></e>
+<e><p><l>fe onxala<s n = "adv"/></l>   <r>hopefully<s n = "adv"/></r></p></e>
+<e><p><l>fe oposya<s n = "adv"/></l>   <r>on the contrary<s n = "adv"/></r></p></e>
 <e><p><l>fe oposya de<s n = "pr"/></l>   <r>opposite<s n = "pr"/></r></p></e>
 <e><p><l>fe oposya de<s n = "pr"/></l>   <r>contrary to<s n = "pr"/></r></p></e>
 <e><p><l>fe oposya de<s n = "pr"/></l>   <r>against<s n = "pr"/></r></p></e>
+<e><p><l>fe peda<s n = "adv"/></l>   <r>at the bottom<s n = "adv"/></r></p></e>
 <e><p><l>fe peda de<s n = "pr"/></l>   <r>at the bottom of<s n = "pr"/></r></p></e>
+<e><p><l>fe perya<s n = "adv"/></l>   <r>on top<s n = "adv"/></r></p></e>
+<e><p><l>fe peti<s n = "adv"/></l>   <r>please<s n = "adv"/></r></p></e>
+<e><p><l>fe porya<s n = "adv"/></l>   <r>(in) exchange<s n = "adv"/></r></p></e>
+<e><p><l>fe preferi kom<s n = "adv"/></l>   <r>rather than<s n = "adv"/></r></p></e>
+<e><p><l>fe ruke<s n = "adv"/></l>   <r>in the back<s n = "adv"/></r></p></e>
 <e><p><l>fe ruke de<s n = "pr"/></l>   <r>behind<s n = "pr"/></r></p></e>
 <e><p><l>fe ruke de<s n = "pr"/></l>   <r>in back of<s n = "pr"/></r></p></e>
+<e><p><l>fe sesu bage<s n = "adv"/></l>   <r>for one's part<s n = "adv"/></r></p></e>
+<e><p><l>fe supracengu<s n = "adv"/></l>   <r>upstairs<s n = "adv"/></r></p></e>
+<e><p><l>fe tayti<s n = "adv"/></l>   <r>instead<s n = "adv"/></r></p></e>
+<e><p><l>fe Teo<s n = "adv"/></l>   <r>by God<s n = "adv"/></r></p></e>
+<e><p><l>fe Teo<s n = "adv"/></l>   <r>my God<s n = "adv"/></r></p></e>
+<e><p><l>fe Teo<s n = "adv"/></l>   <r>for God's sake<s n = "adv"/></r></p></e>
+<e><p><l>fe totalya<s n = "adv"/></l>   <r>in total<s n = "adv"/></r></p></e>
+<e><p><l>fe totalya<s n = "adv"/></l>   <r>in all<s n = "adv"/></r></p></e>
+<e><p><l>fe totalya<s n = "adv"/></l>   <r>overall<s n = "adv"/></r></p></e>
+<e><p><l>fe ultraya<s n = "adv"/></l>   <r>beyond<s n = "adv"/></r></p></e>
+<e><p><l>fe xaya<s n = "adv"/></l>   <r>in the future<s n = "adv"/></r></p></e>
+<e><p><l>fe xaya<s n = "adv"/></l>   <r>afterwards<s n = "adv"/></r></p></e>
+<e><p><l>fe xaya<s n = "adv"/></l>   <r>later (on)<s n = "adv"/></r></p></e>
+<e><p><l>fe xoru<s n = "adv"/></l>   <r>at the start<s n = "adv"/></r></p></e>
+<e><p><l>fe xoru<s n = "adv"/></l>   <r>in the beginning<s n = "adv"/></r></p></e>
+<e><p><l>fe xoru<s n = "adv"/></l>   <r>initially<s n = "adv"/></r></p></e>
+<e><p><l>fe xugwan<s n = "adv"/></l>   <r>usually<s n = "adv"/></r></p></e>
+<e><p><l>fe xugwan<s n = "adv"/></l>   <r>typically<s n = "adv"/></r></p></e>
+<e><p><l>fe xukra<s n = "adv"/></l>   <r>thankfully<s n = "adv"/></r></p></e>
 <e><p><l>federa<s n = "n"/></l>   <r>federation<s n = "n"/></r></p></e>
 <e><p><l>federali<s n = "adj"/></l>   <r>federal<s n = "adj"/></r></p></e>
 <e><p><l>fefu<s n = "n"/></l>   <r>lung<s n = "n"/></r></p></e>
@@ -3438,6 +3594,8 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>finco<s n = "n"/></l>   <r>_Fringillidae_<s n = "n"/></r></p></e>
 <e><p><l>finfe<s n = "pr"/></l>   <r>until<s n = "pr"/></r></p></e>
 <e><p><l>finfe<s n = "pr"/></l>   <r>to<s n = "pr"/></r></p></e>
+<e><p><l>finfe nunya<s n = "adv"/></l>   <r>so far<s n = "adv"/></r></p></e>
+<e><p><l>finfe nunya<s n = "adv"/></l>   <r>until now<s n = "adv"/></r></p></e>
 <e><p><l>fini<s n = "n"/></l>   <r>end<s n = "n"/></r></p></e>
 <e><p><l>fini<s n = "n"/></l>   <r>conclusion<s n = "n"/></r></p></e>
 <e><p><l>fini<s n = "vblex"/></l>   <r>finish<s n = "vblex"/></r></p></e>
@@ -3536,6 +3694,7 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>fol<s n = "pr"/></l>   <r>by<s n = "pr"/></r></p></e>
 <e><p><l>fol<s n = "pr"/></l>   <r>for<s n = "pr"/></r></p></e>
 <e><p><l>fol<s n = "pr"/></l>   <r>the more/less<s n = "pr"/></r></p></e>
+<e><p><l>fol satumeter<s n = "adv"/></l>   <r>clockwise<s n = "adv"/></r></p></e>
 <e><p><l>folcu<s n = "n"/></l>   <r>get<b/>alongside<b/>(of)<s n = "n"/></r></p></e>
 <e><p><l>folder<s n = "n"/></l>   <r>folder<s n = "n"/></r></p></e>
 <e><p><l>folfatoli<s n = "adj"/></l>   <r>objective<s n = "adj"/></r></p></e>
@@ -4556,6 +4715,7 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>intona<s n = "vblex"/></l>   <r>inflect<s n = "vblex"/></r></p></e>
 <e><p><l>intre<s n = "pr"/></l>   <r>between<s n = "pr"/></r></p></e>
 <e><p><l>intre<s n = "pr"/></l>   <r>among<s n = "pr"/></r></p></e>
+<e><p><l>intre aloto<s n = "adv"/></l>   <r>among other things<s n = "adv"/></r></p></e>
 <e><p><l>intreaksyon<s n = "n"/></l>   <r>interaction<s n = "n"/></r></p></e>
 <e><p><l>intreaksyon<s n = "vblex"/></l>   <r>interact<s n = "vblex"/></r></p></e>
 <e><p><l>intrediskusi<s n = "n"/></l>   <r>dialogue<s n = "n"/></r></p></e>
@@ -5919,8 +6079,15 @@ quantity of<s n = "adj"/></r></p></e>
 <e><p><l>leaxam<s n = "n"/></l>   <r>eve<s n = "n"/></r></p></e>
 <e><p><l>lefe<s n = "pr"/></l>   <r>before<s n = "pr"/></r></p></e>
 <e><p><l>lefe<s n = "pr"/></l>   <r>ago<s n = "pr"/></r></p></e>
+<e><p><l>lefe dento<s n = "adv"/></l>   <r>beforehand<s n = "adv"/></r></p></e>
+<e><p><l>lefe dento<s n = "adv"/></l>   <r>previously<s n = "adv"/></r></p></e>
 <e><p><l>lefe or fe<s n = "pr"/></l>   <r>by<s n = "pr"/></r></p></e>
 <e><p><l>lefe or fe<s n = "pr"/></l>   <r>on or before<s n = "pr"/></r></p></e>
+<e><p><l>lefe to<s n = "adv"/></l>   <r>previously<s n = "adv"/></r></p></e>
+<e><p><l>lefe to<s n = "adv"/></l>   <r>formerly<s n = "adv"/></r></p></e>
+<e><p><l>lefe to<s n = "adv"/></l>   <r>earlier<s n = "adv"/></r></p></e>
+<e><p><l>lefe to<s n = "adv"/></l>   <r>before then<s n = "adv"/></r></p></e>
+<e><p><l>lefe to<s n = "adv"/></l>   <r>before that<s n = "adv"/></r></p></e>
 <e><p><l>lefeeskol<s n = "n"/></l>   <r>preschool<s n = "n"/></r></p></e>
 <e><p><l>lefefikso<s n = "n"/></l>   <r>prefix<s n = "n"/></r></p></e>
 <e><p><l>lefegaminame<s n = "n"/></l>   <r>maiden<b/>name<s n = "n"/></r></p></e>
@@ -7237,6 +7404,7 @@ in every way<s n = "adj"/></r></p></e>
 <e><p><l>nenwajenpul<s n = "adv"/></l>   <r>lightly<s n = "adv"/></r></p></e>
 <e><p><l>nenxekastedo<s n = "adj"/></l>   <r>undefeated<s n = "adj"/></r></p></e>
 <e><p><l>nenyon<s n = "pr"/></l>   <r>without<s n = "pr"/></r></p></e>
+<e><p><l>nenyon na<s n = "adv"/></l>   <r>without<s n = "adv"/></r></p></e>
 <e><p><l>neo<s n = "adj"/></l>   <r>new<s n = "adj"/></r></p></e>
 <e><p><l>neo<s n = "adv"/></l>   <r>newly<s n = "adv"/></r></p></e>
 <e><p><l>neodimyum<s n = "n"/></l>   <r>neodymium<s n = "n"/></r></p></e>
@@ -8007,6 +8175,8 @@ in no way<s n = "adj"/></r></p></e>
 <e><p><l>populer<s n = "adv"/></l>   <r>popularly<s n = "adv"/></r></p></e>
 <e><p><l>populergi<s n = "n"/></l>   <r>popularize<s n = "n"/></r></p></e>
 <e><p><l>por<s n = "pr"/></l>   <r>(in exchange) for<s n = "pr"/></r></p></e>
+<e><p><l>por moyun<s n = "adv"/></l>   <r>per<s n = "adv"/></r></p></e>
+<e><p><l>por moyun<s n = "adv"/></l>   <r>for (each)<s n = "adv"/></r></p></e>
 <e><p><l>porcelen<s n = "n"/></l>   <r>porcelain<s n = "n"/></r></p></e>
 <e><p><l>porgi<s n = "n"/></l>   <r>exchange<s n = "n"/></r></p></e>
 <e><p><l>porgi<s n = "n"/></l>   <r>trade<s n = "n"/></r></p></e>
@@ -8060,6 +8230,9 @@ in no way<s n = "adj"/></r></p></e>
 <e><p><l>posehtiramfil<s n = "adj"/></l>   <r>disrespectful<s n = "adj"/></r></p></e>
 <e><p><l>posehtiramfil<s n = "adv"/></l>   <r>disrespectfully<s n = "adv"/></r></p></e>
 <e><p><l>posfol<s n = "pr"/></l>   <r>against<s n = "pr"/></r></p></e>
+<e><p><l>posfol satumeter<s n = "adv"/></l>   <r>counterclockwise<s n = "adv"/></r></p></e>
+<e><p><l>posfol satumeter<s n = "adv"/></l>   <r>anticlockwise<s n = "adv"/></r></p></e>
+<e><p><l>posfol satumeter<s n = "adv"/></l>   <r>withershins<s n = "adv"/></r></p></e>
 <e><p><l>posfolloga<s n = "n"/></l>   <r>contradiction<s n = "n"/></r></p></e>
 <e><p><l>posfolloga<s n = "vblex"/></l>   <r>contradict<s n = "vblex"/></r></p></e>
 <e><p><l>posfolya<s n = "n"/></l>   <r>be<b/>against<s n = "n"/></r></p></e>
@@ -10160,6 +10333,9 @@ in no way<s n = "adj"/></r></p></e>
 <e><p><l>wenxi<s n = "adj"/></l>   <r>proto-<s n = "adj"/></r></p></e>
 <e><p><l>wermu<s n = "n"/></l>   <r>worm<s n = "n"/></r></p></e>
 <e><p><l>wey<s n = "pr"/></l>   <r>around<s n = "pr"/></r></p></e>
+<e><p><l>wey total<s n = "adv"/></l>   <r>all around<s n = "adv"/></r></p></e>
+<e><p><l>wey total<s n = "adv"/></l>   <r>all over<s n = "adv"/></r></p></e>
+<e><p><l>wey total<s n = "adv"/></l>   <r>throughout<s n = "adv"/></r></p></e>
 <e><p><l>weycu<s n = "n"/></l>   <r>get<b/>around<s n = "n"/></r></p></e>
 <e><p><l>weycu<s n = "n"/></l>   <r>put<b/>itself<b/>around<s n = "n"/></r></p></e>
 <e><p><l>weygebo<s n = "n"/></l>   <r>hug<s n = "n"/></r></p></e>
@@ -10195,6 +10371,15 @@ in no way<s n = "adj"/></r></p></e>
 <e><p><l>xafe<s n = "pr"/></l>   <r>after<s n = "pr"/></r></p></e>
 <e><p><l>xafe<s n = "pr"/></l>   <r>in<s n = "pr"/></r></p></e>
 <e><p><l>xafe<s n = "pr"/></l>   <r>from now<s n = "pr"/></r></p></e>
+<e><p><l>xafe dento<s n = "adv"/></l>   <r>later (after that)<s n = "adv"/></r></p></e>
+<e><p><l>xafe dento<s n = "adv"/></l>   <r>afterwards<s n = "adv"/></r></p></e>
+<e><p><l>xafe dento<s n = "adv"/></l>   <r>(and) then<s n = "adv"/></r></p></e>
+<e><p><l>xafe morcu<s n = "adv"/></l>   <r>postmortem<s n = "adv"/></r></p></e>
+<e><p><l>xafe morcu<s n = "adv"/></l>   <r>posthumous<s n = "adv"/></r></p></e>
+<e><p><l>xafe to<s n = "adv"/></l>   <r>later <s n = "adv"/></r></p></e>
+<e><p><l>xafe to<s n = "adv"/></l>   <r>afterwards<s n = "adv"/></r></p></e>
+<e><p><l>xafe to<s n = "adv"/></l>   <r>(and) then<s n = "adv"/></r></p></e>
+<e><p><l>xafe xengi<s n = "adv"/></l>   <r>postpartum<s n = "adv"/></r></p></e>
 <e><p><l>xafefikso<s n = "n"/></l>   <r>suffix<s n = "n"/></r></p></e>
 <e><p><l>xafemorculi<s n = "adj"/></l>   <r>postmortem<s n = "adj"/></r></p></e>
 <e><p><l>xafemorculi<s n = "adj"/></l>   <r>posthumous<s n = "adj"/></r></p></e>
@@ -10378,6 +10563,7 @@ in no way<s n = "adj"/></r></p></e>
 <e><p><l>xorfe<s n = "pr"/></l>   <r>from<s n = "pr"/></r></p></e>
 <e><p><l>xorfe<s n = "pr"/></l>   <r>as of<s n = "pr"/></r></p></e>
 <e><p><l>xorfe<s n = "pr"/></l>   <r>since<s n = "pr"/></r></p></e>
+<e><p><l>xorfe nunya<s n = "adv"/></l>   <r>from now on<s n = "adv"/></r></p></e>
 <e><p><l>xorfirmayen<s n = "n"/></l>   <r>entrepreneur<s n = "n"/></r></p></e>
 <e><p><l>xorfley<s n = "n"/></l>   <r>takeoff<s n = "n"/></r></p></e>
 <e><p><l>xorfley<s n = "vblex"/></l>   <r>take<g><b/>off</g><s n = "vblex"/></r></p></e>
@@ -10564,6 +10750,7 @@ in no way<s n = "adj"/></r></p></e>
 <e><p><l>yon<s n = "pr"/></l>   <r>by means of<s n = "pr"/></r></p></e>
 <e><p><l>yon<s n = "pr"/></l>   <r>through<s n = "pr"/></r></p></e>
 <e><p><l>yon<s n = "pr"/></l>   <r>via<s n = "pr"/></r></p></e>
+<e><p><l>yon na<s n = "adv"/></l>   <r>by<s n = "adv"/></r></p></e>
 <e><p><l>yonfobi<s n = "n"/></l>   <r>intimidate<s n = "n"/></r></p></e>
 <e><p><l>yongu<s n = "n"/></l>   <r>use<s n = "n"/></r></p></e>
 <e><p><l>yongu<s n = "n"/></l>   <r>usage<s n = "n"/></r></p></e>

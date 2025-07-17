@@ -12,15 +12,36 @@
     </match>
   </rule>
 
-  <rule weight="1.0">
-    <or>
-      <match lemma="trade" tags="n.*" />
-      <match lemma="labour" tags="n.*" />
-      <match lemma="professional" tags="adj" />
-    </or>
-    <match lemma="union" tags="n.*">
-      <select lemma="ergouncutim" tags="n.*" />
+  <rule>
+    <match lemma="boy" tags="n.*">
+      <select lemma="mannini" tags="n.*"/>
     </match>
+  </rule>
+  <rule>
+    <match lemma="girl" tags="n.*">
+      <select lemma="femnini" tags="n.*"/>
+    </match>
+  </rule>
+  <rule>
+    <match lemma="girl" tags="n.*">
+      <select lemma="femnini" tags="n.*"/>
+    </match>
+  </rule>
+
+  <rule>
+    <match lemma="with" tags="pr">
+      <select lemma="ton" tags="pr*"/>
+    </match>
+    <match lemma="dog" tags="n.*"/>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="how" tags="adv"><select lemma="kemo"/></match>
+    <match tags="adj*"/>
+  </rule>
+  <rule weight="1.0">
+    <match lemma="how" tags="adv"><select lemma="kemaner"/></match>
+    <match tags=""/>
   </rule>
   
   <rule weight="1.0">

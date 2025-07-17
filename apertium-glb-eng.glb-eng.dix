@@ -126,19 +126,28 @@
 <e>       <p><l>iji<s n="cnjcoo"/></l>                 <r>both<s n="cnjcoo"/></r></p></e>
 
 
+
 <e>       <p><l>moydua<s n="det"/><s n="ind"/><s n="pl"/><j/>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l>                 <r>both<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
 
 
     <!-- the following are solely here to enable the rule   SN V SN "and also" SN -> SN V SN<acc> "and also" SN<acc>   match -->
-<e>       <p><l>ji<b/>pia<s n="cnjcoo"/></l>        <r>and<b/>also<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>mas<b/>pia<s n="cnjcoo"/></l>        <r>but<b/>also<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>kom<s n="cnjcoo"/></l>                  <r>than<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>ji<b/>pia<s n="cnjcoo"/></l>           <r>and<b/>also<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>mas<b/>pia<s n="cnjcoo"/></l>          <r>but<b/>also<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>kom<s n = "cnjsub"/></l>               <r>as<s n = "cnjsub"/></r></p></e>
+<e>       <p><l>kom<s n="cnjcoo"/></l>                 <r>than<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>mas<s n="cnjcoo"/></l>                 <r>but<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>kam<s n = "cnjcoo"/></l>               <r><s n = "cnjcoo"/></r></p></e>
 <e>       <p><l>or<s n="cnjcoo"/></l>                  <r>or<s n="cnjcoo"/></r></p></e>
-<e r="RL"><p><l>oro<s n="cnjcoo"/></l>                  <r>either<s n="cnjcoo"/></r></p></e>
+<e r="RL"><p><l>oro<s n="cnjcoo"/></l>                 <r>either<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>nor<s n="cnjcoo"/></l>                 <r>neither<s n="cnjcoo"/></r></p></e>
 <e r="RL"><p><l>nor<s n="cnjcoo"/></l>                 <r>nor<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>mas<b/>prefere<s n="cnjcoo"/></l>      <r>but<b/>rather<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>nenkom<s n = "cnjcoo"/></l>            <r>unlike<s n = "cnjcoo"/></r></p></e>
+<e>       <p><l>poskom<s n = "cnjcoo"/></l>            <r>unlike<s n = "cnjcoo"/></r></p></e>
+<e>       <p><l>alopul<b/>kom<s n = "cnjcoo"/></l>     <r>unlike<s n = "cnjcoo"/></r></p></e>
+<e>       <p><l>denpul<b/>kom<s n = "cnjcoo"/></l>     <r>as<s n = "cnjcoo"/></r></p></e>
+<e>       <p><l>denpul<b/>kom<s n = "cnjcoo"/></l>     <r>such<b/>as<s n = "cnjcoo"/></r></p></e>
+<e>       <p><l>denpul<b/>kom<s n = "cnjcoo"/></l>     <r>like<s n = "cnjcoo"/></r></p></e>
 
 <e r="LR"><p><l>u<s n="vbpr"/></l><r></r></p></e>
     
@@ -163,14 +172,10 @@
 
 <e><p><l>triunfa<s n = "vblex"/></l>   <r>triumph<s n = "vblex"/></r></p></e>
 
-<e><p><l>alopul<b/>kom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
 <e><p><l>celki<s n = "cnjsub"/></l>   <r>so<b/>that<s n = "cnjsub"/></r></p></e>
 <e><p><l>celki<s n = "cnjsub"/></l>   <r>in<b/>order<b/>for<s n = "cnjsub"/></r></p></e>
 <e><p><l>denmaner<b/>hu<s n = "cnjsub"/></l>   <r>like<s n = "cnjsub"/></r></p></e>
 <e><p><l>denmaner<b/>hu<s n = "cnjsub"/></l>   <r>in<b/>the<b/>way<b/>that<s n = "cnjsub"/></r></p></e>
-<e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>as<s n = "cnjsub"/></r></p></e>
-<e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>such<b/>as<s n = "cnjsub"/></r></p></e>
-<e><p><l>denpul<b/>kom<s n = "cnjsub"/></l>   <r>like<s n = "cnjsub"/></r></p></e>
 <e><p><l>denwatu<s n="adv"/><j/>hu<s n = "cnjsub"/></l>   <r>whenever<s n = "cnjsub"/></r></p></e>
 <e><p><l>durki<s n = "cnjsub"/></l>   <r>while<s n = "cnjsub"/></r></p></e>
 <e><p><l>eger<s n = "cnjsub"/></l>   <r>if<s n = "cnjsub"/></r></p></e>
@@ -189,20 +194,12 @@
 <e><p><l>finki<s n = "cnjsub"/></l>   <r>until<s n = "cnjsub"/></r></p></e>
 <e><p><l>folki<s n = "cnjsub"/></l>   <r>the<b/>more<s n = "cnjsub"/></r></p></e>
 <e><p><l>folki<s n = "cnjsub"/></l>   <r>the<b/>less<s n = "cnjsub"/></r></p></e>
-<e><p><l>kam<s n = "cnjsub"/></l>   <r>yes/no<b/>question<b/>particle<s n = "cnjsub"/></r></p></e>
-<e><p><l>kam<s n = "cnjsub"/></l>   <r>or<s n = "cnjsub"/></r></p></e>
-<e><p><l>kam<s n = "cnjsub"/></l>   <r>or<b/>whether<s n = "cnjsub"/></r></p></e>
 <e><p><l>ki<s n = "cnjsub"/></l>   <r>that<s n = "cnjsub"/></r></p></e>
-<e><p><l>kom<s n = "cnjsub"/></l>   <r>as<s n = "cnjsub"/></r></p></e>
-<e><p><l>kom<s n = "cnjsub"/></l>   <r>than<s n = "cnjsub"/></r></p></e>
 <e><p><l>koski<s n = "cnjsub"/></l>   <r>because<s n = "cnjsub"/></r></p></e>
 <e><p><l>koski<s n = "cnjsub"/></l>   <r>since<s n = "cnjsub"/></r></p></e>
 <e><p><l>ku<s n = "cnjsub"/></l>   <r>_interrogative<b/>clauses<b/>in<b/>declarative<b/>sentences_<s n = "cnjsub"/></r></p></e>
 <e><p><l>kwas<s n = "cnjsub"/></l>   <r>as<b/>if<s n = "cnjsub"/></r></p></e>
 <e><p><l>leki<s n = "cnjsub"/></l>   <r>before<s n = "cnjsub"/></r></p></e>
-<e><p><l>mas<s n = "cnjsub"/></l>   <r>but<s n = "cnjsub"/></r></p></e>
-<e><p><l>nenkom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
-<e><p><l>poskom<s n = "cnjsub"/></l>   <r>unlike<s n = "cnjsub"/></r></p></e>
 <e><p><l>temki<s n = "cnjsub"/></l>   <r>that<s n = "cnjsub"/></r></p></e>
 <e><p><l>temki<s n = "cnjsub"/></l>   <r>about<b/>which<s n = "cnjsub"/></r></p></e>
 <e><p><l>xaki<s n = "cnjsub"/></l>   <r>after<s n = "cnjsub"/></r></p></e>

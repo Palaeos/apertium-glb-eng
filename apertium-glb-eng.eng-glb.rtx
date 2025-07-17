@@ -142,9 +142,6 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
-copula -> be@vblex.$tense { 1 } | vbser.$tense { 1 };
-
-quant -> num {1} | several@det_ind_cor {1};
 
 !v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
 
@@ -172,7 +169,7 @@ NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             |
             5:det_qnt_cor NP.$number  { 1 _ 2 }
             |
-            0.1 : 20:det_ind_cor NP.$number  { 1 _ 2 }
+            0.1:det_ind_cor NP.$number  { 1 _ 2 }
             |
             0.01: NP.$number  (if (1.number = sg) { un@num[lemcase=1.lemcase] _ 1 }
             elif (1.number = pl)  { plu@adj _ 1 }
@@ -180,7 +177,12 @@ NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             )|
             ! inserts implied pronouns after adjectives. a numeral if available is used to pick the right number.
             AJC  {  1 _ prpers@prn.p3.GD.sg }|
-            quant AJC  (if (1.number = sg)
+            num AJC  (if (1.number = sg)
+            { 1 _ 2 _ prpers@prn.p3.GD.sg }
+            else
+            { 1 _ 2 _ prpers@prn.p3.GD.pl }
+            )|
+            several@det_ind_cor AJC  (if (1.number = sg)
             { 1 _ 2 _ prpers@prn.p3.GD.sg }
             else
             { 1 _ 2 _ prpers@prn.p3.GD.pl }
@@ -259,15 +261,16 @@ DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          20:have@vbhaver %be@vblex.pp DP { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|  
          20:have@vbhaver %be@vblex.pp AJC { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|
          20:have@vbhaver not@adv %VP.pp { u@vbpr.[1.tense].perf.neg _ %3[tense=""] }|
-         20:be@[copula] AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
-         20:be@[copula] AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
-         20:be@[copula] not@adv { u@vbpr.[1.tense].neg _ %1[tense=""] }|
-         20:be@[copula] not@adv AJC { u@vbpr.[1.tense].neg _ %1[tense=""] _ 3 }|
+         20:be@copula AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
+         20:be@copula AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
+         20:be@copula not@adv { u@vbpr.[1.tense].neg _ %1[tense=""] }|
+         20:be@copula not@adv AJC { u@vbpr.[1.tense].neg _ %1[tense=""] _ 3 }|
          BE.[finite] VP.ger { u@vbpr.[1.tense].impf _ %2[tense=""] }|
          BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ %4[tense=""] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
          20:to@pr VP.inf{ u@vbpr.inf _ 2 }|
          VP.[finite]{ u@vbpr.[1.tense] _ 1 }
+         
 
          ;
 

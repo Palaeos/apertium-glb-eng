@@ -10,6 +10,7 @@
     <sdef n="vblex"           c="Verb, lexical"/>
     <sdef n="vbmod"           c="Modal verb"/>
     <sdef n="vaux"            c="Auxiliary verb"/>
+    <sdef n="vbdo"           c="'do' support verb"/>
     <sdef n="vbser"           c="'To be' verb"/>
     <sdef n="vbhaver"         c="'To have' verb"/>
     <sdef n="vbpr"           c="Verbal preposition"/>
@@ -70,6 +71,7 @@
     <sdef n="dem"             c="Demonstrative"/>
     <sdef n="itg"             c="Question word / interrogative"/>
     <sdef n="qnt"             c="Quantifier"/>
+    <sdef n="aff"             c="Affirmative" />
     <sdef n="neg"             c="Negative"/>
     <sdef n="emph"            c="Emphatic"/>
 
@@ -150,6 +152,13 @@
 <e>       <p><l>denpul<b/>kom<s n = "cnjcoo"/></l>     <r>like<s n = "cnjcoo"/></r></p></e>
 
 <e r="LR"><p><l>u<s n="vbpr"/></l><r></r></p></e>
+
+<e>  <p><l>si<s n="ij"/></l>     <r>yes<s n="ij"/></r></p></e>
+<e>  <p><l>no<s n="ij"/></l>     <r>no<s n="ij"/></r></p></e>
+
+<e>  <p><l>si<s n="adv"/></l>     <r>indeed<s n="ij"/></r></p></e>
+<e>  <p><l>no<s n="adv"/></l>     <r>not<s n="ij"/></r></p></e>
+
     
         <!-- Co-ordinating conjunction 
 <e>       <p><l>no<s n="adv"/><s n="fut"/></l>                 <r>not<s n="adv"/></r></p></e>
@@ -207,7 +216,7 @@
 <e><p><l>xorki<s n = "cnjsub"/></l>   <r>since<s n = "cnjsub"/></r></p></e>
 
 
-
+<e><p><l>kama<s n = "cnjsub"/></l>       <r>whether<s n = "cnjsub"/></r></p></e>
 
 <e>       <p><l>su<s n="pos"/></l>                 <r>'s<s n="gen"/></r></p></e>
     
@@ -285,6 +294,8 @@
 
 
 <e>       <p><l>ki<s n="cnjsub"/></l>                   <r>that<s n="cnjsub"/></r></p></e>
+<e>       <p><l>hu<s n = "cnjsub"/></l>                   <r><s n="cnjsub"/></r></p></e>
+
 
 <e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
 <e>       <p><l>hin<s n="det"/></l>                   <r>this<s n="det"/><s n="dem"/><s n="sp"/></r></p></e>
@@ -359,6 +370,8 @@
 <e>       <p><l>denmaner<s n="adv"/><b/>hu<s n="adv"/></l>                             <r>like<s n="cnjsub"/></r></p></e>
 
 <e>       <p><l>hu<b/>dasu<s n="adv"/></l>                             <r>whose<s n="det"/><s n="pos"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e><p><l>da<s n = "prn"/></l>   <r>that<s n = "prn"/></r></p></e>
 
 <e>       <p><l>kufi<s n="adj"/></l>                             <r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
 

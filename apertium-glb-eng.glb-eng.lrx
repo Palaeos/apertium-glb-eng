@@ -10,7 +10,14 @@
     </match>
   </rule>
   -->
+  <rule>
+    <match lemma="of" tags="pr.*">
+      <select lemma="from" tags="pr.*"/>
+    </match>
+  </rule>
+
 </rules>
+
 
 <!--
 Resources:

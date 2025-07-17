@@ -291,8 +291,8 @@ REL -> prn.rel DVP {hu@cnjsub _ da@prn _ 2 }|
        whom@prn NOM DVP {hu@cnjsub _ 2  _ 3  _ da@prn };
 
 ! Attempt to translate the lexical verb questions to starting with "kam"
-S ->  do@vbdo.$tense.* NOM VP { kam@adv _ 2 _ u@vbpr.[1.tense] _ 3 }|
-      prn.itg do@vbdo.$tense NOM VP { 3 _ u@vbpr.[2.tense] _ 4 _ 1 }|
+S ->  do@vbdo.$tense.* NOM VP { kam@cnjcoo _ 2 _ u@vbpr.[1.tense] _ %3[tense=""] }|
+      prn.itg do@vbdo.$tense NOM VP { 3 _ u@vbpr.[2.tense] _ %4[tense=""] _ 1 }|
       there@adv BE.$tense { u@vbpr.[2.tense] _ hay@vblex }; ! Translates "there is", "there was" into "hay"
 
 

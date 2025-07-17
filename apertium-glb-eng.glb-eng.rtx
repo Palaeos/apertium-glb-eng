@@ -29,8 +29,9 @@ preflist = aw ex per;
 
 
 n: _.number;
-adj: _;
+adj: _.degree;
 pr: _;
+adv: _;
 num: _;
 prn: _.case.person.gender_ENG.number;
 det_default: _.det_type;
@@ -42,7 +43,7 @@ vbmod: _.tense.person.number;
 NP: _.number;
 
 npcomp: _.number;
-NNP: _;
+NNP: _.number;
 CNP: _;
 DP: _;
 NOM: _;
@@ -59,7 +60,7 @@ WILL: _.tense;
 BE: _.tense;
 HAVE: _.tense;
 VP: _.tense;
-PVP: _.tense;
+PVP: _.tense.person.number;
 DVP: _.tense.person.number;
 PRN: _.person.gender_ENG.number;
 S: _;
@@ -86,8 +87,29 @@ det: (if (1.det_type = def or 1.det_type = ind)
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
-NP -> %n {1}|
-      adj %NP {1 _ 2};
+! Accounts for any number of adverbs
+AVP -> 0.1:adj.ord AVP { 1 _ 2 }  |
+       adj.ord { 1 } |
+       0.1:adv AVP { 1 _ 2 }  |
+       adv { 1 } ; 
+
+       ! Accounts for any number of adjectival phrases and carries forth the comparative degree to later convert to an adverb.
+AJ -> AVP adj.$degree { 1 _ 2 } |
+      adj.$degree { 1 } ;
+
+! Coverts the comparative degree into an adverb.
+AJC ->      maxmo@adv AJ { 2[degree=comp] }|
+            maxim@adv AJ { 2[degree=sup] }|
+            AJ { 1  };
+
+! Accounts for any number of adjectival phrases including comparisons.
+AP -> AJC AP { 1 _ 2 } |
+      AJC { 1 } ;
+
+VP -> vblex.$tense { %1[person=$person, number=$number] }| AVP vblex.$tense { 1 _ %2[person=$person, number=$number] };
+
+NP -> %n {%1[number=$number]}|
+      adj %NP {1 _ %2[number=$number]};
 
 NNP -> %NP {%1[number=sg]}|
       %num NP {1 %2[number=pl]}|
@@ -96,12 +118,14 @@ NNP -> %NP {%1[number=sg]}|
 
 NOM -> NP {1}| prn {1};
 
-DVP ->   u@vbpr.[prespast] %vblex {  %2[person=$person, number=$number] }|
-         u@vbpr.[prespast] %vblex {  %2[person=$person, number=$number] }|
-         u@vbpr.[futcondi] %vblex {  will@vbmod.[1.tense>tense_PP] _ %2[tense = inf, person=$person, number=$number] }|
-         5: u@vbpr.inf %vblex { to@pr _  2[tense=inf] }|
-         [modal]@vbmod.$tense u@vbpr.inf %vblex { 1[tense=pres] _  3[tense=2.tense] }|
-         0.01: %vblex.$tense {  %1[tense=pres, person=$person, number=$number] }
+DVP ->   u@vbpr.[prespast] %VP {  %2[tense=1.tense, person=$person, number=$number] }|
+         u@vbpr.[futcondi] %VP {  will@vbmod.[1.tense>tense_PP] _ %2[tense = inf, person=$person, number=$number] }|
+         5: u@vbpr.inf %VP { to@pr _  2[tense=inf] }|
+         [modal]@vbmod.$tense u@vbpr.inf %VP { 1[tense=pres] _  3[tense=2.tense] }|
+         0.01: %VP 
+         (if (1.tense = pprs | 1.tense = pp) {  %1[tense=1.tense, person=$person, number=$number] }
+            else {  %1[tense=pres, person=$person, number=$number] }
+            )
 ;
 
 S -> NNP %DVP {1 _ %2[person=p3,number=1.number]}|
@@ -112,6 +136,10 @@ S -> NNP %DVP {1 _ %2[person=p3,number=1.number]}|
      prpers@prn %DVP {1[case=subj] _ %2[person=1.person, number=1.number]}|
      prpers@prn %DVP prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3[case=obj]}|
      prpers@prn %DVP pr prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3 _ 4[case=obj]}
+     !kam@cnjcoo NNP u@vbpr.[prespast] VP { do@vbdo.[tense=3.tense, person=3p, number=2.number] _ 2 _ %4[tense=inf] }|
+     !kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP {do@vbdo.[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf]}|
+     !kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP prpers@prn {do@vbdo.[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf] _ 5[case=obj]}|
+     !kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP pr prpers@prn {do@vbdo.[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf] _ 5 _ 6[case=obj]}
 ;
 
 ! Example rule:

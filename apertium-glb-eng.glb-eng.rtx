@@ -104,8 +104,12 @@ DVP ->   u@vbpr.[prespast] %vblex {  %2[person=$person, number=$number] }|
          0.01: %vblex.$tense {  %1[tense=pres, person=$person, number=$number] }
 ;
 
-S -> n DVP {1[number=sg] _ 2[person=p3,number=sg]}|
-     prpers@prn %DVP {1[case=subj, person=1.person, number=1.number] _ %2[person=1.person, number=1.number]}|
+S -> NNP %DVP {1 _ %2[person=p3,number=1.number]}|
+     hu@cnjsub da@prn %DVP {who@cnjsub _ %3[person=p3,number=sg]}|
+     hu@cnjsub da@prn AVP %DVP {who@prn.rel.an.mf.sp _ 3 _ %4[person=p3,number=sg]}|
+     hu@cnjsub AVP da@prn %DVP {who@prn.rel.an.mf.sp _ 2 _ %4[person=p3,number=sg]}|
+     hu@cnjsub NNP %DVP da@prn  {whom@prn.rel.an.mf.sp _ 2 _ %3[person=p3,number=sg]}|
+     prpers@prn %DVP {1[case=subj] _ %2[person=1.person, number=1.number]}|
      prpers@prn %DVP prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3[case=obj]}|
      prpers@prn %DVP pr prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3 _ 4[case=obj]}
 ;

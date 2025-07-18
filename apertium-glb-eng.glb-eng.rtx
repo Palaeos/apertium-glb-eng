@@ -37,6 +37,7 @@ prn: _.case.person.gender_ENG.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
 vblex: _.tense.person.number;
+vbdo: _.tense.person.number;
 vbpr: _.tense.aspect;
 vbmod: _.tense.person.number;
 
@@ -116,10 +117,11 @@ NNP -> %NP {%1[number=sg]}|
       5: %un@num NP {%2[number=sg]}|
       plu@adj %NP {%2[number=pl]};
 
-NOM -> NP {1}| prn {1};
+NOM -> NNP {1}| prn {1};
 
 DVP ->   u@vbpr.[prespast] %VP {  %2[tense=1.tense, person=$person, number=$number] }|
          u@vbpr.[futcondi] %VP {  will@vbmod.[1.tense>tense_PP] _ %2[tense = inf, person=$person, number=$number] }|
+         u@vbpr.imp %VP { %2[tense = imp, person=$person, number=$number] }|
          5: u@vbpr.inf %VP { to@pr _  2[tense=inf] }|
          [modal]@vbmod.$tense u@vbpr.inf %VP { 1[tense=pres] _  3[tense=2.tense] }|
          0.01: %VP 
@@ -129,17 +131,21 @@ DVP ->   u@vbpr.[prespast] %VP {  %2[tense=1.tense, person=$person, number=$numb
 ;
 
 S -> NNP %DVP {1 _ %2[person=p3,number=1.number]}|
+     NNP %DVP ke@prn {3 _  2 _ 1}|
+     10: AP NNP %DVP ke@prn {4 _  3 _ 1 _ 2}|
      hu@cnjsub da@prn %DVP {who@cnjsub _ %3[person=p3,number=sg]}|
      hu@cnjsub da@prn AVP %DVP {who@prn.rel.an.mf.sp _ 3 _ %4[person=p3,number=sg]}|
      hu@cnjsub AVP da@prn %DVP {who@prn.rel.an.mf.sp _ 2 _ %4[person=p3,number=sg]}|
      hu@cnjsub NNP %DVP da@prn  {whom@prn.rel.an.mf.sp _ 2 _ %3[person=p3,number=sg]}|
      prpers@prn %DVP {1[case=subj] _ %2[person=1.person, number=1.number]}|
      prpers@prn %DVP prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3[case=obj]}|
-     prpers@prn %DVP pr prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3 _ 4[case=obj]}
-     !kam@cnjcoo NNP u@vbpr.[prespast] VP { do@vbdo.[tense=3.tense, person=3p, number=2.number] _ 2 _ %4[tense=inf] }|
-     !kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP {do@vbdo.[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf]}|
-     !kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP prpers@prn {do@vbdo.[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf] _ 5[case=obj]}|
-     !kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP pr prpers@prn {do@vbdo.[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf] _ 5 _ 6[case=obj]}
+     prpers@prn %DVP pr prpers@prn {1[case=subj] _ %2[person=1.person, number=1.number] _ 3 _ 4[case=obj]}|
+     kam@cnjcoo NOM u@vbpr.[futcondi] VP { will@vbmod.[3.tense>tense_PP] _ 2 _ %4[tense=inf] }|
+     kam@cnjcoo NNP u@vbpr.[prespast] VP { do@vbdo[tense=3.tense, person=p3, number=2.number] _ 2 _ %4[tense=inf] }|
+     kam@cnjcoo NNP VP { do@vbdo[tense=pres, person=p3, number=2.number] _ 2 _ %3[tense=inf] }|
+     kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP {do@vbdo[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf]}|
+     kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP prpers@prn {do@vbdo[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf] _ 5[case=obj]}|
+     kam@cnjcoo prpers@prn u@vbpr.[prespast] %VP pr prpers@prn {do@vbdo[tense=3.tense, person=2.person, number=2.number] _ 2[case=subj] _ %4[tense=inf] _ 5 _ 6[case=obj]}
 ;
 
 ! Example rule:

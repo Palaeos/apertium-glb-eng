@@ -176,7 +176,6 @@ NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             else { 1 }
             )|
             ! inserts implied pronouns after adjectives. a numeral if available is used to pick the right number.
-            AJC  {  1 _ prpers@prn.p3.GD.sg }|
             num AJC  (if (1.number = sg)
             { 1 _ 2 _ prpers@prn.p3.GD.sg }
             else
@@ -196,8 +195,9 @@ CNP ->      det_pos.$gender_ENG.$number NNP {1[gender_GLB = 1.gender_ENG>gender_
 
 ! Accounts for determiners and removes definite/indefinite articles
 DP -> [articles]@det NNP { 2[lemcase=1.lemcase] }|
-      det_pos_cor NNP {1 _ 2 }|
-      !det_def NNP {1 _ 2 }|
+      [articles]@det AJC { 2[lemcase=1.lemcase] _ prpers@prn.p3.GD.sg }|
+      !det_pos_cor NNP {1 _ 2 }|
+      det_def NNP {1 _ 2 }|
       NNP { 1 };
 
 

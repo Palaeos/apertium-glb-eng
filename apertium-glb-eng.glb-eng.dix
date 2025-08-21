@@ -334,13 +334,20 @@
 <e>       <p><l>ke<s n="prn"/><s n="nt"/><s n="sg"/></l>                   <r>what<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 <e>       <p><l>ke<s n="prn"/><s n="nt"/><s n="sg"/></l>                   <r>which<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 
-<e><p><l>banete<s n = "prn"/></l>   <r>some<b/>of<b/>them<s n = "prn"/></r></p></e>
-<e><p><l>banoto<s n = "prn"/></l>   <r>some<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>ban<s n="prn"/><s n="ut"/><s n="pl"/></l>   <r>some<b/>of<b/>them<s n = "prn"/></r></p></e>
+<e><p><l>ban<s n="prn"/><s n="nt"/><s n="pl"/></l>   <r>some<b/>things<s n = "prn"/></r></p></e>
 
-<e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>somebody<s n = "prn"/></r></p></e>
-<e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>somebody<s n = "prn"/></r></p></e>
-<e><p><l>bante<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>someone<s n = "prn"/></r></p></e>
-<e><p><l>banto<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>something<s n = "prn"/></r></p></e>
+<e><p><l>ban<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>someone<s n = "prn"/><s n = "ind"/><s n = "mf"/><s n="sg"/></r></p></e>
+<e><p><l>ban<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>something<s n = "prn"/><s n = "ind"/><s n = "nt"/><s n="sg"/></r></p></e>
+
+<e><p><l>alo<s n="prn"/><s n="ut"/><s n="pl"/></l>   <r>some<b/>other<b/>ones<s n = "prn"/></r></p></e>
+<e><p><l>alo<s n="prn"/><s n="nt"/><s n="pl"/></l>   <r>some<b/>other<b/>things<s n = "prn"/></r></p></e>
+<e><p><l>alo<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>somebody<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>alo<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>someone<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>alo<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>something<b/>else<s n = "prn"/></r></p></e>
+<e><p><l>alo<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>another<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>alo<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>a<b/>different<b/>thing<s n = "prn"/></r></p></e>
+
 
 <e>       <p><l>banøtø<s n="prn"/><s n="GD"/><s n="pl"/></l>                   <r>some<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
 
@@ -376,21 +383,15 @@
 <e>       <p><l>kufi<s n="adj"/></l>                             <r>enough<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
 
 
-<e><p><l>aloete<s n = "prn"/></l>   <r>some<b/>other<b/>ones<s n = "prn"/></r></p></e>
-<e><p><l>alooto<s n = "prn"/></l>   <r>some<b/>other<b/>things<s n = "prn"/></r></p></e>
-<e><p><l>alote<s n = "prn"/></l>   <r>somebody<b/>else<s n = "prn"/></r></p></e>
-<e><p><l>alote<s n = "prn"/></l>   <r>someone<b/>else<s n = "prn"/></r></p></e>
-<e><p><l>aloto<s n = "prn"/></l>   <r>something<b/>else<s n = "prn"/></r></p></e>
-<e><p><l>aloto<s n = "prn"/></l>   <r>another<b/>thing<s n = "prn"/></r></p></e>
-<e><p><l>aloto<s n = "prn"/></l>   <r>a<b/>different<b/>thing<s n = "prn"/></r></p></e>
+
 <e><p><l>denete<s n = "prn"/></l>   <r>those<b/>ones<s n = "prn"/></r></p></e>
 <e><p><l>denoto<s n = "prn"/></l>   <r>those<b/>(things)<s n = "prn"/></r></p></e>
 <e><p><l>denoto<s n = "prn"/></l>   <r>those<b/>ones<s n = "prn"/></r></p></e>
-<e><p><l>dente<s n = "prn"/></l>   <r>that<b/>one<s n = "prn"/></r></p></e>
-<e><p><l>dente<s n = "prn"/></l>   <r>that<b/>being<s n = "prn"/></r></p></e>
-<e><p><l>dente<s n = "prn"/></l>   <r>that<b/>person<s n = "prn"/></r></p></e>
-<e><p><l>dento<s n = "prn"/></l>   <r>that<b/>one<s n = "prn"/></r></p></e>
-<e><p><l>dento<s n = "prn"/></l>   <r>that<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>den<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>that<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>den<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>that<b/>being<s n = "prn"/></r></p></e>
+<e><p><l>den<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>that<b/>person<s n = "prn"/></r></p></e>
+<e><p><l>den<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>that<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>den<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>that<b/>thing<s n = "prn"/></r></p></e>
 <e><p><l>he<b/>alote<s n = "prn"/></l>   <r>anybody<b/>else<s n = "prn"/></r></p></e>
 <e><p><l>he<b/>alote<s n = "prn"/></l>   <r>anyone<b/>else<s n = "prn"/></r></p></e>
 <e><p><l>he<b/>aloto<s n = "prn"/></l>   <r>any<b/>other<b/>thing<s n = "prn"/></r></p></e>
@@ -413,11 +414,11 @@
 <e><p><l>hinete<s n = "prn"/></l>   <r>these<b/>ones<s n = "prn"/></r></p></e>
 <e><p><l>hinoto<s n = "prn"/></l>   <r>these<b/>(things)<s n = "prn"/></r></p></e>
 <e><p><l>hinoto<s n = "prn"/></l>   <r>these<b/>ones<s n = "prn"/></r></p></e>
-<e><p><l>hinte<s n = "prn"/></l>   <r>this<b/>one<s n = "prn"/></r></p></e>
-<e><p><l>hinte<s n = "prn"/></l>   <r>this<b/>being<s n = "prn"/></r></p></e>
-<e><p><l>hinte<s n = "prn"/></l>   <r>this<b/>person<s n = "prn"/></r></p></e>
-<e><p><l>hinto<s n = "prn"/></l>   <r>this<b/>one<s n = "prn"/></r></p></e>
-<e><p><l>hinto<s n = "prn"/></l>   <r>this<b/>thing<s n = "prn"/></r></p></e>
+<e><p><l>hin<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>this<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>hin<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>this<b/>being<s n = "prn"/></r></p></e>
+<e><p><l>hin<s n="prn"/><s n="ut"/><s n="sg"/></l>   <r>this<b/>person<s n = "prn"/></r></p></e>
+<e><p><l>hin<s n="prn"/><s n="nt"/><s n="sg"/></l>   <r>this<b/>one<s n = "prn"/></r></p></e>
+<e><p><l>hin<s n="prn"/><s n="nt"/><s n="sg"/>></l>   <r>this<b/>thing<s n = "prn"/></r></p></e>
 <e><p><l>mante<s n = "prn"/></l>   <r>he<s n = "prn"/></r></p></e>
 <e><p><l>moyete<s n = "prn"/></l>   <r>they<b/>all<s n = "prn"/></r></p></e>
 <e><p><l>moyete<s n = "prn"/></l>   <r>all<b/>of<b/>them<s n = "prn"/></r></p></e>

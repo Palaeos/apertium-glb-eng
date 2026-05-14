@@ -132,6 +132,15 @@ NNP -> %NP {%1[number=sg]}|
       %num NP {1 %2[number=pl]}|
       5: %un@num NP {%2[number=sg]}|
       plu@adj %NP {%2[number=pl]}|
+      ! Demonstrative + "un" (one): drop "one", stay singular: "Hin un kitabu" -> "this book"
+      20: hin@det un@num %NP { this@det.dem.sg[lemcase=1.lemcase] _ %3[number=sg] }|
+      20: den@det un@num %NP { that@det.dem.sg[lemcase=1.lemcase] _ %3[number=sg] }|
+      ! Demonstrative + number > 1: "Hin care lama kitabu" -> "These four old books"
+      10: hin@det num %NP { this@det.dem.pl[lemcase=1.lemcase] _ 2 _ %3[number=pl] }|
+      10: den@det num %NP { that@det.dem.pl[lemcase=1.lemcase] _ 2 _ %3[number=pl] }|
+      ! Demonstrative + "plu" (plural marker): "Hin plu kitabu" -> "these books"
+      15: hin@det plu@adj %NP { this@det.dem.pl[lemcase=1.lemcase] _ %3[number=pl] }|
+      15: den@det plu@adj %NP { that@det.dem.pl[lemcase=1.lemcase] _ %3[number=pl] }|
       ! Determiner + possessive: restructure to "[det-pl] N of mine/yours/..."
       10: hin@det misu@adj  %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p1.mf.sg }|
       10: hin@det yusu@adj  %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p2.mf.sg }|

@@ -14251,25 +14251,25 @@
 <e><p><l>dasu<s n="adj"/></l>   <r>plural<s n="adj"/></r></p></e>
 <e><p><l>dasu<s n="adj"/></l>   <r>animate<s n="adj"/></r></p></e>
 <e><p><l>dasu<s n="adj"/></l>   <r>inanimate_)<s n="adj"/></r></p></e>
-<e><p><l>etesu<s n="adj"/></l>   <r>their<s n="adj"/></r></p></e>
+<e><p><l>etesu<s n="adj"/></l>   <r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 <e><p><l>hu<b/>dasu<s n="adj"/></l>   <r>whose<s n="adj"/></r></p></e>
 <e><p><l>hu<b/>dasu<s n="adj"/></l>   <r>of<b/>whom<s n="adj"/></r></p></e>
 <e><p><l>hu<b/>dasu<s n="adj"/></l>   <r>of<b/>which<s n="adj"/></r></p></e>
-<e><p><l>imisu<s n="adj"/></l>   <r>our<s n="adj"/></r></p></e>
-<e><p><l>misu<s n="adj"/></l>   <r>my<s n="adj"/></r></p></e>
-<e><p><l>otosu<s n="adj"/></l>   <r>their<s n="adj"/></r></p></e>
+<e><p><l>imisu<s n="adj"/></l>   <r>our<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>misu<s n="adj"/></l>   <r>my<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>otosu<s n="adj"/></l>   <r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 <e><p><l>rensu<s n="adj"/></l>   <r>one's<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>her<b/>own<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>his<b/>own<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>their<b/>own<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>one's<b/>own<s n="adj"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>her<s n="adj"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>his<s n="adj"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>its<s n="adj"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>their<s n="adj"/></r></p></e>
-<e><p><l>tosu<s n="adj"/></l>   <r>its<s n="adj"/></r></p></e>
-<e><p><l>uyusu<s n="adj"/></l>   <r>your<s n="adj"/></r></p></e>
-<e><p><l>yusu<s n="adj"/></l>   <r>your<s n="adj"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>her<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>his<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>its<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>tosu<s n="adj"/></l>   <r>its<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>uyusu<s n="adj"/></l>   <r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>yusu<s n="adj"/></l>   <r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
 <e><p><l>Afganili<s n="adj"/></l>   <r>Afghan<b/>(_relating<b/>to<b/>Afghanistan<s n="adj"/></r></p></e>
 <e><p><l>Afganili<s n="adj"/></l>   <r>its<b/>people<s n="adj"/></r></p></e>
 <e><p><l>Afganili<s n="adj"/></l>   <r>or<b/>their<b/>language_)<s n="adj"/></r></p></e>

@@ -175,6 +175,38 @@
 <e>       <p><l>xafe<s n = "pr"/><b/>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></l>                 <r>and<s n="cnjcoo"/><j/>then<s n="cnjadv"/></r></p></e>
 
 <e><p><l>kom<s n = "pr"/></l>   <r>as<s n = "pr"/></r></p></e>
+<e><p><l>kom<s n = "cnjcoo"/></l>   <r>than<s n = "cnjcoo"/></r></p></e>
+
+<!-- Bare prepositions -->
+<e><p><l>in<s n="pr"/></l>   <r>in<s n="pr"/></r></p></e>
+<e><p><l>tas<s n="pr"/></l>   <r>to<s n="pr"/></r></p></e>
+<e><p><l>de<s n="pr"/></l>   <r>of<s n="pr"/></r></p></e>
+<e><p><l>fe<s n="pr"/></l>   <r>at<s n="pr"/></r></p></e>
+<e><p><l>el<s n="pr"/></l>   <r>el<s n="pr"/></r></p></e>
+
+<!-- Quantifier -->
+<e><p><l>multi<s n="adj"/></l>   <r>many<s n="adj"/></r></p></e>
+<e><p><l>multi<s n="adv"/></l>   <r>much<s n="adv"/></r></p></e>
+
+<!-- Cardinal numbers: units, tens -->
+<e><p><l>un<s n="num"/></l>   <r>one<s n="num"/></r></p></e>
+<e><p><l>dua<s n="num"/></l>   <r>two<s n="num"/></r></p></e>
+<e><p><l>tiga<s n="num"/></l>   <r>three<s n="num"/></r></p></e>
+<e><p><l>care<s n="num"/></l>   <r>four<s n="num"/></r></p></e>
+<e><p><l>lima<s n="num"/></l>   <r>five<s n="num"/></r></p></e>
+<e><p><l>sisa<s n="num"/></l>   <r>six<s n="num"/></r></p></e>
+<e><p><l>sabe<s n="num"/></l>   <r>seven<s n="num"/></r></p></e>
+<e><p><l>oco<s n="num"/></l>   <r>eight<s n="num"/></r></p></e>
+<e><p><l>nue<s n="num"/></l>   <r>nine<s n="num"/></r></p></e>
+<e><p><l>des<s n="num"/></l>   <r>ten<s n="num"/></r></p></e>
+<e><p><l>duades<s n="num"/></l>   <r>twenty<s n="num"/></r></p></e>
+<e><p><l>tigades<s n="num"/></l>   <r>thirty<s n="num"/></r></p></e>
+<e><p><l>caredes<s n="num"/></l>   <r>forty<s n="num"/></r></p></e>
+<e><p><l>limades<s n="num"/></l>   <r>fifty<s n="num"/></r></p></e>
+<e><p><l>sisades<s n="num"/></l>   <r>sixty<s n="num"/></r></p></e>
+<e><p><l>sabedes<s n="num"/></l>   <r>seventy<s n="num"/></r></p></e>
+<e><p><l>ocodes<s n="num"/></l>   <r>eighty<s n="num"/></r></p></e>
+<e><p><l>nuedes<s n="num"/></l>   <r>ninety<s n="num"/></r></p></e>
 
 <e>       <p><l>moydua<s n="det"/><s n="ind"/><s n="pl"/><j/>prpers<s n="prn"/><s n="p3"/><s n="ut"/><s n="pl"/></l>                 <r>both<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
 

@@ -136,7 +136,7 @@
 <e>       <p><l>ji<b/>pia<s n="cnjcoo"/></l>           <r>and<b/>also<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>mas<b/>pia<s n="cnjcoo"/></l>          <r>but<b/>also<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>kom<s n = "cnjsub"/></l>               <r>as<s n = "cnjsub"/></r></p></e>
-<e>       <p><l>kom<s n="cnjcoo"/></l>                 <r>than<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>kom<s n="cnjcoo"/></l>                 <r>than<s n="cnjsub"/></r></p></e>
 <e>       <p><l>mas<s n="cnjcoo"/></l>                 <r>but<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>kam<s n = "cnjcoo"/></l>               <r><s n = "cnjcoo"/></r></p></e>
 <e>       <p><l>or<s n="cnjcoo"/></l>                  <r>or<s n="cnjcoo"/></r></p></e>
@@ -175,7 +175,7 @@
 <e>       <p><l>xafe<s n = "pr"/><b/>prpers<s n="prn"/><s n="p3"/><s n="nt"/><s n="sg"/></l>                 <r>and<s n="cnjcoo"/><j/>then<s n="cnjadv"/></r></p></e>
 
 <e><p><l>kom<s n = "pr"/></l>   <r>as<s n = "pr"/></r></p></e>
-<e><p><l>kom<s n = "cnjcoo"/></l>   <r>than<s n = "cnjcoo"/></r></p></e>
+<e><p><l>kom<s n = "cnjcoo"/></l>   <r>than<s n = "cnjsub"/></r></p></e>
 
 <!-- Bare prepositions -->
 <e><p><l>in<s n="pr"/></l>   <r>in<s n="pr"/></r></p></e>

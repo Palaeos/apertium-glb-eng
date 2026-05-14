@@ -117,12 +117,38 @@ VPser -> vbser.$tense.$person.$number { %1[person=$person, number=$number] }|
          AVP vbser.$tense.$person.$number { 1 _ %2[person=$person, number=$number] };
 
 NP -> %n {%1[number=$number]}|
+      ! Bare possessive: emit as <det><pos><sp> instead of <adj>
+      10: misu@adj  %NP { my@det.pos.sp    _ %2[number=$number] }|
+      10: yusu@adj  %NP { your@det.pos.sp  _ %2[number=$number] }|
+      10: tesu@adj  %NP { their@det.pos.sp _ %2[number=$number] }|
+      10: tosu@adj  %NP { its@det.pos.sp   _ %2[number=$number] }|
+      10: imisu@adj %NP { our@det.pos.sp   _ %2[number=$number] }|
+      10: uyusu@adj %NP { your@det.pos.sp  _ %2[number=$number] }|
+      10: etesu@adj %NP { their@det.pos.sp _ %2[number=$number] }|
+      10: otosu@adj %NP { their@det.pos.sp _ %2[number=$number] }|
       adj %NP {1 _ %2[number=$number]};
 
 NNP -> %NP {%1[number=sg]}|
       %num NP {1 %2[number=pl]}|
       5: %un@num NP {%2[number=sg]}|
-      plu@adj %NP {%2[number=pl]};
+      plu@adj %NP {%2[number=pl]}|
+      ! Determiner + possessive: restructure to "[det-pl] N of mine/yours/..."
+      10: hin@det misu@adj  %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p1.mf.sg }|
+      10: hin@det yusu@adj  %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p2.mf.sg }|
+      10: hin@det tesu@adj  %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.m.sg }|
+      10: hin@det tosu@adj  %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.nt.sg }|
+      10: hin@det imisu@adj %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p1.mf.pl }|
+      10: hin@det uyusu@adj %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p2.mf.pl }|
+      10: hin@det etesu@adj %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.mf.pl }|
+      10: hin@det otosu@adj %num NP { this@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.nt.pl }|
+      10: den@det misu@adj  %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p1.mf.sg }|
+      10: den@det yusu@adj  %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p2.mf.sg }|
+      10: den@det tesu@adj  %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.m.sg }|
+      10: den@det tosu@adj  %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.nt.sg }|
+      10: den@det imisu@adj %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p1.mf.pl }|
+      10: den@det uyusu@adj %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p2.mf.pl }|
+      10: den@det etesu@adj %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.mf.pl }|
+      10: den@det otosu@adj %num NP { that@det.dem.pl[lemcase=1.lemcase] _ %3 _ %4[number=pl] _ of@pr _ prpers@prn.pos.p3.nt.pl };
 
 NOM -> NNP {1}| prn {1};
 

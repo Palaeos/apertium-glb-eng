@@ -17,6 +17,7 @@ prespast = pres past;
 futcondi = fut cni;
 modal = abil ingay musi;
 case = subj obj;
+prn_subtype = ref rel ind dem;
 finite = pres past fut cni imp;
 aspect = prog impf pros;
 tense = [finite] inf pprs ger pp;
@@ -29,11 +30,12 @@ preflist = aw ex per;
 
 
 n: _.number;
-adj: _.degree;
+adj: _.degree.det_type.number;
 pr: _;
 adv: _;
-num: _;
-prn: _.case.person.gender_ENG.number;
+num: _.number;
+prn: _.case.det_type.prn_subtype.person.gender_ENG.number;
+det: _.det_type.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
 vblex: _.tense.person.number;

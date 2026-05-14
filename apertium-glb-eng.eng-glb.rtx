@@ -33,13 +33,13 @@ tense_PP = pres past;
 ! Because of the almost isolating nature of Globasa, except for pronouns, no inflection information applies so we do not output any here.
 
 n: _.gender_GLB;
-np: _;
+np: _.gender_GLB;
 pfx: _;
 prn: _.person.gender_GLB.number;
 det_pos: _.<pos>.person.gender_GLB.number;
 det_pos_cor: _.<pos>;
-det_qnt_cor: _.<qnt>.number;
-det_ind_cor: _.<qnt>.number;
+det_qnt_cor: _.<qnt>;
+det_ind_cor: _.<qnt>;
 det_def: _;
 
 ! The resulting Globasa determiner will either be possessive with the associated tags "Misu", "yusu", etc. or not
@@ -74,7 +74,7 @@ verb: _.tense;
 v: _.tense;
 vv: _.tense;
 
-vbser: _;
+vbser: _.out_tense;
 vbdo:  _;
 vbhaver: _;
 
@@ -144,6 +144,7 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 
 
 !v -> copula.$tense { 1 } | vv.$tense { 1 } | vbhaver.$tense { 1 };
+!v -> vv.$tense { 1 };
 
 ! For lexical verbs, takes adverbs after or or followed by a nominal phrase and converts them into prefixes. For instance "die away" -> "awmorcu"
 ! This rule interferes with the will/would tense marking.
@@ -167,11 +168,11 @@ NP -> npcomp.$number { 1 } |
 ! Extracts the number information from the noun to determine the right numeral to put before
 NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             |
-            5:det_qnt_cor NP.$number  { 1 _ 2 }
+            5:det_qnt_cor NP  { 1 _ %2[number=""] }
             |
-            0.1:det_ind_cor NP.$number  { 1 _ 2 }
+            0.1:det_ind_cor NP  { 1 _ %2[number=""] }
             |
-            0.01: NP.$number  (if (1.number = sg) { un@num[lemcase=1.lemcase] _ 1 }
+            0.0001: NP.$number  (if (1.number = sg) { un@num[lemcase=1.lemcase] _ 1 }
             elif (1.number = pl)  { plu@adj _ 1 }
             else { 1 }
             )|
@@ -269,7 +270,7 @@ DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          BE.[finite] go@vblex.ger to@pr VP.inf { u@vbpr.[1.tense].pros _ %4[tense=""] }|
          [modal]@vbmod VP.inf{ 1 _ u@vbpr.inf _ 2 }|
          20:to@pr VP.inf{ u@vbpr.inf _ 2 }|
-         VP.[finite]{ u@vbpr.[1.tense] _ 1 }
+         VP.[finite]{ u@vbpr.[1.tense] _ %1[tense=""] }
          
 
          ;

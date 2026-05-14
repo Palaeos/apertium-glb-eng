@@ -22,6 +22,7 @@ finite = pres past fut cni imp;
 aspect = prog impf pros;
 tense = [finite] inf pprs ger pp;
 preflist = aw ex per;
+adj_class = sint;
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
@@ -30,16 +31,16 @@ preflist = aw ex per;
 
 
 n: _.number;
-adj: _.degree.det_type.number;
+adj: _.adj_class.degree.det_type.number;
 pr: _;
-adv: _;
+adv: _.det_type;
 num: _.number;
 prn: _.case.det_type.prn_subtype.person.gender_ENG.number;
 det: _.det_type.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
 vblex: _.tense.person.number;
-vbdo: _.tense.person.number;
+vbdo: _.tense;
 vbpr: _.tense.aspect;
 vbmod: _.tense.person.number;
 vbser: _.tense.person.number;
@@ -103,7 +104,9 @@ AJ -> AVP adj.$degree { 1 _ 2 } |
       adj.$degree { 1 } ;
 
 ! Coverts the comparative degree into an adverb.
-AJC ->      maxmo@adv AJ { 2[degree=comp] }|
+AJC ->      5: maxmo@adv adj { 2[degree=comp] }|
+            5: maxim@adv adj { 2[degree=sup] }|
+            maxmo@adv AJ { 2[degree=comp] }|
             maxim@adv AJ { 2[degree=sup] }|
             AJ { 1  };
 
@@ -179,8 +182,29 @@ DVP ->   u@vbpr.[prespast] %VP {  %2[tense=1.tense, person=$person, number=$numb
 ;
 
 S -> NNP %DVP (if (1.number = pl) {1 _ %2[person=p3,number=pl]} else {1 _ %2[person=p3,number=sg]})|
-     NNP %DVP ke@prn {3 _  2 _ 1}|
-     10: AP NNP %DVP ke@prn {4 _  3 _ 1 _ 2}|
+     ! Wh-pronoun (ke) copula questions: "X sen keto?" -> "What is X?"
+     ! Wh-pronoun (ke) copula questions: "X sen keto?" -> "What is X?"
+     NNP %DVP ke@prn (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     10: AP NNP %DVP ke@prn (if (2.number = pl) {4 _ %3[person=p3,number=pl] _ 1 _ 2} else {4 _ %3[person=p3,number=sg] _ 1 _ 2})|
+     ! Wh-pronoun (ke) copula with pronoun subject: "Mi sen keto?" -> "What am I?"
+     prpers@prn %DVP ke@prn (if (1.number = pl) {3 _ %2[person=1.person, number=pl] _ 1[case=subj]} else {3 _ %2[person=1.person, number=sg] _ 1[case=subj]})|
+     ! Wh-adverb copula questions: "X sen keloka?" -> "Where is X?"
+     10: NNP %DVP keloka@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     10: NNP %DVP kewatu@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     10: NNP %DVP keseba@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     10: NNP %DVP kemo@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     10: NNP %DVP kemaner@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     ! Wh-adverb with future/conditional + lexical verb: "S xa V keloka?" -> "Where will S V?"
+     50: NNP u@vbpr.[futcondi] VP keloka@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP kewatu@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP keseba@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP kemo@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP kemaner@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP keloka@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP kewatu@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP keseba@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP kemo@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP kemaner@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
      hu@cnjsub da@prn %DVP {who@cnjsub _ %3[person=p3,number=sg]}|
      hu@cnjsub da@prn AVP %DVP {who@prn.rel.an.mf.sp _ 3 _ %4[person=p3,number=sg]}|
      hu@cnjsub AVP da@prn %DVP {who@prn.rel.an.mf.sp _ 2 _ %4[person=p3,number=sg]}|

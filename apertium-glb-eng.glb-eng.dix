@@ -14251,25 +14251,25 @@
 <e><p><l>dasu<s n="adj"/></l>   <r>plural<s n="adj"/></r></p></e>
 <e><p><l>dasu<s n="adj"/></l>   <r>animate<s n="adj"/></r></p></e>
 <e><p><l>dasu<s n="adj"/></l>   <r>inanimate_)<s n="adj"/></r></p></e>
-<e><p><l>etesu<s n="adj"/></l>   <r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>etesu<s n="adj"/></l>   <r>their<s n="adj"/></r></p></e>
 <e><p><l>hu<b/>dasu<s n="adj"/></l>   <r>whose<s n="adj"/></r></p></e>
 <e><p><l>hu<b/>dasu<s n="adj"/></l>   <r>of<b/>whom<s n="adj"/></r></p></e>
 <e><p><l>hu<b/>dasu<s n="adj"/></l>   <r>of<b/>which<s n="adj"/></r></p></e>
-<e><p><l>imisu<s n="adj"/></l>   <r>our<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>misu<s n="adj"/></l>   <r>my<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>otosu<s n="adj"/></l>   <r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>imisu<s n="adj"/></l>   <r>our<s n="adj"/></r></p></e>
+<e><p><l>misu<s n="adj"/></l>   <r>my<s n="adj"/></r></p></e>
+<e><p><l>otosu<s n="adj"/></l>   <r>their<s n="adj"/></r></p></e>
 <e><p><l>rensu<s n="adj"/></l>   <r>one's<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>her<b/>own<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>his<b/>own<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>their<b/>own<s n="adj"/></r></p></e>
 <e><p><l>sesu<s n="adj"/></l>   <r>one's<b/>own<s n="adj"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>her<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>his<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>its<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>tesu<s n="adj"/></l>   <r>their<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>tosu<s n="adj"/></l>   <r>its<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>uyusu<s n="adj"/></l>   <r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
-<e><p><l>yusu<s n="adj"/></l>   <r>your<s n="det"/><s n="pos"/><s n="sp"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>her<s n="adj"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>his<s n="adj"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>its<s n="adj"/></r></p></e>
+<e><p><l>tesu<s n="adj"/></l>   <r>their<s n="adj"/></r></p></e>
+<e><p><l>tosu<s n="adj"/></l>   <r>its<s n="adj"/></r></p></e>
+<e><p><l>uyusu<s n="adj"/></l>   <r>your<s n="adj"/></r></p></e>
+<e><p><l>yusu<s n="adj"/></l>   <r>your<s n="adj"/></r></p></e>
 <e><p><l>Afganili<s n="adj"/></l>   <r>Afghan<b/>(_relating<b/>to<b/>Afghanistan<s n="adj"/></r></p></e>
 <e><p><l>Afganili<s n="adj"/></l>   <r>its<b/>people<s n="adj"/></r></p></e>
 <e><p><l>Afganili<s n="adj"/></l>   <r>or<b/>their<b/>language_)<s n="adj"/></r></p></e>
@@ -14471,7 +14471,7 @@
 <e><p><l>absurdo<s n="adv"/></l>   <r>preposterously<s n="adv"/></r></p></e>
 <e><p><l>abyasado<s n="adj"/></l>   <r>rehearsed<s n="adj"/></r></p></e>
 <e><p><l>acidipul<s n="adj"/></l>   <r>acidic<s n="adj"/></r></p></e>
-<e><p><l>acidipul<s n="adj"/></l>   <r>sour<s n="adj"/></r></p></e>
+<e><p><l>acidipul<s n="adj"/></l>   <r>sour<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>acidipul<s n="adv"/></l>   <r>acidly<s n="adv"/></r></p></e>
 <e><p><l>acidipul<s n="adv"/></l>   <r>sourly<s n="adv"/></r></p></e>
 <e><p><l>adateabil<s n="adj"/></l>   <r>adaptable<s n="adj"/></r></p></e>
@@ -14485,11 +14485,11 @@
 <e><p><l>adebufil<s n="adv"/></l>   <r>politely<s n="adv"/></r></p></e>
 <e><p><l>adebufil<s n="adv"/></l>   <r>courteously<s n="adv"/></r></p></e>
 <e><p><l>adebukal<s n="adj"/></l>   <r>impolite<s n="adj"/></r></p></e>
-<e><p><l>adebukal<s n="adj"/></l>   <r>rude<s n="adj"/></r></p></e>
+<e><p><l>adebukal<s n="adj"/></l>   <r>rude<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adebukal<s n="adv"/></l>   <r>impolitely<s n="adv"/></r></p></e>
 <e><p><l>adebukal<s n="adv"/></l>   <r>rudely<s n="adv"/></r></p></e>
 <e><p><l>adebunenfil<s n="adj"/></l>   <r>impolite<s n="adj"/></r></p></e>
-<e><p><l>adebunenfil<s n="adj"/></l>   <r>rude<s n="adj"/></r></p></e>
+<e><p><l>adebunenfil<s n="adj"/></l>   <r>rude<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adebunenfil<s n="adv"/></l>   <r>impolitely<s n="adv"/></r></p></e>
 <e><p><l>adebunenfil<s n="adv"/></l>   <r>rudely<s n="adv"/></r></p></e>
 <e><p><l>adebupul<s n="adj"/></l>   <r>polite<s n="adj"/></r></p></e>
@@ -14497,25 +14497,25 @@
 <e><p><l>adebupul<s n="adv"/></l>   <r>politely<s n="adv"/></r></p></e>
 <e><p><l>adebupul<s n="adv"/></l>   <r>courteously<s n="adv"/></r></p></e>
 <e><p><l>adhesiabil<s n="adj"/></l>   <r>adhesive<s n="adj"/></r></p></e>
-<e><p><l>adhesiabil<s n="adj"/></l>   <r>sticky<s n="adj"/></r></p></e>
+<e><p><l>adhesiabil<s n="adj"/></l>   <r>sticky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adhesiabil<s n="adv"/></l>   <r>adhesively<s n="adv"/></r></p></e>
 <e><p><l>adhesicuabil<s n="adj"/></l>   <r>adhesive<s n="adj"/></r></p></e>
-<e><p><l>adhesicuabil<s n="adj"/></l>   <r>sticky<s n="adj"/></r></p></e>
+<e><p><l>adhesicuabil<s n="adj"/></l>   <r>sticky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adhesicuabil<s n="adv"/></l>   <r>adhesively<s n="adv"/></r></p></e>
 <e><p><l>adhesicune<s n="adj"/></l>   <r>adhesive<s n="adj"/></r></p></e>
-<e><p><l>adhesicune<s n="adj"/></l>   <r>sticky<s n="adj"/></r></p></e>
+<e><p><l>adhesicune<s n="adj"/></l>   <r>sticky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adhesicune<s n="adv"/></l>   <r>adhesively<s n="adv"/></r></p></e>
 <e><p><l>adhesine<s n="adj"/></l>   <r>adhesive<s n="adj"/></r></p></e>
-<e><p><l>adhesine<s n="adj"/></l>   <r>sticky<s n="adj"/></r></p></e>
+<e><p><l>adhesine<s n="adj"/></l>   <r>sticky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adhesine<s n="adv"/></l>   <r>adhesively<s n="adv"/></r></p></e>
-<e><p><l>adil<s n="adj"/></l>   <r>fair<s n="adj"/></r></p></e>
-<e><p><l>adil<s n="adj"/></l>   <r>just<s n="adj"/></r></p></e>
+<e><p><l>adil<s n="adj"/></l>   <r>fair<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>adil<s n="adj"/></l>   <r>just<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adil<s n="adv"/></l>   <r>fairly<s n="adv"/></r></p></e>
 <e><p><l>adil<s n="adv"/></l>   <r>justly<s n="adv"/></r></p></e>
-<e><p><l>adolabala<s n="adj"/></l>   <r>brawny<s n="adj"/></r></p></e>
+<e><p><l>adolabala<s n="adj"/></l>   <r>brawny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adolakal<s n="adj"/></l>   <r>scrawny<s n="adj"/></r></p></e>
 <e><p><l>adolapul<s n="adj"/></l>   <r>muscular<s n="adj"/></r></p></e>
-<e><p><l>adolapul<s n="adj"/></l>   <r>brawny<s n="adj"/></r></p></e>
+<e><p><l>adolapul<s n="adj"/></l>   <r>brawny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>adolapul<s n="adv"/></l>   <r>muscularly<s n="adv"/></r></p></e>
 <e><p><l>adolapul<s n="adv"/></l>   <r>brawnily<s n="adv"/></r></p></e>
 <e><p><l>adopsili<s n="adj"/></l>   <r>adoptive<s n="adj"/></r></p></e>
@@ -14530,7 +14530,7 @@
 <e><p><l>afatupul<s n="adv"/></l>   <r>calamitously<s n="adv"/></r></p></e>
 <e><p><l>afsaneli<s n="adj"/></l>   <r>legendary<s n="adj"/></r></p></e>
 <e><p><l>afsaneli<s n="adv"/></l>   <r>legendarily<s n="adv"/></r></p></e>
-<e><p><l>agil<s n="adj"/></l>   <r>agile<s n="adj"/></r></p></e>
+<e><p><l>agil<s n="adj"/></l>   <r>agile<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>agil<s n="adv"/></l>   <r>agilely<s n="adv"/></r></p></e>
 <e><p><l>ahamible<s n="adj"/></l>   <r>understandable<s n="adj"/></r></p></e>
 <e><p><l>ahamible<s n="adj"/></l>   <r>comprehensible<s n="adj"/></r></p></e>
@@ -14540,9 +14540,9 @@
 <e><p><l>ahamible<s n="adv"/></l>   <r>intelligibly<s n="adv"/></r></p></e>
 <e><p><l>ahamnenible<s n="adj"/></l>   <r>incomprehensible<s n="adj"/></r></p></e>
 <e><p><l>ahamnenible<s n="adv"/></l>   <r>incomprehensibly<s n="adv"/></r></p></e>
-<e><p><l>ajabu<s n="adj"/></l>   <r>strange<s n="adj"/></r></p></e>
-<e><p><l>ajabu<s n="adj"/></l>   <r>weird<s n="adj"/></r></p></e>
-<e><p><l>ajabu<s n="adj"/></l>   <r>odd<s n="adj"/></r></p></e>
+<e><p><l>ajabu<s n="adj"/></l>   <r>strange<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>ajabu<s n="adj"/></l>   <r>weird<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>ajabu<s n="adj"/></l>   <r>odd<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ajabu<s n="adj"/></l>   <r>peculiar<s n="adj"/></r></p></e>
 <e><p><l>ajabu<s n="adv"/></l>   <r>strangely<s n="adv"/></r></p></e>
 <e><p><l>ajabu<s n="adv"/></l>   <r>weirdly<s n="adv"/></r></p></e>
@@ -14554,7 +14554,7 @@
 <e><p><l>ajelado<s n="adv"/></l>   <r>hurriedly<s n="adv"/></r></p></e>
 <e><p><l>ajelado<s n="adv"/></l>   <r>in<b/>a<b/>rush<s n="adv"/></r></p></e>
 <e><p><l>ajelado<s n="adv"/></l>   <r>in<b/>a<b/>hurry<s n="adv"/></r></p></e>
-<e><p><l>ajelapul<s n="adj"/></l>   <r>hasty<s n="adj"/></r></p></e>
+<e><p><l>ajelapul<s n="adj"/></l>   <r>hasty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ajelapul<s n="adj"/></l>   <r>rushed<s n="adj"/></r></p></e>
 <e><p><l>ajelapul<s n="adv"/></l>   <r>hastily<s n="adv"/></r></p></e>
 <e><p><l>akademili<s n="adj"/></l>   <r>academic<s n="adj"/></r></p></e>
@@ -14626,12 +14626,12 @@
 <e><p><l>ambisinenfil<s n="adv"/></l>   <r>unambitiously<s n="adv"/></r></p></e>
 <e><p><l>ambisipul<s n="adj"/></l>   <r>ambitious<s n="adj"/></r></p></e>
 <e><p><l>ambisipul<s n="adv"/></l>   <r>ambitiously<s n="adv"/></r></p></e>
-<e><p><l>amiku<s n="adj"/></l>   <r>deep<s n="adj"/></r></p></e>
+<e><p><l>amiku<s n="adj"/></l>   <r>deep<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>amiku<s n="adj"/></l>   <r>profound<s n="adj"/></r></p></e>
 <e><p><l>amiku<s n="adv"/></l>   <r>deeply<s n="adv"/></r></p></e>
 <e><p><l>amiku<s n="adv"/></l>   <r>profoundly<s n="adv"/></r></p></e>
 <e><p><l>amirufil<s n="adj"/></l>   <r>commanding<s n="adj"/></r></p></e>
-<e><p><l>amirufil<s n="adj"/></l>   <r>bossy<s n="adj"/></r></p></e>
+<e><p><l>amirufil<s n="adj"/></l>   <r>bossy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>amirufil<s n="adj"/></l>   <r>authoritative<s n="adj"/></r></p></e>
 <e><p><l>amirufil<s n="adv"/></l>   <r>commandingly<s n="adv"/></r></p></e>
 <e><p><l>amirufil<s n="adv"/></l>   <r>bossily<s n="adv"/></r></p></e>
@@ -14642,10 +14642,10 @@
 <e><p><l>amusado<s n="adj"/></l>   <r>entertained<s n="adj"/></r></p></e>
 <e><p><l>amusane<s n="adj"/></l>   <r>amusing<s n="adj"/></r></p></e>
 <e><p><l>amusane<s n="adj"/></l>   <r>entertaining<s n="adj"/></r></p></e>
-<e><p><l>amusane<s n="adj"/></l>   <r>fun<s n="adj"/></r></p></e>
+<e><p><l>amusane<s n="adj"/></l>   <r>fun<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>amusane<s n="adv"/></l>   <r>amusingly<s n="adv"/></r></p></e>
 <e><p><l>amusane<s n="adv"/></l>   <r>entertainingly<s n="adv"/></r></p></e>
-<e><p><l>amusapul<s n="adj"/></l>   <r>fun<s n="adj"/></r></p></e>
+<e><p><l>amusapul<s n="adj"/></l>   <r>fun<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>amusapul<s n="adj"/></l>   <r>amusing<s n="adj"/></r></p></e>
 <e><p><l>amusapul<s n="adj"/></l>   <r>entertaining<s n="adj"/></r></p></e>
 <e><p><l>amusapul<s n="adj"/></l>   <r>amused<s n="adj"/></r></p></e>
@@ -14661,12 +14661,12 @@
 <e><p><l>anarkili<s n="adj"/></l>   <r>anarchic<s n="adj"/></r></p></e>
 <e><p><l>anarkili<s n="adv"/></l>   <r>anarchically<s n="adv"/></r></p></e>
 <e><p><l>andin<s n="adj"/></l>   <r>stable<s n="adj"/></r></p></e>
-<e><p><l>andin<s n="adj"/></l>   <r>firm<s n="adj"/></r></p></e>
+<e><p><l>andin<s n="adj"/></l>   <r>firm<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>andin<s n="adv"/></l>   <r>stably<s n="adv"/></r></p></e>
 <e><p><l>andin<s n="adv"/></l>   <r>firmly<s n="adv"/></r></p></e>
 <e><p><l>anedotali<s n="adj"/></l>   <r>anecdotal<s n="adj"/></r></p></e>
 <e><p><l>anedotali<s n="adv"/></l>   <r>anecdotally<s n="adv"/></r></p></e>
-<e><p><l>anjen<s n="adj"/></l>   <r>safe<s n="adj"/></r></p></e>
+<e><p><l>anjen<s n="adj"/></l>   <r>safe<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>anjen<s n="adj"/></l>   <r>secure<s n="adj"/></r></p></e>
 <e><p><l>anjen<s n="adv"/></l>   <r>safely<s n="adv"/></r></p></e>
 <e><p><l>anjen<s n="adv"/></l>   <r>securely<s n="adv"/></r></p></e>
@@ -14696,7 +14696,7 @@
 <e><p><l>aplikaible<s n="adv"/></l>   <r>applicably<s n="adv"/></r></p></e>
 <e><p><l>aprobado<s n="adj"/></l>   <r>approved<s n="adj"/></r></p></e>
 <e><p><l>aristo<s n="adj"/></l>   <r>aristocratic<s n="adj"/></r></p></e>
-<e><p><l>aristo<s n="adj"/></l>   <r>noble<s n="adj"/></r></p></e>
+<e><p><l>aristo<s n="adj"/></l>   <r>noble<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>aristo<s n="adv"/></l>   <r>aristocratically<s n="adv"/></r></p></e>
 <e><p><l>aristo<s n="adv"/></l>   <r>nobly<s n="adv"/></r></p></e>
 <e><p><l>arkiteturli<s n="adj"/></l>   <r>architectural<s n="adj"/></r></p></e>
@@ -14713,7 +14713,7 @@
 <e><p><l>artroitisdo<s n="adj"/></l>   <r>arthritic<s n="adj"/></r></p></e>
 <e><p><l>artroitisli<s n="adj"/></l>   <r>arthritic<s n="adj"/></r></p></e>
 <e><p><l>artroitispul<s n="adj"/></l>   <r>arthritic<s n="adj"/></r></p></e>
-<e><p><l>asan<s n="adj"/></l>   <r>easy<s n="adj"/></r></p></e>
+<e><p><l>asan<s n="adj"/></l>   <r>easy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>asan<s n="adv"/></l>   <r>easily<s n="adv"/></r></p></e>
 <e><p><l>aselcune<s n="adj"/></l>   <r>originating<s n="adj"/></r></p></e>
 <e><p><l>aselli<s n="adj"/></l>   <r>original<b/>(_first<s n="adj"/></r></p></e>
@@ -14792,27 +14792,27 @@
 <e><p><l>aybudo<s n="adj"/></l>   <r>caressed<s n="adj"/></r></p></e>
 <e><p><l>aybudo<s n="adj"/></l>   <r>stroked<s n="adj"/></r></p></e>
 <e><p><l>aybudo<s n="adj"/></l>   <r>petted<s n="adj"/></r></p></e>
-<e><p><l>aysepul<s n="adj"/></l>   <r>icy<s n="adj"/></r></p></e>
+<e><p><l>aysepul<s n="adj"/></l>   <r>icy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>aysepul<s n="adv"/></l>   <r>icily<s n="adv"/></r></p></e>
-<e><p><l>azizu<s n="adj"/></l>   <r>dear<s n="adj"/></r></p></e>
+<e><p><l>azizu<s n="adj"/></l>   <r>dear<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>azizu<s n="adv"/></l>   <r>dearly<s n="adv"/></r></p></e>
 <e><p><l>baharili<s n="adj"/></l>   <r>maritime<s n="adj"/></r></p></e>
 <e><p><l>baharili<s n="adj"/></l>   <r>oceanic<s n="adj"/></r></p></e>
-<e><p><l>bala<s n="adj"/></l>   <r>strong<s n="adj"/></r></p></e>
+<e><p><l>bala<s n="adj"/></l>   <r>strong<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bala<s n="adv"/></l>   <r>strongly<s n="adv"/></r></p></e>
 <e><p><l>baligu<s n="adj"/></l>   <r>adult<s n="adj"/></r></p></e>
 <e><p><l>baligu<s n="adj"/></l>   <r>grown-up<s n="adj"/></r></p></e>
 <e><p><l>bangura<s n="adj"/></l>   <r>fragile<s n="adj"/></r></p></e>
 <e><p><l>bangura<s n="adj"/></l>   <r>delicate<s n="adj"/></r></p></e>
-<e><p><l>bangura<s n="adj"/></l>   <r>brittle<s n="adj"/></r></p></e>
+<e><p><l>bangura<s n="adj"/></l>   <r>brittle<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bangura<s n="adj"/></l>   <r>frail<s n="adj"/></r></p></e>
-<e><p><l>bangura<s n="adj"/></l>   <r>tender<s n="adj"/></r></p></e>
+<e><p><l>bangura<s n="adj"/></l>   <r>tender<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bangura<s n="adv"/></l>   <r>fragilely<s n="adv"/></r></p></e>
 <e><p><l>bangura<s n="adv"/></l>   <r>delicately<s n="adv"/></r></p></e>
 <e><p><l>bangura<s n="adv"/></l>   <r>frailly<s n="adv"/></r></p></e>
 <e><p><l>bangura<s n="adv"/></l>   <r>tenderly<s n="adv"/></r></p></e>
 <e><p><l>bankofil<s n="adj"/></l>   <r>frugal<s n="adj"/></r></p></e>
-<e><p><l>bankofil<s n="adj"/></l>   <r>thrifty<s n="adj"/></r></p></e>
+<e><p><l>bankofil<s n="adj"/></l>   <r>thrifty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bankofil<s n="adv"/></l>   <r>frugally<s n="adv"/></r></p></e>
 <e><p><l>bankofil<s n="adv"/></l>   <r>thriftily<s n="adv"/></r></p></e>
 <e><p><l>barakado<s n="adj"/></l>   <r>blessed<s n="adj"/></r></p></e>
@@ -14822,10 +14822,10 @@
 <e><p><l>barbari<s n="adv"/></l>   <r>barbarically<s n="adv"/></r></p></e>
 <e><p><l>bardiabil<s n="adj"/></l>   <r>cooling<s n="adj"/></r></p></e>
 <e><p><l>bardiday<s n="adj"/></l>   <r>freezing<s n="adj"/></r></p></e>
-<e><p><l>bardilil<s n="adj"/></l>   <r>cool<s n="adj"/></r></p></e>
+<e><p><l>bardilil<s n="adj"/></l>   <r>cool<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bardilil<s n="adv"/></l>   <r>coolly<s n="adv"/></r></p></e>
 <e><p><l>bardine<s n="adj"/></l>   <r>cooling<s n="adj"/></r></p></e>
-<e><p><l>bardipul<s n="adj"/></l>   <r>cold<s n="adj"/></r></p></e>
+<e><p><l>bardipul<s n="adj"/></l>   <r>cold<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bardipul<s n="adv"/></l>   <r>coldly<s n="adv"/></r></p></e>
 <e><p><l>basali<s n="adj"/></l>   <r>linguistic<s n="adj"/></r></p></e>
 <e><p><l>basali<s n="adv"/></l>   <r>linguistically<s n="adv"/></r></p></e>
@@ -14872,8 +14872,8 @@
 <e><p><l>beharemusi<s n="adj"/></l>   <r>indispensable<s n="adj"/></r></p></e>
 <e><p><l>beharemusi<s n="adv"/></l>   <r>indispensably<s n="adv"/></r></p></e>
 <e><p><l>bekir<s n="adj"/></l>   <r>virgin<s n="adj"/></r></p></e>
-<e><p><l>belopul<s n="adj"/></l>   <r>hairy<s n="adj"/></r></p></e>
-<e><p><l>belopul<s n="adj"/></l>   <r>furry<s n="adj"/></r></p></e>
+<e><p><l>belopul<s n="adj"/></l>   <r>hairy<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>belopul<s n="adj"/></l>   <r>furry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>belopul<s n="adv"/></l>   <r>hairily<s n="adv"/></r></p></e>
 <e><p><l>bembido<s n="adj"/></l>   <r>constipated<s n="adj"/></r></p></e>
 <e><p><l>bembine<s n="adj"/></l>   <r>constipating<s n="adj"/></r></p></e>
@@ -14889,9 +14889,9 @@
 <e><p><l>beyongukal<s n="adv"/></l>   <r>uselessly<s n="adv"/></r></p></e>
 <e><p><l>beyongupul<s n="adj"/></l>   <r>useful<s n="adj"/></r></p></e>
 <e><p><l>beyongupul<s n="adv"/></l>   <r>usefully<s n="adv"/></r></p></e>
-<e><p><l>bimar<s n="adj"/></l>   <r>sick<s n="adj"/></r></p></e>
-<e><p><l>bimar<s n="adj"/></l>   <r>ill<s n="adj"/></r></p></e>
-<e><p><l>bimarfil<s n="adj"/></l>   <r>sickly<s n="adj"/></r></p></e>
+<e><p><l>bimar<s n="adj"/></l>   <r>sick<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>bimar<s n="adj"/></l>   <r>ill<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>bimarfil<s n="adj"/></l>   <r>sickly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bioli<s n="adj"/></l>   <r>organic<s n="adj"/></r></p></e>
 <e><p><l>bioli<s n="adj"/></l>   <r>biological<s n="adj"/></r></p></e>
 <e><p><l>bioli<s n="adv"/></l>   <r>organically<s n="adv"/></r></p></e>
@@ -14921,9 +14921,9 @@
 <e><p><l>blokinenible<s n="adv"/></l>   <r>unavoidably<s n="adv"/></r></p></e>
 <e><p><l>blokinenible<s n="adv"/></l>   <r>unpreventably<s n="adv"/></r></p></e>
 <e><p><l>blokinenible<s n="adv"/></l>   <r>inevitably<s n="adv"/></r></p></e>
-<e><p><l>blue<s n="adj"/></l>   <r>blue<s n="adj"/></r></p></e>
-<e><p><l>bobo<s n="adj"/></l>   <r>dumb<s n="adj"/></r></p></e>
-<e><p><l>bobo<s n="adj"/></l>   <r>stupid<s n="adj"/></r></p></e>
+<e><p><l>blue<s n="adj"/></l>   <r>blue<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>bobo<s n="adj"/></l>   <r>dumb<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>bobo<s n="adj"/></l>   <r>stupid<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bobo<s n="adj"/></l>   <r>foolish<s n="adj"/></r></p></e>
 <e><p><l>bobo<s n="adv"/></l>   <r>dumbly<s n="adv"/></r></p></e>
 <e><p><l>bobo<s n="adv"/></l>   <r>stupidly<s n="adv"/></r></p></e>
@@ -14937,11 +14937,11 @@
 <e><p><l>bodonfil<s n="adv"/></l>   <r>riotously<s n="adv"/></r></p></e>
 <e><p><l>bodonfil<s n="adv"/></l>   <r>tumultuously<s n="adv"/></r></p></e>
 <e><p><l>bodonfil<s n="adv"/></l>   <r>turbulently<s n="adv"/></r></p></e>
-<e><p><l>bofunpul<s n="adj"/></l>   <r>stormy<s n="adj"/></r></p></e>
+<e><p><l>bofunpul<s n="adj"/></l>   <r>stormy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bofunpul<s n="adv"/></l>   <r>stormily<s n="adv"/></r></p></e>
-<e><p><l>bon<s n="adj"/></l>   <r>good<s n="adj"/></r></p></e>
+<e><p><l>bon<s n="adj"/></l>   <r>good<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bon<s n="adj"/></l>   <r>well<s n="adj"/></r></p></e>
-<e><p><l>bon<s n="adj"/></l>   <r>fine<s n="adj"/></r></p></e>
+<e><p><l>bon<s n="adj"/></l>   <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bon<s n="adj"/></l>   <r>positive<s n="adj"/></r></p></e>
 <e><p><l>bon<s n="adv"/></l>   <r>well<s n="adv"/></r></p></e>
 <e><p><l>bon<s n="adv"/></l>   <r>positively<s n="adv"/></r></p></e>
@@ -14952,11 +14952,11 @@
 <e><p><l>bonkonedo<s n="adj"/></l>   <r>familiar<s n="adj"/></r></p></e>
 <e><p><l>bonkonedo<s n="adv"/></l>   <r>familiarly<s n="adv"/></r></p></e>
 <e><p><l>bonxanseli<s n="adj"/></l>   <r>fortunate<s n="adj"/></r></p></e>
-<e><p><l>bonxanseli<s n="adj"/></l>   <r>lucky<s n="adj"/></r></p></e>
+<e><p><l>bonxanseli<s n="adj"/></l>   <r>lucky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bonxanseli<s n="adv"/></l>   <r>fortunately<s n="adv"/></r></p></e>
 <e><p><l>bonxanseli<s n="adv"/></l>   <r>luckily<s n="adv"/></r></p></e>
 <e><p><l>bonxansepul<s n="adj"/></l>   <r>fortunate<s n="adj"/></r></p></e>
-<e><p><l>bonxansepul<s n="adj"/></l>   <r>lucky<s n="adj"/></r></p></e>
+<e><p><l>bonxansepul<s n="adj"/></l>   <r>lucky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bonxansepul<s n="adv"/></l>   <r>fortunately<s n="adv"/></r></p></e>
 <e><p><l>bonxansepul<s n="adv"/></l>   <r>luckily<s n="adv"/></r></p></e>
 <e><p><l>boykotido<s n="adj"/></l>   <r>boycotted<s n="adj"/></r></p></e>
@@ -14964,14 +14964,14 @@
 <e><p><l>boyledo<s n="adj"/></l>   <r>boiled<s n="adj"/></r></p></e>
 <e><p><l>boylene<s n="adj"/></l>   <r>boiling<s n="adj"/></r></p></e>
 <e><p><l>brilameli<s n="adj"/></l>   <r>resplendent<s n="adj"/></r></p></e>
-<e><p><l>brilameli<s n="adj"/></l>   <r>shiny<s n="adj"/></r></p></e>
+<e><p><l>brilameli<s n="adj"/></l>   <r>shiny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>brilameli<s n="adv"/></l>   <r>resplendently<s n="adv"/></r></p></e>
-<e><p><l>brilapul<s n="adj"/></l>   <r>shiny<s n="adj"/></r></p></e>
+<e><p><l>brilapul<s n="adj"/></l>   <r>shiny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>brilapul<s n="adj"/></l>   <r>brilliant<s n="adj"/></r></p></e>
 <e><p><l>brilapul<s n="adv"/></l>   <r>brilliantly<s n="adv"/></r></p></e>
 <e><p><l>bronzeli<s n="adj"/></l>   <r>bronze<s n="adj"/></r></p></e>
 <e><p><l>bronzeli<s n="adj"/></l>   <r>made<b/>of<b/>bronze<s n="adj"/></r></p></e>
-<e><p><l>bruno<s n="adj"/></l>   <r>brown<s n="adj"/></r></p></e>
+<e><p><l>bruno<s n="adj"/></l>   <r>brown<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bucunli<s n="adj"/></l>   <r>supplementary<s n="adj"/></r></p></e>
 <e><p><l>bucunli<s n="adv"/></l>   <r>supplementarily<s n="adv"/></r></p></e>
 <e><p><l>bucunne<s n="adj"/></l>   <r>supplemental<s n="adj"/></r></p></e>
@@ -14996,7 +14996,7 @@
 <e><p><l>bunmanpul<s n="adv"/></l>   <r>resentfully<s n="adv"/></r></p></e>
 <e><p><l>bunmanpul<s n="adv"/></l>   <r>rancorously<s n="adv"/></r></p></e>
 <e><p><l>bunmanpul<s n="adv"/></l>   <r>bitterly<s n="adv"/></r></p></e>
-<e><p><l>bur<s n="adj"/></l>   <r>bad<s n="adj"/></r></p></e>
+<e><p><l>bur<s n="adj"/></l>   <r>bad<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bur<s n="adj"/></l>   <r>evil<s n="adj"/></r></p></e>
 <e><p><l>bur<s n="adj"/></l>   <r>negative<s n="adj"/></r></p></e>
 <e><p><l>bur<s n="adv"/></l>   <r>badly<s n="adv"/></r></p></e>
@@ -15018,7 +15018,7 @@
 <e><p><l>burinsansim<s n="adj"/></l>   <r>inhuman<s n="adj"/></r></p></e>
 <e><p><l>burinsansim<s n="adj"/></l>   <r>inhumane<s n="adj"/></r></p></e>
 <e><p><l>burinsansim<s n="adv"/></l>   <r>inhumanely<s n="adv"/></r></p></e>
-<e><p><l>bursolo<s n="adj"/></l>   <r>lonely<s n="adj"/></r></p></e>
+<e><p><l>bursolo<s n="adj"/></l>   <r>lonely<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>bursolo<s n="adj"/></l>   <r>lonesome<s n="adj"/></r></p></e>
 <e><p><l>bursolo<s n="adv"/></l>   <r>lonesomely<s n="adv"/></r></p></e>
 <e><p><l>burxanseli<s n="adj"/></l>   <r>unfortunate<s n="adj"/></r></p></e>
@@ -15031,7 +15031,7 @@
 <e><p><l>butersim<s n="adj"/></l>   <r>buttery<s n="adj"/></r></p></e>
 <e><p><l>cakarene<s n="adj"/></l>   <r>dizzying<s n="adj"/></r></p></e>
 <e><p><l>cakarene<s n="adv"/></l>   <r>dizzyingly<s n="adv"/></r></p></e>
-<e><p><l>cakarepul<s n="adj"/></l>   <r>dizzy<s n="adj"/></r></p></e>
+<e><p><l>cakarepul<s n="adj"/></l>   <r>dizzy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cakarepul<s n="adv"/></l>   <r>dizzily<s n="adv"/></r></p></e>
 <e><p><l>calyoli<s n="adj"/></l>   <r>vehicular<s n="adj"/></r></p></e>
 <e><p><l>calyoli<s n="adv"/></l>   <r>vehicularly<s n="adv"/></r></p></e>
@@ -15077,9 +15077,9 @@
 <e><p><l>centroli<s n="adv"/></l>   <r>centrally<s n="adv"/></r></p></e>
 <e><p><l>cenyum<s n="adj"/></l>   <r>hundredth<s n="adj"/></r></p></e>
 <e><p><l>ceramikali<s n="adj"/></l>   <r>ceramic<s n="adj"/></r></p></e>
-<e><p><l>cibokal<s n="adj"/></l>   <r>lean<s n="adj"/></r></p></e>
+<e><p><l>cibokal<s n="adj"/></l>   <r>lean<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cibokal<s n="adv"/></l>   <r>leanly<s n="adv"/></r></p></e>
-<e><p><l>cibopul<s n="adj"/></l>   <r>fat<s n="adj"/></r></p></e>
+<e><p><l>cibopul<s n="adj"/></l>   <r>fat<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cibopul<s n="adv"/></l>   <r>fattily<s n="adv"/></r></p></e>
 <e><p><l>cihene<s n="adj"/></l>   <r>screaming<s n="adj"/></r></p></e>
 <e><p><l>cihene<s n="adj"/></l>   <r>yelling<s n="adj"/></r></p></e>
@@ -15094,16 +15094,16 @@
 <e><p><l>cinonday<s n="adj"/></l>   <r>brilliant<s n="adj"/></r></p></e>
 <e><p><l>cinonday<s n="adj"/></l>   <r>genius<s n="adj"/></r></p></e>
 <e><p><l>cinonday<s n="adv"/></l>   <r>brilliantly<s n="adv"/></r></p></e>
-<e><p><l>cinonkal<s n="adj"/></l>   <r>stupid<s n="adj"/></r></p></e>
+<e><p><l>cinonkal<s n="adj"/></l>   <r>stupid<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cinonkal<s n="adv"/></l>   <r>stupidly<s n="adv"/></r></p></e>
-<e><p><l>cinonlil<s n="adj"/></l>   <r>stupid<s n="adj"/></r></p></e>
+<e><p><l>cinonlil<s n="adj"/></l>   <r>stupid<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cinonlil<s n="adv"/></l>   <r>stupidly<s n="adv"/></r></p></e>
 <e><p><l>cinonpul<s n="adj"/></l>   <r>intelligent<s n="adj"/></r></p></e>
-<e><p><l>cinonpul<s n="adj"/></l>   <r>smart<s n="adj"/></r></p></e>
+<e><p><l>cinonpul<s n="adj"/></l>   <r>smart<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cinonpul<s n="adv"/></l>   <r>intelligently<s n="adv"/></r></p></e>
 <e><p><l>cinonpul<s n="adv"/></l>   <r>smartly<s n="adv"/></r></p></e>
 <e><p><l>cipenkal<s n="adj"/></l>   <r>honest<s n="adj"/></r></p></e>
-<e><p><l>cipenkal<s n="adj"/></l>   <r>sincere<s n="adj"/></r></p></e>
+<e><p><l>cipenkal<s n="adj"/></l>   <r>sincere<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cipenkal<s n="adj"/></l>   <r>frank<s n="adj"/></r></p></e>
 <e><p><l>cipenkal<s n="adv"/></l>   <r>honestly<s n="adv"/></r></p></e>
 <e><p><l>cipenkal<s n="adv"/></l>   <r>sincerely<s n="adv"/></r></p></e>
@@ -15120,7 +15120,7 @@
 <e><p><l>civil<s n="adv"/></l>   <r>civilly<s n="adv"/></r></p></e>
 <e><p><l>cokolateli<s n="adj"/></l>   <r>chocolate<s n="adj"/></r></p></e>
 <e><p><l>cokolateli<s n="adj"/></l>   <r>of<b/>chocolate<s n="adj"/></r></p></e>
-<e><p><l>colo<s n="adj"/></l>   <r>ugly<s n="adj"/></r></p></e>
+<e><p><l>colo<s n="adj"/></l>   <r>ugly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>comenli<s n="adj"/></l>   <r>side<s n="adj"/></r></p></e>
 <e><p><l>comenli<s n="adj"/></l>   <r>lateral<s n="adj"/></r></p></e>
 <e><p><l>comenli<s n="adv"/></l>   <r>laterally<s n="adv"/></r></p></e>
@@ -15140,8 +15140,8 @@
 <e><p><l>cosanlaye<s n="adv"/></l>   <r>commendably<s n="adv"/></r></p></e>
 <e><p><l>cosanlaye<s n="adv"/></l>   <r>laudably<s n="adv"/></r></p></e>
 <e><p><l>cosanlaye<s n="adv"/></l>   <r>admirably<s n="adv"/></r></p></e>
-<e><p><l>cote<s n="adj"/></l>   <r>short<s n="adj"/></r></p></e>
-<e><p><l>cote<s n="adj"/></l>   <r>low<s n="adj"/></r></p></e>
+<e><p><l>cote<s n="adj"/></l>   <r>short<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>cote<s n="adj"/></l>   <r>low<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>cote<s n="adv"/></l>   <r>low<s n="adv"/></r></p></e>
 <e><p><l>coxodo<s n="adj"/></l>   <r>mocked<s n="adj"/></r></p></e>
 <e><p><l>coxodo<s n="adj"/></l>   <r>derided<s n="adj"/></r></p></e>
@@ -15204,10 +15204,10 @@
 <e><p><l>dahabuli<s n="adj"/></l>   <r>gold<s n="adj"/></r></p></e>
 <e><p><l>dahabuli<s n="adj"/></l>   <r>of<b/>gold<s n="adj"/></r></p></e>
 <e><p><l>dahabusim<s n="adj"/></l>   <r>golden<s n="adj"/></r></p></e>
-<e><p><l>daifu<s n="adj"/></l>   <r>weak<s n="adj"/></r></p></e>
+<e><p><l>daifu<s n="adj"/></l>   <r>weak<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>daifu<s n="adv"/></l>   <r>weakly<s n="adv"/></r></p></e>
 <e><p><l>daju<s n="adj"/></l>   <r>approximate<s n="adj"/></r></p></e>
-<e><p><l>daju<s n="adj"/></l>   <r>rough<s n="adj"/></r></p></e>
+<e><p><l>daju<s n="adj"/></l>   <r>rough<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>daju<s n="adv"/></l>   <r>approximately<s n="adv"/></r></p></e>
 <e><p><l>daju<s n="adv"/></l>   <r>roughly<s n="adv"/></r></p></e>
 <e><p><l>daju<s n="adv"/></l>   <r>around<s n="adv"/></r></p></e>
@@ -15217,11 +15217,11 @@
 <e><p><l>dakwado<s n="adj"/></l>   <r>indicted<s n="adj"/></r></p></e>
 <e><p><l>dambipul<s n="adj"/></l>   <r>sinful<s n="adj"/></r></p></e>
 <e><p><l>dambipul<s n="adv"/></l>   <r>sinfully<s n="adv"/></r></p></e>
-<e><p><l>dambo<s n="adj"/></l>   <r>thin<s n="adj"/></r></p></e>
-<e><p><l>dambo<s n="adj"/></l>   <r>slim<s n="adj"/></r></p></e>
-<e><p><l>dambo<s n="adj"/></l>   <r>slender<s n="adj"/></r></p></e>
-<e><p><l>dambo<s n="adj"/></l>   <r>lean<s n="adj"/></r></p></e>
-<e><p><l>dambo<s n="adj"/></l>   <r>skinny<s n="adj"/></r></p></e>
+<e><p><l>dambo<s n="adj"/></l>   <r>thin<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>dambo<s n="adj"/></l>   <r>slim<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>dambo<s n="adj"/></l>   <r>slender<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>dambo<s n="adj"/></l>   <r>lean<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>dambo<s n="adj"/></l>   <r>skinny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>dambo<s n="adv"/></l>   <r>thinly<s n="adv"/></r></p></e>
 <e><p><l>dambo<s n="adv"/></l>   <r>slimly<s n="adv"/></r></p></e>
 <e><p><l>dambo<s n="adv"/></l>   <r>slenderly<s n="adv"/></r></p></e>
@@ -15241,21 +15241,21 @@
 <e><p><l>davafil<s n="adj"/></l>   <r>addicted<b/>to<b/>drugs<s n="adj"/></r></p></e>
 <e><p><l>davaikawne<s n="adj"/></l>   <r>drug-addicted<s n="adj"/></r></p></e>
 <e><p><l>davaikawne<s n="adj"/></l>   <r>addicted<b/>to<b/>drugs<s n="adj"/></r></p></e>
-<e><p><l>day<s n="adj"/></l>   <r>big<s n="adj"/></r></p></e>
-<e><p><l>day<s n="adj"/></l>   <r>large<s n="adj"/></r></p></e>
-<e><p><l>day<s n="adj"/></l>   <r>great<s n="adj"/></r></p></e>
+<e><p><l>day<s n="adj"/></l>   <r>big<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>day<s n="adj"/></l>   <r>large<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>day<s n="adj"/></l>   <r>great<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>day<s n="adj"/></l>   <r>major<s n="adj"/></r></p></e>
 <e><p><l>day<s n="adv"/></l>   <r>greatly<s n="adv"/></r></p></e>
 <e><p><l>day<s n="adv"/></l>   <r>majorly<s n="adv"/></r></p></e>
 <e><p><l>dayajabu<s n="adj"/></l>   <r>bizarre<s n="adj"/></r></p></e>
 <e><p><l>dayajabu<s n="adv"/></l>   <r>bizarrely<s n="adv"/></r></p></e>
-<e><p><l>daybala<s n="adj"/></l>   <r>mighty<s n="adj"/></r></p></e>
+<e><p><l>daybala<s n="adj"/></l>   <r>mighty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>daybala<s n="adv"/></l>   <r>mightily<s n="adv"/></r></p></e>
 <e><p><l>daybardipul<s n="adj"/></l>   <r>freezing<s n="adj"/></r></p></e>
 <e><p><l>daybawlupul<s n="adj"/></l>   <r>brutal<s n="adj"/></r></p></e>
 <e><p><l>daybawlupul<s n="adv"/></l>   <r>brutally<s n="adv"/></r></p></e>
 <e><p><l>daybon<s n="adj"/></l>   <r>excellent<s n="adj"/></r></p></e>
-<e><p><l>daybon<s n="adj"/></l>   <r>great<s n="adj"/></r></p></e>
+<e><p><l>daybon<s n="adj"/></l>   <r>great<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>daybon<s n="adj"/></l>   <r>awesome<s n="adj"/></r></p></e>
 <e><p><l>daybon<s n="adj"/></l>   <r>fantastic<s n="adj"/></r></p></e>
 <e><p><l>daybon<s n="adv"/></l>   <r>excellently<s n="adv"/></r></p></e>
@@ -15293,7 +15293,7 @@
 <e><p><l>dayhox<s n="adv"/></l>   <r>ecstatically<s n="adv"/></r></p></e>
 <e><p><l>dayhox<s n="adv"/></l>   <r>blissfully<s n="adv"/></r></p></e>
 <e><p><l>dayible<s n="adj"/></l>   <r>probable<s n="adj"/></r></p></e>
-<e><p><l>dayible<s n="adj"/></l>   <r>likely<s n="adj"/></r></p></e>
+<e><p><l>dayible<s n="adj"/></l>   <r>likely<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>dayible<s n="adv"/></l>   <r>probably<s n="adv"/></r></p></e>
 <e><p><l>dayible<s n="adv"/></l>   <r>likely<s n="adv"/></r></p></e>
 <e><p><l>daykotor<s n="adj"/></l>   <r>filthy<s n="adj"/></r></p></e>
@@ -15303,7 +15303,7 @@
 <e><p><l>daykwantipul<s n="adv"/></l>   <r>abundantly<s n="adv"/></r></p></e>
 <e><p><l>daykwantipul<s n="adv"/></l>   <r>plentifully<s n="adv"/></r></p></e>
 <e><p><l>daylama<s n="adj"/></l>   <r>ancient<s n="adj"/></r></p></e>
-<e><p><l>daylil<s n="adj"/></l>   <r>tiny<s n="adj"/></r></p></e>
+<e><p><l>daylil<s n="adj"/></l>   <r>tiny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>daylubilaye<s n="adj"/></l>   <r>adorable<s n="adj"/></r></p></e>
 <e><p><l>daylubilaye<s n="adv"/></l>   <r>adorably<s n="adv"/></r></p></e>
 <e><p><l>daymeli<s n="adj"/></l>   <r>gorgeous<s n="adj"/></r></p></e>
@@ -15325,12 +15325,12 @@
 <e><p><l>daynakunkal<s n="adj"/></l>   <r>achelate<s n="adj"/></r></p></e>
 <e><p><l>dayneo<s n="adj"/></l>   <r>brand<b/>new<s n="adj"/></r></p></e>
 <e><p><l>dayrapul<s n="adj"/></l>   <r>circular<s n="adj"/></r></p></e>
-<e><p><l>dayrapul<s n="adj"/></l>   <r>round<s n="adj"/></r></p></e>
+<e><p><l>dayrapul<s n="adj"/></l>   <r>round<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>dayrapul<s n="adv"/></l>   <r>circularly<s n="adv"/></r></p></e>
 <e><p><l>daysurprisado<s n="adj"/></l>   <r>astonished<s n="adj"/></r></p></e>
 <e><p><l>daysurprisane<s n="adj"/></l>   <r>astonishing<s n="adj"/></r></p></e>
 <e><p><l>daysurprisane<s n="adv"/></l>   <r>astonishingly<s n="adv"/></r></p></e>
-<e><p><l>daytermopul<s n="adj"/></l>   <r>hot<s n="adj"/></r></p></e>
+<e><p><l>daytermopul<s n="adj"/></l>   <r>hot<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>daytermopul<s n="adj"/></l>   <r>scorching<s n="adj"/></r></p></e>
 <e><p><l>daytermopul<s n="adv"/></l>   <r>hotly<s n="adv"/></r></p></e>
 <e><p><l>daytermopul<s n="adv"/></l>   <r>scorchingly<s n="adv"/></r></p></e>
@@ -15446,8 +15446,8 @@
 <e><p><l>dongwigine<s n="adv"/></l>   <r>convincingly<s n="adv"/></r></p></e>
 <e><p><l>dongwipul<s n="adj"/></l>   <r>consensual<s n="adj"/></r></p></e>
 <e><p><l>dongwipul<s n="adv"/></l>   <r>consensually<s n="adv"/></r></p></e>
-<e><p><l>dostefil<s n="adj"/></l>   <r>friendly<s n="adj"/></r></p></e>
-<e><p><l>dostesim<s n="adj"/></l>   <r>friendly<s n="adj"/></r></p></e>
+<e><p><l>dostefil<s n="adj"/></l>   <r>friendly<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>dostesim<s n="adj"/></l>   <r>friendly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>doxoabil<s n="adj"/></l>   <r>literate<s n="adj"/></r></p></e>
 <e><p><l>doxoabil<s n="adv"/></l>   <r>literately<s n="adv"/></r></p></e>
 <e><p><l>doxodo<s n="adj"/></l>   <r>read<s n="adj"/></r></p></e>
@@ -15519,7 +15519,7 @@
 <e><p><l>dyabolsim<s n="adj"/></l>   <r>diabolical<s n="adj"/></r></p></e>
 <e><p><l>dyabolsim<s n="adj"/></l>   <r>devilish<s n="adj"/></r></p></e>
 <e><p><l>dyabolsim<s n="adv"/></l>   <r>diabolically<s n="adv"/></r></p></e>
-<e><p><l>dyer<s n="adj"/></l>   <r>late<s n="adj"/></r></p></e>
+<e><p><l>dyer<s n="adj"/></l>   <r>late<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>dyer<s n="adv"/></l>   <r>late<s n="adv"/></r></p></e>
 <e><p><l>dyucado<s n="adj"/></l>   <r>investigated<s n="adj"/></r></p></e>
 <e><p><l>efetobon<s n="adj"/></l>   <r>effective<s n="adj"/></r></p></e>
@@ -15711,21 +15711,21 @@
 <e><p><l>fadilapul<s n="adv"/></l>   <r>virtuously<s n="adv"/></r></p></e>
 <e><p><l>fadilapul<s n="adv"/></l>   <r>righteously<s n="adv"/></r></p></e>
 <e><p><l>fahex<s n="adj"/></l>   <r>vulgar<s n="adj"/></r></p></e>
-<e><p><l>fahex<s n="adj"/></l>   <r>crude<s n="adj"/></r></p></e>
+<e><p><l>fahex<s n="adj"/></l>   <r>crude<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>fahex<s n="adj"/></l>   <r>uncouth<s n="adj"/></r></p></e>
 <e><p><l>fahex<s n="adj"/></l>   <r>obscene<s n="adj"/></r></p></e>
 <e><p><l>fahex<s n="adv"/></l>   <r>vulgarly<s n="adv"/></r></p></e>
 <e><p><l>fahex<s n="adv"/></l>   <r>crudely<s n="adv"/></r></p></e>
 <e><p><l>fahex<s n="adv"/></l>   <r>uncouthly<s n="adv"/></r></p></e>
 <e><p><l>fahex<s n="adv"/></l>   <r>obscenely<s n="adv"/></r></p></e>
-<e><p><l>fahuri<s n="adj"/></l>   <r>proud<s n="adj"/></r></p></e>
+<e><p><l>fahuri<s n="adj"/></l>   <r>proud<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>fahuri<s n="adv"/></l>   <r>proudly<s n="adv"/></r></p></e>
 <e><p><l>faksido<s n="adj"/></l>   <r>faxed<s n="adj"/></r></p></e>
 <e><p><l>faledo<s n="adj"/></l>   <r>done<s n="adj"/></r></p></e>
-<e><p><l>falso<s n="adj"/></l>   <r>false<s n="adj"/></r></p></e>
+<e><p><l>falso<s n="adj"/></l>   <r>false<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>falso<s n="adj"/></l>   <r>untrue<s n="adj"/></r></p></e>
 <e><p><l>falso<s n="adv"/></l>   <r>falsely<s n="adv"/></r></p></e>
-<e><p><l>fankopul<s n="adj"/></l>   <r>muddy<s n="adj"/></r></p></e>
+<e><p><l>fankopul<s n="adj"/></l>   <r>muddy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>fankopul<s n="adv"/></l>   <r>muddily<s n="adv"/></r></p></e>
 <e><p><l>fantasisim<s n="adj"/></l>   <r>fantastic<s n="adj"/></r></p></e>
 <e><p><l>fantasisim<s n="adv"/></l>   <r>fantastically<s n="adv"/></r></p></e>
@@ -15833,13 +15833,13 @@
 <e><p><l>fobifil<s n="adj"/></l>   <r>fear-prone<s n="adj"/></r></p></e>
 <e><p><l>fobikal<s n="adj"/></l>   <r>fearless<s n="adj"/></r></p></e>
 <e><p><l>fobikal<s n="adv"/></l>   <r>fearlessly<s n="adv"/></r></p></e>
-<e><p><l>fobine<s n="adj"/></l>   <r>scary<s n="adj"/></r></p></e>
+<e><p><l>fobine<s n="adj"/></l>   <r>scary<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>fobine<s n="adj"/></l>   <r>frightening<s n="adj"/></r></p></e>
 <e><p><l>fobine<s n="adj"/></l>   <r>feared<s n="adj"/></r></p></e>
 <e><p><l>fobine<s n="adv"/></l>   <r>frighteningly<s n="adv"/></r></p></e>
 <e><p><l>fobipul<s n="adj"/></l>   <r>frightful<s n="adj"/></r></p></e>
 <e><p><l>fobipul<s n="adj"/></l>   <r>frightening<s n="adj"/></r></p></e>
-<e><p><l>fobipul<s n="adj"/></l>   <r>scary<s n="adj"/></r></p></e>
+<e><p><l>fobipul<s n="adj"/></l>   <r>scary<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>fobipul<s n="adj"/></l>   <r>fearful<s n="adj"/></r></p></e>
 <e><p><l>fobipul<s n="adj"/></l>   <r>afraid<s n="adj"/></r></p></e>
 <e><p><l>fobipul<s n="adv"/></l>   <r>frightfully<s n="adv"/></r></p></e>
@@ -15918,14 +15918,14 @@
 <e><p><l>furahapul<s n="adj"/></l>   <r>pleased<s n="adj"/></r></p></e>
 <e><p><l>furahapul<s n="adj"/></l>   <r>pleasured<s n="adj"/></r></p></e>
 <e><p><l>furahapul<s n="adv"/></l>   <r>pleasingly<s n="adv"/></r></p></e>
-<e><p><l>furi<s n="adj"/></l>   <r>furry<s n="adj"/></r></p></e>
+<e><p><l>furi<s n="adj"/></l>   <r>furry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>furnodo<s n="adj"/></l>   <r>baked<s n="adj"/></r></p></e>
 <e><p><l>futruli<s n="adj"/></l>   <r>fungal<s n="adj"/></r></p></e>
 <e><p><l>futruli<s n="adj"/></l>   <r>fungous<s n="adj"/></r></p></e>
 <e><p><l>futruli<s n="adj"/></l>   <r>mycotic<s n="adj"/></r></p></e>
 <e><p><l>futruli<s n="adv"/></l>   <r>fungally<s n="adv"/></r></p></e>
 <e><p><l>fuxido<s n="adj"/></l>   <r>wiped<s n="adj"/></r></p></e>
-<e><p><l>gadibu<s n="adj"/></l>   <r>angry<s n="adj"/></r></p></e>
+<e><p><l>gadibu<s n="adj"/></l>   <r>angry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gadibu<s n="adv"/></l>   <r>angrily<s n="adv"/></r></p></e>
 <e><p><l>gagane<s n="adj"/></l>   <r>stuttering<s n="adj"/></r></p></e>
 <e><p><l>galaksili<s n="adj"/></l>   <r>galactic<s n="adj"/></r></p></e>
@@ -15942,8 +15942,8 @@
 <e><p><l>ganimado<s n="adj"/></l>   <r>marauded<s n="adj"/></r></p></e>
 <e><p><l>ganjonpul<s n="adj"/></l>   <r>emotional<s n="adj"/></r></p></e>
 <e><p><l>ganjonpul<s n="adv"/></l>   <r>emotionally<s n="adv"/></r></p></e>
-<e><p><l>gao<s n="adj"/></l>   <r>tall<s n="adj"/></r></p></e>
-<e><p><l>gao<s n="adj"/></l>   <r>high<s n="adj"/></r></p></e>
+<e><p><l>gao<s n="adj"/></l>   <r>tall<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>gao<s n="adj"/></l>   <r>high<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gao<s n="adv"/></l>   <r>highly<s n="adv"/></r></p></e>
 <e><p><l>gao<s n="adv"/></l>   <r>greatly<s n="adv"/></r></p></e>
 <e><p><l>gaodarajeli<s n="adj"/></l>   <r>advanced<s n="adj"/></r></p></e>
@@ -15977,12 +15977,12 @@
 <e><p><l>gibedo<s n="adj"/></l>   <r>given<s n="adj"/></r></p></e>
 <e><p><l>gibefil<s n="adj"/></l>   <r>generous<s n="adj"/></r></p></e>
 <e><p><l>gibefil<s n="adv"/></l>   <r>generously<s n="adv"/></r></p></e>
-<e><p><l>gibenenfil<s n="adj"/></l>   <r>stingy<s n="adj"/></r></p></e>
+<e><p><l>gibenenfil<s n="adj"/></l>   <r>stingy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gibenenfil<s n="adj"/></l>   <r>ungenerous<s n="adj"/></r></p></e>
 <e><p><l>gibenenfil<s n="adv"/></l>   <r>stingily<s n="adv"/></r></p></e>
 <e><p><l>gidado<s n="adj"/></l>   <r>guided<s n="adj"/></r></p></e>
 <e><p><l>gidane<s n="adj"/></l>   <r>guiding<s n="adj"/></r></p></e>
-<e><p><l>gile<s n="adj"/></l>   <r>wet<s n="adj"/></r></p></e>
+<e><p><l>gile<s n="adj"/></l>   <r>wet<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gile<s n="adv"/></l>   <r>wetly<s n="adv"/></r></p></e>
 <e><p><l>gimnastili<s n="adj"/></l>   <r>gymnastic<s n="adj"/></r></p></e>
 <e><p><l>gimnastili<s n="adv"/></l>   <r>gymnastically<s n="adv"/></r></p></e>
@@ -16035,14 +16035,14 @@
 <e><p><l>godo<s n="adv"/></l>   <r>too<b/>much<s n="adv"/></r></p></e>
 <e><p><l>godojaldi<s n="adj"/></l>   <r>premature<s n="adj"/></r></p></e>
 <e><p><l>godojaldi<s n="adv"/></l>   <r>prematurely<s n="adv"/></r></p></e>
-<e><p><l>gomyo<s n="adj"/></l>   <r>witty<s n="adj"/></r></p></e>
-<e><p><l>gomyo<s n="adj"/></l>   <r>clever<s n="adj"/></r></p></e>
-<e><p><l>gomyo<s n="adj"/></l>   <r>sharp<s n="adj"/></r></p></e>
+<e><p><l>gomyo<s n="adj"/></l>   <r>witty<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>gomyo<s n="adj"/></l>   <r>clever<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>gomyo<s n="adj"/></l>   <r>sharp<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gomyo<s n="adj"/></l>   <r>astute<s n="adj"/></r></p></e>
 <e><p><l>gomyo<s n="adj"/></l>   <r>ingenious<s n="adj"/></r></p></e>
 <e><p><l>gomyo<s n="adj"/></l>   <r>slick<s n="adj"/></r></p></e>
 <e><p><l>gomyo<s n="adj"/></l>   <r>crafty<s n="adj"/></r></p></e>
-<e><p><l>gomyo<s n="adj"/></l>   <r>sly<s n="adj"/></r></p></e>
+<e><p><l>gomyo<s n="adj"/></l>   <r>sly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gomyo<s n="adj"/></l>   <r>cunning<s n="adj"/></r></p></e>
 <e><p><l>gomyo<s n="adj"/></l>   <r>wily<s n="adj"/></r></p></e>
 <e><p><l>gomyo<s n="adv"/></l>   <r>wittily<s n="adv"/></r></p></e>
@@ -16074,11 +16074,11 @@
 <e><p><l>goyudo<s n="adj"/></l>   <r>dug<b/>up<s n="adj"/></r></p></e>
 <e><p><l>gramatili<s n="adj"/></l>   <r>grammar<s n="adj"/></r></p></e>
 <e><p><l>gramatili<s n="adv"/></l>   <r>grammatically<s n="adv"/></r></p></e>
-<e><p><l>graspul<s n="adj"/></l>   <r>grassy<s n="adj"/></r></p></e>
-<e><p><l>gresapul<s n="adj"/></l>   <r>greasy<s n="adj"/></r></p></e>
+<e><p><l>graspul<s n="adj"/></l>   <r>grassy<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>gresapul<s n="adj"/></l>   <r>greasy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gresapul<s n="adv"/></l>   <r>greasily<s n="adv"/></r></p></e>
 <e><p><l>gubarofgido<s n="adj"/></l>   <r>dusted<s n="adj"/></r></p></e>
-<e><p><l>gubarpul<s n="adj"/></l>   <r>dusty<s n="adj"/></r></p></e>
+<e><p><l>gubarpul<s n="adj"/></l>   <r>dusty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gubarpul<s n="adv"/></l>   <r>dustily<s n="adv"/></r></p></e>
 <e><p><l>gudedo<s n="adj"/></l>   <r>tickled<s n="adj"/></r></p></e>
 <e><p><l>gudehisifil<s n="adj"/></l>   <r>ticklish<s n="adj"/></r></p></e>
@@ -16089,7 +16089,7 @@
 <e><p><l>gurumane<s n="adj"/></l>   <r>grunting<s n="adj"/></r></p></e>
 <e><p><l>gurumane<s n="adj"/></l>   <r>grumbling<s n="adj"/></r></p></e>
 <e><p><l>gurumane<s n="adj"/></l>   <r>muttering<s n="adj"/></r></p></e>
-<e><p><l>gutipul<s n="adj"/></l>   <r>solid<s n="adj"/></r></p></e>
+<e><p><l>gutipul<s n="adj"/></l>   <r>solid<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>gutipul<s n="adv"/></l>   <r>solidly<s n="adv"/></r></p></e>
 <e><p><l>gutoncune<s n="adj"/></l>   <r>hurting<s n="adj"/></r></p></e>
 <e><p><l>gutondo<s n="adj"/></l>   <r>pained<s n="adj"/></r></p></e>
@@ -16123,14 +16123,14 @@
 <e><p><l>hajakal<s n="adj"/></l>   <r>without<b/>need<s n="adj"/></r></p></e>
 <e><p><l>hajakal<s n="adv"/></l>   <r>self-sufficiently<s n="adv"/></r></p></e>
 <e><p><l>hajane<s n="adj"/></l>   <r>in<b/>need<s n="adj"/></r></p></e>
-<e><p><l>hajane<s n="adj"/></l>   <r>needy<s n="adj"/></r></p></e>
+<e><p><l>hajane<s n="adj"/></l>   <r>needy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hajane<s n="adv"/></l>   <r>needily<s n="adv"/></r></p></e>
-<e><p><l>hajapul<s n="adj"/></l>   <r>needy<s n="adj"/></r></p></e>
+<e><p><l>hajapul<s n="adj"/></l>   <r>needy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hajapul<s n="adv"/></l>   <r>needily<s n="adv"/></r></p></e>
-<e><p><l>hajul<s n="adj"/></l>   <r>shy<s n="adj"/></r></p></e>
+<e><p><l>hajul<s n="adj"/></l>   <r>shy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hajul<s n="adj"/></l>   <r>bashful<s n="adj"/></r></p></e>
 <e><p><l>hajul<s n="adj"/></l>   <r>timid<s n="adj"/></r></p></e>
-<e><p><l>hajul<s n="adj"/></l>   <r>coy<s n="adj"/></r></p></e>
+<e><p><l>hajul<s n="adj"/></l>   <r>coy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hajul<s n="adv"/></l>   <r>shyly<s n="adv"/></r></p></e>
 <e><p><l>hajul<s n="adv"/></l>   <r>bashfully<s n="adv"/></r></p></e>
 <e><p><l>hajul<s n="adv"/></l>   <r>timidly<s n="adv"/></r></p></e>
@@ -16138,7 +16138,7 @@
 <e><p><l>hakedo<s n="adj"/></l>   <r>hacked<s n="adj"/></r></p></e>
 <e><p><l>halado<s n="adj"/></l>   <r>solved<s n="adj"/></r></p></e>
 <e><p><l>hamile<s n="adj"/></l>   <r>pregnant<s n="adj"/></r></p></e>
-<e><p><l>hanman<s n="adj"/></l>   <r>slow<s n="adj"/></r></p></e>
+<e><p><l>hanman<s n="adj"/></l>   <r>slow<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hanman<s n="adv"/></l>   <r>slowly<s n="adv"/></r></p></e>
 <e><p><l>harabudo<s n="adj"/></l>   <r>ruined<s n="adj"/></r></p></e>
 <e><p><l>harabudo<s n="adj"/></l>   <r>wrecked<s n="adj"/></r></p></e>
@@ -16147,19 +16147,19 @@
 <e><p><l>hareible<s n="adj"/></l>   <r>available<s n="adj"/></r></p></e>
 <e><p><l>hareible<s n="adv"/></l>   <r>availably<s n="adv"/></r></p></e>
 <e><p><l>harenenible<s n="adj"/></l>   <r>unavailable<s n="adj"/></r></p></e>
-<e><p><l>haririsim<s n="adj"/></l>   <r>silky<s n="adj"/></r></p></e>
+<e><p><l>haririsim<s n="adj"/></l>   <r>silky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>haririsim<s n="adv"/></l>   <r>silkily<s n="adv"/></r></p></e>
 <e><p><l>harkaabil<s n="adj"/></l>   <r>mobile<s n="adj"/></r></p></e>
 <e><p><l>harkacuabil<s n="adj"/></l>   <r>mobile<s n="adj"/></r></p></e>
 <e><p><l>harkacune<s n="adj"/></l>   <r>moving<s n="adj"/></r></p></e>
 <e><p><l>harkado<s n="adj"/></l>   <r>moved<s n="adj"/></r></p></e>
-<e><p><l>harkakal<s n="adj"/></l>   <r>still<s n="adj"/></r></p></e>
+<e><p><l>harkakal<s n="adj"/></l>   <r>still<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>harkakal<s n="adj"/></l>   <r>motionless<s n="adj"/></r></p></e>
 <e><p><l>harkakal<s n="adv"/></l>   <r>still<s n="adv"/></r></p></e>
 <e><p><l>harkakal<s n="adv"/></l>   <r>motionlessly<s n="adv"/></r></p></e>
 <e><p><l>harkane<s n="adj"/></l>   <r>moving<s n="adj"/></r></p></e>
-<e><p><l>hasaxi<s n="adj"/></l>   <r>tender<s n="adj"/></r></p></e>
-<e><p><l>hasaxi<s n="adj"/></l>   <r>gentle<s n="adj"/></r></p></e>
+<e><p><l>hasaxi<s n="adj"/></l>   <r>tender<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>hasaxi<s n="adj"/></l>   <r>gentle<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hasaxi<s n="adj"/></l>   <r>loving<s n="adj"/></r></p></e>
 <e><p><l>hasaxi<s n="adj"/></l>   <r>sympathetic<s n="adj"/></r></p></e>
 <e><p><l>hasaxi<s n="adv"/></l>   <r>tenderly<s n="adv"/></r></p></e>
@@ -16184,7 +16184,7 @@
 <e><p><l>hazamne<s n="adj"/></l>   <r>digesting<s n="adj"/></r></p></e>
 <e><p><l>hazamne<s n="adj"/></l>   <r>digestive<s n="adj"/></r></p></e>
 <e><p><l>hazamne<s n="adv"/></l>   <r>digestively<s n="adv"/></r></p></e>
-<e><p><l>hazuni<s n="adj"/></l>   <r>sad<s n="adj"/></r></p></e>
+<e><p><l>hazuni<s n="adj"/></l>   <r>sad<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hazuni<s n="adv"/></l>   <r>sadly<s n="adv"/></r></p></e>
 <e><p><l>hencido<s n="adj"/></l>   <r>dedicated<s n="adj"/></r></p></e>
 <e><p><l>herbali<s n="adj"/></l>   <r>herbal<s n="adj"/></r></p></e>
@@ -16218,7 +16218,7 @@
 <e><p><l>hormonali<s n="adj"/></l>   <r>hormonal<s n="adj"/></r></p></e>
 <e><p><l>hormonali<s n="adv"/></l>   <r>hormonally<s n="adv"/></r></p></e>
 <e><p><l>horne<s n="adj"/></l>   <r>snoring<s n="adj"/></r></p></e>
-<e><p><l>hox<s n="adj"/></l>   <r>happy<s n="adj"/></r></p></e>
+<e><p><l>hox<s n="adj"/></l>   <r>happy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hox<s n="adj"/></l>   <r>joyful<s n="adj"/></r></p></e>
 <e><p><l>hox<s n="adv"/></l>   <r>happily<s n="adv"/></r></p></e>
 <e><p><l>hox<s n="adv"/></l>   <r>joyfully<s n="adv"/></r></p></e>
@@ -16227,7 +16227,7 @@
 <e><p><l>hulasado<s n="adj"/></l>   <r>summed<b/>up<s n="adj"/></r></p></e>
 <e><p><l>hulasado<s n="adj"/></l>   <r>recapitulated<s n="adj"/></r></p></e>
 <e><p><l>humorpul<s n="adj"/></l>   <r>humorous<s n="adj"/></r></p></e>
-<e><p><l>humorpul<s n="adj"/></l>   <r>funny<s n="adj"/></r></p></e>
+<e><p><l>humorpul<s n="adj"/></l>   <r>funny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>humorpul<s n="adv"/></l>   <r>humorously<s n="adv"/></r></p></e>
 <e><p><l>humorpul<s n="adv"/></l>   <r>funnily<s n="adv"/></r></p></e>
 <e><p><l>hunfundo<s n="adj"/></l>   <r>excited<s n="adj"/></r></p></e>
@@ -16239,15 +16239,15 @@
 <e><p><l>hunfunne<s n="adj"/></l>   <r>stimulating<s n="adj"/></r></p></e>
 <e><p><l>hunfunne<s n="adv"/></l>   <r>arousingly<s n="adv"/></r></p></e>
 <e><p><l>hunfunne<s n="adv"/></l>   <r>stimulatingly<s n="adv"/></r></p></e>
-<e><p><l>huru<s n="adj"/></l>   <r>free<s n="adj"/></r></p></e>
+<e><p><l>huru<s n="adj"/></l>   <r>free<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>huru<s n="adv"/></l>   <r>free<s n="adv"/></r></p></e>
 <e><p><l>huru<s n="adv"/></l>   <r>freely<s n="adv"/></r></p></e>
 <e><p><l>hwamne<s n="adj"/></l>   <r>yawning<s n="adj"/></r></p></e>
 <e><p><l>hwepido<s n="adj"/></l>   <r>avoided<s n="adj"/></r></p></e>
 <e><p><l>hwepido<s n="adj"/></l>   <r>evaded<s n="adj"/></r></p></e>
 <e><p><l>hwepido<s n="adj"/></l>   <r>dodged<s n="adj"/></r></p></e>
-<e><p><l>hwese<s n="adj"/></l>   <r>gray<s n="adj"/></r></p></e>
-<e><p><l>hwese<s n="adj"/></l>   <r>grey<s n="adj"/></r></p></e>
+<e><p><l>hwese<s n="adj"/></l>   <r>gray<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>hwese<s n="adj"/></l>   <r>grey<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>hyanatudo<s n="adj"/></l>   <r>betrayed<s n="adj"/></r></p></e>
 <e><p><l>hyerarkili<s n="adj"/></l>   <r>hierarchical<s n="adj"/></r></p></e>
 <e><p><l>hyerarkili<s n="adv"/></l>   <r>hierarchically<s n="adv"/></r></p></e>
@@ -16375,14 +16375,14 @@
 <e><p><l>ixarado<s n="adj"/></l>   <r>signaled<s n="adj"/></r></p></e>
 <e><p><l>ixarado<s n="adj"/></l>   <r>indicated<s n="adj"/></r></p></e>
 <e><p><l>ixarado<s n="adj"/></l>   <r>signed<s n="adj"/></r></p></e>
-<e><p><l>ixgaludo<s n="adj"/></l>   <r>busy<s n="adj"/></r></p></e>
+<e><p><l>ixgaludo<s n="adj"/></l>   <r>busy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ixgaludo<s n="adj"/></l>   <r>occupied<s n="adj"/></r></p></e>
 <e><p><l>ixgaludo<s n="adj"/></l>   <r>taken<s n="adj"/></r></p></e>
 <e><p><l>ixgaludo<s n="adv"/></l>   <r>busily<s n="adv"/></r></p></e>
-<e><p><l>ixgalukal<s n="adj"/></l>   <r>free<s n="adj"/></r></p></e>
+<e><p><l>ixgalukal<s n="adj"/></l>   <r>free<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ixgalukal<s n="adj"/></l>   <r>available<s n="adj"/></r></p></e>
 <e><p><l>ixgalukal<s n="adj"/></l>   <r>unoccupied<s n="adj"/></r></p></e>
-<e><p><l>ixgalupul<s n="adj"/></l>   <r>busy<s n="adj"/></r></p></e>
+<e><p><l>ixgalupul<s n="adj"/></l>   <r>busy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ixgalupul<s n="adv"/></l>   <r>busily<s n="adv"/></r></p></e>
 <e><p><l>ixikal<s n="adj"/></l>   <r>unconscious<s n="adj"/></r></p></e>
 <e><p><l>ixikal<s n="adv"/></l>   <r>unconsciously<s n="adv"/></r></p></e>
@@ -16405,7 +16405,7 @@
 <e><p><l>jahanomsim<s n="adv"/></l>   <r>hellishly<s n="adv"/></r></p></e>
 <e><p><l>jakulyeli<s n="adj"/></l>   <r>adrenal<s n="adj"/></r></p></e>
 <e><p><l>jakulyeli<s n="adj"/></l>   <r>suprarenal<s n="adj"/></r></p></e>
-<e><p><l>jaldi<s n="adj"/></l>   <r>early<s n="adj"/></r></p></e>
+<e><p><l>jaldi<s n="adj"/></l>   <r>early<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>jaldi<s n="adv"/></l>   <r>early<s n="adv"/></r></p></e>
 <e><p><l>jaleli<s n="adj"/></l>   <r>last<s n="adj"/></r></p></e>
 <e><p><l>jaleli<s n="adj"/></l>   <r>most<b/>recent<s n="adj"/></r></p></e>
@@ -16413,11 +16413,11 @@
 <e><p><l>jaleli<s n="adv"/></l>   <r>most<b/>recently<s n="adv"/></r></p></e>
 <e><p><l>jali<s n="adj"/></l>   <r>adjacent<s n="adj"/></r></p></e>
 <e><p><l>jali<s n="adv"/></l>   <r>adjacently<s n="adv"/></r></p></e>
-<e><p><l>jalo<s n="adj"/></l>   <r>yellow<s n="adj"/></r></p></e>
+<e><p><l>jalo<s n="adj"/></l>   <r>yellow<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>jamedo<s n="adj"/></l>   <r>frozen<s n="adj"/></r></p></e>
 <e><p><l>janatusim<s n="adj"/></l>   <r>heavenly<s n="adj"/></r></p></e>
 <e><p><l>janatusim<s n="adv"/></l>   <r>heavenly<s n="adv"/></r></p></e>
-<e><p><l>jandan<s n="adj"/></l>   <r>simple<s n="adj"/></r></p></e>
+<e><p><l>jandan<s n="adj"/></l>   <r>simple<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>jandan<s n="adv"/></l>   <r>simply<s n="adv"/></r></p></e>
 <e><p><l>jangefil<s n="adj"/></l>   <r>militant<s n="adj"/></r></p></e>
 <e><p><l>jangefil<s n="adj"/></l>   <r>warlike<s n="adj"/></r></p></e>
@@ -16475,8 +16475,8 @@
 <e><p><l>jogaydo<s n="adj"/></l>   <r>disabled<s n="adj"/></r></p></e>
 <e><p><l>jogaydo<s n="adj"/></l>   <r>impaired<s n="adj"/></r></p></e>
 <e><p><l>jogulene<s n="adj"/></l>   <r>juggling<s n="adj"/></r></p></e>
-<e><p><l>jotaybon<s n="adj"/></l>   <r>good<s n="adj"/></r></p></e>
-<e><p><l>jotaybon<s n="adj"/></l>   <r>fine<s n="adj"/></r></p></e>
+<e><p><l>jotaybon<s n="adj"/></l>   <r>good<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>jotaybon<s n="adj"/></l>   <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>jotaybon<s n="adj"/></l>   <r>in<b/>good<b/>condition<s n="adj"/></r></p></e>
 <e><p><l>jotaybon<s n="adj"/></l>   <r>in<b/>a<b/>good<b/>state<s n="adj"/></r></p></e>
 <e><p><l>joxudo<s n="adj"/></l>   <r>excited<s n="adj"/></r></p></e>
@@ -16510,14 +16510,14 @@
 <e><p><l>jula<s n="adj"/></l>   <r>apart<s n="adj"/></r></p></e>
 <e><p><l>jula<s n="adj"/></l>   <r>separate<s n="adj"/></r></p></e>
 <e><p><l>jula<s n="adv"/></l>   <r>separately<s n="adv"/></r></p></e>
-<e><p><l>jumbi<s n="adj"/></l>   <r>ready<s n="adj"/></r></p></e>
+<e><p><l>jumbi<s n="adj"/></l>   <r>ready<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>jumbi<s n="adj"/></l>   <r>prepared<s n="adj"/></r></p></e>
 <e><p><l>jumbi<s n="adj"/></l>   <r>set<s n="adj"/></r></p></e>
 <e><p><l>jumbi<s n="adv"/></l>   <r>readily<s n="adv"/></r></p></e>
 <e><p><l>jumundo<s n="adj"/></l>   <r>bewitched<s n="adj"/></r></p></e>
 <e><p><l>jundwando<s n="adj"/></l>   <r>interrupted<s n="adj"/></r></p></e>
 <e><p><l>jundwando<s n="adj"/></l>   <r>disrupted<s n="adj"/></r></p></e>
-<e><p><l>juni<s n="adj"/></l>   <r>young<s n="adj"/></r></p></e>
+<e><p><l>juni<s n="adj"/></l>   <r>young<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>juni<s n="adv"/></l>   <r>quasi-pfx:<b/>offspring<s n="adv"/></r></p></e>
 <e><p><l>juni<s n="adv"/></l>   <r>young<s n="adv"/></r></p></e>
 <e><p><l>junisim<s n="adj"/></l>   <r>youthful<s n="adj"/></r></p></e>
@@ -16546,7 +16546,7 @@
 <e><p><l>kafarene<s n="adj"/></l>   <r>redeeming<s n="adj"/></r></p></e>
 <e><p><l>kafarene<s n="adv"/></l>   <r>redemptively<s n="adv"/></r></p></e>
 <e><p><l>kafyane<s n="adj"/></l>   <r>rhyming<s n="adj"/></r></p></e>
-<e><p><l>kal<s n="adj"/></l>   <r>empty<s n="adj"/></r></p></e>
+<e><p><l>kal<s n="adj"/></l>   <r>empty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kal<s n="adv"/></l>   <r>emptily<s n="adv"/></r></p></e>
 <e><p><l>kalapado<s n="adj"/></l>   <r>stirred<s n="adj"/></r></p></e>
 <e><p><l>kalapado<s n="adj"/></l>   <r>agitated<s n="adj"/></r></p></e>
@@ -16580,8 +16580,8 @@
 <e><p><l>kararfil<s n="adv"/></l>   <r>decisively<s n="adv"/></r></p></e>
 <e><p><l>kararpul<s n="adj"/></l>   <r>determined<s n="adj"/></r></p></e>
 <e><p><l>kararpul<s n="adv"/></l>   <r>determinedly<s n="adv"/></r></p></e>
-<e><p><l>karay<s n="adj"/></l>   <r>spicy<s n="adj"/></r></p></e>
-<e><p><l>karay<s n="adj"/></l>   <r>hot<s n="adj"/></r></p></e>
+<e><p><l>karay<s n="adj"/></l>   <r>spicy<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>karay<s n="adj"/></l>   <r>hot<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>karay<s n="adv"/></l>   <r>spicily<s n="adv"/></r></p></e>
 <e><p><l>karay<s n="adv"/></l>   <r>hotly<s n="adv"/></r></p></e>
 <e><p><l>karducududo<s n="adj"/></l>   <r>borrowed<s n="adj"/></r></p></e>
@@ -16601,13 +16601,13 @@
 <e><p><l>kasirunenible<s n="adj"/></l>   <r>unbreakable<s n="adj"/></r></p></e>
 <e><p><l>katado<s n="adj"/></l>   <r>cut<s n="adj"/></r></p></e>
 <e><p><l>katina<s n="adj"/></l>   <r>difficult<s n="adj"/></r></p></e>
-<e><p><l>katina<s n="adj"/></l>   <r>hard<s n="adj"/></r></p></e>
-<e><p><l>katina<s n="adj"/></l>   <r>tough<s n="adj"/></r></p></e>
+<e><p><l>katina<s n="adj"/></l>   <r>hard<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>katina<s n="adj"/></l>   <r>tough<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>katina<s n="adv"/></l>   <r>difficultly<s n="adv"/></r></p></e>
 <e><p><l>katina<s n="adv"/></l>   <r>with<b/>difficulty<s n="adv"/></r></p></e>
 <e><p><l>kavuke<s n="adj"/></l>   <r>hollow<s n="adj"/></r></p></e>
 <e><p><l>kavuke<s n="adv"/></l>   <r>hollowly<s n="adv"/></r></p></e>
-<e><p><l>kaway<s n="adj"/></l>   <r>cute<s n="adj"/></r></p></e>
+<e><p><l>kaway<s n="adj"/></l>   <r>cute<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kaway<s n="adv"/></l>   <r>cutely<s n="adv"/></r></p></e>
 <e><p><l>kawaywaodo<s n="adj"/></l>   <r>endeared<s n="adj"/></r></p></e>
 <e><p><l>kawaywaone<s n="adj"/></l>   <r>endearing<s n="adj"/></r></p></e>
@@ -16622,13 +16622,13 @@
 <e><p><l>kefukulaye<s n="adv"/></l>   <r>admirably<s n="adv"/></r></p></e>
 <e><p><l>kentando<s n="adj"/></l>   <r>explored<s n="adj"/></r></p></e>
 <e><p><l>kermeskolordo<s n="adj"/></l>   <r>crimson<s n="adj"/></r></p></e>
-<e><p><l>kijawi<s n="adj"/></l>   <r>green<s n="adj"/></r></p></e>
+<e><p><l>kijawi<s n="adj"/></l>   <r>green<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kiloyum<s n="adj"/></l>   <r>thousandth<s n="adj"/></r></p></e>
-<e><p><l>kimakal<s n="adj"/></l>   <r>free<s n="adj"/></r></p></e>
+<e><p><l>kimakal<s n="adj"/></l>   <r>free<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kimakal<s n="adj"/></l>   <r>free<b/>of<b/>charge<s n="adj"/></r></p></e>
 <e><p><l>kimakal<s n="adv"/></l>   <r>free<b/>of<b/>charge<s n="adv"/></r></p></e>
 <e><p><l>kimakal<s n="adv"/></l>   <r>for<b/>free<s n="adv"/></r></p></e>
-<e><p><l>kimapul<s n="adj"/></l>   <r>costly<s n="adj"/></r></p></e>
+<e><p><l>kimapul<s n="adj"/></l>   <r>costly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kimapul<s n="adj"/></l>   <r>pricey<s n="adj"/></r></p></e>
 <e><p><l>kimapul<s n="adj"/></l>   <r>expensive<s n="adj"/></r></p></e>
 <e><p><l>kimapul<s n="adv"/></l>   <r>expensively<s n="adv"/></r></p></e>
@@ -16725,12 +16725,12 @@
 <e><p><l>kostruido<s n="adj"/></l>   <r>built<s n="adj"/></r></p></e>
 <e><p><l>kotonli<s n="adj"/></l>   <r>cotton<s n="adj"/></r></p></e>
 <e><p><l>kotonli<s n="adj"/></l>   <r>made<b/>of<b/>cotton<s n="adj"/></r></p></e>
-<e><p><l>kotor<s n="adj"/></l>   <r>dirty<s n="adj"/></r></p></e>
+<e><p><l>kotor<s n="adj"/></l>   <r>dirty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kotor<s n="adv"/></l>   <r>dirtily<s n="adv"/></r></p></e>
 <e><p><l>kowakal<s n="adj"/></l>   <r>powerless<s n="adj"/></r></p></e>
 <e><p><l>kowakal<s n="adv"/></l>   <r>powerlessly<s n="adv"/></r></p></e>
 <e><p><l>kowapul<s n="adj"/></l>   <r>powerful<s n="adj"/></r></p></e>
-<e><p><l>kowapul<s n="adj"/></l>   <r>mighty<s n="adj"/></r></p></e>
+<e><p><l>kowapul<s n="adj"/></l>   <r>mighty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kowapul<s n="adv"/></l>   <r>powerfully<s n="adv"/></r></p></e>
 <e><p><l>kowapul<s n="adv"/></l>   <r>mightily<s n="adv"/></r></p></e>
 <e><p><l>krasine<s n="adj"/></l>   <r>governing<s n="adj"/></r></p></e>
@@ -16759,10 +16759,10 @@
 <e><p><l>kulturali<s n="adj"/></l>   <r>cultural<s n="adj"/></r></p></e>
 <e><p><l>kulturali<s n="adv"/></l>   <r>culturally<s n="adv"/></r></p></e>
 <e><p><l>kunde<s n="adj"/></l>   <r>dull<s n="adj"/></r></p></e>
-<e><p><l>kunde<s n="adj"/></l>   <r>blunt<s n="adj"/></r></p></e>
+<e><p><l>kunde<s n="adj"/></l>   <r>blunt<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kunganli<s n="adj"/></l>   <r>spatial<s n="adj"/></r></p></e>
 <e><p><l>kunganli<s n="adv"/></l>   <r>spatially<s n="adv"/></r></p></e>
-<e><p><l>kurto<s n="adj"/></l>   <r>short<s n="adj"/></r></p></e>
+<e><p><l>kurto<s n="adj"/></l>   <r>short<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kurto<s n="adj"/></l>   <r>brief<s n="adj"/></r></p></e>
 <e><p><l>kurto<s n="adv"/></l>   <r>briefly<s n="adv"/></r></p></e>
 <e><p><l>kurtowatuli<s n="adj"/></l>   <r>short-term<s n="adj"/></r></p></e>
@@ -16772,9 +16772,9 @@
 <e><p><l>kuvupul<s n="adj"/></l>   <r>mildewy<s n="adj"/></r></p></e>
 <e><p><l>kwalitabon<s n="adj"/></l>   <r>quality<s n="adj"/></r></p></e>
 <e><p><l>kwalitabon<s n="adj"/></l>   <r>good-quality<s n="adj"/></r></p></e>
-<e><p><l>kwalitabon<s n="adj"/></l>   <r>fine<s n="adj"/></r></p></e>
+<e><p><l>kwalitabon<s n="adj"/></l>   <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kwalitagao<s n="adj"/></l>   <r>high-quality<s n="adj"/></r></p></e>
-<e><p><l>kwalitagao<s n="adj"/></l>   <r>fine<s n="adj"/></r></p></e>
+<e><p><l>kwalitagao<s n="adj"/></l>   <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kwanlido<s n="adj"/></l>   <r>administered<s n="adj"/></r></p></e>
 <e><p><l>kwanlido<s n="adj"/></l>   <r>managed<s n="adj"/></r></p></e>
 <e><p><l>kwarentindo<s n="adj"/></l>   <r>quarantined<s n="adj"/></r></p></e>
@@ -16782,7 +16782,7 @@
 <e><p><l>kwasi<s n="adj"/></l>   <r>apparent<s n="adj"/></r></p></e>
 <e><p><l>kwasi<s n="adv"/></l>   <r>seemingly<s n="adv"/></r></p></e>
 <e><p><l>kwasi<s n="adv"/></l>   <r>apparently<s n="adv"/></r></p></e>
-<e><p><l>kweho<s n="adj"/></l>   <r>merry<s n="adj"/></r></p></e>
+<e><p><l>kweho<s n="adj"/></l>   <r>merry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>kweho<s n="adj"/></l>   <r>cheerful<s n="adj"/></r></p></e>
 <e><p><l>kweho<s n="adv"/></l>   <r>merrily<s n="adv"/></r></p></e>
 <e><p><l>kweho<s n="adv"/></l>   <r>cheerfully<s n="adv"/></r></p></e>
@@ -16799,14 +16799,14 @@
 <e><p><l>lafuzudo<s n="adj"/></l>   <r>pronounced<s n="adj"/></r></p></e>
 <e><p><l>lalado<s n="adj"/></l>   <r>sung<s n="adj"/></r></p></e>
 <e><p><l>lalane<s n="adj"/></l>   <r>singing<s n="adj"/></r></p></e>
-<e><p><l>lama<s n="adj"/></l>   <r>old<s n="adj"/></r></p></e>
+<e><p><l>lama<s n="adj"/></l>   <r>old<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lama<s n="adj"/></l>   <r>longtime<s n="adj"/></r></p></e>
 <e><p><l>lancado<s n="adj"/></l>   <r>launched<s n="adj"/></r></p></e>
 <e><p><l>lanetudo<s n="adj"/></l>   <r>condemned<s n="adj"/></r></p></e>
 <e><p><l>lanetudo<s n="adj"/></l>   <r>sentenced<s n="adj"/></r></p></e>
 <e><p><l>lanetudo<s n="adj"/></l>   <r>damned<s n="adj"/></r></p></e>
 <e><p><l>lanetudo<s n="adj"/></l>   <r>doomed<s n="adj"/></r></p></e>
-<e><p><l>lao<s n="adj"/></l>   <r>old<s n="adj"/></r></p></e>
+<e><p><l>lao<s n="adj"/></l>   <r>old<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>laringeli<s n="adj"/></l>   <r>laryngeal<s n="adj"/></r></p></e>
 <e><p><l>lateksuli<s n="adj"/></l>   <r>latex<s n="adj"/></r></p></e>
 <e><p><l>lateksuli<s n="adj"/></l>   <r>made<b/>of<b/>latex<s n="adj"/></r></p></e>
@@ -16816,13 +16816,13 @@
 <e><p><l>lawfendo<s n="adj"/></l>   <r>vexed<s n="adj"/></r></p></e>
 <e><p><l>lawfenne<s n="adj"/></l>   <r>annoying<s n="adj"/></r></p></e>
 <e><p><l>lawfenne<s n="adv"/></l>   <r>annoyingly<s n="adv"/></r></p></e>
-<e><p><l>laxo<s n="adj"/></l>   <r>loose<s n="adj"/></r></p></e>
+<e><p><l>laxo<s n="adj"/></l>   <r>loose<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>laxo<s n="adj"/></l>   <r>flaccid<s n="adj"/></r></p></e>
 <e><p><l>laxo<s n="adj"/></l>   <r>limp<s n="adj"/></r></p></e>
 <e><p><l>laxo<s n="adv"/></l>   <r>loosely<s n="adv"/></r></p></e>
 <e><p><l>laxo<s n="adv"/></l>   <r>flaccidly<s n="adv"/></r></p></e>
 <e><p><l>laxo<s n="adv"/></l>   <r>limply<s n="adv"/></r></p></e>
-<e><p><l>laye<s n="adj"/></l>   <r>worthy<s n="adj"/></r></p></e>
+<e><p><l>laye<s n="adj"/></l>   <r>worthy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>laye<s n="adv"/></l>   <r>worthily<s n="adv"/></r></p></e>
 <e><p><l>lefeixarado<s n="adj"/></l>   <r>foreshadowed<s n="adj"/></r></p></e>
 <e><p><l>lefeixarado<s n="adj"/></l>   <r>portended<s n="adj"/></r></p></e>
@@ -16866,16 +16866,16 @@
 <e><p><l>likwidopul<s n="adj"/></l>   <r>liquid<s n="adj"/></r></p></e>
 <e><p><l>likwidopul<s n="adv"/></l>   <r>liquidly<s n="adv"/></r></p></e>
 <e><p><l>lil<s n="adj"/></l>   <r>little<s n="adj"/></r></p></e>
-<e><p><l>lil<s n="adj"/></l>   <r>small<s n="adj"/></r></p></e>
+<e><p><l>lil<s n="adj"/></l>   <r>small<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lil<s n="adj"/></l>   <r>minor<s n="adj"/></r></p></e>
 <e><p><l>lil<s n="adj"/></l>   <r>slight<s n="adj"/></r></p></e>
 <e><p><l>lil<s n="adv"/></l>   <r>minorly<s n="adv"/></r></p></e>
 <e><p><l>lil<s n="adv"/></l>   <r>a<b/>little<s n="adv"/></r></p></e>
 <e><p><l>lil<s n="adv"/></l>   <r>minorly<s n="adv"/></r></p></e>
 <e><p><l>lil<s n="adv"/></l>   <r>a<b/>little<b/>bit<s n="adv"/></r></p></e>
-<e><p><l>lilbardipul<s n="adj"/></l>   <r>cool<s n="adj"/></r></p></e>
+<e><p><l>lilbardipul<s n="adj"/></l>   <r>cool<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lilbardipul<s n="adv"/></l>   <r>coolly<s n="adv"/></r></p></e>
-<e><p><l>lilgile<s n="adj"/></l>   <r>damp<s n="adj"/></r></p></e>
+<e><p><l>lilgile<s n="adj"/></l>   <r>damp<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lilgile<s n="adj"/></l>   <r>moist<s n="adj"/></r></p></e>
 <e><p><l>lilgile<s n="adv"/></l>   <r>damply<s n="adv"/></r></p></e>
 <e><p><l>lilgile<s n="adv"/></l>   <r>moistly<s n="adv"/></r></p></e>
@@ -16928,28 +16928,28 @@
 <e><p><l>luksopul<s n="adv"/></l>   <r>luxuriously<s n="adv"/></r></p></e>
 <e><p><l>lumindo<s n="adj"/></l>   <r>illuminated<s n="adj"/></r></p></e>
 <e><p><l>lumindo<s n="adj"/></l>   <r>lit<s n="adj"/></r></p></e>
-<e><p><l>luminkal<s n="adj"/></l>   <r>dark<s n="adj"/></r></p></e>
+<e><p><l>luminkal<s n="adj"/></l>   <r>dark<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>luminkal<s n="adv"/></l>   <r>darkly<s n="adv"/></r></p></e>
-<e><p><l>luminlil<s n="adj"/></l>   <r>dim<s n="adj"/></r></p></e>
+<e><p><l>luminlil<s n="adj"/></l>   <r>dim<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>luminlil<s n="adv"/></l>   <r>dimly<s n="adv"/></r></p></e>
-<e><p><l>luminpul<s n="adj"/></l>   <r>bright<s n="adj"/></r></p></e>
-<e><p><l>luminpul<s n="adj"/></l>   <r>light<s n="adj"/></r></p></e>
+<e><p><l>luminpul<s n="adj"/></l>   <r>bright<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>luminpul<s n="adj"/></l>   <r>light<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>luminpul<s n="adv"/></l>   <r>brightly<s n="adv"/></r></p></e>
-<e><p><l>lungo<s n="adj"/></l>   <r>long<s n="adj"/></r></p></e>
+<e><p><l>lungo<s n="adj"/></l>   <r>long<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lungo<s n="adv"/></l>   <r>for<b/>long<s n="adv"/></r></p></e>
 <e><p><l>lungo<s n="adv"/></l>   <r>for<b/>a<b/>long<b/>time<s n="adv"/></r></p></e>
 <e><p><l>lungo<s n="adv"/></l>   <r>at<b/>length<s n="adv"/></r></p></e>
 <e><p><l>lungowatuli<s n="adj"/></l>   <r>long-term<s n="adj"/></r></p></e>
 <e><p><l>lungowatuli<s n="adj"/></l>   <r>long-time<s n="adj"/></r></p></e>
-<e><p><l>lutuffil<s n="adj"/></l>   <r>kind<s n="adj"/></r></p></e>
-<e><p><l>lutuffil<s n="adj"/></l>   <r>nice<s n="adj"/></r></p></e>
+<e><p><l>lutuffil<s n="adj"/></l>   <r>kind<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>lutuffil<s n="adj"/></l>   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lutuffil<s n="adv"/></l>   <r>kindly<s n="adv"/></r></p></e>
 <e><p><l>lutuffil<s n="adv"/></l>   <r>nicely<s n="adv"/></r></p></e>
-<e><p><l>lutufkal<s n="adj"/></l>   <r>unkind<s n="adj"/></r></p></e>
-<e><p><l>lutufkal<s n="adj"/></l>   <r>mean<s n="adj"/></r></p></e>
+<e><p><l>lutufkal<s n="adj"/></l>   <r>unkind<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>lutufkal<s n="adj"/></l>   <r>mean<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lutufkal<s n="adv"/></l>   <r>unkindly<s n="adv"/></r></p></e>
-<e><p><l>lutufpul<s n="adj"/></l>   <r>kind<s n="adj"/></r></p></e>
-<e><p><l>lutufpul<s n="adj"/></l>   <r>nice<s n="adj"/></r></p></e>
+<e><p><l>lutufpul<s n="adj"/></l>   <r>kind<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>lutufpul<s n="adj"/></l>   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>lutufpul<s n="adv"/></l>   <r>kindly<s n="adv"/></r></p></e>
 <e><p><l>lutufpul<s n="adv"/></l>   <r>nicely<s n="adv"/></r></p></e>
 <e><p><l>maderili<s n="adj"/></l>   <r>material<s n="adj"/></r></p></e>
@@ -16972,7 +16972,7 @@
 <e><p><l>magnetosim<s n="adv"/></l>   <r>magnetically<s n="adv"/></r></p></e>
 <e><p><l>magnetosim<s n="adv"/></l>   <r>attractively<s n="adv"/></r></p></e>
 <e><p><l>mahamelsim<s n="adj"/></l>   <r>velvety<s n="adj"/></r></p></e>
-<e><p><l>maharakal<s n="adj"/></l>   <r>clumsy<s n="adj"/></r></p></e>
+<e><p><l>maharakal<s n="adj"/></l>   <r>clumsy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>maharakal<s n="adj"/></l>   <r>inept<s n="adj"/></r></p></e>
 <e><p><l>maharakal<s n="adj"/></l>   <r>awkward<s n="adj"/></r></p></e>
 <e><p><l>maharakal<s n="adv"/></l>   <r>clumsily<s n="adv"/></r></p></e>
@@ -16983,8 +16983,8 @@
 <e><p><l>maharapul<s n="adj"/></l>   <r>skilful<s n="adj"/></r></p></e>
 <e><p><l>maharapul<s n="adv"/></l>   <r>skillfully<s n="adv"/></r></p></e>
 <e><p><l>maharapul<s n="adv"/></l>   <r>skilfully<s n="adv"/></r></p></e>
-<e><p><l>majnuni<s n="adj"/></l>   <r>crazy<s n="adj"/></r></p></e>
-<e><p><l>majnuni<s n="adj"/></l>   <r>mad<s n="adj"/></r></p></e>
+<e><p><l>majnuni<s n="adj"/></l>   <r>crazy<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>majnuni<s n="adj"/></l>   <r>mad<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>majnuni<s n="adj"/></l>   <r>nuts<s n="adj"/></r></p></e>
 <e><p><l>majnuni<s n="adj"/></l>   <r>insane<s n="adj"/></r></p></e>
 <e><p><l>majnuni<s n="adv"/></l>   <r>crazily<s n="adv"/></r></p></e>
@@ -17067,7 +17067,7 @@
 <e><p><l>meditali<s n="adv"/></l>   <r>meditatively<s n="adv"/></r></p></e>
 <e><p><l>megayum<s n="adj"/></l>   <r>millionth<s n="adj"/></r></p></e>
 <e><p><l>megayum<s n="adj"/></l>   <r>one<b/>millionth<s n="adj"/></r></p></e>
-<e><p><l>megupul<s n="adj"/></l>   <r>cloudy<s n="adj"/></r></p></e>
+<e><p><l>megupul<s n="adj"/></l>   <r>cloudy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>megupul<s n="adj"/></l>   <r>overcast<s n="adj"/></r></p></e>
 <e><p><l>megupul<s n="adv"/></l>   <r>cloudily<s n="adv"/></r></p></e>
 <e><p><l>mehmangido<s n="adj"/></l>   <r>hosted<s n="adj"/></r></p></e>
@@ -17077,11 +17077,11 @@
 <e><p><l>melankoli<s n="adj"/></l>   <r>melancholic<s n="adj"/></r></p></e>
 <e><p><l>melankoli<s n="adv"/></l>   <r>melancholically<s n="adv"/></r></p></e>
 <e><p><l>meli<s n="adj"/></l>   <r>beautiful<s n="adj"/></r></p></e>
-<e><p><l>meli<s n="adj"/></l>   <r>pretty<s n="adj"/></r></p></e>
+<e><p><l>meli<s n="adj"/></l>   <r>pretty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>meli<s n="adv"/></l>   <r>beautifully<s n="adv"/></r></p></e>
 <e><p><l>meli<s n="adv"/></l>   <r>prettily<s n="adv"/></r></p></e>
-<e><p><l>melibon<s n="adj"/></l>   <r>nice<s n="adj"/></r></p></e>
-<e><p><l>melibon<s n="adj"/></l>   <r>sweet<s n="adj"/></r></p></e>
+<e><p><l>melibon<s n="adj"/></l>   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>melibon<s n="adj"/></l>   <r>sweet<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>melibon<s n="adv"/></l>   <r>nicely<s n="adv"/></r></p></e>
 <e><p><l>melibon<s n="adv"/></l>   <r>sweetly<s n="adv"/></r></p></e>
 <e><p><l>melodipul<s n="adj"/></l>   <r>melodic<s n="adj"/></r></p></e>
@@ -17125,10 +17125,10 @@
 <e><p><l>midi<s n="adj"/></l>   <r>mid-<s n="adj"/></r></p></e>
 <e><p><l>mididay<s n="adj"/></l>   <r>medium<s n="adj"/></r></p></e>
 <e><p><l>mididay<s n="adj"/></l>   <r>medium-sized<s n="adj"/></r></p></e>
-<e><p><l>miju<s n="adj"/></l>   <r>dense<s n="adj"/></r></p></e>
+<e><p><l>miju<s n="adj"/></l>   <r>dense<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>miju<s n="adj"/></l>   <r>concentrated<s n="adj"/></r></p></e>
 <e><p><l>miju<s n="adv"/></l>   <r>densely<s n="adv"/></r></p></e>
-<e><p><l>mingu<s n="adj"/></l>   <r>clear<s n="adj"/></r></p></e>
+<e><p><l>mingu<s n="adj"/></l>   <r>clear<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>mingu<s n="adj"/></l>   <r>evident<s n="adj"/></r></p></e>
 <e><p><l>mingu<s n="adv"/></l>   <r>clearly<s n="adv"/></r></p></e>
 <e><p><l>mingu<s n="adv"/></l>   <r>evidently<s n="adv"/></r></p></e>
@@ -17171,12 +17171,12 @@
 <e><p><l>moderno<s n="adj"/></l>   <r>modern<s n="adj"/></r></p></e>
 <e><p><l>moderno<s n="adv"/></l>   <r>modernly<s n="adv"/></r></p></e>
 <e><p><l>mogekal<s n="adj"/></l>   <r>brainless<s n="adj"/></r></p></e>
-<e><p><l>mogekal<s n="adj"/></l>   <r>stupid<s n="adj"/></r></p></e>
+<e><p><l>mogekal<s n="adj"/></l>   <r>stupid<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>mogekal<s n="adv"/></l>   <r>brainlessly<s n="adv"/></r></p></e>
 <e><p><l>mogekal<s n="adv"/></l>   <r>stupidly<s n="adv"/></r></p></e>
 <e><p><l>mogepul<s n="adj"/></l>   <r>intelligent<s n="adj"/></r></p></e>
-<e><p><l>mogepul<s n="adj"/></l>   <r>smart<s n="adj"/></r></p></e>
-<e><p><l>mogepul<s n="adj"/></l>   <r>brainy<s n="adj"/></r></p></e>
+<e><p><l>mogepul<s n="adj"/></l>   <r>smart<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>mogepul<s n="adj"/></l>   <r>brainy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>mogepul<s n="adv"/></l>   <r>intelligently<s n="adv"/></r></p></e>
 <e><p><l>mogepul<s n="adv"/></l>   <r>smartly<s n="adv"/></r></p></e>
 <e><p><l>mogokido<s n="adj"/></l>   <r>witnessed<s n="adj"/></r></p></e>
@@ -17194,20 +17194,20 @@
 <e><p><l>mor<s n="adj"/></l>   <r>deceased<s n="adj"/></r></p></e>
 <e><p><l>morcuabil<s n="adj"/></l>   <r>mortal<s n="adj"/></r></p></e>
 <e><p><l>morcuabil<s n="adv"/></l>   <r>mortally<s n="adv"/></r></p></e>
-<e><p><l>morgine<s n="adj"/></l>   <r>deadly<s n="adj"/></r></p></e>
+<e><p><l>morgine<s n="adj"/></l>   <r>deadly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>morgine<s n="adj"/></l>   <r>lethal<s n="adj"/></r></p></e>
 <e><p><l>morgine<s n="adj"/></l>   <r>fatal<s n="adj"/></r></p></e>
 <e><p><l>morgine<s n="adj"/></l>   <r>mortal<s n="adj"/></r></p></e>
 <e><p><l>morgine<s n="adj"/></l>   <r>killing<s n="adj"/></r></p></e>
 <e><p><l>morgine<s n="adv"/></l>   <r>lethally<s n="adv"/></r></p></e>
 <e><p><l>morgine<s n="adv"/></l>   <r>mortally<s n="adv"/></r></p></e>
-<e><p><l>mote<s n="adj"/></l>   <r>thick<s n="adj"/></r></p></e>
+<e><p><l>mote<s n="adj"/></l>   <r>thick<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>mote<s n="adv"/></l>   <r>thickly<s n="adv"/></r></p></e>
 <e><p><l>motsukal<s n="adj"/></l>   <r>frictionless<s n="adj"/></r></p></e>
-<e><p><l>motsukal<s n="adj"/></l>   <r>smooth<s n="adj"/></r></p></e>
+<e><p><l>motsukal<s n="adj"/></l>   <r>smooth<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>motsukal<s n="adv"/></l>   <r>frictionlessly<s n="adv"/></r></p></e>
 <e><p><l>motsukal<s n="adv"/></l>   <r>smoothly<s n="adv"/></r></p></e>
-<e><p><l>motsupul<s n="adj"/></l>   <r>rough<s n="adj"/></r></p></e>
+<e><p><l>motsupul<s n="adj"/></l>   <r>rough<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>motsupul<s n="adv"/></l>   <r>roughly<s n="adv"/></r></p></e>
 <e><p><l>moyabil<s n="adj"/></l>   <r>almighty<s n="adj"/></r></p></e>
 <e><p><l>moyabil<s n="adj"/></l>   <r>omnipotent<s n="adj"/></r></p></e>
@@ -17253,7 +17253,7 @@
 <e><p><l>nabizane<s n="adj"/></l>   <r>beating<s n="adj"/></r></p></e>
 <e><p><l>nabizane<s n="adj"/></l>   <r>throbbing<s n="adj"/></r></p></e>
 <e><p><l>nabizane<s n="adv"/></l>   <r>pulsatingly<s n="adv"/></r></p></e>
-<e><p><l>nadir<s n="adj"/></l>   <r>rare<s n="adj"/></r></p></e>
+<e><p><l>nadir<s n="adj"/></l>   <r>rare<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>nadir<s n="adv"/></l>   <r>rarely<s n="adv"/></r></p></e>
 <e><p><l>nadir<s n="adv"/></l>   <r>seldom<s n="adv"/></r></p></e>
 <e><p><l>nafikupul<s n="adj"/></l>   <r>hypocritical<s n="adj"/></r></p></e>
@@ -17266,13 +17266,13 @@
 <e><p><l>naive<s n="adj"/></l>   <r>ingenuous<s n="adj"/></r></p></e>
 <e><p><l>naive<s n="adj"/></l>   <r>innocent<s n="adj"/></r></p></e>
 <e><p><l>naive<s n="adj"/></l>   <r>artless<s n="adj"/></r></p></e>
-<e><p><l>naive<s n="adj"/></l>   <r>simple<s n="adj"/></r></p></e>
+<e><p><l>naive<s n="adj"/></l>   <r>simple<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>naive<s n="adv"/></l>   <r>naively<s n="adv"/></r></p></e>
 <e><p><l>naive<s n="adv"/></l>   <r>ingenuously<s n="adv"/></r></p></e>
 <e><p><l>naive<s n="adv"/></l>   <r>innocently<s n="adv"/></r></p></e>
 <e><p><l>naive<s n="adv"/></l>   <r>artlessly<s n="adv"/></r></p></e>
 <e><p><l>naive<s n="adv"/></l>   <r>simply<s n="adv"/></r></p></e>
-<e><p><l>namakepul<s n="adj"/></l>   <r>salty<s n="adj"/></r></p></e>
+<e><p><l>namakepul<s n="adj"/></l>   <r>salty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>namakepul<s n="adv"/></l>   <r>saltily<s n="adv"/></r></p></e>
 <e><p><l>namekal<s n="adj"/></l>   <r>anonymous<s n="adj"/></r></p></e>
 <e><p><l>namekal<s n="adv"/></l>   <r>anonymously<s n="adv"/></r></p></e>
@@ -17282,9 +17282,9 @@
 <e><p><l>narcisosim<s n="adj"/></l>   <r>conceited<s n="adj"/></r></p></e>
 <e><p><l>narcisosim<s n="adv"/></l>   <r>vainly<s n="adv"/></r></p></e>
 <e><p><l>narcisosim<s n="adv"/></l>   <r>conceitedly<s n="adv"/></r></p></e>
-<e><p><l>narem<s n="adj"/></l>   <r>soft<s n="adj"/></r></p></e>
-<e><p><l>narem<s n="adj"/></l>   <r>tender<s n="adj"/></r></p></e>
-<e><p><l>narem<s n="adj"/></l>   <r>gentle<s n="adj"/></r></p></e>
+<e><p><l>narem<s n="adj"/></l>   <r>soft<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>narem<s n="adj"/></l>   <r>tender<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>narem<s n="adj"/></l>   <r>gentle<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>narem<s n="adv"/></l>   <r>softly<s n="adv"/></r></p></e>
 <e><p><l>narem<s n="adv"/></l>   <r>tenderly<s n="adv"/></r></p></e>
 <e><p><l>narem<s n="adv"/></l>   <r>gently<s n="adv"/></r></p></e>
@@ -17337,7 +17337,7 @@
 <e><p><l>neneskoldo<s n="adj"/></l>   <r>uneducated<s n="adj"/></r></p></e>
 <e><p><l>neneskoldo<s n="adj"/></l>   <r>unschooled<s n="adj"/></r></p></e>
 <e><p><l>nenfil<s n="adj"/></l>   <r>uninclined<s n="adj"/></r></p></e>
-<e><p><l>nengibefil<s n="adj"/></l>   <r>stingy<s n="adj"/></r></p></e>
+<e><p><l>nengibefil<s n="adj"/></l>   <r>stingy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>nengibefil<s n="adj"/></l>   <r>ungenerous<s n="adj"/></r></p></e>
 <e><p><l>nengibefil<s n="adv"/></l>   <r>stingily<s n="adv"/></r></p></e>
 <e><p><l>nengitaydo<s n="adj"/></l>   <r>unexpected<s n="adj"/></r></p></e>
@@ -17358,12 +17358,12 @@
 <e><p><l>nenkarardo<s n="adj"/></l>   <r>undecided<s n="adj"/></r></p></e>
 <e><p><l>nenkararfil<s n="adj"/></l>   <r>indecisive<s n="adj"/></r></p></e>
 <e><p><l>nenkararfil<s n="adv"/></l>   <r>indecisively<s n="adv"/></r></p></e>
-<e><p><l>nenkimapul<s n="adj"/></l>   <r>cheap<s n="adj"/></r></p></e>
+<e><p><l>nenkimapul<s n="adj"/></l>   <r>cheap<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>nenkimapul<s n="adj"/></l>   <r>inexpensive<s n="adj"/></r></p></e>
 <e><p><l>nenkimapul<s n="adv"/></l>   <r>cheaply<s n="adv"/></r></p></e>
 <e><p><l>nenkimapul<s n="adv"/></l>   <r>inexpensively<s n="adv"/></r></p></e>
 <e><p><l>nenkokido<s n="adj"/></l>   <r>un-cooked<s n="adj"/></r></p></e>
-<e><p><l>nenkokido<s n="adj"/></l>   <r>raw<s n="adj"/></r></p></e>
+<e><p><l>nenkokido<s n="adj"/></l>   <r>raw<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>nenkompleto<s n="adj"/></l>   <r>incomplete<s n="adj"/></r></p></e>
 <e><p><l>nenkompleto<s n="adv"/></l>   <r>incompletely<s n="adv"/></r></p></e>
 <e><p><l>nenkonedo<s n="adj"/></l>   <r>unknown<s n="adj"/></r></p></e>
@@ -17435,7 +17435,7 @@
 <e><p><l>nensyensipul<s n="adv"/></l>   <r>unscientifically<s n="adv"/></r></p></e>
 <e><p><l>nentermodo<s n="adj"/></l>   <r>unwarmed<s n="adj"/></r></p></e>
 <e><p><l>nentermodo<s n="adj"/></l>   <r>unheated<s n="adj"/></r></p></e>
-<e><p><l>nenwazenpul<s n="adj"/></l>   <r>light<s n="adj"/></r></p></e>
+<e><p><l>nenwazenpul<s n="adj"/></l>   <r>light<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>nenwazenpul<s n="adv"/></l>   <r>lightly<s n="adv"/></r></p></e>
 <e><p><l>nenxekastedo<s n="adj"/></l>   <r>undefeated<s n="adj"/></r></p></e>
 <e><p><l>nenyakin<s n="adj"/></l>   <r>uncertain<s n="adj"/></r></p></e>
@@ -17443,13 +17443,13 @@
 <e><p><l>nenyakin<s n="adv"/></l>   <r>uncertainly<s n="adv"/></r></p></e>
 <e><p><l>nenyukwe<s n="adj"/></l>   <r>unpleasant<s n="adj"/></r></p></e>
 <e><p><l>nenyukwe<s n="adv"/></l>   <r>unpleasantly<s n="adv"/></r></p></e>
-<e><p><l>neo<s n="adj"/></l>   <r>new<s n="adj"/></r></p></e>
+<e><p><l>neo<s n="adj"/></l>   <r>new<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>neo<s n="adj"/></l>   <r>neo-<s n="adj"/></r></p></e>
 <e><p><l>neo<s n="adv"/></l>   <r>newly<s n="adv"/></r></p></e>
 <e><p><l>neoklasiko<s n="adj"/></l>   <r>neoclassical<s n="adj"/></r></p></e>
 <e><p><l>neoklasiko<s n="adv"/></l>   <r>neoclassically<s n="adv"/></r></p></e>
 <e><p><l>ner<s n="adj"/></l>   <r>nearby<s n="adj"/></r></p></e>
-<e><p><l>ner<s n="adj"/></l>   <r>close<s n="adj"/></r></p></e>
+<e><p><l>ner<s n="adj"/></l>   <r>close<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ner<s n="adv"/></l>   <r>nearby<s n="adv"/></r></p></e>
 <e><p><l>ner<s n="adv"/></l>   <r>close<b/>by<s n="adv"/></r></p></e>
 <e><p><l>nerleli<s n="adj"/></l>   <r>recent<s n="adj"/></r></p></e>
@@ -17487,7 +17487,7 @@
 <e><p><l>nubwado<s n="adj"/></l>   <r>prophesied<s n="adj"/></r></p></e>
 <e><p><l>nubwali<s n="adj"/></l>   <r>prophetic<s n="adj"/></r></p></e>
 <e><p><l>nubwali<s n="adv"/></l>   <r>prophetically<s n="adv"/></r></p></e>
-<e><p><l>nudi<s n="adj"/></l>   <r>nude<s n="adj"/></r></p></e>
+<e><p><l>nudi<s n="adj"/></l>   <r>nude<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>nudi<s n="adj"/></l>   <r>naked<s n="adj"/></r></p></e>
 <e><p><l>nudi<s n="adv"/></l>   <r>nakedly<s n="adv"/></r></p></e>
 <e><p><l>nuedesyum<s n="adj"/></l>   <r>ninetieth<s n="adj"/></r></p></e>
@@ -17539,7 +17539,7 @@
 <e><p><l>okoible<s n="adv"/></l>   <r>visibly<s n="adv"/></r></p></e>
 <e><p><l>okoli<s n="adj"/></l>   <r>visual<s n="adj"/></r></p></e>
 <e><p><l>okoli<s n="adv"/></l>   <r>visually<s n="adv"/></r></p></e>
-<e><p><l>okonenabil<s n="adj"/></l>   <r>blind<s n="adj"/></r></p></e>
+<e><p><l>okonenabil<s n="adj"/></l>   <r>blind<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>okonenabil<s n="adv"/></l>   <r>blindly<s n="adv"/></r></p></e>
 <e><p><l>okonenible<s n="adj"/></l>   <r>invisible<s n="adj"/></r></p></e>
 <e><p><l>okonenible<s n="adv"/></l>   <r>invisibly<s n="adv"/></r></p></e>
@@ -17564,7 +17564,7 @@
 <e><p><l>oredo<s n="adj"/></l>   <r>heard<s n="adj"/></r></p></e>
 <e><p><l>oreible<s n="adj"/></l>   <r>audible<s n="adj"/></r></p></e>
 <e><p><l>oreible<s n="adv"/></l>   <r>audibly<s n="adv"/></r></p></e>
-<e><p><l>orenenabil<s n="adj"/></l>   <r>deaf<s n="adj"/></r></p></e>
+<e><p><l>orenenabil<s n="adj"/></l>   <r>deaf<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>organisado<s n="adj"/></l>   <r>organized<s n="adj"/></r></p></e>
 <e><p><l>organisado<s n="adj"/></l>   <r>organised<s n="adj"/></r></p></e>
 <e><p><l>orgasmoabil<s n="adj"/></l>   <r>orgasmic<s n="adj"/></r></p></e>
@@ -17603,10 +17603,10 @@
 <e><p><l>ovofigurali<s n="adj"/></l>   <r>egg-shaped<s n="adj"/></r></p></e>
 <e><p><l>pagan<s n="adj"/></l>   <r>pagan<s n="adj"/></r></p></e>
 <e><p><l>pagan<s n="adj"/></l>   <r>heathen<s n="adj"/></r></p></e>
-<e><p><l>pahna<s n="adj"/></l>   <r>wide<s n="adj"/></r></p></e>
-<e><p><l>pahna<s n="adj"/></l>   <r>broad<s n="adj"/></r></p></e>
+<e><p><l>pahna<s n="adj"/></l>   <r>wide<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>pahna<s n="adj"/></l>   <r>broad<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pahna<s n="adv"/></l>   <r>broadly<s n="adv"/></r></p></e>
-<e><p><l>pahnaday<s n="adj"/></l>   <r>vast<s n="adj"/></r></p></e>
+<e><p><l>pahnaday<s n="adj"/></l>   <r>vast<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pahnaday<s n="adv"/></l>   <r>vastly<s n="adv"/></r></p></e>
 <e><p><l>paketido<s n="adj"/></l>   <r>packed<s n="adj"/></r></p></e>
 <e><p><l>paketido<s n="adj"/></l>   <r>packaged<s n="adj"/></r></p></e>
@@ -17622,7 +17622,7 @@
 <e><p><l>pandendo<s n="adj"/></l>   <r>climbed<s n="adj"/></r></p></e>
 <e><p><l>pandendo<s n="adj"/></l>   <r>clambered<s n="adj"/></r></p></e>
 <e><p><l>pandendo<s n="adj"/></l>   <r>scaled<s n="adj"/></r></p></e>
-<e><p><l>pangu<s n="adj"/></l>   <r>flat<s n="adj"/></r></p></e>
+<e><p><l>pangu<s n="adj"/></l>   <r>flat<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pangu<s n="adj"/></l>   <r>even<s n="adj"/></r></p></e>
 <e><p><l>pangu<s n="adv"/></l>   <r>flatly<s n="adv"/></r></p></e>
 <e><p><l>pangu<s n="adv"/></l>   <r>evenly<s n="adv"/></r></p></e>
@@ -17659,7 +17659,7 @@
 <e><p><l>pendedo<s n="adj"/></l>   <r>hung<s n="adj"/></r></p></e>
 <e><p><l>pendedo<s n="adj"/></l>   <r>hanged<s n="adj"/></r></p></e>
 <e><p><l>penli<s n="adj"/></l>   <r>convenient<s n="adj"/></r></p></e>
-<e><p><l>penli<s n="adj"/></l>   <r>handy<s n="adj"/></r></p></e>
+<e><p><l>penli<s n="adj"/></l>   <r>handy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>penli<s n="adj"/></l>   <r>expedient<s n="adj"/></r></p></e>
 <e><p><l>penli<s n="adj"/></l>   <r>opportune<s n="adj"/></r></p></e>
 <e><p><l>penli<s n="adv"/></l>   <r>conveniently<s n="adv"/></r></p></e>
@@ -17675,16 +17675,16 @@
 <e><p><l>personli<s n="adj"/></l>   <r>individual<s n="adj"/></r></p></e>
 <e><p><l>personli<s n="adv"/></l>   <r>personally<s n="adv"/></r></p></e>
 <e><p><l>personli<s n="adv"/></l>   <r>individually<s n="adv"/></r></p></e>
-<e><p><l>pesakal<s n="adj"/></l>   <r>poor<s n="adj"/></r></p></e>
+<e><p><l>pesakal<s n="adj"/></l>   <r>poor<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pesakal<s n="adv"/></l>   <r>poorly<s n="adv"/></r></p></e>
 <e><p><l>pesali<s n="adj"/></l>   <r>monetary<s n="adj"/></r></p></e>
 <e><p><l>pesali<s n="adj"/></l>   <r>financial<s n="adj"/></r></p></e>
 <e><p><l>pesali<s n="adv"/></l>   <r>monetarily<s n="adv"/></r></p></e>
 <e><p><l>pesali<s n="adv"/></l>   <r>financially<s n="adv"/></r></p></e>
-<e><p><l>pesapul<s n="adj"/></l>   <r>rich<s n="adj"/></r></p></e>
+<e><p><l>pesapul<s n="adj"/></l>   <r>rich<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pesapul<s n="adv"/></l>   <r>richly<s n="adv"/></r></p></e>
 <e><p><l>pesima<s n="adj"/></l>   <r>worst<b/>possible<s n="adj"/></r></p></e>
-<e><p><l>pesima<s n="adj"/></l>   <r>lame<s n="adj"/></r></p></e>
+<e><p><l>pesima<s n="adj"/></l>   <r>lame<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pesimaismoli<s n="adj"/></l>   <r>pessimistic<s n="adj"/></r></p></e>
 <e><p><l>pesimaismoli<s n="adj"/></l>   <r>negative<s n="adj"/></r></p></e>
 <e><p><l>pesimaismoli<s n="adv"/></l>   <r>pessimistically<s n="adv"/></r></p></e>
@@ -17705,9 +17705,9 @@
 <e><p><l>pimpan<s n="adv"/></l>   <r>oftentimes<s n="adv"/></r></p></e>
 <e><p><l>pincado<s n="adj"/></l>   <r>pinched<s n="adj"/></r></p></e>
 <e><p><l>pingun<s n="adj"/></l>   <r>average<s n="adj"/></r></p></e>
-<e><p><l>pingun<s n="adj"/></l>   <r>mean<s n="adj"/></r></p></e>
+<e><p><l>pingun<s n="adj"/></l>   <r>mean<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pingun<s n="adv"/></l>   <r>on<b/>average<s n="adv"/></r></p></e>
-<e><p><l>pinku<s n="adj"/></l>   <r>pink<s n="adj"/></r></p></e>
+<e><p><l>pinku<s n="adj"/></l>   <r>pink<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>plagudo<s n="adj"/></l>   <r>plugged<s n="adj"/></r></p></e>
 <e><p><l>planido<s n="adj"/></l>   <r>planned<s n="adj"/></r></p></e>
 <e><p><l>plasido<s n="adj"/></l>   <r>placed<s n="adj"/></r></p></e>
@@ -17754,7 +17754,7 @@
 <e><p><l>posadil<s n="adv"/></l>   <r>unjustly<s n="adv"/></r></p></e>
 <e><p><l>posadil<s n="adv"/></l>   <r>wrongfully<s n="adv"/></r></p></e>
 <e><p><l>posadil<s n="adv"/></l>   <r>evilly<s n="adv"/></r></p></e>
-<e><p><l>posamiku<s n="adj"/></l>   <r>shallow<s n="adj"/></r></p></e>
+<e><p><l>posamiku<s n="adj"/></l>   <r>shallow<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>posamiku<s n="adv"/></l>   <r>shallowly<s n="adv"/></r></p></e>
 <e><p><l>posamusado<s n="adj"/></l>   <r>bored<s n="adj"/></r></p></e>
 <e><p><l>posamusane<s n="adj"/></l>   <r>boring<s n="adj"/></r></p></e>
@@ -17793,7 +17793,7 @@
 <e><p><l>possim<s n="adv"/></l>   <r>differently<s n="adv"/></r></p></e>
 <e><p><l>postido<s n="adj"/></l>   <r>posted<s n="adj"/></r></p></e>
 <e><p><l>postido<s n="adj"/></l>   <r>displayed<s n="adj"/></r></p></e>
-<e><p><l>posyesen<s n="adj"/></l>   <r>tame<s n="adj"/></r></p></e>
+<e><p><l>posyesen<s n="adj"/></l>   <r>tame<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>posyesen<s n="adv"/></l>   <r>tamely<s n="adv"/></r></p></e>
 <e><p><l>posyukwe<s n="adj"/></l>   <r>displeasing<s n="adj"/></r></p></e>
 <e><p><l>posyukwe<s n="adv"/></l>   <r>displeasingly<s n="adv"/></r></p></e>
@@ -17836,7 +17836,7 @@
 <e><p><l>propul<s n="adv"/></l>   <r>favorably<s n="adv"/></r></p></e>
 <e><p><l>propul<s n="adv"/></l>   <r>favourably<s n="adv"/></r></p></e>
 <e><p><l>proyeksido<s n="adj"/></l>   <r>projected<s n="adj"/></r></p></e>
-<e><p><l>pul<s n="adj"/></l>   <r>full<s n="adj"/></r></p></e>
+<e><p><l>pul<s n="adj"/></l>   <r>full<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>pul<s n="adv"/></l>   <r>fully<s n="adv"/></r></p></e>
 <e><p><l>purpuro<s n="adj"/></l>   <r>purple<s n="adj"/></r></p></e>
 <e><p><l>rahatune<s n="adj"/></l>   <r>resting<s n="adj"/></r></p></e>
@@ -17911,7 +17911,7 @@
 <e><p><l>ripul<s n="adv"/></l>   <r>anew<s n="adv"/></r></p></e>
 <e><p><l>riskojuine<s n="adj"/></l>   <r>cautious<s n="adj"/></r></p></e>
 <e><p><l>riskojuine<s n="adv"/></l>   <r>cautiously<s n="adv"/></r></p></e>
-<e><p><l>riskopul<s n="adj"/></l>   <r>risky<s n="adj"/></r></p></e>
+<e><p><l>riskopul<s n="adj"/></l>   <r>risky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>riskopul<s n="adv"/></l>   <r>riskily<s n="adv"/></r></p></e>
 <e><p><l>ritmoli<s n="adj"/></l>   <r>rhythmic<s n="adj"/></r></p></e>
 <e><p><l>ritmoli<s n="adv"/></l>   <r>rhythmically<s n="adv"/></r></p></e>
@@ -17921,7 +17921,7 @@
 <e><p><l>robotili<s n="adv"/></l>   <r>robotically<s n="adv"/></r></p></e>
 <e><p><l>robotisim<s n="adj"/></l>   <r>robotic<s n="adj"/></r></p></e>
 <e><p><l>robotisim<s n="adv"/></l>   <r>robotically<s n="adv"/></r></p></e>
-<e><p><l>roso<s n="adj"/></l>   <r>red<s n="adj"/></r></p></e>
+<e><p><l>roso<s n="adj"/></l>   <r>red<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>rotacune<s n="adj"/></l>   <r>rotating<s n="adj"/></r></p></e>
 <e><p><l>rotado<s n="adj"/></l>   <r>rotated<s n="adj"/></r></p></e>
 <e><p><l>rotane<s n="adj"/></l>   <r>rotating<s n="adj"/></r></p></e>
@@ -17946,9 +17946,9 @@
 <e><p><l>sabeple<s n="adv"/></l>   <r>sevenfold<s n="adv"/></r></p></e>
 <e><p><l>sabeyum<s n="adj"/></l>   <r>seventh<s n="adj"/></r></p></e>
 <e><p><l>sabotajedo<s n="adj"/></l>   <r>sabotaged<s n="adj"/></r></p></e>
-<e><p><l>sabunpul<s n="adj"/></l>   <r>soapy<s n="adj"/></r></p></e>
+<e><p><l>sabunpul<s n="adj"/></l>   <r>soapy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sabunpul<s n="adv"/></l>   <r>soapily<s n="adv"/></r></p></e>
-<e><p><l>safe<s n="adj"/></l>   <r>clean<s n="adj"/></r></p></e>
+<e><p><l>safe<s n="adj"/></l>   <r>clean<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>safe<s n="adv"/></l>   <r>cleanly<s n="adv"/></r></p></e>
 <e><p><l>sahayli<s n="adj"/></l>   <r>auxiliary<s n="adj"/></r></p></e>
 <e><p><l>sahayli<s n="adv"/></l>   <r>auxiliarily<s n="adv"/></r></p></e>
@@ -17959,17 +17959,17 @@
 <e><p><l>sahi<s n="adv"/></l>   <r>accurately<s n="adv"/></r></p></e>
 <e><p><l>sahigili<s n="adj"/></l>   <r>corrective<s n="adj"/></r></p></e>
 <e><p><l>sahigili<s n="adv"/></l>   <r>correctively<s n="adv"/></r></p></e>
-<e><p><l>sahte<s n="adj"/></l>   <r>hard<s n="adj"/></r></p></e>
-<e><p><l>sahte<s n="adj"/></l>   <r>stiff<s n="adj"/></r></p></e>
+<e><p><l>sahte<s n="adj"/></l>   <r>hard<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>sahte<s n="adj"/></l>   <r>stiff<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sahte<s n="adj"/></l>   <r>rigid<s n="adj"/></r></p></e>
-<e><p><l>sahte<s n="adj"/></l>   <r>firm<s n="adj"/></r></p></e>
-<e><p><l>sahte<s n="adj"/></l>   <r>tough<s n="adj"/></r></p></e>
-<e><p><l>sahte<s n="adj"/></l>   <r>rough<s n="adj"/></r></p></e>
+<e><p><l>sahte<s n="adj"/></l>   <r>firm<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>sahte<s n="adj"/></l>   <r>tough<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>sahte<s n="adj"/></l>   <r>rough<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sahte<s n="adv"/></l>   <r>rigidly<s n="adv"/></r></p></e>
 <e><p><l>sahte<s n="adv"/></l>   <r>firmly<s n="adv"/></r></p></e>
 <e><p><l>sahte<s n="adv"/></l>   <r>toughly<s n="adv"/></r></p></e>
 <e><p><l>sahte<s n="adv"/></l>   <r>roughly<s n="adv"/></r></p></e>
-<e><p><l>sahtebala<s n="adj"/></l>   <r>sturdy<s n="adj"/></r></p></e>
+<e><p><l>sahtebala<s n="adj"/></l>   <r>sturdy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sahtebala<s n="adj"/></l>   <r>robust<s n="adj"/></r></p></e>
 <e><p><l>sahtebala<s n="adv"/></l>   <r>sturdily<s n="adv"/></r></p></e>
 <e><p><l>sahtebala<s n="adv"/></l>   <r>robustly<s n="adv"/></r></p></e>
@@ -17990,10 +17990,10 @@
 <e><p><l>samrudipul<s n="adj"/></l>   <r>flourishing<s n="adj"/></r></p></e>
 <e><p><l>samrudipul<s n="adv"/></l>   <r>prosperously<s n="adv"/></r></p></e>
 <e><p><l>sangudo<s n="adj"/></l>   <r>hidden<s n="adj"/></r></p></e>
-<e><p><l>santo<s n="adj"/></l>   <r>holy<s n="adj"/></r></p></e>
+<e><p><l>santo<s n="adj"/></l>   <r>holy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>santo<s n="adj"/></l>   <r>sacred<s n="adj"/></r></p></e>
 <e><p><l>santo<s n="adv"/></l>   <r>holily<s n="adv"/></r></p></e>
-<e><p><l>sati<s n="adj"/></l>   <r>true<s n="adj"/></r></p></e>
+<e><p><l>sati<s n="adj"/></l>   <r>true<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sati<s n="adv"/></l>   <r>indeed<s n="adv"/></r></p></e>
 <e><p><l>sati<s n="adv"/></l>   <r>truly<s n="adv"/></r></p></e>
 <e><p><l>saynido<s n="adj"/></l>   <r>signed<s n="adj"/></r></p></e>
@@ -18003,14 +18003,14 @@
 <e><p><l>sebakal<s n="adv"/></l>   <r>arbitrarily<s n="adv"/></r></p></e>
 <e><p><l>sedabihune<s n="adj"/></l>   <r>self-sacrificing<s n="adj"/></r></p></e>
 <e><p><l>sedabihune<s n="adv"/></l>   <r>self-sacrificingly<s n="adv"/></r></p></e>
-<e><p><l>sefide<s n="adj"/></l>   <r>white<s n="adj"/></r></p></e>
+<e><p><l>sefide<s n="adj"/></l>   <r>white<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sefil<s n="adj"/></l>   <r>selfish<s n="adj"/></r></p></e>
 <e><p><l>sefil<s n="adv"/></l>   <r>selfishly<s n="adv"/></r></p></e>
 <e><p><l>segoyondo<s n="adj"/></l>   <r>self-employed<s n="adj"/></r></p></e>
-<e><p><l>seha<s n="adj"/></l>   <r>healthy<s n="adj"/></r></p></e>
+<e><p><l>seha<s n="adj"/></l>   <r>healthy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>seha<s n="adv"/></l>   <r>healthily<s n="adv"/></r></p></e>
 <e><p><l>sehagine<s n="adj"/></l>   <r>healing<s n="adj"/></r></p></e>
-<e><p><l>sehagine<s n="adj"/></l>   <r>healthy<s n="adj"/></r></p></e>
+<e><p><l>sehagine<s n="adj"/></l>   <r>healthy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sehagine<s n="adv"/></l>   <r>healthily<s n="adv"/></r></p></e>
 <e><p><l>sehaginenible<s n="adj"/></l>   <r>incurable<s n="adj"/></r></p></e>
 <e><p><l>sehaginenible<s n="adv"/></l>   <r>incurably<s n="adv"/></r></p></e>
@@ -18019,7 +18019,7 @@
 <e><p><l>sekrasine<s n="adj"/></l>   <r>autonomous<s n="adj"/></r></p></e>
 <e><p><l>sekrasine<s n="adj"/></l>   <r>self-governing<s n="adj"/></r></p></e>
 <e><p><l>sekrasine<s n="adv"/></l>   <r>autonomously<s n="adv"/></r></p></e>
-<e><p><l>seksi<s n="adj"/></l>   <r>sexy<s n="adj"/></r></p></e>
+<e><p><l>seksi<s n="adj"/></l>   <r>sexy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>seksi<s n="adv"/></l>   <r>sexily<s n="adv"/></r></p></e>
 <e><p><l>seksoli<s n="adj"/></l>   <r>sexual<s n="adj"/></r></p></e>
 <e><p><l>seksoli<s n="adv"/></l>   <r>sexually<s n="adv"/></r></p></e>
@@ -18028,7 +18028,7 @@
 <e><p><l>seksopeldo<s n="adv"/></l>   <r>hornily<s n="adv"/></r></p></e>
 <e><p><l>seksopeldo<s n="adv"/></l>   <r>lustfully<s n="adv"/></r></p></e>
 <e><p><l>sekular<s n="adj"/></l>   <r>secular<s n="adj"/></r></p></e>
-<e><p><l>sekular<s n="adj"/></l>   <r>worldly<s n="adj"/></r></p></e>
+<e><p><l>sekular<s n="adj"/></l>   <r>worldly<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sekular<s n="adv"/></l>   <r>secularly<s n="adv"/></r></p></e>
 <e><p><l>selado<s n="adj"/></l>   <r>flooded<s n="adj"/></r></p></e>
 <e><p><l>selado<s n="adj"/></l>   <r>inundated<s n="adj"/></r></p></e>
@@ -18061,14 +18061,14 @@
 <e><p><l>semipurpuro<s n="adj"/></l>   <r>purply<s n="adj"/></r></p></e>
 <e><p><l>semiroso<s n="adj"/></l>   <r>reddish<s n="adj"/></r></p></e>
 <e><p><l>semisyahe<s n="adj"/></l>   <r>blackish<s n="adj"/></r></p></e>
-<e><p><l>sempay<s n="adj"/></l>   <r>narrow<s n="adj"/></r></p></e>
+<e><p><l>sempay<s n="adj"/></l>   <r>narrow<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sempay<s n="adv"/></l>   <r>narrowly<s n="adv"/></r></p></e>
 <e><p><l>senmunli<s n="adj"/></l>   <r>glottal<s n="adj"/></r></p></e>
 <e><p><l>servido<s n="adj"/></l>   <r>served<s n="adj"/></r></p></e>
 <e><p><l>seryeli<s n="adj"/></l>   <r>serial<s n="adj"/></r></p></e>
 <e><p><l>seryeli<s n="adv"/></l>   <r>serially<s n="adv"/></r></p></e>
 <e><p><l>sewdo<s n="adj"/></l>   <r>fake<s n="adj"/></r></p></e>
-<e><p><l>sewdo<s n="adj"/></l>   <r>false<s n="adj"/></r></p></e>
+<e><p><l>sewdo<s n="adj"/></l>   <r>false<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sewdo<s n="adj"/></l>   <r>pseudo-<s n="adj"/></r></p></e>
 <e><p><l>sexinloypul<s n="adj"/></l>   <r>confident<s n="adj"/></r></p></e>
 <e><p><l>sexinloypul<s n="adj"/></l>   <r>self-confident<s n="adj"/></r></p></e>
@@ -18081,8 +18081,8 @@
 <e><p><l>sezaible<s n="adj"/></l>   <r>punishable<s n="adj"/></r></p></e>
 <e><p><l>sezaible<s n="adv"/></l>   <r>punishably<s n="adv"/></r></p></e>
 <e><p><l>sidene<s n="adj"/></l>   <r>sitting<s n="adj"/></r></p></e>
-<e><p><l>sifabon<s n="adj"/></l>   <r>good<s n="adj"/></r></p></e>
-<e><p><l>sifabon<s n="adj"/></l>   <r>fine<s n="adj"/></r></p></e>
+<e><p><l>sifabon<s n="adj"/></l>   <r>good<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>sifabon<s n="adj"/></l>   <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sifabon<s n="adv"/></l>   <r>well<s n="adv"/></r></p></e>
 <e><p><l>sikobimar<s n="adj"/></l>   <r>mentally<b/>ill<s n="adj"/></r></p></e>
 <e><p><l>sikoli<s n="adj"/></l>   <r>mental<s n="adj"/></r></p></e>
@@ -18104,7 +18104,7 @@
 <e><p><l>simbololi<s n="adv"/></l>   <r>symbolically<s n="adv"/></r></p></e>
 <e><p><l>simetrili<s n="adj"/></l>   <r>symmetrical<s n="adj"/></r></p></e>
 <e><p><l>simetrili<s n="adv"/></l>   <r>symmetrically<s n="adv"/></r></p></e>
-<e><p><l>simpatilaye<s n="adj"/></l>   <r>pitiful<s n="adj"/></r></p></e>
+<e><p><l>simpatilaye<s n="adj"/></l>   <r>pitiful<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>simpatilaye<s n="adv"/></l>   <r>pitifully<s n="adv"/></r></p></e>
 <e><p><l>simpatipul<s n="adj"/></l>   <r>sympathetic<s n="adj"/></r></p></e>
 <e><p><l>simpatipul<s n="adj"/></l>   <r>compassionate<s n="adj"/></r></p></e>
@@ -18139,7 +18139,7 @@
 <e><p><l>sistemapul<s n="adv"/></l>   <r>systematically<s n="adv"/></r></p></e>
 <e><p><l>siudo<s n="adj"/></l>   <r>sewn<s n="adj"/></r></p></e>
 <e><p><l>soberen<s n="adj"/></l>   <r>sovereign<s n="adj"/></r></p></e>
-<e><p><l>sofipul<s n="adj"/></l>   <r>wise<s n="adj"/></r></p></e>
+<e><p><l>sofipul<s n="adj"/></l>   <r>wise<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sofipul<s n="adv"/></l>   <r>wisely<s n="adv"/></r></p></e>
 <e><p><l>soho<s n="adj"/></l>   <r>reciprocal<s n="adj"/></r></p></e>
 <e><p><l>soho<s n="adj"/></l>   <r>mutual<s n="adj"/></r></p></e>
@@ -18148,7 +18148,7 @@
 <e><p><l>soho<s n="adv"/></l>   <r>each<b/>other<s n="adv"/></r></p></e>
 <e><p><l>sokutudo<s n="adj"/></l>   <r>fallen<s n="adj"/></r></p></e>
 <e><p><l>solali<s n="adj"/></l>   <r>solar<s n="adj"/></r></p></e>
-<e><p><l>solapul<s n="adj"/></l>   <r>sunny<s n="adj"/></r></p></e>
+<e><p><l>solapul<s n="adj"/></l>   <r>sunny<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>solapul<s n="adv"/></l>   <r>sunnily<s n="adv"/></r></p></e>
 <e><p><l>solli<s n="adj"/></l>   <r>mere<s n="adj"/></r></p></e>
 <e><p><l>solo<s n="adj"/></l>   <r>alone<s n="adj"/></r></p></e>
@@ -18164,7 +18164,7 @@
 <e><p><l>solusido<s n="adj"/></l>   <r>dissolved<s n="adj"/></r></p></e>
 <e><p><l>somnone<s n="adj"/></l>   <r>sleeping<s n="adj"/></r></p></e>
 <e><p><l>somnone<s n="adj"/></l>   <r>asleep<s n="adj"/></r></p></e>
-<e><p><l>somnopeldo<s n="adj"/></l>   <r>sleepy<s n="adj"/></r></p></e>
+<e><p><l>somnopeldo<s n="adj"/></l>   <r>sleepy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>somnopeldo<s n="adv"/></l>   <r>sleepily<s n="adv"/></r></p></e>
 <e><p><l>somupul<s n="adj"/></l>   <r>garlicky<s n="adj"/></r></p></e>
 <e><p><l>sonxido<s n="adj"/></l>   <r>lost<s n="adj"/></r></p></e>
@@ -18173,27 +18173,27 @@
 <e><p><l>sosyal<s n="adj"/></l>   <r>social<s n="adj"/></r></p></e>
 <e><p><l>sosyal<s n="adv"/></l>   <r>socially<s n="adv"/></r></p></e>
 <e><p><l>sotikal<s n="adj"/></l>   <r>silent<s n="adj"/></r></p></e>
-<e><p><l>sotikal<s n="adj"/></l>   <r>quiet<s n="adj"/></r></p></e>
+<e><p><l>sotikal<s n="adj"/></l>   <r>quiet<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sotikal<s n="adv"/></l>   <r>silently<s n="adv"/></r></p></e>
 <e><p><l>sotikal<s n="adv"/></l>   <r>quietly<s n="adv"/></r></p></e>
-<e><p><l>sotilil<s n="adj"/></l>   <r>quiet<s n="adj"/></r></p></e>
+<e><p><l>sotilil<s n="adj"/></l>   <r>quiet<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sotilil<s n="adv"/></l>   <r>quietly<s n="adv"/></r></p></e>
-<e><p><l>sotipul<s n="adj"/></l>   <r>loud<s n="adj"/></r></p></e>
+<e><p><l>sotipul<s n="adj"/></l>   <r>loud<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sotipul<s n="adv"/></l>   <r>loudly<s n="adv"/></r></p></e>
 <e><p><l>soyone<s n="adj"/></l>   <r>itching<s n="adj"/></r></p></e>
 <e><p><l>submitido<s n="adj"/></l>   <r>submitted<s n="adj"/></r></p></e>
-<e><p><l>sudeli<s n="adj"/></l>   <r>south<s n="adj"/></r></p></e>
+<e><p><l>sudeli<s n="adj"/></l>   <r>south<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>sudeli<s n="adj"/></l>   <r>southern<s n="adj"/></r></p></e>
 <e><p><l>sudeli<s n="adv"/></l>   <r>southward<s n="adv"/></r></p></e>
-<e><p><l>suhe<s n="adj"/></l>   <r>dry<s n="adj"/></r></p></e>
+<e><p><l>suhe<s n="adj"/></l>   <r>dry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>suhe<s n="adv"/></l>   <r>dryly<s n="adv"/></r></p></e>
 <e><p><l>suhe<s n="adv"/></l>   <r>drily<s n="adv"/></r></p></e>
-<e><p><l>suikal<s n="adj"/></l>   <r>thirsty<s n="adj"/></r></p></e>
+<e><p><l>suikal<s n="adj"/></l>   <r>thirsty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>suikal<s n="adv"/></l>   <r>thirstily<s n="adv"/></r></p></e>
-<e><p><l>suipeldo<s n="adj"/></l>   <r>thirsty<s n="adj"/></r></p></e>
+<e><p><l>suipeldo<s n="adj"/></l>   <r>thirsty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>suipeldo<s n="adv"/></l>   <r>thirstily<s n="adv"/></r></p></e>
 <e><p><l>suipul<s n="adj"/></l>   <r>hydrated<s n="adj"/></r></p></e>
-<e><p><l>sukeripul<s n="adj"/></l>   <r>sugary<s n="adj"/></r></p></e>
+<e><p><l>sukeripul<s n="adj"/></l>   <r>sugary<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>suksespul<s n="adj"/></l>   <r>successful<s n="adj"/></r></p></e>
 <e><p><l>suksespul<s n="adv"/></l>   <r>successfully<s n="adv"/></r></p></e>
 <e><p><l>sulfurli<s n="adj"/></l>   <r>sulfuric<s n="adj"/></r></p></e>
@@ -18234,7 +18234,7 @@
 <e><p><l>suprem<s n="adj"/></l>   <r>greatest<b/>possible<s n="adj"/></r></p></e>
 <e><p><l>suprem<s n="adj"/></l>   <r>extreme<s n="adj"/></r></p></e>
 <e><p><l>suprem<s n="adj"/></l>   <r>excellent<s n="adj"/></r></p></e>
-<e><p><l>suprem<s n="adj"/></l>   <r>cool<s n="adj"/></r></p></e>
+<e><p><l>suprem<s n="adj"/></l>   <r>cool<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>suprem<s n="adv"/></l>   <r>supremely<s n="adv"/></r></p></e>
 <e><p><l>suprem<s n="adv"/></l>   <r>extremely<s n="adv"/></r></p></e>
 <e><p><l>suprem<s n="adv"/></l>   <r>excellently<s n="adv"/></r></p></e>
@@ -18248,14 +18248,14 @@
 <e><p><l>swedo<s n="adj"/></l>   <r>taxed<s n="adj"/></r></p></e>
 <e><p><l>swetane<s n="adj"/></l>   <r>sweating<s n="adj"/></r></p></e>
 <e><p><l>swetane<s n="adj"/></l>   <r>perspiring<s n="adj"/></r></p></e>
-<e><p><l>swetapul<s n="adj"/></l>   <r>sweaty<s n="adj"/></r></p></e>
+<e><p><l>swetapul<s n="adj"/></l>   <r>sweaty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>swetapul<s n="adv"/></l>   <r>sweatily<s n="adv"/></r></p></e>
 <e><p><l>swikarado<s n="adj"/></l>   <r>accepted<s n="adj"/></r></p></e>
 <e><p><l>swikaraible<s n="adj"/></l>   <r>acceptable<s n="adj"/></r></p></e>
 <e><p><l>swikaraible<s n="adv"/></l>   <r>acceptably<s n="adv"/></r></p></e>
 <e><p><l>swikaranenible<s n="adj"/></l>   <r>unacceptable<s n="adj"/></r></p></e>
 <e><p><l>swikaranenible<s n="adv"/></l>   <r>unacceptably<s n="adv"/></r></p></e>
-<e><p><l>syahe<s n="adj"/></l>   <r>black<s n="adj"/></r></p></e>
+<e><p><l>syahe<s n="adj"/></l>   <r>black<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>syensili<s n="adj"/></l>   <r>scientific<s n="adj"/></r></p></e>
 <e><p><l>syensili<s n="adv"/></l>   <r>scientifically<s n="adv"/></r></p></e>
 <e><p><l>syensipul<s n="adj"/></l>   <r>scientific<s n="adj"/></r></p></e>
@@ -18269,9 +18269,9 @@
 <e><p><l>talentopul<s n="adj"/></l>   <r>talented<s n="adj"/></r></p></e>
 <e><p><l>tamadundo<s n="adj"/></l>   <r>civilized<s n="adj"/></r></p></e>
 <e><p><l>tamadundo<s n="adj"/></l>   <r>civilised<s n="adj"/></r></p></e>
-<e><p><l>tami<s n="adj"/></l>   <r>sweet<s n="adj"/></r></p></e>
+<e><p><l>tami<s n="adj"/></l>   <r>sweet<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>tami<s n="adv"/></l>   <r>sweetly<s n="adv"/></r></p></e>
-<e><p><l>tange<s n="adj"/></l>   <r>tight<s n="adj"/></r></p></e>
+<e><p><l>tange<s n="adj"/></l>   <r>tight<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>tange<s n="adv"/></l>   <r>tightly<s n="adv"/></r></p></e>
 <e><p><l>tarafkal<s n="adj"/></l>   <r>impartial<s n="adj"/></r></p></e>
 <e><p><l>tarafkal<s n="adv"/></l>   <r>impartially<s n="adv"/></r></p></e>
@@ -18287,30 +18287,30 @@
 <e><p><l>taypudo<s n="adj"/></l>   <r>typed<s n="adj"/></r></p></e>
 <e><p><l>taytido<s n="adj"/></l>   <r>replaced<s n="adj"/></r></p></e>
 <e><p><l>taytido<s n="adj"/></l>   <r>substituted<s n="adj"/></r></p></e>
-<e><p><l>taze<s n="adj"/></l>   <r>fresh<s n="adj"/></r></p></e>
+<e><p><l>taze<s n="adj"/></l>   <r>fresh<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>taze<s n="adv"/></l>   <r>freshly<s n="adv"/></r></p></e>
 <e><p><l>teatroli<s n="adj"/></l>   <r>theatrical<s n="adj"/></r></p></e>
 <e><p><l>teatroli<s n="adv"/></l>   <r>theatrically<s n="adv"/></r></p></e>
 <e><p><l>tehdidudo<s n="adj"/></l>   <r>threatened<s n="adj"/></r></p></e>
-<e><p><l>tejam<s n="adj"/></l>   <r>sharp<s n="adj"/></r></p></e>
+<e><p><l>tejam<s n="adj"/></l>   <r>sharp<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>tejam<s n="adv"/></l>   <r>sharply<s n="adv"/></r></p></e>
 <e><p><l>teknikali<s n="adj"/></l>   <r>technical<s n="adj"/></r></p></e>
 <e><p><l>teknikali<s n="adv"/></l>   <r>technically<s n="adv"/></r></p></e>
 <e><p><l>teknoli<s n="adj"/></l>   <r>technological<s n="adj"/></r></p></e>
 <e><p><l>teknoli<s n="adv"/></l>   <r>technologically<s n="adv"/></r></p></e>
-<e><p><l>teli<s n="adj"/></l>   <r>far<s n="adj"/></r></p></e>
+<e><p><l>teli<s n="adj"/></l>   <r>far<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>teli<s n="adj"/></l>   <r>remote<s n="adj"/></r></p></e>
 <e><p><l>teli<s n="adj"/></l>   <r>distant<s n="adj"/></r></p></e>
 <e><p><l>teli<s n="adv"/></l>   <r>remotely<s n="adv"/></r></p></e>
 <e><p><l>teli<s n="adv"/></l>   <r>distantly<s n="adv"/></r></p></e>
-<e><p><l>telileli<s n="adj"/></l>   <r>old<s n="adj"/></r></p></e>
+<e><p><l>telileli<s n="adj"/></l>   <r>old<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>telileli<s n="adj"/></l>   <r>long-ago<s n="adj"/></r></p></e>
 <e><p><l>telileli<s n="adv"/></l>   <r>long<b/>ago<s n="adv"/></r></p></e>
 <e><p><l>telileli<s n="adv"/></l>   <r>a<b/>long<b/>time<b/>ago<s n="adv"/></r></p></e>
 <e><p><l>telixali<s n="adv"/></l>   <r>in<b/>a<b/>long<b/>time<s n="adv"/></r></p></e>
 <e><p><l>telixali<s n="adv"/></l>   <r>long<b/>after<s n="adv"/></r></p></e>
 <e><p><l>telixali<s n="adv"/></l>   <r>long<b/>afterwards<s n="adv"/></r></p></e>
-<e><p><l>tembal<s n="adj"/></l>   <r>lazy<s n="adj"/></r></p></e>
+<e><p><l>tembal<s n="adj"/></l>   <r>lazy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>tembal<s n="adv"/></l>   <r>lazily<s n="adv"/></r></p></e>
 <e><p><l>teorili<s n="adj"/></l>   <r>theoretical<s n="adj"/></r></p></e>
 <e><p><l>teorili<s n="adj"/></l>   <r>theoretic<s n="adj"/></r></p></e>
@@ -18320,14 +18320,14 @@
 <e><p><l>teritorili<s n="adj"/></l>   <r>territorial<s n="adj"/></r></p></e>
 <e><p><l>teritorili<s n="adv"/></l>   <r>territorially<s n="adv"/></r></p></e>
 <e><p><l>termoabil<s n="adj"/></l>   <r>heating<s n="adj"/></r></p></e>
-<e><p><l>termoday<s n="adj"/></l>   <r>hot<s n="adj"/></r></p></e>
+<e><p><l>termoday<s n="adj"/></l>   <r>hot<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>termoday<s n="adv"/></l>   <r>hotly<s n="adv"/></r></p></e>
 <e><p><l>termodo<s n="adj"/></l>   <r>warmed<s n="adj"/></r></p></e>
 <e><p><l>termodo<s n="adj"/></l>   <r>heated<s n="adj"/></r></p></e>
 <e><p><l>termolil<s n="adj"/></l>   <r>lukewarm<s n="adj"/></r></p></e>
 <e><p><l>termone<s n="adj"/></l>   <r>heating<s n="adj"/></r></p></e>
-<e><p><l>termopul<s n="adj"/></l>   <r>warm<s n="adj"/></r></p></e>
-<e><p><l>termopul<s n="adj"/></l>   <r>hot<s n="adj"/></r></p></e>
+<e><p><l>termopul<s n="adj"/></l>   <r>warm<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>termopul<s n="adj"/></l>   <r>hot<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>termopul<s n="adv"/></l>   <r>warmly<s n="adv"/></r></p></e>
 <e><p><l>termopul<s n="adv"/></l>   <r>hotly<s n="adv"/></r></p></e>
 <e><p><l>terordo<s n="adj"/></l>   <r>terrorized<s n="adj"/></r></p></e>
@@ -18382,7 +18382,7 @@
 <e><p><l>tragedili<s n="adv"/></l>   <r>tragically<s n="adv"/></r></p></e>
 <e><p><l>tragedipul<s n="adj"/></l>   <r>tragic<s n="adj"/></r></p></e>
 <e><p><l>tragedipul<s n="adv"/></l>   <r>tragically<s n="adv"/></r></p></e>
-<e><p><l>trankwilo<s n="adj"/></l>   <r>calm<s n="adj"/></r></p></e>
+<e><p><l>trankwilo<s n="adj"/></l>   <r>calm<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>trankwilo<s n="adv"/></l>   <r>calmly<s n="adv"/></r></p></e>
 <e><p><l>trasatlantikoli<s n="adj"/></l>   <r>transatlantic<s n="adj"/></r></p></e>
 <e><p><l>trasjensili<s n="adj"/></l>   <r>transgender<s n="adj"/></r></p></e>
@@ -18427,18 +18427,18 @@
 <e><p><l>turxido<s n="adj"/></l>   <r>pickled<s n="adj"/></r></p></e>
 <e><p><l>turxido<s n="adj"/></l>   <r>preserved<s n="adj"/></r></p></e>
 <e><p><l>tutumli<s n="adj"/></l>   <r>cardiac<s n="adj"/></r></p></e>
-<e><p><l>tutumnarem<s n="adj"/></l>   <r>gentle<s n="adj"/></r></p></e>
+<e><p><l>tutumnarem<s n="adj"/></l>   <r>gentle<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>tutumnarem<s n="adv"/></l>   <r>gently<s n="adv"/></r></p></e>
 <e><p><l>twejido<s n="adj"/></l>   <r>retired<s n="adj"/></r></p></e>
 <e><p><l>uflasido<s n="adj"/></l>   <r>bankrupt<s n="adj"/></r></p></e>
 <e><p><l>ufuedo<s n="adj"/></l>   <r>disgusted<s n="adj"/></r></p></e>
 <e><p><l>ufuedo<s n="adj"/></l>   <r>grossed<b/>out<s n="adj"/></r></p></e>
 <e><p><l>ufuene<s n="adj"/></l>   <r>disgusting<s n="adj"/></r></p></e>
-<e><p><l>ufuene<s n="adj"/></l>   <r>gross<s n="adj"/></r></p></e>
+<e><p><l>ufuene<s n="adj"/></l>   <r>gross<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ufuene<s n="adv"/></l>   <r>disgustingly<s n="adv"/></r></p></e>
 <e><p><l>ufuene<s n="adv"/></l>   <r>grossly<s n="adv"/></r></p></e>
-<e><p><l>ukungupul<s n="adj"/></l>   <r>foggy<s n="adj"/></r></p></e>
-<e><p><l>ukungupul<s n="adj"/></l>   <r>hazy<s n="adj"/></r></p></e>
+<e><p><l>ukungupul<s n="adj"/></l>   <r>foggy<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>ukungupul<s n="adj"/></l>   <r>hazy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ukungupul<s n="adj"/></l>   <r>misty<s n="adj"/></r></p></e>
 <e><p><l>ukungupul<s n="adv"/></l>   <r>foggily<s n="adv"/></r></p></e>
 <e><p><l>ukungupul<s n="adv"/></l>   <r>hazily<s n="adv"/></r></p></e>
@@ -18468,7 +18468,7 @@
 <e><p><l>usta<s n="adj"/></l>   <r>expert<s n="adj"/></r></p></e>
 <e><p><l>usta<s n="adj"/></l>   <r>experienced<s n="adj"/></r></p></e>
 <e><p><l>usta<s n="adv"/></l>   <r>expertly<s n="adv"/></r></p></e>
-<e><p><l>utarali<s n="adj"/></l>   <r>north<s n="adj"/></r></p></e>
+<e><p><l>utarali<s n="adj"/></l>   <r>north<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>utarali<s n="adj"/></l>   <r>northern<s n="adj"/></r></p></e>
 <e><p><l>utarali<s n="adv"/></l>   <r>northward<s n="adv"/></r></p></e>
 <e><p><l>uvulali<s n="adj"/></l>   <r>uvular<s n="adj"/></r></p></e>
@@ -18485,18 +18485,18 @@
 <e><p><l>vegetari<s n="adj"/></l>   <r>vegetarian<s n="adj"/></r></p></e>
 <e><p><l>vegetari<s n="adj"/></l>   <r>veggie<b/>(_burger<s n="adj"/></r></p></e>
 <e><p><l>vegetari<s n="adj"/></l>   <r>etc_)<s n="adj"/></r></p></e>
-<e><p><l>velosi<s n="adj"/></l>   <r>fast<s n="adj"/></r></p></e>
-<e><p><l>velosi<s n="adj"/></l>   <r>quick<s n="adj"/></r></p></e>
+<e><p><l>velosi<s n="adj"/></l>   <r>fast<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>velosi<s n="adj"/></l>   <r>quick<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>velosi<s n="adj"/></l>   <r>rapid<s n="adj"/></r></p></e>
 <e><p><l>velosi<s n="adv"/></l>   <r>fast<s n="adv"/></r></p></e>
 <e><p><l>velosi<s n="adv"/></l>   <r>quickly<s n="adv"/></r></p></e>
 <e><p><l>velosi<s n="adv"/></l>   <r>rapidly<s n="adv"/></r></p></e>
-<e><p><l>ventopul<s n="adj"/></l>   <r>windy<s n="adj"/></r></p></e>
+<e><p><l>ventopul<s n="adj"/></l>   <r>windy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ventopul<s n="adv"/></l>   <r>windily<s n="adv"/></r></p></e>
 <e><p><l>vibajado<s n="adj"/></l>   <r>divided<s n="adj"/></r></p></e>
 <e><p><l>vibracune<s n="adj"/></l>   <r>vibrating<s n="adj"/></r></p></e>
 <e><p><l>vibrane<s n="adj"/></l>   <r>vibrating<s n="adj"/></r></p></e>
-<e><p><l>vinamra<s n="adj"/></l>   <r>humble<s n="adj"/></r></p></e>
+<e><p><l>vinamra<s n="adj"/></l>   <r>humble<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>vinamra<s n="adj"/></l>   <r>modest<s n="adj"/></r></p></e>
 <e><p><l>vinamra<s n="adv"/></l>   <r>humbly<s n="adv"/></r></p></e>
 <e><p><l>vinamra<s n="adv"/></l>   <r>modestly<s n="adv"/></r></p></e>
@@ -18535,13 +18535,13 @@
 <e><p><l>warumdo<s n="adj"/></l>   <r>swollen<s n="adj"/></r></p></e>
 <e><p><l>wasyatudo<s n="adj"/></l>   <r>bequeathed<s n="adj"/></r></p></e>
 <e><p><l>watuhuru<s n="adj"/></l>   <r>available<s n="adj"/></r></p></e>
-<e><p><l>watuhuru<s n="adj"/></l>   <r>free<s n="adj"/></r></p></e>
+<e><p><l>watuhuru<s n="adj"/></l>   <r>free<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>watumonli<s n="adj"/></l>   <r>periodic<s n="adj"/></r></p></e>
 <e><p><l>watumonli<s n="adv"/></l>   <r>periodically<s n="adv"/></r></p></e>
-<e><p><l>wazenlil<s n="adj"/></l>   <r>light<s n="adj"/></r></p></e>
+<e><p><l>wazenlil<s n="adj"/></l>   <r>light<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>wazenlil<s n="adj"/></l>   <r>lightweight<s n="adj"/></r></p></e>
 <e><p><l>wazenlil<s n="adv"/></l>   <r>lightly<s n="adv"/></r></p></e>
-<e><p><l>wazenpul<s n="adj"/></l>   <r>heavy<s n="adj"/></r></p></e>
+<e><p><l>wazenpul<s n="adj"/></l>   <r>heavy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>wazenpul<s n="adv"/></l>   <r>heavily<s n="adv"/></r></p></e>
 <e><p><l>wedali<s n="adj"/></l>   <r>farewell<s n="adj"/></r></p></e>
 <e><p><l>wedali<s n="adj"/></l>   <r>goodbye<s n="adj"/></r></p></e>
@@ -18582,11 +18582,11 @@
 <e><p><l>xankakal<s n="adv"/></l>   <r>definitely<s n="adv"/></r></p></e>
 <e><p><l>xankamenapul<s n="adj"/></l>   <r>ambiguous<s n="adj"/></r></p></e>
 <e><p><l>xankamenapul<s n="adv"/></l>   <r>ambiguously<s n="adv"/></r></p></e>
-<e><p><l>xansebon<s n="adj"/></l>   <r>lucky<s n="adj"/></r></p></e>
+<e><p><l>xansebon<s n="adj"/></l>   <r>lucky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>xansebon<s n="adj"/></l>   <r>fortunate<s n="adj"/></r></p></e>
 <e><p><l>xansebon<s n="adv"/></l>   <r>luckily<s n="adv"/></r></p></e>
 <e><p><l>xansebon<s n="adv"/></l>   <r>fortunately<s n="adv"/></r></p></e>
-<e><p><l>xansebur<s n="adj"/></l>   <r>unlucky<s n="adj"/></r></p></e>
+<e><p><l>xansebur<s n="adj"/></l>   <r>unlucky<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>xansebur<s n="adj"/></l>   <r>unfortunate<s n="adj"/></r></p></e>
 <e><p><l>xansebur<s n="adv"/></l>   <r>unluckily<s n="adv"/></r></p></e>
 <e><p><l>xansebur<s n="adv"/></l>   <r>unfortunately<s n="adv"/></r></p></e>
@@ -18598,7 +18598,7 @@
 <e><p><l>xartikal<s n="adv"/></l>   <r>unconditionally<s n="adv"/></r></p></e>
 <e><p><l>xartipul<s n="adj"/></l>   <r>conditional<s n="adj"/></r></p></e>
 <e><p><l>xartipul<s n="adv"/></l>   <r>conditionally<s n="adv"/></r></p></e>
-<e><p><l>xatupul<s n="adj"/></l>   <r>sandy<s n="adj"/></r></p></e>
+<e><p><l>xatupul<s n="adj"/></l>   <r>sandy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>xekastedo<s n="adj"/></l>   <r>defeated<s n="adj"/></r></p></e>
 <e><p><l>xekastenenible<s n="adj"/></l>   <r>invincible<s n="adj"/></r></p></e>
 <e><p><l>xekastenenible<s n="adj"/></l>   <r>unbeatable<s n="adj"/></r></p></e>
@@ -18617,10 +18617,10 @@
 <e><p><l>xerafudo<s n="adj"/></l>   <r>glorified<s n="adj"/></r></p></e>
 <e><p><l>xercado<s n="adj"/></l>   <r>sought<s n="adj"/></r></p></e>
 <e><p><l>xetocubon<s n="adj"/></l>   <r>delicious<s n="adj"/></r></p></e>
-<e><p><l>xetocubon<s n="adj"/></l>   <r>tasty<s n="adj"/></r></p></e>
+<e><p><l>xetocubon<s n="adj"/></l>   <r>tasty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>xetocubon<s n="adv"/></l>   <r>deliciously<s n="adv"/></r></p></e>
 <e><p><l>xetoyukwe<s n="adj"/></l>   <r>delicious<s n="adj"/></r></p></e>
-<e><p><l>xetoyukwe<s n="adj"/></l>   <r>tasty<s n="adj"/></r></p></e>
+<e><p><l>xetoyukwe<s n="adj"/></l>   <r>tasty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>xetoyukwe<s n="adv"/></l>   <r>deliciously<s n="adv"/></r></p></e>
 <e><p><l>xidudo<s n="adj"/></l>   <r>attempted<s n="adj"/></r></p></e>
 <e><p><l>xigoli<s n="adj"/></l>   <r>accidental<s n="adj"/></r></p></e>
@@ -18720,25 +18720,25 @@
 <e><p><l>yakecune<s n="adj"/></l>   <r>burning<s n="adj"/></r></p></e>
 <e><p><l>yakedo<s n="adj"/></l>   <r>burnt<s n="adj"/></r></p></e>
 <e><p><l>yakene<s n="adj"/></l>   <r>burning<s n="adj"/></r></p></e>
-<e><p><l>yakin<s n="adj"/></l>   <r>sure<s n="adj"/></r></p></e>
+<e><p><l>yakin<s n="adj"/></l>   <r>sure<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yakin<s n="adj"/></l>   <r>certain<s n="adj"/></r></p></e>
 <e><p><l>yakin<s n="adv"/></l>   <r>surely<s n="adv"/></r></p></e>
 <e><p><l>yakin<s n="adv"/></l>   <r>certainly<s n="adv"/></r></p></e>
 <e><p><l>yamdo<s n="adj"/></l>   <r>eaten<s n="adj"/></r></p></e>
 <e><p><l>yamible<s n="adj"/></l>   <r>edible<s n="adj"/></r></p></e>
 <e><p><l>yamible<s n="adv"/></l>   <r>edibly<s n="adv"/></r></p></e>
-<e><p><l>yamkal<s n="adj"/></l>   <r>hungry<s n="adj"/></r></p></e>
+<e><p><l>yamkal<s n="adj"/></l>   <r>hungry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yamkal<s n="adv"/></l>   <r>hungrily<s n="adv"/></r></p></e>
 <e><p><l>yamnenible<s n="adj"/></l>   <r>inedible<s n="adj"/></r></p></e>
 <e><p><l>yamnenible<s n="adv"/></l>   <r>inedibly<s n="adv"/></r></p></e>
-<e><p><l>yampeldo<s n="adj"/></l>   <r>hungry<s n="adj"/></r></p></e>
+<e><p><l>yampeldo<s n="adj"/></l>   <r>hungry<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yampeldo<s n="adv"/></l>   <r>hungrily<s n="adv"/></r></p></e>
 <e><p><l>yanlyodo<s n="adj"/></l>   <r>fueled<s n="adj"/></r></p></e>
 <e><p><l>yanlyodo<s n="adj"/></l>   <r>fuelled<s n="adj"/></r></p></e>
 <e><p><l>yaodo<s n="adj"/></l>   <r>bitten<s n="adj"/></r></p></e>
 <e><p><l>yatimado<s n="adj"/></l>   <r>orphaned<s n="adj"/></r></p></e>
 <e><p><l>yentuli<s n="adj"/></l>   <r>pharyngeal<s n="adj"/></r></p></e>
-<e><p><l>yesen<s n="adj"/></l>   <r>wild<s n="adj"/></r></p></e>
+<e><p><l>yesen<s n="adj"/></l>   <r>wild<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yesen<s n="adj"/></l>   <r>untamed<s n="adj"/></r></p></e>
 <e><p><l>yesen<s n="adj"/></l>   <r>savage<s n="adj"/></r></p></e>
 <e><p><l>yesen<s n="adv"/></l>   <r>wildly<s n="adv"/></r></p></e>
@@ -18771,11 +18771,11 @@
 <e><p><l>yozaydo<s n="adj"/></l>   <r>blamed<s n="adj"/></r></p></e>
 <e><p><l>yozaykal<s n="adj"/></l>   <r>innocent<s n="adj"/></r></p></e>
 <e><p><l>yozaykal<s n="adv"/></l>   <r>innocently<s n="adv"/></r></p></e>
-<e><p><l>yozaypul<s n="adj"/></l>   <r>guilty<s n="adj"/></r></p></e>
+<e><p><l>yozaypul<s n="adj"/></l>   <r>guilty<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yozaypul<s n="adv"/></l>   <r>guiltily<s n="adv"/></r></p></e>
 <e><p><l>yukwe<s n="adj"/></l>   <r>pleasant<s n="adj"/></r></p></e>
 <e><p><l>yukwe<s n="adj"/></l>   <r>pleasing<s n="adj"/></r></p></e>
-<e><p><l>yukwe<s n="adj"/></l>   <r>nice<s n="adj"/></r></p></e>
+<e><p><l>yukwe<s n="adj"/></l>   <r>nice<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yukwe<s n="adv"/></l>   <r>pleasantly<s n="adv"/></r></p></e>
 <e><p><l>yukwe<s n="adv"/></l>   <r>nicely<s n="adv"/></r></p></e>
 <e><p><l>yukyokal<s n="adj"/></l>   <r>invalid<s n="adj"/></r></p></e>
@@ -18787,8 +18787,8 @@
 <e><p><l>yunhene<s n="adj"/></l>   <r>melting<s n="adj"/></r></p></e>
 <e><p><l>yunkido<s n="adj"/></l>   <r>encouraged<s n="adj"/></r></p></e>
 <e><p><l>yunkipul<s n="adj"/></l>   <r>courageous<s n="adj"/></r></p></e>
-<e><p><l>yunkipul<s n="adj"/></l>   <r>brave<s n="adj"/></r></p></e>
-<e><p><l>yunkipul<s n="adj"/></l>   <r>bold<s n="adj"/></r></p></e>
+<e><p><l>yunkipul<s n="adj"/></l>   <r>brave<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>yunkipul<s n="adj"/></l>   <r>bold<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>yunkipul<s n="adj"/></l>   <r>daring<s n="adj"/></r></p></e>
 <e><p><l>yunkipul<s n="adv"/></l>   <r>courageously<s n="adv"/></r></p></e>
 <e><p><l>yunkipul<s n="adv"/></l>   <r>bravely<s n="adv"/></r></p></e>
@@ -18807,7 +18807,7 @@
 <e><p><l>zarif<s n="adj"/></l>   <r>elegant<s n="adj"/></r></p></e>
 <e><p><l>zarif<s n="adj"/></l>   <r>chic<s n="adj"/></r></p></e>
 <e><p><l>zarif<s n="adj"/></l>   <r>stylish<s n="adj"/></r></p></e>
-<e><p><l>zarif<s n="adj"/></l>   <r>fancy<s n="adj"/></r></p></e>
+<e><p><l>zarif<s n="adj"/></l>   <r>fancy<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>zarif<s n="adv"/></l>   <r>elegantly<s n="adv"/></r></p></e>
 <e><p><l>zarif<s n="adv"/></l>   <r>stylishly<s n="adv"/></r></p></e>
 <e><p><l>zarif<s n="adv"/></l>   <r>fancily<s n="adv"/></r></p></e>
@@ -18829,7 +18829,7 @@
 <e><p><l>maxim<b/>nerleli<s n="adv"/></l>   <r>most<b/>recently<s n="adv"/></r></p></e>
 <e><p><l>maxmo<b/>jaldi<s n="adj"/></l>   <r>earlier<s n="adj"/></r></p></e>
 <e><p><l>maxmo<b/>jaldi<s n="adv"/></l>   <r>in<b/>advance<s n="adv"/></r></p></e>
-<e><p><l>abil<s n="adj"/></l>   <r>able<s n="adj"/></r></p></e>
+<e><p><l>abil<s n="adj"/></l>   <r>able<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>abil<s n="adj"/></l>   <r>capable<s n="adj"/></r></p></e>
 <e><p><l>abil<s n="adj"/></l>   <r>which<b/>can<s n="adj"/></r></p></e>
 <e><p><l>abil<s n="adj"/></l>   <r>which<b/>can<b/>be<s n="adj"/></r></p></e>
@@ -18877,7 +18877,7 @@
 <e><p><l>mimbay<s n="adv"/></l>   <r>evidently<s n="adv"/></r></p></e>
 <e><p><l>mimbay<s n="ij"/></l>   <r>of<b/>course<s n="ij"/></r></p></e>
 <e><p><l>okey<s n="adj"/></l>   <r>okay<s n="adj"/></r></p></e>
-<e><p><l>okey<s n="adj"/></l>   <r>fine<s n="adj"/></r></p></e>
+<e><p><l>okey<s n="adj"/></l>   <r>fine<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>okey<s n="adj"/></l>   <r>all<b/>right<s n="adj"/></r></p></e>
 <e><p><l>okey<s n="adv"/></l>   <r>okay<s n="adv"/></r></p></e>
 <e><p><l>okey<s n="adv"/></l>   <r>fine<s n="adv"/></r></p></e>
@@ -19005,7 +19005,7 @@
 <e><p><l>he<b/>bansu<s n="adj"/></l>   <r>anyone's<s n="adj"/></r></p></e>
 <e><p><l>hinsu<s n="adj"/></l>   <r>this<b/>one's<s n="adj"/></r></p></e>
 <e><p><l>hinsu<s n="adj"/></l>   <r>these<b/>ones'<s n="adj"/></r></p></e>
-<e><p><l>kesu<s n="adj"/></l>   <r>whose<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+<e><p><l>kesu<s n="adj"/></l>   <r>whose<s n="adj"/></r></p></e>
 <e><p><l>moysu<s n="adj"/></l>   <r>everybody's<s n="adj"/></r></p></e>
 <e><p><l>moysu<s n="adj"/></l>   <r>everyone's<s n="adj"/></r></p></e>
 <e><p><l>nilsu<s n="adj"/></l>   <r>nobody's<s n="adj"/></r></p></e>

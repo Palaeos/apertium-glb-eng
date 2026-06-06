@@ -35,6 +35,7 @@ tense_PP = pres past;
 n: _.gender_GLB;
 np: _.gender_GLB;
 pfx: _;
+gen: _;
 prn: _.person.gender_GLB.number;
 det_pos: _.<pos>.person.gender_GLB.number;
 det_pos_cor: _.<pos>;
@@ -74,7 +75,8 @@ verb: _.tense;
 v: _.tense;
 vv: _.tense;
 
-vbser: _.out_tense;
+! Globasa vbser is uninflected; drop all tense/person/number tags on output.
+vbser: _;
 vbdo:  _;
 vbhaver: _;
 
@@ -149,6 +151,7 @@ gender_ENG > gender_GLB : mf ut, m m, f f, nt nt, GD GD;
 ! For lexical verbs, takes adverbs after or or followed by a nominal phrase and converts them into prefixes. For instance "die away" -> "awmorcu"
 ! This rule interferes with the will/would tense marking.
 prepv ->    0.01: vblex.$tense {%1}
+            | 0.01: vbser.$tense {%1}
             | 0.01:vblex.$tense adv ? ((3.lem/tl in preflist)) {2 %1}|
              0.01:vblex.$tense * adv ? ((3.lem/tl in preflist)) {3 %1 _ 2}
             ;
@@ -172,10 +175,9 @@ NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             |
             0.1:det_ind_cor NP  { 1 _ %2[number=""] }
             |
-            0.0001: NP.$number  (if (1.number = sg) { un@num[lemcase=1.lemcase] _ 1 }
-            elif (1.number = pl)  { plu@adj _ 1 }
-            else { 1 }
-            )|
+            ! Bare NPs default to bare nouns: Globasa does not mark number unless
+            ! explicitly disambiguated by a determiner/quantifier/numeral.
+            0.0001: NP.$number  { 1 }|
             ! inserts implied pronouns after adjectives. a numeral if available is used to pick the right number.
             num AJC  (if (1.number = sg)
             { 1 _ 2 _ prpers@prn.p3.GD.sg }
@@ -186,7 +188,11 @@ NNP ->      1:num NP.$number  { 1 _ %2[number=""] }
             { 1 _ 2 _ prpers@prn.p3.GD.sg }
             else
             { 1 _ 2 _ prpers@prn.p3.GD.pl }
-            )
+            )|
+            ! Forces a space around the genitive clitic so 'Mary's house' -> 'Maria su baytu' (not 'Mariasu baytu').
+            ! The bidix already maps 's<gen> -> su<pos>; this rule only fixes inherited clitic spacing.
+            0.5: np "'s"@gen NNP { 1 _ 2 _ 3 }|
+            0.5: n  "'s"@gen NNP { 1 _ 2 _ 3 }
             ;
 
 ! Translates the number information from the noun into the right numeral to put before.
@@ -227,7 +233,7 @@ AP -> AJC AP { 1 _ 2 } |
 WILL ->     will@vbmod.$tense  { 1 }|
             AVP will@vbmod.$tense  { 1 _ 2 };
 
-BE -> WILL.$tense copula  { 2[tense=tense_PP] }|
+BE -> WILL.$tense copula  { 2[tense = 1.tense>tense_PP] }|
       copula.$tense { 1 };
 
 HAVE -> WILL.$tense vbhaver@vblex {  2 }|
@@ -245,10 +251,10 @@ VP -> vv.$tense { %1 }| AVP vv.$tense { 1 %2 };
 
 
 ! Translates tense and aspect information either from the inflection or from periphastic constructions.
-DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
+DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ %2[tense=""] }|
          1:will@vbmod.$tense_PP { u@vbpr.[1.tense>tense_PP] }|
-         20:will@vbmod.$tense_PP AVP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 _ 3 }|
-         20:shall@vbmod.pres VP.inf { u@vbpr.fut _ 2 }|
+         20:will@vbmod.$tense_PP AVP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 _ %3[tense=""] }|
+         20:shall@vbmod.pres VP.inf { u@vbpr.fut _ %2[tense=""] }|
          will@vbmod.$tense_PP be@vblex.inf VP.ger { u@vbpr.[1.tense>tense_PP].impf _ 3[tense=pres] }|
          will@vbmod.$tense_PP be@vblex.inf go@vblex.[ing] to@pr VP.$tense{ u@vbpr.[1.tense>tense_PP].pros _ 5[tense=inf] }|
          will@vbmod.$tense_PP not@adv be@vblex.inf VP.$tense.ger { u@vbpr.[1.tense>tense_PP].impf.neg _ 4[tense=inf] }|
@@ -262,7 +268,6 @@ DVP ->   20:will@vbmod.$tense_PP vv.inf { u@vbpr.[1.tense>tense_PP] _ 2 }|
          20:have@vbhaver %be@vblex.pp DP { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|  
          20:have@vbhaver %be@vblex.pp AJC { u@vbpr.[1.tense].perf _ %2[tense=""] _ 3 }|
          20:have@vbhaver not@adv %VP.pp { u@vbpr.[1.tense].perf.neg _ %3[tense=""] }|
-         20:be@copula AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
          20:be@copula AJC { u@vbpr.[1.tense] _ %1[tense=""] _ 2 }|
          20:be@copula not@adv { u@vbpr.[1.tense].neg _ %1[tense=""] }|
          20:be@copula not@adv AJC { u@vbpr.[1.tense].neg _ %1[tense=""] _ 3 }|

@@ -17,6 +17,7 @@ prespast = pres past;
 futcondi = fut cni;
 modal = abil ingay musi;
 case = subj obj;
+lemcase = aa Aa AA;
 prn_subtype = ref rel ind dem;
 finite = pres past fut cni imp;
 aspect = prog impf pros;
@@ -183,28 +184,27 @@ DVP ->   u@vbpr.[prespast] %VP {  %2[tense=1.tense, person=$person, number=$numb
 
 S -> NNP %DVP (if (1.number = pl) {1 _ %2[person=p3,number=pl]} else {1 _ %2[person=p3,number=sg]})|
      ! Wh-pronoun (ke) copula questions: "X sen keto?" -> "What is X?"
-     ! Wh-pronoun (ke) copula questions: "X sen keto?" -> "What is X?"
-     NNP %DVP ke@prn (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
-     10: AP NNP %DVP ke@prn (if (2.number = pl) {4 _ %3[person=p3,number=pl] _ 1 _ 2} else {4 _ %3[person=p3,number=sg] _ 1 _ 2})|
+     NNP %DVP ke@prn (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=p3,number=pl] _ 1[lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=p3,number=sg] _ 1[lemcase=aa]})|
+     10: AP NNP %DVP ke@prn (if (2.number = pl) {4[lemcase=2.lemcase] _ %3[person=p3,number=pl] _ 1 _ 2[lemcase=aa]} else {4[lemcase=2.lemcase] _ %3[person=p3,number=sg] _ 1 _ 2[lemcase=aa]})|
      ! Wh-pronoun (ke) copula with pronoun subject: "Mi sen keto?" -> "What am I?"
-     prpers@prn %DVP ke@prn (if (1.number = pl) {3 _ %2[person=1.person, number=pl] _ 1[case=subj]} else {3 _ %2[person=1.person, number=sg] _ 1[case=subj]})|
+     prpers@prn %DVP ke@prn (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=1.person, number=pl] _ 1[case=subj, lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=1.person, number=sg] _ 1[case=subj, lemcase=aa]})|
      ! Wh-adverb copula questions: "X sen keloka?" -> "Where is X?"
-     10: NNP %DVP keloka@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
-     10: NNP %DVP kewatu@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
-     10: NNP %DVP keseba@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
-     10: NNP %DVP kemo@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
-     10: NNP %DVP kemaner@adv (if (1.number = pl) {3 _ %2[person=p3,number=pl] _ 1} else {3 _ %2[person=p3,number=sg] _ 1})|
+     10: NNP %DVP keloka@adv (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=p3,number=pl] _ 1[lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=p3,number=sg] _ 1[lemcase=aa]})|
+     10: NNP %DVP kewatu@adv (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=p3,number=pl] _ 1[lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=p3,number=sg] _ 1[lemcase=aa]})|
+     10: NNP %DVP keseba@adv (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=p3,number=pl] _ 1[lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=p3,number=sg] _ 1[lemcase=aa]})|
+     10: NNP %DVP kemo@adv (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=p3,number=pl] _ 1[lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=p3,number=sg] _ 1[lemcase=aa]})|
+     10: NNP %DVP kemaner@adv (if (1.number = pl) {3[lemcase=1.lemcase] _ %2[person=p3,number=pl] _ 1[lemcase=aa]} else {3[lemcase=1.lemcase] _ %2[person=p3,number=sg] _ 1[lemcase=aa]})|
      ! Wh-adverb with future/conditional + lexical verb: "S xa V keloka?" -> "Where will S V?"
-     50: NNP u@vbpr.[futcondi] VP keloka@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
-     50: NNP u@vbpr.[futcondi] VP kewatu@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
-     50: NNP u@vbpr.[futcondi] VP keseba@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
-     50: NNP u@vbpr.[futcondi] VP kemo@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
-     50: NNP u@vbpr.[futcondi] VP kemaner@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1 _ 3[tense=inf] }|
-     50: prpers@prn u@vbpr.[futcondi] %VP keloka@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
-     50: prpers@prn u@vbpr.[futcondi] %VP kewatu@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
-     50: prpers@prn u@vbpr.[futcondi] %VP keseba@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
-     50: prpers@prn u@vbpr.[futcondi] %VP kemo@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
-     50: prpers@prn u@vbpr.[futcondi] %VP kemaner@adv { 4 _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP keloka@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[lemcase=aa] _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP kewatu@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[lemcase=aa] _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP keseba@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[lemcase=aa] _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP kemo@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[lemcase=aa] _ 3[tense=inf] }|
+     50: NNP u@vbpr.[futcondi] VP kemaner@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[lemcase=aa] _ 3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP keloka@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP kewatu@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP keseba@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP kemo@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
+     50: prpers@prn u@vbpr.[futcondi] %VP kemaner@adv { 4[lemcase=1.lemcase] _ will@vbmod.[2.tense>tense_PP] _ 1[case=subj] _ %3[tense=inf] }|
      hu@cnjsub da@prn %DVP {who@cnjsub _ %3[person=p3,number=sg]}|
      hu@cnjsub da@prn AVP %DVP {who@prn.rel.an.mf.sp _ 3 _ %4[person=p3,number=sg]}|
      hu@cnjsub AVP da@prn %DVP {who@prn.rel.an.mf.sp _ 2 _ %4[person=p3,number=sg]}|
